@@ -1,0 +1,238 @@
+[
+  {
+    "id": "google",
+    "name": "Google",
+    "logo": "Google",
+    "oaDetails": {
+      "duration": "90 mins",
+      "questionsCount": 2,
+      "difficulty": "Medium to Hard",
+      "patterns": ["Graphs (DFS/BFS)", "Dynamic Programming", "Segment Trees"]
+    },
+    "interviewFormats": {
+      "technicalRounds": 3,
+      "hrCriteria": "Googliness & Leadership Principles",
+      "focusAreas": ["Advanced DSA", "System Design", "Scalability", "Clean Code"]
+    },
+    "coreQuestions": [
+      {
+        "id": "comp-goog-1",
+        "title": "Median of Two Sorted Arrays",
+        "difficulty": "Hard",
+        "platforms": {
+          "leetcode": "https://leetcode.com/problems/median-of-two-sorted-arrays/"
+        },
+        "videoSolution": "https://www.youtube.com/watch?v=NTop3WyJadw"
+      },
+      {
+        "id": "comp-goog-2",
+        "title": "Evaluate Division",
+        "difficulty": "Medium",
+        "platforms": {
+          "leetcode": "https://leetcode.com/problems/evaluate-division/"
+        },
+        "videoSolution": "https://www.youtube.com/watch?v=Uei1fwDoyK0"
+      },
+      {
+        "id": "comp-goog-3",
+        "title": "Cracking the Safe",
+        "difficulty": "Hard",
+        "platforms": {
+          "leetcode": "https://leetcode.com/problems/cracking-the-safe/"
+        },
+        "videoSolution": "https://www.youtube.com/watch?v=kR0g_S5YFQU"
+      }
+    ]
+  },
+  {
+    "id": "amazon",
+    "name": "Amazon",
+    "logo": "Amazon",
+    "oaDetails": {
+      "duration": "70 mins",
+      "questionsCount": 2,
+      "difficulty": "Medium",
+      "patterns": ["Heaps", "Hashing", "Greedy algorithms", "Sliding Window"]
+    },
+    "interviewFormats": {
+      "technicalRounds": 2,
+      "hrCriteria": "Amazon Leadership Principles (LP) integrated deeply into tech questions",
+      "focusAreas": ["Data Structures", "System Design", "Object Oriented Design (LLD)"]
+    },
+    "coreQuestions": [
+      {
+        "id": "comp-amzn-1",
+        "title": "LRU Cache",
+        "difficulty": "Hard",
+        "platforms": {
+          "leetcode": "https://leetcode.com/problems/lru-cache/"
+        },
+        "videoSolution": "https://www.youtube.com/watch?v=xDEuM5qa0sg"
+      },
+      {
+        "id": "comp-amzn-2",
+        "title": "K Closest Points to Origin",
+        "difficulty": "Medium",
+        "platforms": {
+          "leetcode": "https://leetcode.com/problems/k-closest-points-to-origin/"
+        },
+        "videoSolution": "https://www.youtube.com/watch?v=rI2EBUEMf9U"
+      },
+      {
+        "id": "comp-amzn-3",
+        "title": "Course Schedule II",
+        "difficulty": "Medium",
+        "platforms": {
+          "leetcode": "https://leetcode.com/problems/course-schedule-ii/"
+        },
+        "videoSolution": "https://www.youtube.com/watch?v=Akt3glAJDfY"
+      }
+    ]
+  },
+  {
+    "id": "microsoft",
+    "name": "Microsoft",
+    "logo": "Microsoft",
+    "oaDetails": {
+      "duration": "120 mins",
+      "questionsCount": 3,
+      "difficulty": "Medium",
+      "patterns": ["Linked Lists", "Trees & Recursion", "Strings"]
+    },
+    "interviewFormats": {
+      "technicalRounds": 3,
+      "hrCriteria": "Cultural Fit & Engineering Excellence",
+      "focusAreas": ["Operating Systems", "Networking", "DSA", "System Design"]
+    },
+    "coreQuestions": [
+      {
+        "id": "comp-msft-1",
+        "title": "Reverse Nodes in k-Group",
+        "difficulty": "Hard",
+        "platforms": {
+          "leetcode": "https://leetcode.com/problems/reverse-nodes-in-k-group/"
+        },
+        "videoSolution": "https://www.youtube.com/watch?v=1uRyGD5f77c"
+      },
+      {
+        "id": "comp-msft-2",
+        "title": "Spiral Matrix",
+        "difficulty": "Medium",
+        "platforms": {
+          "leetcode": "https://leetcode.com/problems/spiral-matrix/"
+        },
+        "videoSolution": "https://www.youtube.com/watch?v=BJnMZNwUk1M"
+      }
+    ]
+  },
+  {
+    "id": "goldman-sachs",
+    "name": "Goldman Sachs",
+    "logo": "GoldmanSachs",
+    "oaDetails": {
+      "duration": "120 mins",
+      "questionsCount": 3,
+      "difficulty": "Medium to Hard",
+      "patterns": ["Number Theory & Math", "Dynamic Programming", "Subarrays"]
+    },
+    "interviewFormats": {
+      "technicalRounds": 3,
+      "hrCriteria": "Quantitative aptitude & communication skills",
+      "focusAreas": ["Puzzles & Probabilities", "Operating Systems", "DSA", "DBMS/SQL"]
+    },
+    "coreQuestions": [
+      {
+        "id": "comp-gs-1",
+        "title": "Fraction to Recurring Decimal",
+        "difficulty": "Medium",
+        "platforms": {
+          "leetcode": "https://leetcode.com/problems/fraction-to-recurring-decimal/"
+        },
+        "videoSolution": "https://www.youtube.com/watch?v=2cRS9dNa780"
+      },
+      {
+        "id": "comp-gs-2",
+        "title": "Median in a Stream",
+        "difficulty": "Hard",
+        "platforms": {
+          "leetcode": "https://leetcode.com/problems/find-median-from-data-stream/"
+        },
+        "videoSolution": "https://www.youtube.com/watch?v=itmhHWaHupI"
+      }
+    ]
+  },
+  {
+    "id": "zoho",
+    "name": "Zoho",
+    "logo": "Zoho",
+    "oaDetails": {
+      "duration": "90 mins",
+      "questionsCount": 5,
+      "difficulty": "Easy to Medium",
+      "patterns": ["String manipulation", "Matrix operations", "Pattern printing"]
+    },
+    "interviewFormats": {
+      "technicalRounds": 2,
+      "hrCriteria": "Hands-on application development round (1-day LLD round)",
+      "focusAreas": ["Basic Algorithms", "Core Java/C++ OOPs", "LLD / Project Design"]
+    },
+    "coreQuestions": [
+      {
+        "id": "comp-zoho-1",
+        "title": "Look and Say Sequence",
+        "difficulty": "Medium",
+        "platforms": {
+          "leetcode": "https://leetcode.com/problems/count-and-say/",
+          "gfg": "https://practice.geeksforgeeks.org/problems/look-and-say-pattern3543/1"
+        },
+        "videoSolution": "https://www.youtube.com/watch?v=1Sgt93d-u6M"
+      },
+      {
+        "id": "comp-zoho-2",
+        "title": "Print Matrix in Spiral form",
+        "difficulty": "Medium",
+        "platforms": {
+          "leetcode": "https://leetcode.com/problems/spiral-matrix/"
+        },
+        "videoSolution": "https://www.youtube.com/watch?v=BJnMZNwUk1M"
+      }
+    ]
+  },
+  {
+    "id": "tcs",
+    "name": "TCS (Digital / Ninja)",
+    "logo": "TCS",
+    "oaDetails": {
+      "duration": "180 mins",
+      "questionsCount": 2,
+      "difficulty": "Easy to Medium",
+      "patterns": ["Basic arrays", "Number logic (Primes, GCD)", "String validation"]
+    },
+    "interviewFormats": {
+      "technicalRounds": 1,
+      "hrCriteria": "Basic programming checks and project discussion",
+      "focusAreas": ["Basic Coding", "Resume Projects", "Database Queries", "Core CS"]
+    },
+    "coreQuestions": [
+      {
+        "id": "comp-tcs-1",
+        "title": "Palindrome String Check",
+        "difficulty": "Easy",
+        "platforms": {
+          "leetcode": "https://leetcode.com/problems/valid-palindrome/",
+          "gfg": "https://practice.geeksforgeeks.org/problems/palindrome-string0817/1"
+        },
+        "videoSolution": "https://www.youtube.com/watch?v=jJXJ14c1JDg"
+      },
+      {
+        "id": "comp-tcs-2",
+        "title": "Leap Year & Leap Day calculations",
+        "difficulty": "Easy",
+        "platforms": {
+          "gfg": "https://practice.geeksforgeeks.org/problems/is-leap-year5125/1"
+        },
+        "videoSolution": "https://www.youtube.com/watch?v=example"
+      }
+    ]
+  }
+]

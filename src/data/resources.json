@@ -1,0 +1,76 @@
+{
+  "resources": [
+    {
+      "id": "res-os-1",
+      "category": "Core CS Subjects",
+      "title": "Operating Systems (OS) - Gate Smashers",
+      "description": "Premium free lecture series covering CPU scheduling, memory management, file systems, and concurrency.",
+      "tags": ["OS", "Videos", "Free"],
+      "link": "https://www.youtube.com/playlist?list=PLmXKhU9FNesSFvj6gASuWmQd23Ul5omtD"
+    },
+    {
+      "id": "res-dbms-1",
+      "category": "Core CS Subjects",
+      "title": "SQL & DBMS Masterclass - Love Babbar",
+      "description": "Deep-dive playlist covering normalization, keys, transactions, indexing, and SQL queries with live examples.",
+      "tags": ["DBMS", "SQL", "Free"],
+      "link": "https://www.youtube.com/playlist?list=PLDzeHZWIZsTp4x1l1B_rZqf6eLqpy4z6f"
+    },
+    {
+      "id": "res-cn-1",
+      "category": "Core CS Subjects",
+      "title": "Computer Networks (CN) Lectures - Neso Academy",
+      "description": "Excellent visual playlist explaining TCP/IP, OSI layers, IP addressing, subnetting, and protocols.",
+      "tags": ["CN", "Networking", "Free"],
+      "link": "https://www.youtube.com/playlist?list=PLBlnK6fEyqRgMCUAG0XRw78UA8qnv6jEx"
+    },
+    {
+      "id": "res-sd-1",
+      "category": "System Design",
+      "title": "System Design Primer by Donne Martin",
+      "description": "The ultimate GitHub repository covering large-scale systems design, architectural patterns, scaling database servers, and microservices.",
+      "tags": ["System Design", "GitHub", "Reading"],
+      "link": "https://github.com/donnemartin/system-design-primer"
+    },
+    {
+      "id": "res-sd-2",
+      "category": "System Design",
+      "title": "System Design Playlist - ByteByteGo",
+      "description": "Short, clear, and highly animated videos explaining system design concepts like CDNs, Load Balancers, Redis, and Kafka.",
+      "tags": ["System Design", "Videos", "Visual"],
+      "link": "https://www.youtube.com/@ByteByteGo"
+    },
+    {
+      "id": "res-res-1",
+      "category": "Resume Templates",
+      "title": "Deedy Resume Template (Overleaf)",
+      "description": "A clean, modern, two-column LaTeX resume template widely used by CS undergrads for tech companies.",
+      "tags": ["LaTeX", "Resume", "Template"],
+      "link": "https://www.overleaf.com/latex/templates/deedy-resume/bqqgbrrtybsg"
+    },
+    {
+      "id": "res-res-2",
+      "category": "Resume Templates",
+      "title": "Jake's Resume Template (Overleaf)",
+      "description": "A classic, high-performance, single-column ATS-friendly LaTeX resume template preferred for software engineering roles.",
+      "tags": ["LaTeX", "Resume", "ATS-Friendly"],
+      "link": "https://www.overleaf.com/latex/templates/jakes-resume/phrwgwpzzqss"
+    },
+    {
+      "id": "res-mock-1",
+      "category": "Mock Interview Platforms",
+      "title": "Pramp",
+      "description": "Free, peer-to-peer technical mock interview platform matching you with peers to practice coding, system design, and behavioral questions.",
+      "tags": ["Mocks", "Coding", "Free"],
+      "link": "https://www.pramp.com/"
+    },
+    {
+      "id": "res-mock-2",
+      "category": "Mock Interview Platforms",
+      "title": "Interviewing.io",
+      "description": "Anonymous mock interviews with staff engineers from Google, Facebook, Amazon, and Netflix. Includes excellent video archives.",
+      "tags": ["Mocks", "Premium", "Video Archives"],
+      "link": "https://interviewing.io/"
+    }
+  ]
+}

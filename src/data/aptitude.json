@@ -1,0 +1,85 @@
+{
+  "quantitative": [
+    {
+      "topic": "Permutations & Combinations",
+      "description": "Arrangements and selections of objects in mathematical orders.",
+      "questions": [
+        {
+          "id": "apt-q-pc1",
+          "question": "In how many ways can the letters of the word 'LEADER' be arranged?",
+          "options": ["72", "144", "360", "720"],
+          "answer": "360",
+          "explanation": "The word 'LEADER' contains 6 letters, where the letter 'E' is repeated twice. Number of arrangements = 6! / 2! = (720) / 2 = 360 ways."
+        },
+        {
+          "id": "apt-q-pc2",
+          "question": "Out of 7 consonants and 4 vowels, how many words of 3 consonants and 2 vowels can be formed?",
+          "options": ["24,400", "21,300", "25,200", "22,000"],
+          "answer": "25,200",
+          "explanation": "Number of ways of selecting 3 consonants from 7 = 7C3 = 35. Number of ways of selecting 2 vowels from 4 = 4C2 = 6. Total ways of selecting = 35 * 6 = 210. Each group of 5 letters can be arranged in 5! = 120 ways. Total words = 210 * 120 = 25,200."
+        }
+      ]
+    },
+    {
+      "topic": "Profit & Loss",
+      "description": "Cost price, selling price, profit percent, loss percent, and discounts.",
+      "questions": [
+        {
+          "id": "apt-q-pl1",
+          "question": "A person sells an article for $240 and incurs a loss of 20%. At what price should he sell it to gain 10%?",
+          "options": ["$330", "$300", "$280", "$320"],
+          "answer": "$330",
+          "explanation": "Loss = 20%, Selling Price = $240. Therefore, Cost Price = 240 / 0.8 = $300. To gain 10%, new Selling Price = 300 * 1.1 = $330."
+        }
+      ]
+    }
+  ],
+  "logical": [
+    {
+      "topic": "Syllogisms",
+      "description": "Deductive reasoning questions based on statements and conclusions.",
+      "questions": [
+        {
+          "id": "apt-l-syl1",
+          "question": "Statements: (1) All mangoes are golden. (2) No golden things are cheap. Conclusions: (I) All mangoes are cheap. (II) No mangoes are cheap.",
+          "options": ["Only I follows", "Only II follows", "Either I or II follows", "Neither I nor II follows"],
+          "answer": "Only II follows",
+          "explanation": "Since all mangoes are golden, and no golden things are cheap, it is impossible for any mango to be cheap. Thus, conclusion II definitely follows."
+        }
+      ]
+    },
+    {
+      "topic": "Blood Relations",
+      "description": "Decoding relationships and drawing family tree structures.",
+      "questions": [
+        {
+          "id": "apt-l-br1",
+          "question": "Pointing to a photograph, a man said, 'I have no brother or sister but that man's father is my father's son.' Whose photograph was it?",
+          "options": ["His own", "His son's", "His father's", "His nephew's"],
+          "answer": "His son's",
+          "explanation": "Since the speaker has no brother or sister, 'my father's son' must be the speaker himself. Thus, 'that man's father is the speaker'. The photograph is of his son."
+        }
+      ]
+    }
+  ],
+  "verbal": [
+    {
+      "topic": "Sentence Correction",
+      "description": "Identifying grammatical errors and improving sentences.",
+      "questions": [
+        {
+          "id": "apt-v-sc1",
+          "question": "Identify the grammatically correct sentence: 'Neither of the two candidates were selected.'",
+          "options": [
+            "Neither of the two candidates was selected.",
+            "Neither of the two candidates were selected.",
+            "Either of the two candidates were selected.",
+            "Neither candidates was selected."
+          ],
+          "answer": "Neither of the two candidates was selected.",
+          "explanation": "'Neither' acts as a singular pronoun, requiring the singular verb 'was' instead of the plural 'were'."
+        }
+      ]
+    }
+  ]
+}
