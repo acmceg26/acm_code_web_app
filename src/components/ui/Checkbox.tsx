@@ -27,8 +27,8 @@ export const Checkbox: React.FC<CheckboxProps> = ({
         />
         <div className={`w-5 h-5 rounded-md border flex items-center justify-center transition-all duration-200 
           ${checked 
-            ? 'bg-indigo-600 border-indigo-500 shadow-md shadow-indigo-600/30' 
-            : 'border-slate-700 bg-slate-900 group-hover:border-indigo-500/50'
+            ? 'bg-blue-600 border-blue-500'
+            : 'border-zinc-700 bg-zinc-900 group-hover:border-blue-500/50'
           }`}
         >
           {checked && (
@@ -45,7 +45,7 @@ export const Checkbox: React.FC<CheckboxProps> = ({
         </div>
       </div>
       {label && (
-        <span className={`ml-3 text-sm transition-colors duration-200 ${checked ? 'text-slate-500 line-through' : 'text-slate-300'}`}>
+        <span className={`ml-3 text-sm transition-colors duration-200 ${checked ? 'text-zinc-500 line-through' : 'text-zinc-300'}`}>
           {label}
         </span>
       )}

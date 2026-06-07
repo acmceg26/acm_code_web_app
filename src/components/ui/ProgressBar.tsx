@@ -30,7 +30,7 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
         <svg className="transform -rotate-90" width={size} height={size}>
           {/* Background circle */}
           <circle
-            className="text-slate-800"
+            className="text-zinc-800"
             stroke="currentColor"
             fill="transparent"
             strokeWidth={strokeWidth}
@@ -40,8 +40,8 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
           />
           {/* Progress circle */}
           <circle
-            className="text-indigo-500 transition-all duration-500 ease-out"
-            stroke="url(#progress-gradient)"
+            className="text-blue-500 transition-all duration-500 ease-out"
+            stroke="currentColor"
             fill="transparent"
             strokeWidth={strokeWidth}
             strokeDasharray={circumference}
@@ -51,18 +51,11 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
             cx={size / 2}
             cy={size / 2}
           />
-          {/* Gradient definition */}
-          <defs>
-            <linearGradient id="progress-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#818cf8" /> {/* indigo-400 */}
-              <stop offset="100%" stopColor="#ec4899" /> {/* pink-500 */}
-            </linearGradient>
-          </defs>
         </svg>
         {showText && (
           <div className="absolute flex flex-col items-center">
-            <span className="text-2xl font-bold text-slate-100 font-mono leading-none">{cleanProgress}%</span>
-            <span className="text-[10px] text-slate-400 uppercase tracking-widest font-semibold mt-1">Complete</span>
+            <span className="text-2xl font-bold text-zinc-100 font-mono leading-none">{cleanProgress}%</span>
+            <span className="text-[10px] text-zinc-400 uppercase tracking-widest font-semibold mt-1">Complete</span>
           </div>
         )}
       </div>
@@ -73,13 +66,13 @@ export const ProgressBar: React.FC<ProgressBarProps> = ({
     <div className={`w-full ${className}`}>
       {showText && (
         <div className="flex justify-between items-center mb-1.5">
-          <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Progress</span>
-          <span className="text-sm font-bold text-slate-200 font-mono">{cleanProgress}%</span>
+          <span className="text-xs font-semibold text-zinc-400 uppercase tracking-wider">Progress</span>
+          <span className="text-sm font-bold text-zinc-200 font-mono">{cleanProgress}%</span>
         </div>
       )}
-      <div className="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+      <div className="w-full h-2 bg-zinc-800 rounded-full overflow-hidden">
         <div
-          className="h-full bg-gradient-to-r from-indigo-500 to-pink-500 rounded-full transition-all duration-500 ease-out"
+          className="h-full bg-blue-500 rounded-full transition-all duration-500 ease-out"
           style={{ width: `${cleanProgress}%` }}
         />
       </div>

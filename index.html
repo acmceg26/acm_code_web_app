@@ -4,10 +4,24 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PrepVault - DSA Sheet & Placement Preparation Tracker</title>
-    <meta name="description" content="A comprehensive dark-mode DSA sheet tracker and placement preparation tool. Monitor coding problems, company-specific interview criteria, aptitude topics, and core CS resources." />
+    <title>PrepVault — Placement Tracker</title>
+    <meta name="description" content="Track DSA sheets, company prep, and aptitude practice in one place." />
+    <script>
+      // Apply the saved (or system) theme before paint to avoid a flash.
+      (function () {
+        try {
+          var t = localStorage.getItem('theme');
+          if (t !== 'light' && t !== 'dark') {
+            t = window.matchMedia('(prefers-color-scheme: light)').matches
+              ? 'light'
+              : 'dark';
+          }
+          if (t === 'light') document.documentElement.classList.add('light');
+        } catch (e) {}
+      })();
+    </script>
   </head>
-  <body class="bg-slate-950 text-slate-100">
+  <body class="bg-zinc-950 text-zinc-100">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

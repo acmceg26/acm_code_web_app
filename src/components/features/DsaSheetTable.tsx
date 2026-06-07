@@ -70,7 +70,7 @@ export const DsaSheetTable: React.FC<DsaSheetTableProps> = ({ problems, topicNam
     <div className="overflow-x-auto w-full">
       <table className="w-full text-left border-collapse min-w-[600px]">
         <thead>
-          <tr className="border-b border-slate-800 text-xs font-bold text-slate-400 uppercase tracking-wider">
+          <tr className="border-b border-zinc-800 text-xs font-bold text-zinc-400 uppercase tracking-wider">
             <th className="py-3 px-4 w-12 text-center">Status</th>
             <th className="py-3 px-4">Problem Name</th>
             <th className="py-3 px-4 w-32 text-center">Difficulty</th>
@@ -79,7 +79,7 @@ export const DsaSheetTable: React.FC<DsaSheetTableProps> = ({ problems, topicNam
             <th className="py-3 px-4 w-24 text-center">Notes</th>
           </tr>
         </thead>
-        <tbody className="divide-y divide-slate-800/50">
+        <tbody className="divide-y divide-zinc-800/50">
           {problems.map((problem) => {
             const solved = isSolved(problem.id);
             const noteExists = getNote(problem.id).trim().length > 0;
@@ -88,9 +88,9 @@ export const DsaSheetTable: React.FC<DsaSheetTableProps> = ({ problems, topicNam
             return (
               <React.Fragment key={problem.id}>
                 {/* Main Problem Row */}
-                <tr 
-                  className={`group transition-colors duration-150 hover:bg-slate-900/35 
-                    ${solved ? 'bg-slate-950/20 opacity-70' : ''}`}
+                <tr
+                  className={`group transition-colors duration-150
+                    ${solved ? 'bg-blue-500/15 hover:bg-blue-500/20' : 'hover:bg-zinc-900/35'}`}
                 >
                   {/* Status Checkbox */}
                   <td className="py-3.5 px-4 text-center">
@@ -111,8 +111,8 @@ export const DsaSheetTable: React.FC<DsaSheetTableProps> = ({ problems, topicNam
 
                   {/* Problem Name */}
                   <td className="py-3.5 px-4">
-                    <span className={`text-sm font-semibold transition-all duration-200 
-                      ${solved ? 'line-through text-slate-500 font-medium' : 'text-slate-200 group-hover:text-white'}`}
+                    <span className={`text-sm font-semibold transition-colors duration-200
+                      ${solved ? 'text-zinc-100' : 'text-zinc-200 group-hover:text-zinc-100'}`}
                     >
                       {problem.title}
                     </span>
@@ -134,7 +134,7 @@ export const DsaSheetTable: React.FC<DsaSheetTableProps> = ({ problems, topicNam
                           target="_blank" 
                           rel="noreferrer"
                           title="Solve on LeetCode"
-                          className="p-1.5 rounded-lg border border-slate-800 hover:border-amber-500/40 bg-slate-950/50 text-slate-400 hover:text-amber-500 transition-all cursor-pointer"
+                          className="p-1.5 rounded-lg border border-zinc-800 hover:border-amber-500/40 bg-zinc-950/50 text-zinc-400 hover:text-amber-500 transition-all cursor-pointer"
                         >
                           <Code2 className="w-4 h-4" />
                         </a>
@@ -145,7 +145,7 @@ export const DsaSheetTable: React.FC<DsaSheetTableProps> = ({ problems, topicNam
                           target="_blank" 
                           rel="noreferrer"
                           title="Solve on GeeksforGeeks"
-                          className="p-1.5 rounded-lg border border-slate-800 hover:border-emerald-500/40 bg-slate-950/50 text-slate-400 hover:text-emerald-500 transition-all cursor-pointer"
+                          className="p-1.5 rounded-lg border border-zinc-800 hover:border-emerald-500/40 bg-zinc-950/50 text-zinc-400 hover:text-emerald-500 transition-all cursor-pointer"
                         >
                           <ExternalLink className="w-4 h-4" />
                         </a>
@@ -162,12 +162,12 @@ export const DsaSheetTable: React.FC<DsaSheetTableProps> = ({ problems, topicNam
                           target="_blank" 
                           rel="noreferrer"
                           title="Watch YouTube Solution"
-                          className="p-1.5 rounded-lg border border-slate-800 hover:border-rose-500/40 bg-slate-950/50 text-slate-400 hover:text-rose-500 transition-all cursor-pointer"
+                          className="p-1.5 rounded-lg border border-zinc-800 hover:border-rose-500/40 bg-zinc-950/50 text-zinc-400 hover:text-rose-500 transition-all cursor-pointer"
                         >
                           <Video className="w-4 h-4" />
                         </a>
                       ) : (
-                        <span className="text-slate-700 text-xs font-medium">-</span>
+                        <span className="text-zinc-700 text-xs font-medium">-</span>
                       )}
                     </div>
                   </td>
@@ -177,17 +177,17 @@ export const DsaSheetTable: React.FC<DsaSheetTableProps> = ({ problems, topicNam
                     <div className="flex justify-center">
                       <button 
                         onClick={() => toggleNotes(problem.id)}
-                        className={`p-1.5 rounded-lg border transition-all cursor-pointer relative 
-                          ${isNotesExpanded 
-                            ? 'bg-indigo-650/10 border-indigo-500 text-indigo-400 shadow-md shadow-indigo-500/5' 
+                        className={`p-1.5 rounded-lg border transition-colors cursor-pointer relative
+                          ${isNotesExpanded
+                            ? 'bg-blue-600/10 border-blue-500/50 text-blue-400'
                             : noteExists
-                              ? 'bg-slate-800/40 border-slate-700 text-indigo-400'
-                              : 'bg-slate-950/50 border-slate-800 text-slate-500 hover:text-slate-350 hover:border-slate-705'}`}
+                              ? 'bg-zinc-800/40 border-zinc-700 text-blue-400'
+                              : 'bg-zinc-950/50 border-zinc-800 text-zinc-500 hover:text-zinc-400 hover:border-zinc-700'}`}
                         title="Add/View Notes"
                       >
                         <StickyNote className="w-4 h-4" />
                         {noteExists && !isNotesExpanded && (
-                          <span className="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 bg-indigo-500 rounded-full" />
+                          <span className="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 bg-blue-500 rounded-full" />
                         )}
                       </button>
                     </div>
@@ -197,15 +197,15 @@ export const DsaSheetTable: React.FC<DsaSheetTableProps> = ({ problems, topicNam
                 {/* Notes Collapse Area */}
                 {isNotesExpanded && (
                   <tr>
-                    <td colSpan={6} className="bg-slate-900/15 p-4 border-b border-slate-800">
+                    <td colSpan={6} className="bg-zinc-900/15 p-4 border-b border-zinc-800">
                       <div className="flex flex-col gap-2 max-w-3xl mx-auto pl-12 animate-fade-in-up">
                         <div className="flex justify-between items-center">
-                          <span className="text-xs font-bold text-indigo-400 uppercase tracking-wider flex items-center gap-1.5">
+                          <span className="text-xs font-medium text-zinc-400 flex items-center gap-1.5">
                             <StickyNote className="w-3.5 h-3.5" />
-                            Scratchpad Notes (Saved in Browser)
+                            Notes (saved in this browser)
                           </span>
                           {saveStatus && (
-                            <span className={`text-[10px] font-bold font-mono tracking-tight flex items-center gap-1 ${saveStatus === 'saving' ? 'text-slate-500' : 'text-emerald-400'}`}>
+                            <span className={`text-[10px] font-bold font-mono tracking-tight flex items-center gap-1 ${saveStatus === 'saving' ? 'text-zinc-500' : 'text-emerald-400'}`}>
                               {saveStatus === 'saving' ? 'Saving...' : <><Check className="w-3 h-3" /> Saved</>}
                             </span>
                           )}
@@ -213,8 +213,8 @@ export const DsaSheetTable: React.FC<DsaSheetTableProps> = ({ problems, topicNam
                         <textarea
                           value={editingNoteText}
                           onChange={(e) => handleNotesChange(problem.id, e.target.value)}
-                          placeholder="Type code snippets, approach thoughts, or key patterns to watch out for..."
-                          className="w-full min-h-[90px] p-3 text-xs bg-slate-950 border border-slate-800 hover:border-slate-700 focus:border-indigo-500 rounded-xl text-slate-350 placeholder-slate-600 focus:outline-none resize-y font-mono leading-relaxed"
+                          placeholder="Approach, edge cases, patterns to remember..."
+                          className="w-full min-h-[90px] p-3 text-xs bg-zinc-950 border border-zinc-800 hover:border-zinc-700 focus:border-blue-500 rounded-lg text-zinc-300 placeholder-zinc-600 focus:outline-none resize-y font-mono leading-relaxed"
                         />
                       </div>
                     </td>

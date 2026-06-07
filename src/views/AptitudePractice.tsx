@@ -15,7 +15,7 @@ export const AptitudePractice: React.FC = () => {
       title: 'Quantitative Aptitude',
       description: 'Numerical concepts, algebra, permutations, combinations, and core mathematical puzzles.',
       icon: Calculator,
-      gradient: 'from-blue-500/10 to-indigo-500/10 border-indigo-500/20 text-indigo-400',
+      iconClass: 'border-zinc-700 text-zinc-300',
       topicsCount: aptitudeData.quantitative.length,
     },
     {
@@ -23,7 +23,7 @@ export const AptitudePractice: React.FC = () => {
       title: 'Logical Reasoning',
       description: 'Deductive syllogisms, family relations, critical thinking, and abstract patterns.',
       icon: Compass,
-      gradient: 'from-purple-500/10 to-pink-500/10 border-pink-500/20 text-pink-400',
+      iconClass: 'border-zinc-700 text-zinc-300',
       topicsCount: aptitudeData.logical.length,
     },
     {
@@ -31,7 +31,7 @@ export const AptitudePractice: React.FC = () => {
       title: 'Verbal Ability',
       description: 'Grammar analysis, paragraph reading, corrections, and sentence logic checks.',
       icon: BookOpen,
-      gradient: 'from-emerald-500/10 to-teal-500/10 border-teal-500/20 text-emerald-400',
+      iconClass: 'border-zinc-700 text-zinc-300',
       topicsCount: aptitudeData.verbal.length,
     },
   ];
@@ -53,8 +53,8 @@ export const AptitudePractice: React.FC = () => {
     <div className="space-y-6 animate-fade-in-up">
       {/* Page Header */}
       <div>
-        <span className="text-xs font-bold text-indigo-400 uppercase tracking-widest">Aptitude & Logical Skills</span>
-        <h2 className="text-2xl font-extrabold text-slate-100 mt-0.5">Aptitude Practice</h2>
+        <h2 className="text-xl font-semibold text-zinc-100">Aptitude Practice</h2>
+        <p className="text-sm text-zinc-500 mt-1">Quantitative, logical, and verbal question sets.</p>
       </div>
 
       {/* Categories Grid */}
@@ -68,22 +68,20 @@ export const AptitudePractice: React.FC = () => {
               className="flex flex-col justify-between group cursor-pointer h-full"
             >
               <div>
-                <div className={`w-12 h-12 rounded-2xl bg-slate-900 border flex items-center justify-center mb-5 ${cat.gradient}`}>
-                  <Icon className="w-6 h-6" />
+                <div className={`w-11 h-11 rounded-lg bg-zinc-800 border flex items-center justify-center mb-5 ${cat.iconClass}`}>
+                  <Icon className="w-5 h-5" />
                 </div>
-                <h3 className="text-lg font-bold text-slate-200 group-hover:text-indigo-400 transition-colors mb-2">
+                <h3 className="text-base font-semibold text-zinc-100 mb-2">
                   {cat.title}
                 </h3>
-                <p className="text-xs text-slate-400 leading-relaxed mb-6">
+                <p className="text-xs text-zinc-400 leading-relaxed mb-6">
                   {cat.description}
                 </p>
               </div>
 
-              <div className="flex items-center justify-between pt-4 border-t border-slate-800/80 text-xs font-semibold">
-                <span className="text-slate-500 font-mono">{cat.topicsCount} Topics Curated</span>
-                <span className="text-indigo-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform duration-200">
-                  Select Category &rarr;
-                </span>
+              <div className="flex items-center justify-between pt-4 border-t border-zinc-800 text-xs font-medium">
+                <span className="text-zinc-500">{cat.topicsCount} topics</span>
+                <span className="text-zinc-400 group-hover:text-zinc-200 transition-colors">Open &rarr;</span>
               </div>
             </Card>
           );

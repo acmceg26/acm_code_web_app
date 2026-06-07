@@ -48,44 +48,44 @@ export const ActivityLog: React.FC = () => {
   const recentSolved = solvedProblems.slice(0, 5);
 
   return (
-    <div className="glass-panel p-6 rounded-2xl border border-slate-800/80 flex flex-col h-full">
+    <div className="glass-panel p-6 rounded-xl border border-zinc-800/80 flex flex-col h-full">
       <div className="hidden">{timeUpdater}</div>
       <div className="flex items-center gap-2 mb-6">
-        <CheckCircle2 className="w-5 h-5 text-emerald-400 animate-pulse-ring rounded-full" />
-        <h3 className="font-bold text-slate-200 text-base">Recently Solved</h3>
+        <CheckCircle2 className="w-5 h-5 text-emerald-400" />
+        <h3 className="font-semibold text-zinc-200 text-base">Recently solved</h3>
       </div>
 
       {recentSolved.length === 0 ? (
-        <div className="flex-grow flex flex-col items-center justify-center py-10 text-center text-slate-500">
-          <Calendar className="w-10 h-10 text-slate-750 mb-3" />
+        <div className="flex-grow flex flex-col items-center justify-center py-10 text-center text-zinc-500">
+          <Calendar className="w-10 h-10 text-zinc-700 mb-3" />
           <p className="text-sm font-medium">No recent activity</p>
-          <p className="text-xs text-slate-600 mt-1 max-w-[200px]">Problems you complete will appear here in real-time.</p>
+          <p className="text-xs text-zinc-600 mt-1 max-w-[200px]">Problems you check off will show up here.</p>
         </div>
       ) : (
         <div className="flex-grow space-y-4">
           {recentSolved.map((item) => (
             <div 
               key={`${item.problemId}-${item.solvedAtTimestamp}`}
-              className="relative pl-6 pb-2 border-l border-slate-805 last:border-0 last:pb-0 group"
+              className="relative pl-6 pb-2 border-l border-zinc-800 last:border-0 last:pb-0 group"
             >
               {/* Timeline dot */}
-              <span className="absolute left-[-5px] top-1.5 w-2.5 h-2.5 rounded-full bg-slate-700 border-2 border-slate-900 group-hover:bg-indigo-500 group-hover:border-indigo-500/50 transition-colors duration-250" />
+              <span className="absolute left-[-5px] top-1.5 w-2.5 h-2.5 rounded-full bg-zinc-700 border-2 border-zinc-900 group-hover:bg-blue-500 group-hover:border-blue-500/50 transition-colors duration-250" />
               
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1.5 sm:gap-4">
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center gap-2 mb-0.5">
-                    <h4 className="font-bold text-slate-205 text-sm truncate hover:text-slate-100 transition-colors">
+                    <h4 className="font-bold text-zinc-200 text-sm truncate hover:text-zinc-100 transition-colors">
                       {item.title}
                     </h4>
                     {getDifficultyBadge(item.difficulty)}
                   </div>
-                  <span className="text-xs font-medium text-slate-400">
+                  <span className="text-xs font-medium text-zinc-400">
                     {item.topic}
                   </span>
                 </div>
                 
                 <div className="shrink-0 flex items-center gap-2 text-right">
-                  <span className="text-[10px] font-bold text-slate-500 font-mono tracking-tight bg-slate-950/40 px-2 py-1 rounded-md border border-slate-850">
+                  <span className="text-[10px] font-bold text-zinc-500 font-mono tracking-tight bg-zinc-950/40 px-2 py-1 rounded-md border border-zinc-800">
                     {getRelativeTime(item.solvedAtTimestamp)}
                   </span>
                 </div>

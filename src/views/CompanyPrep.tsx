@@ -3,30 +3,49 @@ import companyData from '../data/companies.json';
 import { CompanyDetails } from '../components/features/CompanyDetails';
 import { Card } from '../components/ui/Card';
 
+// Brand domains used to fetch each company's logo.
+const COMPANY_DOMAINS: Record<string, string> = {
+  google: 'google.com',
+  amazon: 'amazon.com',
+  microsoft: 'microsoft.com',
+  'goldman-sachs': 'goldmansachs.com',
+  zoho: 'zoho.com',
+  tcs: 'www.tcs.com',
+};
+
+// Renders the real company logo on a white tile, falling back to the
+// company initial if the logo can't be loaded.
+const CompanyLogo: React.FC<{ companyId: string; name: string }> = ({ companyId, name }) => {
+  const [failed, setFailed] = useState(false);
+  const domain = COMPANY_DOMAINS[companyId];
+
+  if (failed || !domain) {
+    return (
+      <div className="w-11 h-11 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center">
+        <span className="font-semibold text-zinc-200 text-sm tracking-tight">{name.charAt(0)}</span>
+      </div>
+    );
+  }
+
+  return (
+    <div className="w-11 h-11 rounded-lg bg-white border border-black/10 flex items-center justify-center overflow-hidden">
+      <img
+        src={`https://www.google.com/s2/favicons?domain=${domain}&sz=128`}
+        alt={`${name} logo`}
+        width={28}
+        height={28}
+        className="w-7 h-7 object-contain"
+        loading="lazy"
+        onError={() => setFailed(true)}
+      />
+    </div>
+  );
+};
+
 export const CompanyPrep: React.FC = () => {
   const [selectedCompanyId, setSelectedCompanyId] = useState<string | null>(null);
 
   const selectedCompany = companyData.find(c => c.id === selectedCompanyId);
-
-  // Helper to render customized modern logos/initials for companies
-  const renderCompanyLogo = (companyId: string, name: string) => {
-    const configurations: Record<string, { gradient: string; text: string }> = {
-      google: { gradient: 'from-blue-500 via-red-500 to-yellow-500', text: 'G' },
-      amazon: { gradient: 'from-amber-500 to-orange-600', text: 'A' },
-      microsoft: { gradient: 'from-blue-600 to-teal-500', text: 'M' },
-      'goldman-sachs': { gradient: 'from-yellow-600 via-yellow-500 to-amber-600', text: 'GS' },
-      zoho: { gradient: 'from-red-500 via-blue-500 to-green-500', text: 'Z' },
-      tcs: { gradient: 'from-blue-700 to-indigo-850', text: 'TCS' },
-    };
-
-    const config = configurations[companyId] || { gradient: 'from-slate-700 to-slate-900', text: name.charAt(0) };
-
-    return (
-      <div className={`w-12 h-12 rounded-2xl bg-gradient-to-tr ${config.gradient} flex items-center justify-center shadow-md border border-white/5`}>
-        <span className="font-extrabold text-white text-base tracking-tight">{config.text}</span>
-      </div>
-    );
-  };
 
   if (selectedCompany) {
     return (
@@ -41,8 +60,8 @@ export const CompanyPrep: React.FC = () => {
     <div className="space-y-6 animate-fade-in-up">
       {/* Page Header */}
       <div>
-        <span className="text-xs font-bold text-indigo-400 uppercase tracking-widest">Target Recruitment</span>
-        <h2 className="text-2xl font-extrabold text-slate-100 mt-0.5">Company Wise & OA Prep</h2>
+        <h2 className="text-xl font-semibold text-zinc-100">Companies</h2>
+        <p className="text-sm text-zinc-500 mt-1">Online assessment formats and interview questions by company.</p>
       </div>
 
       {/* Grid Layout of Company Profiles */}
@@ -55,31 +74,29 @@ export const CompanyPrep: React.FC = () => {
           >
             <div>
               <div className="flex items-center justify-between mb-5">
-                {renderCompanyLogo(company.id, company.name)}
-                <span className="text-[10px] font-bold text-slate-500 font-mono tracking-tight bg-slate-950/40 px-2.5 py-1 rounded-lg border border-slate-850">
+                <CompanyLogo companyId={company.id} name={company.name} />
+                <span className="text-[10px] font-bold text-zinc-500 font-mono tracking-tight bg-blue-500/15 border border-blue-500/20">
                   {company.coreQuestions.length} core questions
                 </span>
               </div>
               
-              <h3 className="text-lg font-bold text-slate-200 group-hover:text-indigo-400 transition-colors mb-2">
+              <h3 className="text-base font-semibold text-zinc-100 mb-2">
                 {company.name}
               </h3>
               
-              <div className="space-y-2 text-xs text-slate-400">
+              <div className="space-y-2 text-xs text-zinc-400">
                 <p className="line-clamp-1">
-                  <span className="font-semibold text-slate-500">OA:</span> {company.oaDetails.duration} &bull; {company.oaDetails.questionsCount} Questions
+                  <span className="font-semibold text-zinc-500">OA:</span> {company.oaDetails.duration} &bull; {company.oaDetails.questionsCount} Questions
                 </p>
                 <p className="line-clamp-1">
-                  <span className="font-semibold text-slate-500">Rounds:</span> {company.interviewFormats.technicalRounds} Tech &bull; {company.interviewFormats.hrCriteria.split(' ')[0]} Focus
+                  <span className="font-semibold text-zinc-500">Rounds:</span> {company.interviewFormats.technicalRounds} Tech &bull; {company.interviewFormats.hrCriteria.split(' ')[0]} Focus
                 </p>
               </div>
             </div>
 
-            <div className="flex items-center justify-between mt-6 pt-4 border-t border-slate-800/80 text-xs font-semibold">
-              <span className="text-slate-500 group-hover:text-slate-400 transition-colors">View Interview Strategy</span>
-              <span className="text-indigo-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform duration-200">
-                Analyze &rarr;
-              </span>
+            <div className="flex items-center justify-between mt-6 pt-4 border-t border-zinc-800 text-xs font-medium">
+              <span className="text-zinc-500">OA &amp; interview details</span>
+              <span className="text-zinc-400 group-hover:text-zinc-200 transition-colors">View &rarr;</span>
             </div>
           </Card>
         ))}

@@ -33,22 +33,22 @@ export const DsaSheets: React.FC = () => {
     <div className="space-y-6 animate-fade-in-up">
       {/* Page Header */}
       <div>
-        <span className="text-xs font-bold text-indigo-400 uppercase tracking-widest">DSA Practice Roads</span>
-        <h2 className="text-2xl font-extrabold text-slate-100 mt-0.5">DSA Track Sheets</h2>
+        <h2 className="text-xl font-semibold text-zinc-100">DSA Sheets</h2>
+        <p className="text-sm text-zinc-500 mt-1">Problem sets grouped by topic.</p>
       </div>
 
       {/* Sheets Navigation Bar (Pills style) */}
-      <div className="flex flex-wrap gap-2.5 pb-2 border-b border-slate-800">
+      <div className="flex flex-wrap gap-2 pb-2 border-b border-zinc-800">
         {dsaData.sheets.map((sheet) => {
           const isActive = sheet.id === activeSheetId;
           return (
             <button
               key={sheet.id}
               onClick={() => setActiveSheetId(sheet.id)}
-              className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all duration-200 cursor-pointer ${
+              className={`px-3.5 py-2 rounded-lg text-xs font-medium transition-colors duration-150 cursor-pointer ${
                 isActive
-                  ? 'bg-indigo-600 text-white shadow-lg shadow-indigo-600/15'
-                  : 'bg-slate-900 border border-slate-805/60 text-slate-400 hover:text-slate-200 hover:border-slate-700'
+                  ? 'bg-zinc-100 text-zinc-900'
+                  : 'bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-200 hover:border-zinc-700'
               }`}
             >
               {sheet.title}
@@ -58,25 +58,25 @@ export const DsaSheets: React.FC = () => {
       </div>
 
       {/* Sheet Specific Statistics / Info Card */}
-      <div className="glass-panel p-5 rounded-2xl border border-slate-800/80 flex flex-col md:flex-row md:items-center justify-between gap-5 bg-gradient-to-br from-slate-900/40 to-slate-950/20">
+      <div className="glass-panel p-5 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-5">
         <div className="space-y-1.5 flex-1 max-w-xl">
-          <h3 className="font-bold text-slate-200 text-base">{activeSheet.title}</h3>
-          <p className="text-xs text-slate-400 leading-relaxed">{activeSheet.description}</p>
+          <h3 className="font-bold text-zinc-200 text-base">{activeSheet.title}</h3>
+          <p className="text-xs text-zinc-400 leading-relaxed">{activeSheet.description}</p>
         </div>
         
         {/* Progress Metrics for this sheet */}
-        <div className="shrink-0 flex items-center gap-4 bg-slate-950/50 p-4 rounded-xl border border-slate-850">
+        <div className="shrink-0 flex items-center gap-4 bg-zinc-950/50 p-4 rounded-xl border border-zinc-800">
           <div className="text-left">
-            <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block">Sheet Progress</span>
-            <span className="text-lg font-extrabold text-slate-200 font-mono">
-              {solvedProblemsCount} <span className="text-xs font-medium text-slate-500">/ {totalProblems} solved</span>
+            <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-wider block">Sheet Progress</span>
+            <span className="text-lg font-bold text-zinc-200 font-mono">
+              {solvedProblemsCount} <span className="text-xs font-medium text-zinc-500">/ {totalProblems} solved</span>
             </span>
           </div>
           <div className="relative flex items-center justify-center w-12 h-12">
             {/* Simple SVGs circular indicator */}
             <svg className="transform -rotate-90 w-12 h-12">
               <circle
-                className="text-slate-800"
+                className="text-zinc-800"
                 stroke="currentColor"
                 fill="transparent"
                 strokeWidth="4"
@@ -85,7 +85,7 @@ export const DsaSheets: React.FC = () => {
                 cy="24"
               />
               <circle
-                className="text-indigo-400 transition-all duration-500"
+                className="text-blue-400 transition-all duration-500"
                 stroke="currentColor"
                 fill="transparent"
                 strokeWidth="4"
@@ -97,7 +97,7 @@ export const DsaSheets: React.FC = () => {
                 cy="24"
               />
             </svg>
-            <span className="absolute text-[10px] font-extrabold text-slate-200 font-mono">{activeSheetPercent}%</span>
+            <span className="absolute text-[10px] font-bold text-zinc-200 font-mono">{activeSheetPercent}%</span>
           </div>
         </div>
       </div>
@@ -113,8 +113,8 @@ export const DsaSheets: React.FC = () => {
           const badgeEl = (
             <span className={`px-2 py-0.5 text-[10px] font-bold font-mono rounded-md border shrink-0 ${
               isTopicFinished 
-                ? 'bg-emerald-500/10 text-emerald-450 border-emerald-500/20' 
-                : 'bg-slate-950 text-slate-400 border-slate-850'
+                ? 'bg-emerald-500/50 text-emerald-400 border-emerald-500/20' 
+                : 'bg-zinc-950 text-zinc-400 border-zinc-800'
             }`}>
               {topicSolved} / {topicTotal}
             </span>
