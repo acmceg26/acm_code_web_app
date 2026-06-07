@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { TrackerProvider } from './context/TrackerContext';
 import { Sidebar } from './components/features/Sidebar';
 import { Dashboard } from './views/Dashboard';
@@ -6,22 +7,32 @@ import { DsaSheets } from './views/DsaSheets';
 import { CompanyPrep } from './views/CompanyPrep';
 import { AptitudePractice } from './views/AptitudePractice';
 import { Resources } from './views/Resources';
+import { Login } from './views/auth/Login';
+import { Signup } from './views/auth/Signup';
 import { Menu, Sun, Moon } from 'lucide-react';
-import { useTheme } from './hooks/useTheme';
+import { useTheme, type Theme } from './hooks/useTheme';
+import { useAuth, getFirstName, type User } from './hooks/useAuth';
 import acmLogoDark from './assets/acm-logo-dark.png';
 import acmLogoBright from './assets/acm-logo-bright.png';
 
 type ViewType = 'dashboard' | 'dsa' | 'company' | 'aptitude' | 'resources';
 
-function AppContent() {
+interface AppContentProps {
+  theme: Theme;
+  toggleTheme: () => void;
+  onLogout: () => void;
+  user: User | null;
+}
+
+function AppContent({ theme, toggleTheme, onLogout, user }: AppContentProps) {
   const [activeView, setActiveView] = useState<ViewType>('dashboard');
   const [mobileOpen, setMobileOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme();
+  const firstName = getFirstName(user);
 
   const renderView = () => {
     switch (activeView) {
       case 'dashboard':
-        return <Dashboard />;
+        return <Dashboard userName={firstName} />;
       case 'dsa':
         return <DsaSheets />;
       case 'company':
@@ -45,6 +56,7 @@ function AppContent() {
         setMobileOpen={setMobileOpen}
         theme={theme}
         toggleTheme={toggleTheme}
+        onLogout={onLogout}
       />
 
       {/* Main Content Layout */}
@@ -57,7 +69,7 @@ function AppContent() {
               alt="ACM-CEG Student Chapter"
               className={`h-7 w-auto rounded ${theme === 'dark' ? 'bg-black' : 'bg-white'}`}
             />
-            <span className="font-bold text-zinc-100 text-sm tracking-tight">PrepVault</span>
+            <span className="font-bold text-zinc-100 text-sm tracking-tight">C.O.D.E</span>
           </div>
           
           <div className="flex items-center gap-2">
@@ -87,10 +99,52 @@ function AppContent() {
   );
 }
 
+function Root() {
+  const { theme, toggleTheme } = useTheme();
+  const { user, isAuthenticated, login, logout } = useAuth();
+
+  return (
+    <Routes>
+      <Route
+        path="/login"
+        element={
+          isAuthenticated ? (
+            <Navigate to="/" replace />
+          ) : (
+            <Login theme={theme} toggleTheme={toggleTheme} onAuth={login} />
+          )
+        }
+      />
+      <Route
+        path="/signup"
+        element={
+          isAuthenticated ? (
+            <Navigate to="/" replace />
+          ) : (
+            <Signup theme={theme} toggleTheme={toggleTheme} onAuth={login} />
+          )
+        }
+      />
+      <Route
+        path="*"
+        element={
+          isAuthenticated ? (
+            <AppContent theme={theme} toggleTheme={toggleTheme} onLogout={logout} user={user} />
+          ) : (
+            <Navigate to="/login" replace />
+          )
+        }
+      />
+    </Routes>
+  );
+}
+
 function App() {
   return (
     <TrackerProvider>
-      <AppContent />
+      <BrowserRouter>
+        <Root />
+      </BrowserRouter>
     </TrackerProvider>
   );
 }

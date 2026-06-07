@@ -8,6 +8,7 @@ import {
   Trash2,
   Sun,
   Moon,
+  LogOut,
   X
 } from 'lucide-react';
 import { useTracker } from '../../hooks/useTracker';
@@ -24,6 +25,7 @@ interface SidebarProps {
   setMobileOpen: (open: boolean) => void;
   theme: Theme;
   toggleTheme: () => void;
+  onLogout: () => void;
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({
@@ -33,6 +35,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   setMobileOpen,
   theme,
   toggleTheme,
+  onLogout,
 }) => {
   const { metrics, clearAllProgress } = useTracker();
 
@@ -72,8 +75,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
               className={`h-9 w-auto rounded-md ${theme === 'dark' ? 'bg-black' : 'bg-white'}`}
             />
             <div>
-              <h1 className="font-bold text-zinc-100 text-lg leading-tight tracking-tight">PrepVault</h1>
-              <span className="text-[10px] font-semibold text-zinc-400 tracking-wider uppercase">Placement Tracker</span>
+              <h1 className="font-bold text-zinc-100 text-lg leading-tight tracking-tight">C.O.D.E</h1>
+              <span className="text-[10px] font-semibold text-zinc-400 tracking-wider uppercase">Placement Prep Tracker</span>
             </div>
           </div>
           <button 
@@ -133,10 +136,18 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
           <button
             onClick={clearAllProgress}
-            className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-zinc-800 hover:border-rose-900 hover:bg-rose-950/10 text-xs font-medium text-zinc-400 hover:text-rose-400 transition-colors cursor-pointer"
+            className="w-full flex items-center justify-center gap-2 px-4 py-2.5 mb-2 rounded-lg border border-zinc-800 hover:border-rose-900 hover:bg-rose-950/10 text-xs font-medium text-zinc-400 hover:text-rose-400 transition-colors cursor-pointer"
           >
             <Trash2 className="w-3.5 h-3.5" />
             <span>Reset all progress</span>
+          </button>
+
+          <button
+            onClick={onLogout}
+            className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800/50 text-xs font-medium text-zinc-400 hover:text-zinc-200 transition-colors cursor-pointer"
+          >
+            <LogOut className="w-3.5 h-3.5" />
+            <span>Log out</span>
           </button>
         </div>
       </aside>

@@ -5,7 +5,11 @@ import { ActivityLog } from '../components/features/ActivityLog';
 import { CompletionDonut } from '../components/features/CompletionDonut';
 import { Calendar, BookOpen } from 'lucide-react';
 
-export const Dashboard: React.FC = () => {
+interface DashboardProps {
+  userName?: string | null;
+}
+
+export const Dashboard: React.FC<DashboardProps> = ({ userName }) => {
   const { metrics } = useTracker();
 
   // Get current date string for greeting banner
@@ -33,7 +37,7 @@ export const Dashboard: React.FC = () => {
           <div className="space-y-2">
             <span className="text-xs font-medium text-zinc-500">Placement preparation</span>
             <h2 className="text-2xl font-semibold text-zinc-100 tracking-tight">
-              {getGreeting()}
+              {getGreeting()}{userName ? `, ${userName}` : ''}
             </h2>
             <p className="text-sm text-zinc-400 max-w-lg leading-relaxed">
               {getEncouragement(metrics.percentCompleted)}
