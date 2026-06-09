@@ -4,6 +4,7 @@ import {
   BookOpen,
   Building2,
   Brain,
+  Trophy,
   FolderOpen,
   Trash2,
   Sun,
@@ -16,7 +17,7 @@ import type { Theme } from '../../hooks/useTheme';
 import acmLogoDark from '../../assets/acm-logo-dark.png';
 import acmLogoBright from '../../assets/acm-logo-bright.png';
 
-type ViewType = 'dashboard' | 'dsa' | 'company' | 'aptitude' | 'resources';
+type ViewType = 'dashboard' | 'dsa' | 'company' | 'aptitude' | 'contests' | 'resources';
 
 interface SidebarProps {
   activeView: ViewType;
@@ -44,6 +45,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { id: 'dsa', label: 'DSA Sheets', icon: BookOpen },
     { id: 'company', label: 'Company & OA Prep', icon: Building2 },
     { id: 'aptitude', label: 'Aptitude Practice', icon: Brain },
+    { id: 'contests', label: 'Contests', icon: Trophy },
     { id: 'resources', label: 'Other Resources', icon: FolderOpen },
   ] as const;
 

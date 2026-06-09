@@ -1,0 +1,72 @@
+{
+  "upcoming": [
+    {
+      "id": "up-1",
+      "name": "C.O.D.E Weekly #4",
+      "platform": "ACM-CEG",
+      "startsAt": "2026-06-14T18:00:00",
+      "durationMins": 120,
+      "link": "leetcode.com/contest/code-weekly-1"
+    },
+    {
+      "id": "up-2",
+      "name": "C.O.D.E Weekly #5",
+      "platform": "ACM-CEG",
+      "startsAt": "2026-06-21T18:00:00",
+      "durationMins": 135,
+      "link": "leetcode.com/contest/code-weekly-2"
+    },
+    {
+      "id": "up-3",
+      "name": "C.O.D.E Weekly #6",
+      "platform": "ACM-CEG",
+      "startsAt": "2026-06-28T18:00:00",
+      "durationMins": 90,
+      "link": "leetcode.com/contest/code-weekly-3"
+    }
+  ],
+  "completed": [
+    {
+      "id": "done-1",
+      "name": "C.O.D.E Weekly #1",
+      "platform": "ACM-CEG",
+      "heldOn": "2026-06-01T18:00:00",
+      "participants": 86,
+      "leaderboard": [
+        { "rank": 1, "name": "Aarav Mehta", "score": 2980 },
+        { "rank": 2, "name": "Sneha Iyer", "score": 2715 },
+        { "rank": 3, "name": "Rahul Verma", "score": 2540 },
+        { "rank": 4, "name": "Karthik Reddy", "score": 2310 },
+        { "rank": 5, "name": "Divya Lakshmi", "score": 2180 }
+      ]
+    },
+    {
+      "id": "done-2",
+      "name": "C.O.D.E Weekly #2",
+      "platform": "ACM-CEG",
+      "heldOn": "2026-05-18T21:00:00",
+      "participants": 64,
+      "leaderboard": [
+        { "rank": 1, "name": "Vikram Singh", "score": 500 },
+        { "rank": 2, "name": "Ananya Gupta", "score": 470 },
+        { "rank": 3, "name": "Naveen Raj", "score": 455 },
+        { "rank": 4, "name": "Pooja Menon", "score": 420 },
+        { "rank": 5, "name": "Aditya Rao", "score": 410 }
+      ]
+    },
+    {
+      "id": "done-3",
+      "name": "C.O.D.E Weekly #3",
+      "platform": "ACM-CEG",
+      "heldOn": "2026-05-25T18:00:00",
+      "participants": 78,
+      "leaderboard": [
+        { "rank": 1, "name": "Ishita Bose", "score": 2890 },
+        { "rank": 2, "name": "Harish Kumar", "score": 2650 },
+        { "rank": 3, "name": "Meera Krishnan", "score": 2500 },
+        { "rank": 4, "name": "Sanjay Pillai", "score": 2375 },
+        { "rank": 5, "name": "Priya Nair", "score": 2200 }
+      ]
+    }
+  ]
+}
