@@ -44,7 +44,7 @@ export const AuthLayout: React.FC<AuthLayoutProps> = ({
             <img src={logo} alt="ACM-CEG Student Chapter" className={`h-10 w-auto rounded-md ${logoBg}`} />
             <div>
               <h1 className="font-bold text-zinc-100 text-lg leading-tight tracking-tight">C.O.D.E</h1>
-              <span className="text-[10px] font-semibold text-zinc-400 tracking-wider uppercase">Placement Prep Tracker</span>
+              <span className="text-[10px] font-semibold text-zinc-400 tracking-wider uppercase">Intern and Placement Prep Tracker</span>
             </div>
           </div>
 
@@ -100,7 +100,7 @@ export const AuthLayout: React.FC<AuthLayoutProps> = ({
               <img src={logo} alt="ACM-CEG Student Chapter" className={`h-11 w-auto rounded-md ${logoBg}`} />
               <div className="text-center">
                 <h1 className="font-bold text-zinc-100 text-lg leading-tight tracking-tight">C.O.D.E</h1>
-                <span className="text-[10px] font-semibold text-zinc-400 tracking-wider uppercase">Placement Prep Tracker</span>
+                <span className="text-[10px] font-semibold text-zinc-400 tracking-wider uppercase">Intern and Placement Prep Tracker</span>
               </div>
             </div>
 

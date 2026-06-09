@@ -80,7 +80,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             />
             <div>
               <h1 className="font-bold text-zinc-100 text-lg leading-tight tracking-tight">C.O.D.E</h1>
-              <span className="text-[10px] font-semibold text-zinc-400 tracking-wider uppercase">Placement Prep Tracker</span>
+              <span className="text-[10px] font-semibold text-zinc-400 tracking-wider uppercase">Intern and Placement Prep Tracker</span>
             </div>
           </div>
           <button 
