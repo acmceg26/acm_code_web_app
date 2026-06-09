@@ -56,9 +56,9 @@ export const PlacementExperiences: React.FC<PlacementExperiencesProps> = ({ comp
               className="flex items-center justify-between gap-4 p-4"
             >
               <div className="flex items-center gap-3 min-w-0">
-                <span className="w-9 h-9 shrink-0 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center text-zinc-300 text-sm font-semibold">
+                {/* <span className="w-9 h-9 shrink-0 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center text-zinc-300 text-sm font-semibold">
                   {exp.name.charAt(0)}
-                </span>
+                </span> */}
                 <div className="min-w-0">
                   <p className="text-sm font-medium text-zinc-100 truncate">{exp.name}</p>
                   <div className="flex flex-wrap items-center gap-2 mt-0.5">
