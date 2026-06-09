@@ -1,0 +1,176 @@
+[
+  {
+    "id": "os",
+    "subject": "Operating Systems",
+    "icon": "cpu",
+    "description": "Processes & threads, CPU scheduling, memory management, deadlocks, and concurrency.",
+    "questions": [
+      {
+        "id": "os-q1",
+        "question": "Which CPU scheduling algorithm can cause starvation of low-priority processes?",
+        "options": ["Round Robin", "First-Come First-Served", "Priority Scheduling", "Multilevel Round Robin"],
+        "answer": "Priority Scheduling",
+        "explanation": "Under priority scheduling, low-priority processes may wait indefinitely if higher-priority processes keep arriving. Aging is used to prevent this."
+      },
+      {
+        "id": "os-q2",
+        "question": "Which of these is one of the four Coffman conditions necessary for a deadlock?",
+        "options": ["Preemption", "Mutual exclusion", "Unlimited resources", "Single process"],
+        "answer": "Mutual exclusion",
+        "explanation": "The four conditions are mutual exclusion, hold and wait, no preemption, and circular wait."
+      },
+      {
+        "id": "os-q3",
+        "question": "Thrashing in an operating system refers to:",
+        "options": ["High CPU utilization", "Excessive paging activity", "Fast context switching", "Efficient memory use"],
+        "answer": "Excessive paging activity",
+        "explanation": "Thrashing occurs when the system spends more time swapping pages in and out of memory than executing processes."
+      }
+    ]
+  },
+  {
+    "id": "dbms",
+    "subject": "DBMS",
+    "icon": "database",
+    "description": "Normalization, indexing, transactions, ACID properties, and SQL query reasoning.",
+    "questions": [
+      {
+        "id": "dbms-q1",
+        "question": "Which normal form eliminates transitive dependencies?",
+        "options": ["1NF", "2NF", "3NF", "BCNF"],
+        "answer": "3NF",
+        "explanation": "Third Normal Form removes transitive dependencies of non-prime attributes on the primary key."
+      },
+      {
+        "id": "dbms-q2",
+        "question": "In ACID, what does the 'D' stand for?",
+        "options": ["Distribution", "Durability", "Dependency", "Delegation"],
+        "answer": "Durability",
+        "explanation": "Durability guarantees that once a transaction commits, its changes survive system failures."
+      },
+      {
+        "id": "dbms-q3",
+        "question": "Which statement about a primary key is true?",
+        "options": ["It can be NULL", "It uniquely identifies a row", "It allows duplicates", "It must be a foreign key"],
+        "answer": "It uniquely identifies a row",
+        "explanation": "A primary key must be unique and non-NULL, uniquely identifying each row in a table."
+      }
+    ]
+  },
+  {
+    "id": "cn",
+    "subject": "Computer Networks",
+    "icon": "network",
+    "description": "OSI & TCP/IP layers, routing, common protocols, and IP addressing.",
+    "questions": [
+      {
+        "id": "cn-q1",
+        "question": "Which layer of the OSI model is responsible for routing packets?",
+        "options": ["Data Link", "Network", "Transport", "Session"],
+        "answer": "Network",
+        "explanation": "The Network layer (Layer 3) handles logical addressing and routing of packets between hosts."
+      },
+      {
+        "id": "cn-q2",
+        "question": "Which of the following is a connection-oriented protocol?",
+        "options": ["UDP", "IP", "TCP", "ICMP"],
+        "answer": "TCP",
+        "explanation": "TCP establishes a connection via a three-way handshake and guarantees ordered, reliable delivery."
+      },
+      {
+        "id": "cn-q3",
+        "question": "How many bits make up an IPv4 address?",
+        "options": ["16", "32", "64", "128"],
+        "answer": "32",
+        "explanation": "IPv4 addresses are 32 bits, usually written as four 8-bit octets (e.g. 192.168.0.1)."
+      }
+    ]
+  },
+  {
+    "id": "oop",
+    "subject": "OOP Concepts",
+    "icon": "boxes",
+    "description": "Encapsulation, inheritance, polymorphism, abstraction, and SOLID basics.",
+    "questions": [
+      {
+        "id": "oop-q1",
+        "question": "Which OOP principle hides internal state and exposes access only through methods?",
+        "options": ["Inheritance", "Polymorphism", "Encapsulation", "Abstraction"],
+        "answer": "Encapsulation",
+        "explanation": "Encapsulation bundles data with the methods that operate on it and restricts direct access to internal state."
+      },
+      {
+        "id": "oop-q2",
+        "question": "Method overriding is an example of which type of polymorphism?",
+        "options": ["Compile-time", "Run-time", "Static", "None"],
+        "answer": "Run-time",
+        "explanation": "Overriding is resolved at run time based on the actual object type (dynamic dispatch)."
+      },
+      {
+        "id": "oop-q3",
+        "question": "In the SOLID principles, the 'S' stands for:",
+        "options": ["Single Responsibility", "Stateless", "Synchronization", "Separation"],
+        "answer": "Single Responsibility",
+        "explanation": "The Single Responsibility Principle states that a class should have only one reason to change."
+      }
+    ]
+  },
+  {
+    "id": "dsa",
+    "subject": "Data Structures",
+    "icon": "binary",
+    "description": "Arrays, linked lists, trees, graphs, hashing, and complexity analysis.",
+    "questions": [
+      {
+        "id": "dsa-q1",
+        "question": "What is the average-case time complexity of search in a balanced binary search tree?",
+        "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+        "answer": "O(log n)",
+        "explanation": "A balanced BST has height O(log n), so search, insert, and delete are O(log n) on average."
+      },
+      {
+        "id": "dsa-q2",
+        "question": "Which data structure follows First-In-First-Out (FIFO) ordering?",
+        "options": ["Stack", "Queue", "Tree", "Graph"],
+        "answer": "Queue",
+        "explanation": "A queue removes elements in the same order they were added — FIFO. A stack is LIFO."
+      },
+      {
+        "id": "dsa-q3",
+        "question": "What is the average-case lookup time of a hash table?",
+        "options": ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
+        "answer": "O(1)",
+        "explanation": "With a good hash function and low load factor, hash table lookups are O(1) on average."
+      }
+    ]
+  },
+  {
+    "id": "sd",
+    "subject": "System Design Basics",
+    "icon": "server",
+    "description": "Scaling, caching, load balancing, and high-level design trade-offs.",
+    "questions": [
+      {
+        "id": "sd-q1",
+        "question": "Which technique reduces database read load by storing frequent results in fast memory?",
+        "options": ["Sharding", "Caching", "Replication", "Indexing"],
+        "answer": "Caching",
+        "explanation": "Caching keeps frequently accessed data in fast storage (e.g. Redis) to avoid repeated expensive reads."
+      },
+      {
+        "id": "sd-q2",
+        "question": "A load balancer primarily helps with:",
+        "options": ["Data backup", "Distributing traffic across servers", "Encrypting data", "Compiling code"],
+        "answer": "Distributing traffic across servers",
+        "explanation": "A load balancer spreads incoming requests across multiple servers to improve availability and throughput."
+      },
+      {
+        "id": "sd-q3",
+        "question": "Horizontal scaling refers to:",
+        "options": ["Adding more CPU/RAM to one server", "Adding more servers", "Removing servers", "Using a faster disk"],
+        "answer": "Adding more servers",
+        "explanation": "Horizontal scaling (scaling out) adds more machines, whereas vertical scaling adds resources to one machine."
+      }
+    ]
+  }
+]
