@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import companyData from '../data/companies.json';
 import { CompanyDetails } from '../components/features/CompanyDetails';
+import { PlacementExperiences } from '../components/features/PlacementExperiences';
 import { Card } from '../components/ui/Card';
 
 // Brand domains used to fetch each company's logo.
@@ -44,14 +45,28 @@ const CompanyLogo: React.FC<{ companyId: string; name: string }> = ({ companyId,
 
 export const CompanyPrep: React.FC = () => {
   const [selectedCompanyId, setSelectedCompanyId] = useState<string | null>(null);
+  const [showExperiences, setShowExperiences] = useState(false);
 
   const selectedCompany = companyData.find(c => c.id === selectedCompanyId);
 
   if (selectedCompany) {
+    if (showExperiences) {
+      return (
+        <PlacementExperiences
+          company={selectedCompany}
+          onBack={() => setShowExperiences(false)}
+        />
+      );
+    }
+
     return (
-      <CompanyDetails 
-        company={selectedCompany} 
-        onBack={() => setSelectedCompanyId(null)} 
+      <CompanyDetails
+        company={selectedCompany}
+        onBack={() => {
+          setSelectedCompanyId(null);
+          setShowExperiences(false);
+        }}
+        onViewExperiences={() => setShowExperiences(true)}
       />
     );
   }

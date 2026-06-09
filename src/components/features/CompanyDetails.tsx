@@ -1,25 +1,30 @@
 import React from 'react';
 import { DsaSheetTable } from './DsaSheetTable';
-import { 
-  Clock, 
-  Layers, 
-  Users, 
-  ArrowLeft 
+import {
+  Clock,
+  Layers,
+  Users,
+  ArrowLeft,
+  FileText,
+  ChevronRight
 } from 'lucide-react';
 
 interface Company {
   id: string;
   name: string;
   logo: string;
+  placementExperiences: { name: string; year: string; link: string }[];
   oaDetails: {
     duration: string;
     questionsCount: number;
     difficulty: string;
+    description: string;
     patterns: string[];
   };
   interviewFormats: {
     technicalRounds: number;
     hrCriteria: string;
+    description: string;
     focusAreas: string[];
   };
   coreQuestions: {
@@ -37,23 +42,37 @@ interface Company {
 interface CompanyDetailsProps {
   company: Company;
   onBack: () => void;
+  onViewExperiences: () => void;
 }
 
-export const CompanyDetails: React.FC<CompanyDetailsProps> = ({ company, onBack }) => {
+export const CompanyDetails: React.FC<CompanyDetailsProps> = ({ company, onBack, onViewExperiences }) => {
   return (
     <div className="space-y-6 animate-fade-in-up">
       {/* Header / Back navigation */}
-      <div className="flex items-center gap-4">
-        <button
-          onClick={onBack}
-          className="p-2 rounded-lg border border-zinc-800 hover:border-zinc-700 bg-zinc-900 text-zinc-400 hover:text-zinc-100 transition-colors flex items-center justify-center cursor-pointer"
-        >
-          <ArrowLeft className="w-5 h-5" />
-        </button>
-        <div>
-          <span className="text-xs font-medium text-zinc-500">Company</span>
-          <h2 className="text-xl font-semibold text-zinc-100">{company.name}</h2>
+      <div className="flex items-center justify-between gap-4">
+        <div className="flex items-center gap-4">
+          <button
+            onClick={onBack}
+            className="p-2 rounded-lg border border-zinc-800 hover:border-zinc-700 bg-zinc-900 text-zinc-400 hover:text-zinc-100 transition-colors flex items-center justify-center cursor-pointer"
+          >
+            <ArrowLeft className="w-5 h-5" />
+          </button>
+          <div>
+            <span className="text-xs font-medium text-zinc-500">Company</span>
+            <h2 className="text-xl font-semibold text-zinc-100">{company.name}</h2>
+          </div>
         </div>
+
+        {/* Link to the company-specific placement experiences page */}
+        <button
+          onClick={onViewExperiences}
+          className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg border border-zinc-800 hover:border-zinc-700 bg-zinc-900 text-zinc-300 hover:text-zinc-100 text-xs font-medium transition-colors cursor-pointer"
+        >
+          <FileText className="w-4 h-4" />
+          <span className="hidden sm:inline">Placement experiences</span>
+          <span className="text-zinc-500">({company.placementExperiences.length})</span>
+          <ChevronRight className="w-4 h-4" />
+        </button>
       </div>
 
       {/* Grid: OA Details & Interview format */}
@@ -64,7 +83,9 @@ export const CompanyDetails: React.FC<CompanyDetailsProps> = ({ company, onBack 
             <Clock className="w-5 h-5 text-amber-400" />
             <h3 className="font-semibold text-zinc-200 text-base">Online Assessment</h3>
           </div>
-          
+
+          <p className="text-sm text-zinc-400 leading-relaxed">{company.oaDetails.description}</p>
+
           <div className="grid grid-cols-2 gap-4 text-sm">
             <div className="space-y-1">
               <span className="text-xs text-zinc-500 font-semibold uppercase tracking-wider">Test Duration</span>
@@ -99,9 +120,11 @@ export const CompanyDetails: React.FC<CompanyDetailsProps> = ({ company, onBack 
         <div className="glass-panel p-6 rounded-xl border border-zinc-800/80 space-y-4">
           <div className="flex items-center gap-2.5 pb-3 border-b border-zinc-800">
             <Users className="w-5 h-5 text-blue-400" />
-            <h3 className="font-bold text-zinc-200 text-base">Interview Round Formats</h3>
+            <h3 className="font-semibold text-zinc-200 text-base">Interview Round Formats</h3>
           </div>
-          
+
+          <p className="text-sm text-zinc-400 leading-relaxed">{company.interviewFormats.description}</p>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
             <div className="space-y-1">
               <span className="text-xs text-zinc-500 font-semibold uppercase tracking-wider">Technical Rounds</span>
