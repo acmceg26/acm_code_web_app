@@ -108,15 +108,17 @@ export const TrackerProvider: React.FC<{ children: React.ReactNode }> = ({ child
   // Extract all problems to find totals by difficulty/topic
   const allProblemsMap = new Map<string, { id: string; title: string; topic: string; difficulty: 'Easy' | 'Medium' | 'Hard' }>();
   
-  // 1. Gather from sheets
+  // 1. Gather from sheets (sheet -> level -> topic -> problems)
   dsaData.sheets.forEach((sheet) => {
-    sheet.topics.forEach((topic) => {
-      topic.problems.forEach((prob) => {
-        allProblemsMap.set(prob.id, {
-          id: prob.id,
-          title: prob.title,
-          topic: topic.name,
-          difficulty: prob.difficulty as 'Easy' | 'Medium' | 'Hard',
+    sheet.levels.forEach((level) => {
+      level.topics.forEach((topic) => {
+        topic.problems.forEach((prob) => {
+          allProblemsMap.set(prob.id, {
+            id: prob.id,
+            title: prob.title,
+            topic: topic.name,
+            difficulty: prob.difficulty as 'Easy' | 'Medium' | 'Hard',
+          });
         });
       });
     });

@@ -1,353 +1,366 @@
 {
   "sheets": [
     {
-      "id": "placement-circuital",
-      "title": "Placement Circuital (ECE/EEE/ICE)",
-      "description": "Optimized for hardware-software interface, embedded systems, bitwise operations, memory management, and core algorithms.",
-      "topics": [
+      "id": "placement",
+      "title": "Placement",
+      "description": "High-frequency interview questions from top product companies. Start with the Beginner set, then move on to the Advanced set for full-time placement rounds.",
+      "levels": [
         {
-          "name": "Bit Manipulation & Low Level",
-          "problems": [
+          "id": "placement-beginner",
+          "name": "Beginner",
+          "topics": [
             {
-              "id": "pc-bit-1",
-              "title": "Number of 1 Bits (Set Bits)",
-              "difficulty": "Easy",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/number-of-1-bits/",
-                "gfg": "https://practice.geeksforgeeks.org/problems/set-bits0143/1"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=5Km3utixwUA"
+              "name": "Arrays & Hashing",
+              "problems": [
+                {
+                  "id": "core-arr-1",
+                  "title": "Two Sum",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/two-sum/"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=UXDSeD9mN-k"
+                },
+                {
+                  "id": "inc-ah-2",
+                  "title": "Valid Anagram",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/valid-anagram/",
+                    "gfg": "https://practice.geeksforgeeks.org/problems/anagram-1587115620/1"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=g8cO0G4nC9A"
+                },
+                {
+                  "id": "core-arr-2",
+                  "title": "Top K Frequent Elements",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/top-k-frequent-elements/"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=YPTqKIgVk-k"
+                }
+              ]
             },
             {
-              "id": "pc-bit-2",
-              "title": "Single Number",
-              "difficulty": "Easy",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/single-number/",
-                "gfg": "https://practice.geeksforgeeks.org/problems/single-number2711/1"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=qMPt5zshuoE"
+              "name": "Trees & Graphs",
+              "problems": [
+                {
+                  "id": "core-tg-1",
+                  "title": "Invert Binary Tree",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/invert-binary-tree/"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=OnSn2XEQ4MY"
+                },
+                {
+                  "id": "core-tg-3",
+                  "title": "Number of Islands",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/number-of-islands/"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=pV2KPfyHnNo"
+                }
+              ]
             },
             {
-              "id": "pc-bit-3",
-              "title": "Reverse Bits of a 32-bit Integer",
-              "difficulty": "Medium",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/reverse-bits/",
-                "gfg": "https://practice.geeksforgeeks.org/problems/reverse-bits3556/1"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=UcoN6yAkIUk"
-            },
-            {
-              "id": "pc-bit-4",
-              "title": "Implement a Bitwise Division",
-              "difficulty": "Hard",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/divide-two-integers/",
-                "gfg": "https://practice.geeksforgeeks.org/problems/divide-two-integers-without-using-multiplication-division-and-mod-operator/1"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=m4L_5qG4vYs"
+              "name": "Dynamic Programming",
+              "problems": [
+                {
+                  "id": "core-dp-1",
+                  "title": "Climbing Stairs",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/climbing-stairs/"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=Y0lT9Fck7qI"
+                },
+                {
+                  "id": "core-dp-2",
+                  "title": "Coin Change",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/coin-change/"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=H9bfqozjoqs"
+                }
+              ]
             }
           ]
         },
         {
-          "name": "Arrays & Pointers",
-          "problems": [
+          "id": "placement-advanced",
+          "name": "Advanced",
+          "topics": [
             {
-              "id": "pc-arr-1",
-              "title": "Two Sum",
-              "difficulty": "Easy",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/two-sum/",
-                "gfg": "https://practice.geeksforgeeks.org/problems/key-pair5616/1"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=UXDSeD9mN-k"
+              "name": "Arrays & Hashing",
+              "problems": [
+                {
+                  "id": "core-arr-3",
+                  "title": "Longest Consecutive Sequence",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/longest-consecutive-sequence/"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=P6RZZMu1grM"
+                }
+              ]
             },
             {
-              "id": "pc-arr-2",
-              "title": "Merge Sorted Array",
-              "difficulty": "Easy",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/merge-sorted-array/",
-                "gfg": "https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays-1587115620/1"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=P1IcR5yET_U"
+              "name": "Trees & Graphs",
+              "problems": [
+                {
+                  "id": "core-tg-2",
+                  "title": "Validate Binary Search Tree",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/validate-binary-search-tree/"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=s6ATEkipzow"
+                },
+                {
+                  "id": "core-tg-4",
+                  "title": "Clone Graph",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/clone-graph/"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=mQeF6bN8hMc"
+                }
+              ]
             },
             {
-              "id": "pc-arr-3",
-              "title": "Implement malloc / Custom Allocator logic (Simulate Block Allocation)",
-              "difficulty": "Medium",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/design-a-memory-allocator/"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=J3Zf9hZ2RzU"
+              "name": "Dynamic Programming",
+              "problems": [
+                {
+                  "id": "core-dp-3",
+                  "title": "Longest Common Subsequence",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/longest-common-subsequence/"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=Ua0G3YJKjvA"
+                }
+              ]
+            },
+            {
+              "name": "Bit Manipulation & Design",
+              "problems": [
+                {
+                  "id": "pc-bit-3",
+                  "title": "Reverse Bits of a 32-bit Integer",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/reverse-bits/",
+                    "gfg": "https://practice.geeksforgeeks.org/problems/reverse-bits3556/1"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=UcoN6yAkIUk"
+                },
+                {
+                  "id": "pc-bit-4",
+                  "title": "Divide Two Integers (Bitwise Division)",
+                  "difficulty": "Hard",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/divide-two-integers/",
+                    "gfg": "https://practice.geeksforgeeks.org/problems/divide-two-integers-without-using-multiplication-division-and-mod-operator/1"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=m4L_5qG4vYs"
+                },
+                {
+                  "id": "ic-ll-3",
+                  "title": "LRU Cache Implementation",
+                  "difficulty": "Hard",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/lru-cache/",
+                    "gfg": "https://practice.geeksforgeeks.org/problems/lru-cache/1"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=xDEuM5qa0sg"
+                }
+              ]
             }
           ]
         }
       ]
     },
     {
-      "id": "placement-non-circuital",
-      "title": "Placement Non-Circuital (Mech/Civil/Chem)",
-      "description": "Optimized for core software readiness, emphasizing foundation DSA, SQL querying, arrays, and standard string processing.",
-      "topics": [
+      "id": "intern",
+      "title": "Intern",
+      "description": "A foundation-first roadmap for internship rounds. Clear the Beginner basics first, then build up to the Advanced set covering sorting, linked lists, and design.",
+      "levels": [
         {
-          "name": "Basic Programming Foundations",
-          "problems": [
+          "id": "intern-beginner",
+          "name": "Beginner",
+          "topics": [
             {
-              "id": "pnc-base-1",
-              "title": "Palindrome Number Check",
-              "difficulty": "Easy",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/palindrome-number/",
-                "gfg": "https://practice.geeksforgeeks.org/problems/palindrome0432/1"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=yubRKwEhKbQ"
+              "name": "Programming Foundations",
+              "problems": [
+                {
+                  "id": "pnc-base-1",
+                  "title": "Palindrome Number Check",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/palindrome-number/",
+                    "gfg": "https://practice.geeksforgeeks.org/problems/palindrome0432/1"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=yubRKwEhKbQ"
+                },
+                {
+                  "id": "pnc-base-2",
+                  "title": "Fizz Buzz",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/fizz-buzz/"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=QPZ0pIK_wsc"
+                },
+                {
+                  "id": "pnc-base-3",
+                  "title": "Fibonacci Number (DP Intro)",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/fibonacci-number/",
+                    "gfg": "https://practice.geeksforgeeks.org/problems/introduction-to-dp/1"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=tyB0HAHQskg"
+                }
+              ]
             },
             {
-              "id": "pnc-base-2",
-              "title": "Fizz Buzz",
-              "difficulty": "Easy",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/fizz-buzz/"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=QPZ0pIK_wsc"
-            },
-            {
-              "id": "pnc-base-3",
-              "title": "Fibonacci Number (DP Intro)",
-              "difficulty": "Easy",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/fibonacci-number/",
-                "gfg": "https://practice.geeksforgeeks.org/problems/introduction-to-dp/1"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=tyB0HAHQskg"
+              "name": "Arrays & Hashing",
+              "problems": [
+                {
+                  "id": "pc-bit-1",
+                  "title": "Number of 1 Bits (Set Bits)",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/number-of-1-bits/",
+                    "gfg": "https://practice.geeksforgeeks.org/problems/set-bits0143/1"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=5Km3utixwUA"
+                },
+                {
+                  "id": "pc-arr-1",
+                  "title": "Two Sum",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/two-sum/",
+                    "gfg": "https://practice.geeksforgeeks.org/problems/key-pair5616/1"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=UXDSeD9mN-k"
+                },
+                {
+                  "id": "inc-ah-1",
+                  "title": "Contains Duplicate",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/contains-duplicate/",
+                    "gfg": "https://practice.geeksforgeeks.org/problems/duplicate-elements-in-array/1"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=3OamzN90kPg"
+                },
+                {
+                  "id": "pc-bit-2",
+                  "title": "Single Number",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/single-number/",
+                    "gfg": "https://practice.geeksforgeeks.org/problems/single-number2711/1"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=qMPt5zshuoE"
+                }
+              ]
             }
           ]
         },
         {
-          "name": "Searching & Sorting Fundamentals",
-          "problems": [
+          "id": "intern-advanced",
+          "name": "Advanced",
+          "topics": [
             {
-              "id": "pnc-sort-1",
-              "title": "Binary Search",
-              "difficulty": "Easy",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/binary-search/",
-                "gfg": "https://practice.geeksforgeeks.org/problems/binary-search-1587115620/1"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=s4DPM8ct1Hs"
+              "name": "Arrays & Hashing",
+              "problems": [
+                {
+                  "id": "pc-arr-2",
+                  "title": "Merge Sorted Array",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/merge-sorted-array/",
+                    "gfg": "https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays-1587115620/1"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=P1IcR5yET_U"
+                },
+                {
+                  "id": "inc-gr-1",
+                  "title": "Best Time to Buy and Sell Stock",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+                    "gfg": "https://practice.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=1pkOgXDqqoc"
+                }
+              ]
             },
             {
-              "id": "pnc-sort-2",
-              "title": "Merge Sort",
-              "difficulty": "Medium",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/sort-an-array/",
-                "gfg": "https://practice.geeksforgeeks.org/problems/merge-sort/1"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=4VqmGXwpLqc"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "intern-circuital",
-      "title": "Intern Circuital",
-      "description": "Tailored for circuital branch internships. Focuses on low-level data structures, binary trees, and bit manipulations.",
-      "topics": [
-        {
-          "name": "Linked Lists & Memory Structures",
-          "problems": [
-            {
-              "id": "ic-ll-1",
-              "title": "Reverse a Linked List",
-              "difficulty": "Easy",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/reverse-linked-list/",
-                "gfg": "https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=iT1YJVhcD0o"
+              "name": "Searching & Sorting",
+              "problems": [
+                {
+                  "id": "pnc-sort-1",
+                  "title": "Binary Search",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/binary-search/",
+                    "gfg": "https://practice.geeksforgeeks.org/problems/binary-search-1587115620/1"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=s4DPM8ct1Hs"
+                },
+                {
+                  "id": "pnc-sort-2",
+                  "title": "Merge Sort",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/sort-an-array/",
+                    "gfg": "https://practice.geeksforgeeks.org/problems/merge-sort/1"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=4VqmGXwpLqc"
+                }
+              ]
             },
             {
-              "id": "ic-ll-2",
-              "title": "Detect Cycle in a Linked List",
-              "difficulty": "Easy",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/linked-list-cycle/",
-                "gfg": "https://practice.geeksforgeeks.org/problems/detect-loop-in-linked-list/1"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=gBTe7lFR3vc"
-            },
-            {
-              "id": "ic-ll-3",
-              "title": "LRU Cache Implementation",
-              "difficulty": "Hard",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/lru-cache/",
-                "gfg": "https://practice.geeksforgeeks.org/problems/lru-cache/1"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=xDEuM5qa0sg"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "intern-non-circuital",
-      "title": "Intern Non-Circuital",
-      "description": "Simplified roadmap covering basic arrays, hashing, and greedy algorithms for early internships.",
-      "topics": [
-        {
-          "name": "Arrays & Hashing",
-          "problems": [
-            {
-              "id": "inc-ah-1",
-              "title": "Contains Duplicate",
-              "difficulty": "Easy",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/contains-duplicate/",
-                "gfg": "https://practice.geeksforgeeks.org/problems/duplicate-elements-in-array/1"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=3OamzN90kPg"
-            },
-            {
-              "id": "inc-ah-2",
-              "title": "Valid Anagram",
-              "difficulty": "Easy",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/valid-anagram/",
-                "gfg": "https://practice.geeksforgeeks.org/problems/anagram-1587115620/1"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=g8cO0G4nC9A"
-            }
-          ]
-        },
-        {
-          "name": "Greedy Strategies",
-          "problems": [
-            {
-              "id": "inc-gr-1",
-              "title": "Best Time to Buy and Sell Stock",
-              "difficulty": "Easy",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
-                "gfg": "https://practice.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=1pkOgXDqqoc"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "core-cs-sheet",
-      "title": "Core CS Sheet (Ultimate List)",
-      "description": "Striver and NeetCode style ultimate tracker containing high-frequency interview questions from top product companies.",
-      "topics": [
-        {
-          "name": "Arrays & Hashing",
-          "problems": [
-            {
-              "id": "core-arr-1",
-              "title": "Two Sum",
-              "difficulty": "Easy",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/two-sum/"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=UXDSeD9mN-k"
-            },
-            {
-              "id": "core-arr-2",
-              "title": "Top K Frequent Elements",
-              "difficulty": "Medium",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/top-k-frequent-elements/"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=YPTqKIgVk-k"
-            },
-            {
-              "id": "core-arr-3",
-              "title": "Longest Consecutive Sequence",
-              "difficulty": "Medium",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/longest-consecutive-sequence/"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=P6RZZMu1grM"
-            }
-          ]
-        },
-        {
-          "name": "Trees & Graphs",
-          "problems": [
-            {
-              "id": "core-tg-1",
-              "title": "Invert Binary Tree",
-              "difficulty": "Easy",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/invert-binary-tree/"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=OnSn2XEQ4MY"
-            },
-            {
-              "id": "core-tg-2",
-              "title": "Validate Binary Search Tree",
-              "difficulty": "Medium",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/validate-binary-search-tree/"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=s6ATEkipzow"
-            },
-            {
-              "id": "core-tg-3",
-              "title": "Number of Islands",
-              "difficulty": "Medium",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/number-of-islands/"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=pV2KPfyHnNo"
-            },
-            {
-              "id": "core-tg-4",
-              "title": "Clone Graph",
-              "difficulty": "Medium",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/clone-graph/"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=mQeF6bN8hMc"
-            }
-          ]
-        },
-        {
-          "name": "Dynamic Programming",
-          "problems": [
-            {
-              "id": "core-dp-1",
-              "title": "Climbing Stairs",
-              "difficulty": "Easy",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/climbing-stairs/"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=Y0lT9Fck7qI"
-            },
-            {
-              "id": "core-dp-2",
-              "title": "Coin Change",
-              "difficulty": "Medium",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/coin-change/"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=H9bfqozjoqs"
-            },
-            {
-              "id": "core-dp-3",
-              "title": "Longest Common Subsequence",
-              "difficulty": "Medium",
-              "platforms": {
-                "leetcode": "https://leetcode.com/problems/longest-common-subsequence/"
-              },
-              "videoSolution": "https://www.youtube.com/watch?v=Ua0G3YJKjvA"
+              "name": "Linked Lists & Design",
+              "problems": [
+                {
+                  "id": "ic-ll-1",
+                  "title": "Reverse a Linked List",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/reverse-linked-list/",
+                    "gfg": "https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=iT1YJVhcD0o"
+                },
+                {
+                  "id": "ic-ll-2",
+                  "title": "Detect Cycle in a Linked List",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/linked-list-cycle/",
+                    "gfg": "https://practice.geeksforgeeks.org/problems/detect-loop-in-linked-list/1"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=gBTe7lFR3vc"
+                },
+                {
+                  "id": "pc-arr-3",
+                  "title": "Design a Memory Allocator",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/design-a-memory-allocator/"
+                  },
+                  "videoSolution": "https://www.youtube.com/watch?v=J3Zf9hZ2RzU"
+                }
+              ]
             }
           ]
         }
