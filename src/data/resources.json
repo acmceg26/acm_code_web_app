@@ -62,7 +62,7 @@
     },
     {
       "id": "res-res-1",
-      "category": "Resume Templates - Clean and Formal",
+      "category": "Resume Templates",
       "title": "Resume template adapted from /EngineeringResume",
       "description": "A clean, formal and effective resume template. NOTE: Click File, Make a Copy and then edit your resume. DO NOT REQUEST EDIT ACCESS IN THE ATTACHED DOCUMENT.",
       "tags": [
@@ -77,8 +77,8 @@
     {
       "id": "res-res-2",
       "category": "Resume Templates",
-      "title": "/EngineeringResume Subreddit adapted comprehensive resume guidebook",
-      "description": "A comprehensive guide on how to format resume, add appropriate content, write content and what to avoid.",
+      "title": "Comprehensive Resume Guidebook",
+      "description": "Adapted from /EngineeringResume. A comprehensive guide on how to format resume, add appropriate content, write content and what to avoid.",
       "tags": [
         "Resume",
         "Guide"
