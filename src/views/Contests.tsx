@@ -1,7 +1,13 @@
 import React from 'react';
 import contestsData from '../data/contests.json';
 import { Accordion } from '../components/ui/Accordion';
-import { CalendarClock, Calendar, Clock, Trophy, Users, ExternalLink } from 'lucide-react';
+import { CalendarClock, Calendar, Clock, Trophy, Users, ExternalLink, Hourglass } from 'lucide-react';
+
+// ─── Feature flag ───────────────────────────────────────────────────────────
+// Set to `false` once contest content is ready to publish.
+const COMING_SOON = true;
+// ────────────────────────────────────────────────────────────────────────────
+
 
 const formatWhen = (iso: string) =>
   new Date(iso).toLocaleString(undefined, {
@@ -41,6 +47,42 @@ const PlatformBadge: React.FC<{ platform: string }> = ({ platform }) => (
 
 export const Contests: React.FC = () => {
   const { upcoming, completed } = contestsData;
+
+  // ── Coming Soon screen ──────────────────────────────────────────────────
+  if (COMING_SOON) {
+    return (
+      <div className="space-y-6 animate-fade-in-up">
+        {/* Page Header */}
+        <div>
+          <h2 className="text-xl font-semibold text-zinc-100">Contests</h2>
+          <p className="text-sm text-zinc-500 mt-1">Upcoming rounds and leaderboards from past contests.</p>
+        </div>
+
+        {/* Coming Soon card */}
+        <div className="flex flex-col items-center justify-center py-24 gap-6">
+          {/* Animated ring + icon */}
+          <div className="relative flex items-center justify-center">
+            {/* Outer pulsing ring */}
+            <span className="absolute w-24 h-24 rounded-full border border-zinc-700 animate-ping opacity-20" />
+            <span className="absolute w-16 h-16 rounded-full border border-zinc-600 animate-ping opacity-30 [animation-delay:0.4s]" />
+            {/* Icon container */}
+            <div className="relative w-14 h-14 rounded-2xl bg-zinc-800 border border-zinc-700 flex items-center justify-center shadow-lg">
+              <Hourglass className="w-6 h-6 text-zinc-300 animate-pulse" />
+            </div>
+          </div>
+
+          {/* Text */}
+          <div className="text-center space-y-1.5">
+            <h3 className="text-base font-semibold text-zinc-100">Coming Soon</h3>
+            <p className="text-sm text-zinc-500 max-w-xs leading-relaxed">
+              Contest listings and leaderboards are being set up. Check back soon!
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+  // ────────────────────────────────────────────────────────────────────────
 
   return (
     <div className="space-y-8 animate-fade-in-up">
