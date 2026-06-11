@@ -81,5 +81,57 @@
         }
       ]
     }
+  ],
+  "tests": [
+    {
+      "id": "test-1",
+      "title": "Quantitative Aptitude – Mock Test 1",
+      "description": "30-question timed test covering arithmetic, algebra, and number systems.",
+      "formUrl": "https://forms.google.com/"
+    },
+    {
+      "id": "test-2",
+      "title": "Logical Reasoning – Mock Test 1",
+      "description": "25-question test on syllogisms, blood relations, and seating arrangements.",
+      "formUrl": "https://forms.google.com/"
+    },
+    {
+      "id": "test-3",
+      "title": "Verbal Ability – Mock Test 1",
+      "description": "Reading comprehension, sentence correction, and vocabulary exercises.",
+      "formUrl": "https://forms.google.com/"
+    },
+    {
+      "id": "test-4",
+      "title": "Full Aptitude – Grand Mock Test",
+      "description": "Comprehensive 60-question test covering all three aptitude sections.",
+      "formUrl": "https://forms.google.com/"
+    }
+  ],
+  "studyMaterials": [
+    {
+      "id": "sm-1",
+      "title": "Quantitative Aptitude Notes",
+      "description": "Detailed formula sheets, shortcuts, and solved examples for quantitative topics.",
+      "driveUrl": "https://drive.google.com/"
+    },
+    {
+      "id": "sm-2",
+      "title": "Logical Reasoning Guide",
+      "description": "Structured notes on reasoning patterns with practice problem sets.",
+      "driveUrl": "https://drive.google.com/"
+    },
+    {
+      "id": "sm-3",
+      "title": "Verbal Ability Handbook",
+      "description": "Grammar rules, vocabulary lists, and comprehension strategies.",
+      "driveUrl": "https://drive.google.com/"
+    },
+    {
+      "id": "sm-4",
+      "title": "Previous Year Papers",
+      "description": "Compiled aptitude papers from top companies like TCS, Infosys, and Wipro.",
+      "driveUrl": "https://drive.google.com/"
+    }
   ]
 }
