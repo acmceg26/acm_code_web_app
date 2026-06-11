@@ -1,7 +1,13 @@
 import React from 'react';
 import aptitudeData from '../data/aptitude.json';
 import { Card } from '../components/ui/Card';
+import { ComingSoon } from '../components/ui/ComingSoon';
 import { ExternalLink, FileText, ClipboardList } from 'lucide-react';
+
+// ─── Feature flag ───────────────────────────────────────────────────────────
+// Set to `false` once aptitude test links are ready to publish.
+const TESTS_COMING_SOON = true;
+// ────────────────────────────────────────────────────────────────────────────
 
 export const AptitudePractice: React.FC = () => {
   return (
@@ -24,33 +30,38 @@ export const AptitudePractice: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {aptitudeData.tests.map((test) => (
-            <a
-              key={test.id}
-              href={test.formUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block group"
-            >
-              <Card className="flex flex-col justify-between h-full cursor-pointer group-hover:border-blue-500/40 transition-colors">
-                <div>
-                  <div className="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-4">
-                    <ClipboardList className="w-5 h-5 text-blue-400" />
+        {/* ── Toggle: TESTS_COMING_SOON ── */}
+        {TESTS_COMING_SOON ? (
+          <ComingSoon message="Aptitude test links are being finalised. Check back soon!" />
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {aptitudeData.tests.map((test) => (
+              <a
+                key={test.id}
+                href={test.formUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block group"
+              >
+                <Card className="flex flex-col justify-between h-full cursor-pointer group-hover:border-blue-500/40 transition-colors">
+                  <div>
+                    <div className="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-4">
+                      <ClipboardList className="w-5 h-5 text-blue-400" />
+                    </div>
+                    <h4 className="text-sm font-semibold text-zinc-100 mb-1">{test.title}</h4>
+                    <p className="text-xs text-zinc-400 leading-relaxed">{test.description}</p>
                   </div>
-                  <h4 className="text-sm font-semibold text-zinc-100 mb-1">{test.title}</h4>
-                  <p className="text-xs text-zinc-400 leading-relaxed">{test.description}</p>
-                </div>
-                <div className="flex items-center justify-between pt-4 border-t border-zinc-800 text-xs font-medium mt-4">
-                  <span className="text-zinc-500">Google Forms</span>
-                  <span className="flex items-center gap-1 text-blue-400 group-hover:text-blue-300 transition-colors">
-                    Open Test <ExternalLink className="w-3 h-3" />
-                  </span>
-                </div>
-              </Card>
-            </a>
-          ))}
-        </div>
+                  <div className="flex items-center justify-between pt-4 border-t border-zinc-800 text-xs font-medium mt-4">
+                    <span className="text-zinc-500">Google Forms</span>
+                    <span className="flex items-center gap-1 text-blue-400 group-hover:text-blue-300 transition-colors">
+                      Open Test <ExternalLink className="w-3 h-3" />
+                    </span>
+                  </div>
+                </Card>
+              </a>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* ── Study Materials ────────────────────────────────── */}
