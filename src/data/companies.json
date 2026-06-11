@@ -4,22 +4,46 @@
     "name": "Google",
     "logo": "Google",
     "placementExperiences": [
-      { "name": "Aarav Mehta", "year": "2024", "role": "6-month intern + FTE", "link": "" },
-      { "name": "Sneha Iyer", "year": "2023", "role": "Summer intern", "link": "" },
-      { "name": "Rahul Verma", "year": "2024", "role": "FTE", "link": "" }
+      {
+        "name": "Aarav Mehta",
+        "year": "2024",
+        "role": "6-month intern + FTE",
+        "link": ""
+      },
+      {
+        "name": "Sneha Iyer",
+        "year": "2023",
+        "role": "Summer intern",
+        "link": ""
+      },
+      {
+        "name": "Rahul Verma",
+        "year": "2024",
+        "role": "FTE",
+        "link": ""
+      }
     ],
     "oaDetails": {
       "duration": "90 mins",
       "questionsCount": 2,
       "difficulty": "Medium to Hard",
       "description": "Two algorithmic problems, usually on graphs and dynamic programming, with hidden edge cases that reward optimal time and space complexity.",
-      "patterns": ["Graphs (DFS/BFS)", "Dynamic Programming", "Segment Trees"]
+      "patterns": [
+        "Graphs (DFS/BFS)",
+        "Dynamic Programming",
+        "Segment Trees"
+      ]
     },
     "interviewFormats": {
       "technicalRounds": 3,
       "hrCriteria": "Googliness & Leadership Principles",
       "description": "Three live coding-and-design rounds on a shared editor that assess problem-solving clarity, communication, and code quality alongside 'Googliness'.",
-      "focusAreas": ["Advanced DSA", "System Design", "Scalability", "Clean Code"]
+      "focusAreas": [
+        "Advanced DSA",
+        "System Design",
+        "Scalability",
+        "Clean Code"
+      ]
     },
     "coreQuestions": [
       {
@@ -48,229 +72,6 @@
           "leetcode": "https://leetcode.com/problems/cracking-the-safe/"
         },
         "videoSolution": "https://www.youtube.com/watch?v=kR0g_S5YFQU"
-      }
-    ]
-  },
-  {
-    "id": "amazon",
-    "name": "Amazon",
-    "logo": "Amazon",
-    "placementExperiences": [
-      { "name": "Priya Nair", "year": "2024", "role": "6-month intern + FTE", "link": "" },
-      { "name": "Karthik Reddy", "year": "2023", "role": "FTE", "link": "" },
-      { "name": "Ananya Gupta", "year": "2022", "role": "Summer intern", "link": "" }
-    ],
-    "oaDetails": {
-      "duration": "70 mins",
-      "questionsCount": 2,
-      "difficulty": "Medium",
-      "description": "Two coding problems plus a work-style assessment; the Leadership Principles sections carry real weight alongside the coding score.",
-      "patterns": ["Heaps", "Hashing", "Greedy algorithms", "Sliding Window"]
-    },
-    "interviewFormats": {
-      "technicalRounds": 2,
-      "hrCriteria": "Amazon Leadership Principles (LP) integrated deeply into tech questions",
-      "description": "Two technical rounds mixing DSA and low-level design, where every answer is probed against Amazon's Leadership Principles via behavioral follow-ups.",
-      "focusAreas": ["Data Structures", "System Design", "Object Oriented Design (LLD)"]
-    },
-    "coreQuestions": [
-      {
-        "id": "comp-amzn-1",
-        "title": "LRU Cache",
-        "difficulty": "Hard",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/lru-cache/"
-        },
-        "videoSolution": "https://www.youtube.com/watch?v=xDEuM5qa0sg"
-      },
-      {
-        "id": "comp-amzn-2",
-        "title": "K Closest Points to Origin",
-        "difficulty": "Medium",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/k-closest-points-to-origin/"
-        },
-        "videoSolution": "https://www.youtube.com/watch?v=rI2EBUEMf9U"
-      },
-      {
-        "id": "comp-amzn-3",
-        "title": "Course Schedule II",
-        "difficulty": "Medium",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/course-schedule-ii/"
-        },
-        "videoSolution": "https://www.youtube.com/watch?v=Akt3glAJDfY"
-      }
-    ]
-  },
-  {
-    "id": "microsoft",
-    "name": "Microsoft",
-    "logo": "Microsoft",
-    "placementExperiences": [
-      { "name": "Vikram Singh", "year": "2024", "role": "Summer intern + FTE", "link": "" },
-      { "name": "Meera Krishnan", "year": "2023", "role": "FTE", "link": "" }
-    ],
-    "oaDetails": {
-      "duration": "120 mins",
-      "questionsCount": 3,
-      "difficulty": "Medium",
-      "description": "Three medium problems on linked lists, trees, and strings; partial scoring rewards working solutions even before they are fully optimized.",
-      "patterns": ["Linked Lists", "Trees & Recursion", "Strings"]
-    },
-    "interviewFormats": {
-      "technicalRounds": 3,
-      "hrCriteria": "Cultural Fit & Engineering Excellence",
-      "description": "Three rounds covering DSA, CS fundamentals, and a design discussion, with emphasis on clean, maintainable code and clear reasoning out loud.",
-      "focusAreas": ["Operating Systems", "Networking", "DSA", "System Design"]
-    },
-    "coreQuestions": [
-      {
-        "id": "comp-msft-1",
-        "title": "Reverse Nodes in k-Group",
-        "difficulty": "Hard",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/reverse-nodes-in-k-group/"
-        },
-        "videoSolution": "https://www.youtube.com/watch?v=1uRyGD5f77c"
-      },
-      {
-        "id": "comp-msft-2",
-        "title": "Spiral Matrix",
-        "difficulty": "Medium",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/spiral-matrix/"
-        },
-        "videoSolution": "https://www.youtube.com/watch?v=BJnMZNwUk1M"
-      }
-    ]
-  },
-  {
-    "id": "goldman-sachs",
-    "name": "Goldman Sachs",
-    "logo": "GoldmanSachs",
-    "placementExperiences": [
-      { "name": "Aditya Rao", "year": "2024", "role": "Summer intern", "link": "" },
-      { "name": "Ishita Bose", "year": "2023", "role": "6-month intern + FTE", "link": "" }
-    ],
-    "oaDetails": {
-      "duration": "120 mins",
-      "questionsCount": 3,
-      "difficulty": "Medium to Hard",
-      "description": "A mix of math-heavy coding problems and section-based aptitude; expect number theory, probability, and dynamic programming under a tight clock.",
-      "patterns": ["Number Theory & Math", "Dynamic Programming", "Subarrays"]
-    },
-    "interviewFormats": {
-      "technicalRounds": 3,
-      "hrCriteria": "Quantitative aptitude & communication skills",
-      "description": "Three rounds spanning DSA, CS core (OS/DBMS), and quantitative puzzles, with strong weight on structured communication.",
-      "focusAreas": ["Puzzles & Probabilities", "Operating Systems", "DSA", "DBMS/SQL"]
-    },
-    "coreQuestions": [
-      {
-        "id": "comp-gs-1",
-        "title": "Fraction to Recurring Decimal",
-        "difficulty": "Medium",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/fraction-to-recurring-decimal/"
-        },
-        "videoSolution": "https://www.youtube.com/watch?v=2cRS9dNa780"
-      },
-      {
-        "id": "comp-gs-2",
-        "title": "Median in a Stream",
-        "difficulty": "Hard",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/find-median-from-data-stream/"
-        },
-        "videoSolution": "https://www.youtube.com/watch?v=itmhHWaHupI"
-      }
-    ]
-  },
-  {
-    "id": "zoho",
-    "name": "Zoho",
-    "logo": "Zoho",
-    "placementExperiences": [
-      { "name": "Harish Kumar", "year": "2024", "role": "FTE", "link": "" },
-      { "name": "Divya Lakshmi", "year": "2023", "role": "FTE", "link": "" },
-      { "name": "Naveen Raj", "year": "2022", "role": "Summer intern", "link": "" }
-    ],
-    "oaDetails": {
-      "duration": "90 mins",
-      "questionsCount": 5,
-      "difficulty": "Easy to Medium",
-      "description": "Five implementation-heavy problems on strings, matrices, and pattern printing — correctness across all hidden test cases matters more than cleverness.",
-      "patterns": ["String manipulation", "Matrix operations", "Pattern printing"]
-    },
-    "interviewFormats": {
-      "technicalRounds": 2,
-      "hrCriteria": "Hands-on application development round (1-day LLD round)",
-      "description": "A hands-on, full-day application-building round followed by technical and HR discussions on OOP, projects, and low-level design.",
-      "focusAreas": ["Basic Algorithms", "Core Java/C++ OOPs", "LLD / Project Design"]
-    },
-    "coreQuestions": [
-      {
-        "id": "comp-zoho-1",
-        "title": "Look and Say Sequence",
-        "difficulty": "Medium",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/count-and-say/",
-          "gfg": "https://practice.geeksforgeeks.org/problems/look-and-say-pattern3543/1"
-        },
-        "videoSolution": "https://www.youtube.com/watch?v=1Sgt93d-u6M"
-      },
-      {
-        "id": "comp-zoho-2",
-        "title": "Print Matrix in Spiral form",
-        "difficulty": "Medium",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/spiral-matrix/"
-        },
-        "videoSolution": "https://www.youtube.com/watch?v=BJnMZNwUk1M"
-      }
-    ]
-  },
-  {
-    "id": "tcs",
-    "name": "TCS (Digital / Ninja)",
-    "logo": "TCS",
-    "placementExperiences": [
-      { "name": "Pooja Menon", "year": "2024", "role": "FTE", "link": "" },
-      { "name": "Sanjay Pillai", "year": "2023", "role": "6-month intern + FTE", "link": "" }
-    ],
-    "oaDetails": {
-      "duration": "180 mins",
-      "questionsCount": 2,
-      "difficulty": "Easy to Medium",
-      "description": "Two beginner-friendly problems on arrays, number logic, and string validation within a generous time window, preceded by aptitude sections.",
-      "patterns": ["Basic arrays", "Number logic (Primes, GCD)", "String validation"]
-    },
-    "interviewFormats": {
-      "technicalRounds": 1,
-      "hrCriteria": "Basic programming checks and project discussion",
-      "description": "A single technical round centered on basic coding, resume projects, and core CS, followed by a managerial/HR conversation.",
-      "focusAreas": ["Basic Coding", "Resume Projects", "Database Queries", "Core CS"]
-    },
-    "coreQuestions": [
-      {
-        "id": "comp-tcs-1",
-        "title": "Palindrome String Check",
-        "difficulty": "Easy",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/valid-palindrome/",
-          "gfg": "https://practice.geeksforgeeks.org/problems/palindrome-string0817/1"
-        },
-        "videoSolution": "https://www.youtube.com/watch?v=jJXJ14c1JDg"
-      },
-      {
-        "id": "comp-tcs-2",
-        "title": "Leap Year & Leap Day calculations",
-        "difficulty": "Easy",
-        "platforms": {
-          "gfg": "https://practice.geeksforgeeks.org/problems/is-leap-year5125/1"
-        },
-        "videoSolution": "https://www.youtube.com/watch?v=example"
       }
     ]
   }
