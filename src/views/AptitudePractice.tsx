@@ -61,7 +61,7 @@ export const AptitudePractice: React.FC = () => {
           </div>
           <div>
             <h3 className="text-base font-semibold text-zinc-100">Study Materials</h3>
-            <p className="text-xs text-zinc-500">Notes and resources via Google Drive</p>
+            <p className="text-xs text-zinc-500">Formula sheets, question banks and other resources</p>
           </div>
         </div>
 
