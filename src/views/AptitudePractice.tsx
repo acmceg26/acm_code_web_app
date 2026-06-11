@@ -83,7 +83,6 @@ export const AptitudePractice: React.FC = () => {
                   <p className="text-xs text-zinc-400 leading-relaxed">{material.description}</p>
                 </div>
                 <div className="flex items-center justify-between pt-4 border-t border-zinc-800 text-xs font-medium mt-4">
-                  <span className="text-zinc-500">Google Drive</span>
                   <span className="flex items-center gap-1 text-emerald-400 group-hover:text-emerald-300 transition-colors">
                     Open Material <ExternalLink className="w-3 h-3" />
                   </span>
