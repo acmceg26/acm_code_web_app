@@ -11,9 +11,11 @@ import { Contests } from './views/Contests';
 import { Resources } from './views/Resources';
 import { Login } from './views/auth/Login';
 import { Signup } from './views/auth/Signup';
+import { ForgotPassword } from './views/auth/ForgotPassword';
 import { Menu, Sun, Moon } from 'lucide-react';
 import { useTheme, type Theme } from './hooks/useTheme';
 import { useAuth, getFirstName, type User } from './hooks/useAuth';
+import { signOut } from './services/authService';
 import acmLogoDark from './assets/acm-logo-dark.png';
 import acmLogoBright from './assets/acm-logo-bright.png';
 
@@ -107,7 +109,16 @@ function AppContent({ theme, toggleTheme, onLogout, user }: AppContentProps) {
 
 function Root() {
   const { theme, toggleTheme } = useTheme();
-  const { user, isAuthenticated, login, logout } = useAuth();
+  const { user, isAuthenticated, loading } = useAuth();
+
+  // While the session is being restored, avoid flashing the login screen.
+  if (loading) {
+    return (
+      <div className="min-h-screen app-bg flex items-center justify-center">
+        <div className="h-8 w-8 rounded-full border-2 border-zinc-700 border-t-blue-500 animate-spin" />
+      </div>
+    );
+  }
 
   return (
     <Routes>
@@ -117,7 +128,7 @@ function Root() {
           isAuthenticated ? (
             <Navigate to="/" replace />
           ) : (
-            <Login theme={theme} toggleTheme={toggleTheme} onAuth={login} />
+            <Login theme={theme} toggleTheme={toggleTheme} />
           )
         }
       />
@@ -127,7 +138,17 @@ function Root() {
           isAuthenticated ? (
             <Navigate to="/" replace />
           ) : (
-            <Signup theme={theme} toggleTheme={toggleTheme} onAuth={login} />
+            <Signup theme={theme} toggleTheme={toggleTheme} />
+          )
+        }
+      />
+      <Route
+        path="/forgot-password"
+        element={
+          isAuthenticated ? (
+            <Navigate to="/" replace />
+          ) : (
+            <ForgotPassword theme={theme} toggleTheme={toggleTheme} />
           )
         }
       />
@@ -135,7 +156,7 @@ function Root() {
         path="*"
         element={
           isAuthenticated ? (
-            <AppContent theme={theme} toggleTheme={toggleTheme} onLogout={logout} user={user} />
+            <AppContent theme={theme} toggleTheme={toggleTheme} onLogout={signOut} user={user} />
           ) : (
             <Navigate to="/login" replace />
           )

@@ -1,22 +1,35 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import type { Session } from '@supabase/supabase-js';
+import { supabase } from '../lib/supabase';
 
 export interface User {
-  name?: string;
+  id: string;
   email: string;
+  name?: string;
+  rollNumber?: string;
+  department?: string;
+  campus?: string;
+  year?: number;
+  batch?: string;
 }
 
-const STORAGE_KEY = 'auth_user';
-
-// Frontend-only mock session. When "remember me" is on we persist to
-// localStorage (survives restarts); otherwise sessionStorage (clears when the
-// tab closes). No backend is involved.
-function readStoredUser(): User | null {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY) ?? sessionStorage.getItem(STORAGE_KEY);
-    return raw ? (JSON.parse(raw) as User) : null;
-  } catch {
-    return null;
-  }
+// Map a Supabase session into our app User shape, reading the student details
+// from user_metadata (set at signup).
+function mapUser(session: Session | null): User | null {
+  const u = session?.user;
+  if (!u) return null;
+  const m = (u.user_metadata ?? {}) as Record<string, unknown>;
+  const yearRaw = m.year;
+  return {
+    id: u.id,
+    email: u.email ?? '',
+    name: typeof m.name === 'string' ? m.name : undefined,
+    rollNumber: typeof m.roll_number === 'string' ? m.roll_number : undefined,
+    department: typeof m.department === 'string' ? m.department : undefined,
+    campus: typeof m.campus === 'string' ? m.campus : undefined,
+    year: typeof yearRaw === 'number' ? yearRaw : yearRaw ? Number(yearRaw) : undefined,
+    batch: typeof m.batch === 'string' ? m.batch : undefined,
+  };
 }
 
 // First name for greetings — only from the registered name (set at signup).
@@ -29,36 +42,30 @@ export function getFirstName(user: User | null): string | null {
 }
 
 export function useAuth() {
-  const [user, setUser] = useState<User | null>(readStoredUser);
+  const [user, setUser] = useState<User | null>(null);
+  const [loading, setLoading] = useState(true);
 
-  // Keep this tab in sync if another tab logs in/out.
   useEffect(() => {
-    const sync = () => setUser(readStoredUser());
-    window.addEventListener('storage', sync);
-    return () => window.removeEventListener('storage', sync);
+    let mounted = true;
+
+    // Restore any existing session on load (lets "remembered" users straight in).
+    supabase.auth.getSession().then(({ data }) => {
+      if (!mounted) return;
+      setUser(mapUser(data.session));
+      setLoading(false);
+    });
+
+    // React to sign-in / sign-out / token-refresh across this and other tabs.
+    const { data: sub } = supabase.auth.onAuthStateChange((_event, session) => {
+      setUser(mapUser(session));
+      setLoading(false);
+    });
+
+    return () => {
+      mounted = false;
+      sub.subscription.unsubscribe();
+    };
   }, []);
 
-  const login = useCallback((nextUser: User, remember: boolean) => {
-    const store = remember ? localStorage : sessionStorage;
-    const other = remember ? sessionStorage : localStorage;
-    try {
-      store.setItem(STORAGE_KEY, JSON.stringify(nextUser));
-      other.removeItem(STORAGE_KEY);
-    } catch {
-      // storage unavailable (e.g. private mode) — session stays in memory only
-    }
-    setUser(nextUser);
-  }, []);
-
-  const logout = useCallback(() => {
-    try {
-      localStorage.removeItem(STORAGE_KEY);
-      sessionStorage.removeItem(STORAGE_KEY);
-    } catch {
-      // ignore
-    }
-    setUser(null);
-  }, []);
-
-  return { user, isAuthenticated: user !== null, login, logout };
+  return { user, isAuthenticated: user !== null, loading };
 }
