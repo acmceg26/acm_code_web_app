@@ -12,7 +12,7 @@
       "link": "https://youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&si=IK-cxIkF4M2JbPo6"
     },
     {
-      "id": "res-os-1",
+      "id": "res-ds-1",
       "category": "Video Playlists",
       "title": "Data Structures Playlist - Jenny Lectures CS IT",
       "description": "Comprehensive playlist on Data Structures by Abdul Bari",
@@ -23,8 +23,8 @@
       "link": "https://youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU&si=9RllHAGGBcXT4plK"
     },
     {
-      "id": "res-dbms-1",
-      "category": "Video Playlistss",
+      "id": "res-os-2",
+      "category": "Video Playlists",
       "title": "OS Playlist - Gate Smashers",
       "description": "In-depth playlist on Operating Systems by Gate Smashers",
       "tags": [
@@ -44,7 +44,7 @@
       "link": "https://youtube.com/playlist?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_&si=y5g9LCrH4mz5scff"
     },
     {
-      "id": "res-cn-1",
+      "id": "res-dsa-1",
       "category": "Video Playlists",
       "title": "Striver A to Z solved example videos",
       "description": "Playlist with videos solving all the problems of Striver Sheet A to Z.",
@@ -55,7 +55,7 @@
       "link": "https://youtube.com/playlist?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&si=4viDA1GhW8uvNac7"
     },
     {
-      "id": "res-cn-1",
+      "id": "res-dsa-2",
       "category": "Video Playlists",
       "title": "Neetcode 150 solved example videos",
       "description": "Playlist with videos solving all the problems of Neetcode 150.",
