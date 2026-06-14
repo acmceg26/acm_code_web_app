@@ -37,9 +37,21 @@
     "studyMaterials": [
       {
         "id": "dbms-sm-1",
-        "title": "DBMS — Quick Reference Notes",
-        "description": "Compact notes on normal forms, ER diagrams, SQL queries, and transaction isolation levels.",
-        "driveUrl": "https://drive.google.com/"
+        "title": "SQL Practice Sheet (Codechef)",
+        "description": "SQL Practice sheet from beginner to advanced SQL on Codechef.",
+        "driveUrl": "https://www.codechef.com/practice/sql-case-studies-topic-wise"
+      }
+      {
+        "id": "dbms-sm-2",
+        "title": "SQL Cheat Sheets",
+        "description": "Comprehensive SQL Cheat sheet with basics, joins, standard functions and data analysis. From LearnSQL.com",
+        "driveUrl": "https://drive.google.com/file/d/1ZKOHYROiGMbrabqn1rsKFqOF2tLSW8V4/view?usp=sharing"
+      }, 
+      {
+        "id": "dbms-sm-3",
+        "title": "DBMS Quick Review Notes",
+        "description": "DBMS notes for quick refresh of concepts.",
+        "driveUrl": "https://drive.google.com/file/d/1K_s3ML4oNrm4n1xBRTmOh8EPg7Fv6jB-/view?usp=sharing"
       }
     ]
   },
