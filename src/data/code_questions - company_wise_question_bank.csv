@@ -1,0 +1,511 @@
+,,,,,,,,,,
+,Question Title,Link,OA/Interview,Company,Intern/Placement,Year,Source,Student Name,Contact,Contributer
+,vectors,,OA,Accenture,Placement,2026,CSEA Placement,Kiruthiga P,pmkiruthiga17@gmail.com,Visvam
+,Trapping Rain water,https://www.geeksforgeeks.org/trapping-rain-water/,OA,Accolite,Placement,2021,CSEA Placement,Sai Sundhar J,jss1732000@gmail.com,
+,Happy arrays,,OA,Accolite,Placement,2021,CSEA Placement,Sai Sundhar J,jss1732000@gmail.com,
+,Level order tree traversal,https://www.geeksforgeeks.org/level-order-tree-traversal/,Interview,Accolite,Placement,2021,CSEA Placement,Sai Sundhar J,jss1732000@gmail.com,
+,Print left view of bin tree,https://www.geeksforgeeks.org/iterative-method-to-print-left-view-of-a-binary-tree/,Interview,Accolite,Placement,2021,CSEA Placement,Sai Sundhar J,jss1732000@gmail.com,
+,Right view bin tree using queue,https://www.geeksforgeeks.org/right-view-binary-tree-using-queue/,Interview,Accolite,Placement,2021,CSEA Placement,Sai Sundhar J,jss1732000@gmail.com,
+,Rearrange a given linked list in place,https://www.geeksforgeeks.org/rearrange-a-given-linked-list-in-place/,Interview,Accolite,Placement,2021,CSEA Placement,Sai Sundhar J,jss1732000@gmail.com,
+,Add two numbers represented by linked list,https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists/,Interview,Accolite,Placement,2021,CSEA Placement,Sai Sundhar J,jss1732000@gmail.com,
+,Reverse string without affecting special characters,https://www.geeksforgeeks.org/reverse-a-string-without-affecting-special-characters/,Interview,Accolite,Placement,2021,CSEA Placement,Sai Sundhar J,jss1732000@gmail.com,
+,Dijkstra shortest path using greedy approach,https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/,Interview,Accolite,Placement,2021,CSEA Placement,Sai Sundhar J,jss1732000@gmail.com,
+,Dijkstra shortest path using priority queue,https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-priority_queue-stl/,Interview,Accolite,Placement,2021,CSEA Placement,Sai Sundhar J,jss1732000@gmail.com,
+,Partition set k subests equal sum,https://www.geeksforgeeks.org/partition-set-k-subsets-equal-sum/,Interview,Accolite,Placement,2021,CSEA Placement,Vijaykumar R,rvijayakumar512@gmail.com,
+,Split given array into k sub arrays such that maximum sum of all sub arrays is minimum,https://www.geeksforgeeks.org/split-the-given-array-into-k-sub-arrays-such-that-maximum-sum-of-all-sub-arrays-is-minimum/,Interview,Accolite,Placement,2021,CSEA Placement,Vijaykumar R,rvijayakumar512@gmail.com,
+,Find a triplet that sum to a givne value,https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/,Interview,Accolite,Placement,2021,CSEA Placement,Vijaykumar R,rvijayakumar512@gmail.com,
+,"Dataset Cleaning Cost You are given a string dataset of even length
+consisting of lowercase English letters. You can remove any two characters in one
+operation:
+If both are the same → cost = matchCost
+If different → cost = mismatchCost
+Your goal is to remove all characters while minimizing the total cost.",,OA,Amazon,Placement,2026,CSEA Placement,Surendiran M,"surendiran.m2004@gmail.com, https://www.linkedin.com/in/surendiran-m-488082276/ ",
+," You have a pipeline string and a failedService character.
+Each second, every occurrence of failedService removes its preceding character (if any).
+All removals happen simultaneously.
+Continue until no more removals possible.
+Output = number of seconds until stabilization.",,OA,Amazon,Placement,2026,CSEA Placement,Surendiran M,"surendiran.m2004@gmail.com, https://www.linkedin.com/in/surendiran-m-488082276/ ",
+,Reorder List,https://leetcode.com/problems/reorder-list/description/,Interview,Amazon,Placement,2026,CSEA Placement,Surendiran M,"surendiran.m2004@gmail.com, https://www.linkedin.com/in/surendiran-m-488082276/ ",
+,"The logistics coordinator at a fulfillment center needs to efficiently dispatch a
+set of n items, each originating from a specific warehouse, represented by an
+array of warehouse IDs. The objective is to find the minimum number of
+operations required to clear the entire inventory, subject to two rules:
+1. Paired Dispatch: Two items can be dispatched in a single operation only
+if they are from different warehouses.
+2. Single Dispatch: An item must be dispatched alone if no eligible partner
+from a different warehouse is available.
+The challenge is to devise a strategy that maximizes the use of the more
+efficient paired dispatch operation to achieve the lowest possible total operation
+count.
+Test Case 1:
+Given n = 4 and warehouses = [9,5,9,9]
+Operation X Y Warehouses
+1. 1 - [5,9,9]
+2. 1 2 [9,9]
+ 3. 1 - []
+Hence the coordinator needs to perform 3 operations to dispatch all of the items.",,OA,Amazon,Placement,2026,CSEA Placement,Elumalai D,elumalaipro095@gmail.com,
+,"The task is to determine the time required for a service pipeline to stabilize
+following a disruptive service failure. The pipeline is represented as a string of
+service categories, and the failure is caused by a pecific failedService character.
+The system evolves in discrete time steps (seconds): in every time step, each
+instance of the failedService currently present in the pipeline causes the
+immediate termination and removal of the service node immediately
+preceding it. This process iteratively shortens and changes the pipeline string.
+The objective is to calculate the total number of time steps (seconds) that pass
+until a full step occurs with no services being terminated, at which point the
+system is considered stabilized.
+Sample Testcase:
+N = 4 , pipeline = “database” , failedService = “a”",,OA,Amazon,Placement,2026,CSEA Placement,Elumalai D,elumalaipro095@gmail.com,
+,"You are given a grid consisting only of 0s and 1s, where 0 represents sea and 1
+represents land. Some land cells are connected to one another horizontally or
+vertically, forming connected land regions. If any connected region of land
+touches the boundary of the grid—meaning the top row, bottom row, leftmost
+column, or rightmost column—then that entire region becomes flooded. Flooding
+means that every 1 in that region is converted into a 0. After all boundarytouching land regions are removed in this way, you must determine how many
+land cells (1s) remain in the grid.
+Grid = [
+[0,1,0,0,0],
+[1,1,1,0,0],
+[0,0,1,0,1],
+[0,0,0,0,0],
+[0,1,1,1,0],
+[0,0,0,0,0]
+]",,Interview,Amazon,Placement,2026,CSEA Placement,Elumalai D,elumalaipro095@gmail.com,
+,Koko eating bananas,https://leetcode.com/problems/koko-eating-bananas/description/,Interview,Amazon,Placement,2026,CSEA Placement,Elumalai D,elumalaipro095@gmail.com,
+,Find k pairs with smallest sum,https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/,OA,Amazon,Placement,2026,CSEA Placement,Santosh N,"ssanthoshh0608@gmail.com,   https://www.linkedin.com/in/ssanthoshh/",
+,"You are given an array a[i] where each a[i] represents the price of a product.
+For each product, you need to find the first element to the right that is smaller
+than or equal to the current product price.
+That element represents the discount for the current product.
+If such an element exists, the final price for that product = a[i] - discount.
+If no such element exists, the product price remains the same (a[i]).
+Finally, return the sum of all final prices.
+Input: [8, 4, 6, 2, 3]
+Output: 15",,Interview,Amazon,Placement,2026,CSEA Placement,Santosh N,"ssanthoshh0608@gmail.com,   https://www.linkedin.com/in/ssanthoshh/",
+,"You are given an n × n matrix containing only 0s and 1s,
+where:
+• 0 → water (you can move through it)
+• 1 → obstacle (you cannot pass through it)
+You are also given a value k.
+Starting from the top-left corner (0, 0), you need to reach the bottom-right
+corner (n-1, n-1) using the minimum number of moves.
+In one move, from your current cell (i, j),
+you can move up, down, left, or right — but up to k steps in that direction,
+stopping only before hitting an obstacle (1) or the boundary.
+You need to return the minimum number of moves required to reach the
+destination.
+If it’s not possible, return -1.",,Interview,Amazon,Placement,2026,CSEA Placement,Santosh N,"ssanthoshh0608@gmail.com,   https://www.linkedin.com/in/ssanthoshh/",
+,"Determine if a string s can be segmented into words from wordDict (reuse allowed). Optimal DP/memoization
+solutions expected.
+• Example:
+o s = ""applepenapple""
+o wordDict = [""apple"", ""pen""]
+o Output: true
+o Explanation: ""applepenapple"" → ""apple pen apple""",,Interview,Amazon,Placement,2026,CSEA Placement,Haridass S,https://www.linkedin.com/in/haridass-s-57065425a,
+,"Given an array of words, the score of a string is the count of words that have it as a prefix. Efficient Trie-based
+logic expected.
+• Example:
+o words = [""abc"", ""ab"", ""bc"", ""b""]
+o Output = [5, 4, 3, 2]
+o Explanation:
+▪ ""abc"" → prefixes: a, ab, abc → counts: 2 + 2 + 1 = 5
+▪ ""ab"" → a, ab → 2 + 2 = 4
+▪ ""bc"" → b, bc → 2 + 1 = 3
+▪ ""b"" → b → 2",,Interview,Amazon,Placement,2026,CSEA Placement,Haridass S,https://www.linkedin.com/in/haridass-s-57065425a,
+,Occurrene of character in a given string,https://www.geeksforgeeks.org/program-count-occurrence-given-character-string/,Interview,Amazon,Placement,2025,CSEA Placement,Tharani A,tharaniarumugam514@gmail.com,
+,Find missing number,https://leetcode.com/problems/missing-number/,Interview,Amazon,Placement,2025,CSEA Placement,Tharani A,tharaniarumugam514@gmail.com,
+,Find cycle in linked list,https://leetcode.com/problems/linked-list-cycle/,Interview,Amazon,Placement,2025,CSEA Placement,Tharani A,tharaniarumugam514@gmail.com,
+,"Given Two integer arrays which depict the location of AWS server stations and
+destination stations. Find the minimum sum of absolute difference between the
+stations.
+Example input –
+Center = [1,2,2] //positions of the server stations
+Destination = [5,2,4] //positions of the receiver stations
+Output6",,OA,Amazon,Intern,2026,CSEA Placement,R Arjun,https://www.linkedin.com/in/arjun-r19?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app,
+,"Given a list of strings patterns, each consisting of characters and wildcard symbols (?), determine the minimum number of columns where a character conflict occurs. A character conflict in a column happens when different non- wildcard characters are found in that column. Wildcard symbols are ignored in conflict checks. Return the count of such conflicting columns. Example: input :- patterns = [“hub”, ”gub”, ’gu*”] Output – “*u*” – 2 (count of * is 2)",,OA,Amazon,Intern,2026,CSEA Placement,R Arjun,https://www.linkedin.com/in/arjun-r19?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app,
+,"Given a string which has few characters repeated multiple times, return a string
+which has each character repeated only once.
+Since there would be more than one possible ways of removing repeated
+characters , return the string which is the first occurring instance when all the
+possible answers are sorted according to dictionary order.
+Example:
+“dcsccdd”
+Ans - “csd”",,Interview,Amazon,Intern,2026,CSEA Placement,R Arjun,https://www.linkedin.com/in/arjun-r19?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app,
+,Find cycle in linked list,,Interview,Amazon,Intern,2026,CSEA Placement,R Arjun,https://www.linkedin.com/in/arjun-r19?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app,
+,"Given an integer x and a vector cost of integers. Your task is to count the number of pairs (i, j)
+where i < j and the sum of cost[i] + cost[j] is divisible by x",,OA,Amazon,Intern,2026,CSEA Placement,Mahumitha A,https://www.linkedin.com/in/mathumitha-ma/,
+,"Given a list of strings patterns, each consisting of characters and wildcard symbols (?), determine the minimum number of columns where a character conflict occurs. A character conflict in a column happens when different non-wildcard characters are found in that column. Wildcard symbols are ignored in conflict checks. Return the count of such conflicting columns.",,OA,Amazon,Intern,2026,CSEA Placement,Mahumitha A,https://www.linkedin.com/in/mathumitha-ma/,
+,Detonate the maximum bombs,https://leetcode.com/problems/detonate-the-maximum-bombs/description/,Interview,Amazon,Intern,2026,CSEA Placement,Mahumitha A,https://www.linkedin.com/in/mathumitha-ma/,
+,Sort array of 0s and 1s,https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/,Interview,Amazon,Intern,2026,CSEA Placement,Mahumitha A,https://www.linkedin.com/in/mathumitha-ma/,
+,"A regex pattern consists of lowercase English letters and some wildcard characters (“?”) with
+any English character. Two patterns are called intersecting if the wildcard characters in the
+respective string can be changed in a way to form the same string from both patterns.
+For Example: pattern p=”?cc?” and q = “dc??” intersect as we can form s = “dccx” from both
+p and q.
+Given an array pattern of N regex strings, find the minimum number of “?” characters possible
+in a pattern that intersects with all the patterns.",,OA,Amazon,Placement,2025,CSEA Placement,Ragul S,https://www.linkedin.com/in/ragul-s-301b40252/,
+,"You are given:
+• An integer array of parcels, where each element represents the number of parcels
+each agent currently has.
+• An integer extra_parcels representing the total number of extra parcels that need to
+be distributed among the agents.
+Distribute the extra parcels such that the maximum number of parcels any agent has
+after distribution is minimized. You need to return this minimized maximum number.
+Example:
+Input:
+parcels = [7, 5, 1, 9, 1]
+extra_parcels = 25
+Output:
+10",,OA,Amazon,Placement,2025,CSEA Placement,Ragul S,https://www.linkedin.com/in/ragul-s-301b40252/,
+,Step by step directions from a binary tree node to another,https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/,Interview,Amazon,Placement,2025,CSEA Placement,Ragul S,https://www.linkedin.com/in/ragul-s-301b40252/,
+,"Find the minimum distance between two aws stations (something like that)
+Example:
+Server_stations=[2,5,1,3] //positions of the server stations
+Receiver_stations=[1,5,6,2] //positions of the receiver stations",,OA,Amazon,Intern,2026,CSEA Placement,Nanda Kumaran KR,,
+,Wildcard matching,https://leetcode.com/problems/wildcard-matching/description/,OA,Amazon,Intern,2026,CSEA Placement,Nanda Kumaran KR,,
+,Removing stars from a string,https://leetcode.com/problems/removing-stars-from-a-string/,Interview,Amazon,Intern,2026,CSEA Placement,Nanda Kumaran KR,,
+,Find the next greatest element in a Binary search tree.,,Interview,Amazon,Intern,2026,CSEA Placement,Nanda Kumaran KR,,
+,"Given an array of strings which consists of the names of the websites that a user
+visits. The task is to return an array of strings in the order such that the websites
+that are recently visited should appear first and also the array must only contain
+distinct elements.
+Sample Testcase:
+Str = [“Amazon”, “Facebook”, “YouTube”, “Twitter”, “Facebook”, “Amazon”,
+“YouTube”]
+Output:
+Ans = [“YouTube”, “Amazon”, “Facebook”, “Twitter”]",,OA,Amazon,Intern,2025,CSEA Placement,Mohanraj M,https://www.linkedin.com/in/mohanraj-m-618902251,
+,"Given a binary string where some positions are marked as x other than 1’s and
+0’s. And the defect rate is the number of positions in which the two consecutive
+characters are different. The task is to minimize the defect rate by filling the
+positions which are marked as x by either 0 or 1 and return the defect rate.
+Sample Testcase:
+Str = “0100x011x10xx”
+Output: 4",,OA,Amazon,Intern,2025,CSEA Placement,Mohanraj M,https://www.linkedin.com/in/mohanraj-m-618902252,
+,Print cousins of a given node of a binary tree,https://www.geeksforgeeks.org/print-cousins-of-a-given-node-in-binary-tree,Interview,Amazon,Intern,2025,CSEA Placement,Mohanraj M,https://www.linkedin.com/in/mohanraj-m-618902253,
+,Equilibrium index of an array,https://www.geeksforgeeks.org/equilibrium-index-of-an-array,Interview,Amazon,Intern,2025,CSEA Placement,Mohanraj M,https://www.linkedin.com/in/mohanraj-m-618902254,
+,"For each string given as test case, we have to find the optimized way toarrange the letters in the 9 button such that minimum number of clicks shouldbe performed to type the tex",,OA,Amazon,Intern,2024,CSEA Placement,Nitish KS,,
+,"Each cell in a matrix/ screen may be black which is represented as -1 andwhite as 1. To calculate grayness for each cell you would have to find the
+difference between no of black area and no of white areas in the cell’s
+identified row and col. The one with maximum value (absolute) is the answer.",,OA,Amazon,Intern,2024,CSEA Placement,Nitish KS,,
+,Run length encoding,https://www.geeksforgeeks.org/run-length-encoding/,Interview,Amazon,Intern,2024,CSEA Placement,Nitish KS,,
+,Longest happy string,https://leetcode.com/problems/longest-happy-string/,Interview,Amazon,Intern,2024,CSEA Placement,Nitish KS,,
+,Similar to searching in a row and column wise sorted 2-D Matrix,,OA,Amazon,Placement,2021,CSEA Placement,Abishek,,
+,Similar to finding if one string is a substring of another,,OA,Amazon,Placement,2021,CSEA Placement,Abishek,,
+,Sorting a stream of integers.,,OA,Amazon,Placement,2021,CSEA Placement,Abishek,,
+,Finding longest substring in a dictionary of words.,,OA,Amazon,Placement,2021,CSEA Placement,Abishek,,
+,"Given a game state of Tic-tac-toe as a matrix, you have to find the result of that state like x won, o won, draw or game in progress",,Interview,Amazon,Placement,2021,CSEA Placement,Abinayaa SKC,skcabinayaa299@gmail.com,
+,"Given a binary tree, connect nodes in a level",,Interview,Amazon,Placement,2021,CSEA Placement,Abinayaa SKC,skcabinayaa299@gmail.com,
+,Nearest exit from entrance in maze,https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/description/,OA,American Express,Intern,2027,CSEA Placement,Shibani Selvakumar,https://www.linkedin.com/in/shibaniselvakumar/,
+,Mimimum amount of time to collect garbage,https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/,OA,American Express,Intern,2027,CSEA Placement,Shibani Selvakumar,https://www.linkedin.com/in/shibaniselvakumar/,
+,"Given a string S of lowercase letters, return the minimum number of characters
+to remove such that the remaining characters form a string sorted in
+lexicographical order (for example, aabz is valid, but azb is not).
+Input:
+s = ""banana""
+Output:
+3",,OA,American Express,Placement,2026,CSEA Placement,Sanotsh S,Santhoshsiva2909@gmail.com,
+,"You are given two strings S and T, both consisting of digits and representing
+two integers of equal length (possibly very large). You are allowed to swap
+digits at the same positions in the two numbers (i.e., swap the i-th digit of S
+with the i-th digit of T).
+Your goal is to minimize the absolute difference between the two integers.
+Among all possible solutions, use the fewest swaps.
+Input:
+S = ""29162"", T = ""10524""
+Output:
+2
+",,OA,American Express,Placement,2026,CSEA Placement,Sanotsh S,Santhoshsiva2909@gmail.com,
+,"You are given a rectangular board with N rows and M columns. Each cell
+contains a single digit (0–9). You need to find a path of exactly four distinct
+neighboring cells. Two cells are neighbors if they share a common side (up,
+down, left, or right). By visiting these four cells in order, you form a 4-digit
+integer. Return the largest possible integer that can be formed.
+Input:
+Board =
+[
+[2, 9, 1],
+[4, 0, 7],
+[3, 6, 5]
+]
+Output:
+9765
+",,OA,American Express,Placement,2026,CSEA Placement,Sanotsh S,Santhoshsiva2909@gmail.com,
+," Given an array of integers. Find a subarray that starts and ends with the same
+number and has the maximum possible sum. Return that maximum sum.",,OA,American Express,Intern,2027,CSEA Placement,Sriram T,sriramthilagar@gmail.com,
+,"Given a row of houses, each containing bags of different types of trash:
+Metal (M), Plastic (P), and Glass (G). Distances between consecutive houses
+are given in array D, and the trash types at each house are given in array T.
+Each type of trash has a dedicated truck that:
+• Starts at the beginning,
+• Travels to the farthest house containing its trash type,
+• Collects bags (1 minute per bag),
+• Returns to the starting point.
+Task: Compute the total time needed until all trucks finish collecting and
+return, i.e., the maximum time among all trucks.",,OA,American Express,Intern,2027,CSEA Placement,Sriram T,sriramthilagar@gmail.com,
+," Given an n × m grid with an assassin A, guards (^ v < >), obstacles X, and
+empty cells (.)
+• Guards watch in a straight line in their facing direction until blocked by a
+wall/obstacle or another guard. All cells in their vision are unsafe.
+• The assassin starts at A and wants to reach the bottom-right cell (n-1, m1).
+• The assassin can move up/down/left/right on empty cells . only (not into
+obstacles, guards, or unsafe cells).
+• If the assassin starts in vision or the target is unsafe/blocked, they fail.
+Task: Determine if the assassin can safely reach the bottom-right cell.",,OA,American Express,Intern,2027,CSEA Placement,Sriram T,sriramthilagar@gmail.com,
+,"You will be given a set of paths where each path consists of a set of strings representing a path
+to a particular page starting from the ‘Main’ (homepage) element. You need to construct a tree
+representing every path given as input. The root node will be the ‘Main’ element. Finally print it
+out as per the required format. (Breadcrumbs problem)
+Sample input:
+arr = [[‘Main’, ‘Dashboard’, ‘Settings’], [‘Main’, ‘Profile’, ‘Uploads’], [‘Main’, ‘Dashboard’,
+‘Products’], [‘Main’, ‘Profile’, ‘Remove], [‘Main’, ‘Manager, ‘Work’], [‘Main’, ‘Manager, ‘Review’]]
+Expected Output:
+Main
+-Dashboard
+-Settings
+-Products
+-Profile
+-Uploads
+-Remove
+-Manager
+-Work
+-Review",,OA,Appian,Intern,2026,CSEA Placement,C V Venkata Ramana Rao,venkatraocv2005@gmail.com,
+,"Tickets are sold to a concert in a particular order. The number of tickets, the step size, and the
+offset will be given. Number of Tickets: This is the total count of tickets available for the concert.
+Step Size: This is the number of tickets to skip before selecting the next ticket. For example, if
+the step size is 3, every fourth ticket will be chosen. (It can also be a negative number.) Offset:
+This is the starting position from which the ticket selection begins. It can be thought of as the
+initial position in the sequence of tickets where the process starts. The challenge is to generate
+a sequence of ticket numbers based on these parameters, reflecting the order in which tickets
+are sold.
+It is a variant of the famous Josephus problem but with negative step.
+",,OA,Appian,Intern,2026,CSEA Placement,C V Venkata Ramana Rao,venkatraocv2005@gmail.com,
+,"You are provided with a list of group names and a list of people belonging to each group.
+Additionally, you are given an array of strings representing individuals standing in a line. The
+task is to reorder the array such that:
+1. If a person from a group is in the line, all other subsequent members of the same
+group should move to stand next to each other in the order they appear.
+2. Once all members of a group are adjacent, replace their names with the group name.",,OA,Appian,Intern,2026,CSEA Placement,C V Venkata Ramana Rao,venkatraocv2005@gmail.com,
+,"You are working for an airline reservation system.
+Each booking gets a unique reference number that is a permutation of digits.
+The system must generate the next greater ordered arrangement each time.
+If the current code is the last possible arrangement, reset to the smallest order",,OA,Appian,Placement,2026,CSEA Placement,Aashin A P,apaashin@gmail.com,
+,"A shopping mall is divided into a grid of rooms.
+Rooms can be:
+'S' = start (entrance)
+'O' = open/accessible
+'X' = blocked
+'T' = treasure chest
+Task:
+Find the shortest path (minimum steps) from 'S' to any 'T'.
+Example:
+Input:
+[
+['S','O','O','O','O'],
+['X','O','X','X','O'],
+['X','O','T','X','X'],
+['O','O','O','O','O']
+]
+Output: 5",,OA,Appian,Placement,2026,CSEA Placement,Aashin A P,apaashin@gmail.com,
+,"You are given a list of students in a queue and a mapping of project teams.
+Reorganize the queue such that:
+1. Students from the same team are grouped together.
+2. If all members are present, replace them with the team name.
+3. Students not in any team remain as is.
+4. A student in multiple groups can only be claimed by one (the team with earliest
+occurrence wins). Input: 1. List of names in queue order
+2. Mapping of students to project teams; output: Reorganized list with team names and/or students.
+",,OA,Appian,Placement,2026,CSEA Placement,Aashin A P,apaashin@gmail.com,
+,Merge non-overlapping intervals,,OA,Appian,Placement,2026,CSEA Placement,Aashin A P,apaashin@gmail.com,
+,If list of strings contained duplicates,,OA,Appian,Intern,2027,CSEA Placement,Ajay MS,msajay2866@gmail.com,
+,Insert Interval,https://leetcode.com/problems/insert-interval/description/,OA,Appian,Intern,2027,CSEA Placement,Arun Ulagappan,https://www.linkedin.com/in/arunulagappan2024/,
+,Find first and last position of element in sorted array,https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/,OA,Appian,Intern,2027,CSEA Placement,Arun Ulagappan,https://www.linkedin.com/in/arunulagappan2024/,
+,Find missing and repeating,https://www.geeksforgeeks.org/problems/find-missing-and-repeating2512/1,OA,Appian,Intern,2027,CSEA Placement,Arun Ulagappan,https://www.linkedin.com/in/arunulagappan2024/,
+,Construct binary tree from preorder and inorder traversal,https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/,OA,Appian,Intern,2027,CSEA Placement,Arun Ulagappan,https://www.linkedin.com/in/arunulagappan2024/,
+,Single Number,https://leetcode.com/problems/single-number/,OA,Appian,Intern,2027,CSEA Placement,Arun Ulagappan,https://www.linkedin.com/in/arunulagappan2024/,
+,Two sum,https://leetcode.com/problems/two-sum/,OA,Appian,Intern,2027,CSEA Placement,Arun Ulagappan,https://www.linkedin.com/in/arunulagappan2024/,
+,Find first and last position of element in sorted array,https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/,OA,Appian,Intern,2027,CSEA Placement,Dilshan Chinnappan A,http://www.linkedin.com/in/dilshan-chinnappan,
+,Insert Interval,https://leetcode.com/problems/insert-interval/description/,OA,Appian,Intern,2027,CSEA Placement,Dilshan Chinnappan A,http://www.linkedin.com/in/dilshan-chinnappan,
+,Set-mismatch,https://leetcode.com/problems/set-mismatch/description/,OA,Appian,Intern,2027,CSEA Placement,Dilshan Chinnappan A,http://www.linkedin.com/in/dilshan-chinnappan,
+,"Given a string s which is actually name of people who are need
+to be separated into 2 groups , find the sum of alphabetical indices of
+first and last character of the string and check whether it is even or
+odd.
+If it’s even , then return “Blue”
+Else return “Red”
+Eg : Input :: s = “Dilshan”
+ Output :: “Blue”",,Interview,Appian,Intern,2027,CSEA Placement,Dilshan Chinnappan A,http://www.linkedin.com/in/dilshan-chinnappan,
+,"Given a string s, check whether it’s sorted alphabetically or not .
+If it’s sorted , return “Yes” else return “No”",,Interview,Appian,Intern,2027,CSEA Placement,Dilshan Chinnappan A,http://www.linkedin.com/in/dilshan-chinnappan,
+,Find duplicate and missing elements and return the status of the team,https://www.geeksforgeeks.org/problems/find-missing-and-repeating2512/1,OA,Appian,Intern,2027,CSEA Placement,Sripramod Yogarajan,https://linkedin.com/in/sripramod,
+,"Mobile Battery Drain Simulation
+I was given an array representing properties of multiples phones in a chunks of four
+elements each:
+· Index 0 -> Mobile ID
+· Index 1 -> Current Battery %
+· Index 2 -> Battery Drain rate per minute
+· Index 3 -> Relaxation time (in minutes) [Assume I use phone for 1 minute standardly
+and take break for phone[3] mins]
+This pattern continues for every phone. Determine which phone will get discharged first
+considering its use-and-relax cycle.",,Interview,Appian,Intern,2027,CSEA Placement,Sripramod Yogarajan,https://linkedin.com/in/sripramod,
+,"Given a list of strings, find the one with the maximum number of characters from word
+“BIG” irrespective of the order. Example length of ‘bible’ is 2 (since ‘b’ and ‘I’ 2
+characters from “BIG” are present) and length of “bargain” is 3 (since all 3 characters
+from “BIG” are present).
+",,Interview,Appian,Intern,2027,CSEA Placement,Sripramod Yogarajan,https://linkedin.com/in/sripramod,
+,Find if a string is palindrome,,OA,Appian,Intern,2027,CSEA Placement,Abhijith M,https://www.linkedin.com/in/abhijith-m-a3541b278/,
+,Find first and last occurences of an array,https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/,OA,Appian,Intern,2027,CSEA Placement,Roshni Banu S,,
+,Finding odd numbers from a stream of numbers. ,,Interview,Appian,Intern,2027,CSEA Placement,Roopa Varshini R,http://www.linkedin.com/in/roopa-varshni-23bb6b291/,
+,Two sum,,Interview,Appian,Intern,2027,CSEA Placement,Roopa Varshini R,http://www.linkedin.com/in/roopa-varshni-23bb6b291/,
+,"Simulate a lottery-style queue reordering system using skip and offset logic, where IPL fans are rearranged in a virtual queue to ensure fairness before ticket sales begin.",,OA,Appian,Placement,2026,CSEA Placement,Vamsidhar Venkataraman,https://www.linkedin.com/in/vamsivenkat/,
+,"Determine how many additional counters are needed to serve vulnerable applicants (children and senior citizens) at a passport office, based on the ages of the applicants and a fixed capacity per counter",,OA,Appian,Placement,2026,CSEA Placement,Vamsidhar Venkataraman,https://www.linkedin.com/in/vamsivenkat/,
+,"Calculate the maximum number of hotel rooms that are occupied simultaneously, given a list of bookings with start and end dates. This helps in determining peak room demand.",,OA,Appian,Placement,2026,CSEA Placement,Vamsidhar Venkataraman,https://www.linkedin.com/in/vamsivenkat/,
+,Implement a search system to find how many times a query appears in each product name string and identify relevant inventory items based on a given query.,,OA,Appian,Placement,2026,CSEA Placement,Vamsidhar Venkataraman,https://www.linkedin.com/in/vamsivenkat/,
+,"Given a list of lists of string of paths to webpages in a website, generate the navigation tree and return the root node",,OA,Appian,Placement,2025,CSEA Placement,Nikhil Prasanna,https://www.linkedin.com/in/nikhil03a/,
+,"There is a line consisting of people from different groups. We need to rearrange the line so that people from the same group can stand together. If all the persons who belong to the same group stand in line, then the names of the persons can be replaced with the group name. The order of the groups in the line and the order of persons within the group in the line should not change",,OA,Appian,Placement,2025,CSEA Placement,Nikhil Prasanna,https://www.linkedin.com/in/nikhil03a/,
+,"There are n people waiting in line to buy tickets to a Taylor Swift concert. The ticket
+manager starts at an offset position m and distributes the first ticket. Then, the manager
+jumps k steps in a cyclic fashion to give the next ticket, and this process continues until
+all tickets are distributed. The task is to determine the order in which tickets are given
+out.
+This sum is derived from the Josephus sum",,OA,Appian,Placement,2025,CSEA Placement,Nikhil Prasanna,https://www.linkedin.com/in/nikhil03a/,
+,8 ball puzzle problem,https://www.geeksforgeeks.org/aptitude/puzzle-8-balls-problem/,Interview,Appian,Placement,2025,CSEA Placement,Nikhil Prasanna,https://www.linkedin.com/in/nikhil03a/,
+," Given a set of numbers, print the Fibonacci numbers alone",,Interview,Appian,Placement,2025,CSEA Placement,Varsha Mohan,https://www.linkedin.com/in/varsha-mohan-93913224a,
+,"Given a string, determine whether one or more of its permutations would
+result in a palindrome.",,Interview,Appian,Placement,2025,CSEA Placement,Varsha Mohan,https://www.linkedin.com/in/varsha-mohan-93913224a,
+,Josephus Problem,https://www.geeksforgeeks.org/josephus-problem/,OA,Appian,Intern,2026,CSEA Placement,Karthik Krishna M,karthikk1006@gmail.com,
+,"Question 1:
+Given a set of breadcrumbs for a website represented as an array of arrays of strings,
+construct a hierarchical tree structure from it.
+Sample Input:
+arr = [['Main', 'Dashboard', 'Settings'], ['Main', 'Profile',
+'Uploads'], ['Main', 'Dashboard', 'Products'], ['Main', 'Profile',
+'Remove'], ['Main', 'Manager', 'Work'], ['Main', 'Manager',
+'Review']]
+Expected Output:
+Main
+-Dashboard
+ -Settings
+ -Products
+-Profile
+ -Uploads
+ -Remove
+-Manager
+ -Work
+ -Review",,OA,Appian,Intern,2026,CSEA Placement,Shriram G,shriramgg24@gmail.com,
+,Majority Element,https://leetcode.com/problems/majority-element/,Interview,Appian,Placement,2024,CSEA Placement,Kathir,,
+,Bayer Moore Majority Voting,https://www.geeksforgeeks.org/boyer-moore-majority-voting-algorithm,Interview,Appian,Placement,2024,CSEA Placement,Kathir,,
+,"Restaurant Queue Management: Calculate the total profit of a restaurant with limited seats, where guests arrive and leave according to a log, pay only once, wait in a FIFO queue if seats are full, and leave if they lose patience. Eg: n = 3 price = [6, 2, 9, 5, 8] logs = [0, 1, 2, 3, 4, 1, 0, 3, 2, 4]",,OA,Apple,Placement,2026,,Sujana S,https://www.linkedin.com/in/sujanas29/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_verification_details%3Bk9VllbVPSIe5Ds1OLcb1tA%3D%3D,
+,"The task is to write a program that determines and returns the current state of a tennis game
+based on the points scored by two players.
+Tennis Scoring Rules Recap:
+• A tennis game is scored in points:
+o 1st point → 15
+o 2nd point → 30
+o 3rd point → 40
+• After both players reach at least 40 points, three special conditions apply:
+1. Deuce:
+▪ When both players have scored the same number of points (and at least
+3 points each).
+▪ Example: 5–5.
+2. Advantage:
+▪ When both have at least 3 points, but one player has 1 point more than
+the other.
+▪ Example: 6–5 (Advantage Player 1) or 5–6 (Advantage Player 2).
+3. Win:
+▪ A player wins if they have at least 4 points and at least 2 points more
+than the opponent.
+▪ Example: 8–4 → Player 1 wins.
+Example:
+nameP1 = ""Alice""
+nameP2 = ""Bob""
+winner = {""Alice"", ""Bob"", ""Alice"", ""Alice""}
+Alice scores: 3 points (15 → 30 → 40) Bob scores: 1 point (15)
+Output: ""40 - 15""
+{If more points are played and it becomes 4–4:
+Output: ""Deuce""
+If it becomes 5–4:
+Output: ""Advantage Alice""
+If it becomes 6–4:
+Output: ""Alice wins""}",,OA,Apple,Placement,2026,,Sujana S,https://www.linkedin.com/in/sujanas29/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_verification_details%3Bk9VllbVPSIe5Ds1OLcb1tA%3D%3D,
+,Restrictive Candy Crush,https://www.geeksforgeeks.org/problems/restrictive-candy-crush--141631/1,Interview,Apple,Placement,2026,,Sujana S,https://www.linkedin.com/in/sujanas29/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_verification_details%3Bk9VllbVPSIe5Ds1OLcb1tA%3D%3D,
+,Min heap,,Interview,Apple,Placement,2026,,Deepak Sridhar,6380156548,
+,Two sum,,Interview,Apple,Placement,2026,,Deepak Sridhar,6380156548,
+,Longest Common Prefix,,Interview,Apple,Placement,2026,,Deepak Sridhar,6380156548,
+,Merge two sorted arrays,,Interview,Apple,Placement,2026,,Devaabinaya P,http://www.linkedin.com/in/devaabinaya-p-62111628a,
+,Add two numbers represented by arrays,,Interview,Apple,Placement,2025,,J Nithyasree,https://www.linkedin.com/in/j-nithyasree,
+,Linked list problems,,Interview,Apple,Placement,2025,,J Nithyasree,https://www.linkedin.com/in/j-nithyasree,
+,"First Lady of Software - You are given: n_processes: number of processes (for example, 2
+processes — A and B), n_intervals: number of time intervals (for example, 3 intervals). At each time
+interval, one process runs. You need to find how many different valid schedules are possible to assign
+the processes to these intervals.",,OA,Aptiv,Placement,2026,,Vishnupriya Shanmugam,https://www.linkedin.com/in/vishnupriya-shanmugam/,
+," Score of an array – You are given an array of integers. You can delete any elements
+you want in any order. After all deletions, the array reindexes (positions shift). The score is the
+count of elements where the value equals its position (1-indexed). Find the maximum possible score
+you can achieve after any number of deletions.",,OA,Aptiv,Placement,2026,,Vishnupriya Shanmugam,https://www.linkedin.com/in/vishnupriya-shanmugam/,
+,Missing number,https://leetcode.com/problems/missing-number/,Interview,Aptiv,Placement,2026,,Vishnupriya Shanmugam,https://www.linkedin.com/in/vishnupriya-shanmugam/,
+,Prime factors of a number,,Interview,Aptiv,Placement,2026,,Vishnupriya Shanmugam,https://www.linkedin.com/in/vishnupriya-shanmugam/,
+,"Volume of sphere, cube and cylinder",,Interview,Aptiv,Placement,2026,,Vishnupriya Shanmugam,https://www.linkedin.com/in/vishnupriya-shanmugam/,
+,Maximum consecutive ones,https://leetcode.com/problems/max-consecutive-ones/,Interview,Aptiv,Placement,2026,,Vishnupriya Shanmugam,https://www.linkedin.com/in/vishnupriya-shanmugam/,
+,"An array of size n will be given where adjacent elements are connected to each
+other. Along with that, two points were given that imply an additional edge
+connection between those points. Now I need to return an array of length n
+where the first index has the number of connections with a single hop, the second
+with a double hop, and so on.",,OA,Arista Networks,Placement,2026,,Sri Rama Pandian H U,sriramapandian147@gmail.com,
+,"Two arrays, say arr1 and arr2, were given. We can assume that arr1[i] is the
+parent of arr2[i] or vice versa. Create an undirected graph so that we can fulfill
+1
+our assumption. Now a 2D array was given called queries. Each query indicates
+the ordered traversal of the graph. The traversal starts from 1, then visits all
+children nodes, then their children, and so on. The output is a string where 1
+says the query is correct; else, 0",,OA,Arista Networks,Placement,2026,,Sri Rama Pandian H U,sriramapandian147@gmail.com,
+,Total cost to hire K workers,https://leetcode.com/problems/total-cost-to-hire-k-workers/description/,OA,Arista Networks,Placement,2026,,Sri Rama Pandian H U,sriramapandian147@gmail.com,
+,Simplify path,https://leetcode.com/problems/simplify-path/description/,Interview,Arista Networks,Placement,2026,,Sri Rama Pandian H U,sriramapandian147@gmail.com,
+," Find the sum of the largest path in a binary tree; if we have more than one
+largest path, return the maximum sum among those.",,Interview,Arista Networks,Placement,2026,,Sri Rama Pandian H U,sriramapandian147@gmail.com,
+,Reverse given sentense,,Interview,Aspire Systems,Placement,2021,,Yukesh T,yukeshthamil@gmail.com,
+,Maximum distance between two occurrences of an element,,Interview,Aspire Systems,Placement,2021,,Yukesh T,yukeshthamil@gmail.com,
+,Split given array into k sub arrays,,Interview,Aspire Systems,Placement,2021,,Yukesh T,yukeshthamil@gmail.com,
+,Given two arrays find the element whose sum is odd,,Interview,Aspire Systems,Placement,2021,,Yukesh T,yukeshthamil@gmail.com,
+,"Minimum cost after insetion, An array of integers is given, and the cost is defined as: Cost=∑ (arr[i] − arr[i+1])2 The task was to insert one element anywhere in the array such that the overall cost is minimized and return the minimum cost.",,OA,Athena Health,Placement,2026,,Sharukesh K,sharukeshkkvs@gmail.com,
+,,,,BNY,,,,,,
+,Subarrays with k different integers,https://leetcode.com/problems/subarrays-with-k-different-integers/,OA,Athena Health,Placement,2026,,Sharukesh K,sharukeshkkvs@gmail.com,
+,Implement stack using queues,https://leetcode.com/problems/implement-stack-using-queues/,Interview,Athena Health,Placement,2026,,Sharukesh K,sharukeshkkvs@gmail.com,
+,Remove nth node from the end of the list,https://leetcode.com/problems/remove-nth-node-from-end-of-list/,Interview,Athena Health,Placement,2026,,Sharukesh K,sharukeshkkvs@gmail.com,
+,Find the missing elements in an array,,Interview,Athena Health,Placement,2026,,Sharukesh K,sharukeshkkvs@gmail.com,
+,Nuts and bolts problem,,Interview,Athena Health,Placement,2026,,Sharukesh K,sharukeshkkvs@gmail.com,
+,Minimum  number of platforms required for a railway ,https://takeuforward.org/data-structure/minimum-number-of-platforms-required-for-a-railway,OA,Zoho,Placement,2026,CSEA Placement,Selva Subramanina A,selvasubramanian.annauniv@gmail.com,Srivandhi-Volunteer
+,Find the 2nd maximum element in the array,https://www.geeksforgeeks.org/dsa/find-second-largest-element-array/,Interview,Western Digital,Intern,2027,CSEA Placement,Visvam Srinivasan,yp2.visvam@gmail.com,Srivandhi-Volunteer
+,Reverse words in a string,https://leetcode.com/problems/reverse-words-in-a-string/description/,Interview,Western Digital,Intern,2027,CSEA Placement,Visvam Srinivasan,yp2.visvam@gmail.com,Srivandhi-Volunteer
+,Find the kth maximum element in the array,https://leetcode.com/problems/kth-largest-element-in-an-array/description/,Interview,Western Digital,Intern,2027,CSEA Placement,Visvam Srinivasan,yp2.visvam@gmail.com,Srivandhi-Volunteer
+,Find if a linked list has a cycle,https://leetcode.com/problems/linked-list-cycle/description/,Interview,Western Digital,Intern,2027,CSEA Placement,Visvam Srinivasan,yp2.visvam@gmail.com,Srivandhi-Volunteer
+,N meetings in one room ,https://www.geeksforgeeks.org/find-maximum-meetings-in-one-room/,Interview,Wells Fargo,Placement,2021,CSEA Placement, Pothikkannan G ,pothikkannan1@gmail.com,Srivandhi-Volunteer
+,min - stack ,https://leetcode.com/problems/min-stack/,Interview,Wells Fargo,Placement,2021,CSEA Placement,Ishwarya R,rjishu08@gmail.com,Srivandhi-Volunteer
+,Level order traversal in binary tree ,https://leetcode.com/problems/binary-tree-level-order-traversal/,Interview,Wells Fargo,Placement,2021,CSEA Placement,Ishwarya R,rjishu08@gmail.com,Srivandhi-Volunteer
+,zig zag level order traversal in binary tree ,https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/,Interview,Wells Fargo,Placement,2021,CSEA Placement,Ishwarya R,rjishu08@gmail.com,Srivandhi-Volunteer
+,Missing point of a parallelogram,https://www.geeksforgeeks.org/problems/missing-point-of-a-parallelogram0146/1,Interview,Wells Fargo,Intern,2023,CSEA Placement,Pranava Raman BMS,,Srivandhi-Volunteer
+,"Given a string of length N, which contains ‘1’ , ‘0’ and ‘?’ . Return all the binary strings that can be formed by replacing the ‘?’ with ‘0’ or ‘1’.",https://www.geeksforgeeks.org/generate-all-binary-strings-from-given-pattern/,Interview,Wells Fargo,Intern,2023,CSEA Placement,SACHIN RAGHUL T,sachinraghult2002@gmail.com,Srivandhi-Volunteer
+,"A balloon game is being played among people numbered from 1 to n in circle. Given an integer k which is the number of balloon pass, after which the person should be eliminated. The condition is before elimination of a particular person, the balloon should be passed to the next one. Find the winner ? (one who remains at last)",https://www.geeksforgeeks.org/josephus-problem-set-1-a-on-solution/,Interview,Wells Fargo,Intern,2023,CSEA Placement,SACHIN RAGHUL T,sachinraghult2002@gmail.com,Srivandhi-Volunteer
+,Program to convert a given number to words,https://www.geeksforgeeks.org/convert-number-to-words/,Interview,Wells Fargo,Intern,2023,CSEA Placement,SACHIN RAGHUL T,sachinraghult2002@gmail.com,Srivandhi-Volunteer
+,Find the occurrences of digit d in the range [0..n],https://www.geeksforgeeks.org/find-the-occurrences-of-y-in-the-range-of-x/,Interview,Wells Fargo,Intern,2023,CSEA Placement,SACHIN RAGHUL T,sachinraghult2002@gmail.com,Srivandhi-Volunteer
+,Generate binary string,https://practice.geeksforgeeks.org/problems/generate-binary-string3642/1,OA,Wells Fargo,Intern,2023,CSEA Placement,Safiya Fathima,,Srivandhi-Volunteer
+,Find Minimum sum of product of two arrays,https://iq.opengenus.org/minimum-sum-of-product-of-two-arrays/,OA,Wells Fargo,Intern,2023,CSEA Placement,Safiya Fathima,,Srivandhi-Volunteer
+,Number of overtakes,https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/practice-problems/algorithm/overtakes-count-33746e3a/,Interview,Wells Fargo,Intern,2023,CSEA Placement,Safiya Fathima,,Srivandhi-Volunteer
+,Find missing element in a sorted array of consecutive numbers.,https://www.geeksforgeeks.org/find-missing-element-in-a-sorted-array-of-consecutive-numbers/,Interview,Wells Fargo,Intern,2023,CSEA Placement,Safiya Fathima,,Srivandhi-Volunteer
+,Palindrome String,https://practice.geeksforgeeks.org/problems/palindrome-string0817/1,Interview,Wells Fargo,Intern,2023,CSEA Placement,Safiya Fathima,,Srivandhi-Volunteer
+,Merge Sort,https://www.geeksforgeeks.org/merge-sort/,Interview,Wells Fargo,Intern,2023,CSEA Placement,Safiya Fathima,,Srivandhi-Volunteer
+,longest common prefix string,https://leetcode.com/problems/longest-common-prefix/,OA,Wells Fargo,Intern,2025,CSEA Placement,POOJAA S,poojaakumar719@gmail.com,Srivandhi-Volunteer
+,Segregate Even and Odd numbers ,https://www.geeksforgeeks.org/problems/segregate-even-and-odd-numbers4629/1,OA,Wells Fargo,Intern,2025,CSEA Placement,POOJAA S,poojaakumar719@gmail.com,Srivandhi-Volunteer
+,Sum of an array using pthreads,https://www.geeksforgeeks.org/sum-array-using-pthreads/,OA,Wells Fargo,Intern,2025,CSEA Placement,POOJAA S,poojaakumar719@gmail.com,Srivandhi-Volunteer
+,Area of Intersection of two circles ,https://www.geeksforgeeks.org/area-of-intersection-of-two-circles/,OA,Wells Fargo,Intern,2026,CSEA Placement,T Nathin Kishore,,Srivandhi-Volunteer
+,Zellers congruence find day date,https://www.geeksforgeeks.org/zellers-congruence-find-day-date/,OA,Wells Fargo,Intern,2026,CSEA Placement,Ahalya V S,v.s.ahalya2005@gmail.com,Srivandhi-Volunteer
+,Seven Bridges of Königsberg,https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg,OA,Wells Fargo,Intern,2026,CSEA Placement,Kamalesh N,kamaltvt579@gmail.com,Srivandhi-Volunteer
+,Remove Duplicates from the sorted array ,https://leetcode.com/problems/remove-duplicates-from-sorted-array/,Interview,Wells Fargo,Intern,2026,CSEA Placement,Kamalesh N,kamaltvt579@gmail.com,Srivandhi-Volunteer
+,Minimum length of Anagram Concatenation,https://leetcode.com/problems/minimum-length-of-anagram-concatenation/,OA,Wells Fargo,Placement,2026,CSEA Placement,Rajesh Kumar C,rajesh.cos179@gmail.com,Srivandhi-Volunteer
+,Count Vowel Substrings of a String,https://leetcode.com/problems/count-vowel-substrings-of-a-string/,OA,Wells Fargo,Placement,2026,CSEA Placement,Rajesh Kumar C,rajesh.cos179@gmail.com,Srivandhi-Volunteer
+,Maximum Absolute Difference,https://www.geeksforgeeks.org/maximum-absolute-difference-value-index-sums/,OA,Walmart,Placement,2021,CSEA Placement,AjithKumar Panja,ajithkumarpanja@gmail.com,Srivandhi-Volunteer
+,Reverse Linked List in group of 3,https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/,Interview,Walmart,Placement,2021,CSEA Placement,AjithKumar Panja,ajithkumarpanja@gmail.com,Srivandhi-Volunteer
+,Merge two sorted Linked Lists,https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/,Interview,Walmart,Placement,2021,CSEA Placement,AjithKumar Panja,ajithkumarpanja@gmail.com,Srivandhi-Volunteer
+,4 Tyres and 1 Spare Tyre Puzzle,https://www.geeksforgeeks.org/puzzle-29-car-wheel-puzzle/,Interview,Walmart,Placement,2021,CSEA Placement,AjithKumar Panja,ajithkumarpanja@gmail.com,Srivandhi-Volunteer
+,DFS of a Graph,https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/,Interview,Walmart,Placement,2021,CSEA Placement,AjithKumar Panja,ajithkumarpanja@gmail.com,Srivandhi-Volunteer
+,Grouping Anagrams,https://leetcode.com/problems/group-anagrams/description/,"Interview, OA",Walmart,Placement,2025,CSEA Placement,Tharun RS,rstharun11@gmail.com,Srivandhi-Volunteer
+,Kth smallest element in a BST,https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/,Interview,Walmart,Placement,2025,CSEA Placement,Tharun RS,rstharun11@gmail.com,Srivandhi-Volunteer

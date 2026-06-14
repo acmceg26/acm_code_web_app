@@ -1,40 +1,53 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useTracker } from '../hooks/useTracker';
 import dsaData from '../data/dsaSheets.json';
 import { Accordion } from '../components/ui/Accordion';
 import { DsaSheetTable } from '../components/features/DsaSheetTable';
 import { CheckCircle } from 'lucide-react';
 
+interface Problem {
+  id: string;
+  title: string;
+  difficulty: string;
+  platforms: { leetcode?: string; gfg?: string };
+  videoSolution?: string;
+}
+
 export const DsaSheets: React.FC = () => {
   const { isSolved } = useTracker();
-  const [activeSheetId, setActiveSheetId] = useState(dsaData.sheets[0].id);
-  const [activeLevelId, setActiveLevelId] = useState(dsaData.sheets[0].levels[0].id);
 
-  // Find active sheet object
-  const activeSheet = dsaData.sheets.find(s => s.id === activeSheetId) || dsaData.sheets[0];
-  // Find active level within the sheet (fall back to its first level)
-  const activeLevel = activeSheet.levels.find(l => l.id === activeLevelId) || activeSheet.levels[0];
-
-  const handleSheetChange = (sheetId: string) => {
-    setActiveSheetId(sheetId);
-    const sheet = dsaData.sheets.find(s => s.id === sheetId);
-    if (sheet) setActiveLevelId(sheet.levels[0].id);
-  };
-
-  // Calculate stats for the whole active sheet (both levels) — drives the donut
+  // Flatten every sheet → level → topic into a single list of topics, grouped
+  // by topic name. Problems that repeat across sheets/levels (same id) are
+  // de-duplicated so each question shows once.
+  const topicsMap = new Map<string, { name: string; problems: Problem[]; seen: Set<string> }>();
+  const globalSeen = new Set<string>();
   let totalProblems = 0;
   let solvedProblemsCount = 0;
 
-  activeSheet.levels.forEach((level) => {
-    level.topics.forEach((topic) => {
-      topic.problems.forEach((prob) => {
-        totalProblems++;
-        if (isSolved(prob.id)) {
-          solvedProblemsCount++;
+  dsaData.sheets.forEach((sheet) => {
+    sheet.levels.forEach((level) => {
+      level.topics.forEach((topic) => {
+        let entry = topicsMap.get(topic.name);
+        if (!entry) {
+          entry = { name: topic.name, problems: [], seen: new Set() };
+          topicsMap.set(topic.name, entry);
         }
+        topic.problems.forEach((prob) => {
+          if (!entry!.seen.has(prob.id)) {
+            entry!.seen.add(prob.id);
+            entry!.problems.push(prob as Problem);
+          }
+          if (!globalSeen.has(prob.id)) {
+            globalSeen.add(prob.id);
+            totalProblems++;
+            if (isSolved(prob.id)) solvedProblemsCount++;
+          }
+        });
       });
     });
   });
+
+  const topics = Array.from(topicsMap.values());
 
   const activeSheetPercent = totalProblems > 0
     ? Math.round((solvedProblemsCount / totalProblems) * 100)
@@ -48,37 +61,19 @@ export const DsaSheets: React.FC = () => {
         <p className="text-sm text-zinc-500 mt-1">Problem sets grouped by topic.</p>
       </div>
 
-      {/* Sheets Navigation Bar (Pills style) */}
-      <div className="flex flex-wrap gap-2 pb-2 border-b border-zinc-800">
-        {dsaData.sheets.map((sheet) => {
-          const isActive = sheet.id === activeSheetId;
-          return (
-            <button
-              key={sheet.id}
-              onClick={() => handleSheetChange(sheet.id)}
-              className={`px-3.5 py-2 rounded-lg text-xs font-medium transition-colors duration-150 cursor-pointer ${
-                isActive
-                  ? 'bg-zinc-100 text-zinc-900'
-                  : 'bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-200 hover:border-zinc-700'
-              }`}
-            >
-              {sheet.title}
-            </button>
-          );
-        })}
-      </div>
-
-      {/* Sheet Specific Statistics / Info Card */}
+      {/* Statistics / Info Card */}
       <div className="glass-panel p-5 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-5">
         <div className="space-y-1.5 flex-1 max-w-xl">
-          <h3 className="font-bold text-zinc-200 text-base">{activeSheet.title}</h3>
-          <p className="text-xs text-zinc-400 leading-relaxed">{activeSheet.description}</p>
+          <h3 className="font-bold text-zinc-200 text-base">All Problems</h3>
+          <p className="text-xs text-zinc-400 leading-relaxed">
+            Every placement and intern problem in one place, grouped by topic.
+          </p>
         </div>
 
-        {/* Progress Metrics for this sheet */}
+        {/* Overall progress */}
         <div className="shrink-0 flex items-center gap-4 bg-zinc-950/50 p-4 rounded-xl border border-zinc-800">
           <div className="text-left">
-            <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-wider block">Sheet Progress</span>
+            <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-wider block">Progress</span>
             <span className="text-lg font-bold text-zinc-200 font-mono">
               {solvedProblemsCount} <span className="text-xs font-medium text-zinc-500">/ {totalProblems} solved</span>
             </span>
@@ -113,31 +108,9 @@ export const DsaSheets: React.FC = () => {
         </div>
       </div>
 
-      {/* Level Navigation (Beginner / Advanced) */}
-      <div className="flex flex-wrap gap-2">
-        {activeSheet.levels.map((level) => {
-          const isActive = level.id === activeLevelId;
-          const levelTotal = level.topics.reduce((sum, t) => sum + t.problems.length, 0);
-          return (
-            <button
-              key={level.id}
-              onClick={() => setActiveLevelId(level.id)}
-              className={`px-3.5 py-2 rounded-lg text-xs font-medium transition-colors duration-150 cursor-pointer ${
-                isActive
-                  ? 'bg-zinc-100 text-zinc-900'
-                  : 'bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-200 hover:border-zinc-700'
-              }`}
-            >
-              {level.name}
-              <span className={`ml-1.5 font-mono ${isActive ? 'text-zinc-500' : 'text-zinc-600'}`}>{levelTotal}</span>
-            </button>
-          );
-        })}
-      </div>
-
-      {/* Accordions for each Topic in the active level */}
+      {/* Accordions for each Topic */}
       <div className="space-y-4">
-        {activeLevel.topics.map((topic) => {
+        {topics.map((topic) => {
           // Calculate topic solved count for badges
           let topicTotal = topic.problems.length;
           let topicSolved = topic.problems.filter(p => isSolved(p.id)).length;

@@ -26,6 +26,13 @@ const YEAR_OPTIONS = [
   { value: '4', label: '4th year' },
 ];
 
+const CAMPUS_OPTIONS = [
+  { value: 'CEG', label: 'CEG' },
+  { value: 'MIT', label: 'MIT' },
+  { value: 'ACT', label: 'ACT' },
+  { value: 'SAP', label: 'SAP' },
+]
+
 interface SignupErrors {
   name?: string;
   email?: string;
@@ -204,10 +211,11 @@ export const Signup: React.FC<SignupProps> = ({ theme, toggleTheme }) => {
             onChange={(e) => setDepartment(e.target.value)}
             error={errors.department}
           />
-          <Input
+          <Select
             label="Campus"
             icon={MapPin}
             placeholder="e.g. CEG"
+            options={CAMPUS_OPTIONS}
             value={campus}
             onChange={(e) => setCampus(e.target.value)}
             error={errors.campus}
