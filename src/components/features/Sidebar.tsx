@@ -46,8 +46,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
     { id: 'dsa', label: 'DSA Sheets', icon: BookOpen },
     { id: 'company', label: 'Company & OA Prep', icon: Building2 },
-    { id: 'aptitude', label: 'Aptitude Practice', icon: Brain },
     { id: 'technical', label: 'Technical Concepts', icon: Cpu },
+    { id: 'aptitude', label: 'Aptitude Practice', icon: Brain },
     { id: 'contests', label: 'Contests', icon: Trophy },
     { id: 'resources', label: 'Other Resources', icon: FolderOpen },
   ] as const;

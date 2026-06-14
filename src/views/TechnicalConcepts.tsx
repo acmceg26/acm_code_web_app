@@ -8,7 +8,7 @@ import type { LucideIcon } from 'lucide-react';
 // ─── Feature flags ──────────────────────────────────────────────────────────
 // Set to `false` once the respective links are ready to publish.
 const TESTS_COMING_SOON = true;
-const MATERIALS_COMING_SOON = true;
+const MATERIALS_COMING_SOON = false;
 // ────────────────────────────────────────────────────────────────────────────
 
 const ICONS: Record<string, LucideIcon> = {
@@ -188,10 +188,6 @@ export const TechnicalConcepts: React.FC = () => {
               </div>
 
               <div className="flex items-center justify-between pt-4 border-t border-zinc-800 text-xs font-medium">
-                <span className="flex items-center gap-1.5 text-zinc-500">
-                  <ClipboardList className="w-3.5 h-3.5" />
-                  {concept.tests.length} test{concept.tests.length !== 1 ? 's' : ''}
-                </span>
                 <span className="text-zinc-400 group-hover:text-zinc-200 transition-colors">View &rarr;</span>
               </div>
             </Card>

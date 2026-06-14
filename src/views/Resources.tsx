@@ -1,33 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import resourcesData from '../data/resources.json';
 import { Card } from '../components/ui/Card';
 import { ExternalLink, Link2, FileText, BookOpen, MonitorPlay } from 'lucide-react';
 
 type Tab = { label: string; dataCategory: string; icon: React.ReactNode };
 
+const TABS: Tab[] = [
+  {
+    label: 'Resume Templates & resources',
+    dataCategory: 'Resume',
+    icon: <FileText className="w-3.5 h-3.5" />,
+  },
+  {
+    label: 'Video Playlists',
+    dataCategory: 'Video Playlists',
+    icon: <BookOpen className="w-3.5 h-3.5" />,
+  },
+  {
+    label: 'Mock Interview Platforms',
+    dataCategory: 'Mock Interview Platforms',
+    icon: <MonitorPlay className="w-3.5 h-3.5" />,
+  },
+];
+
 export const Resources: React.FC = () => {
-  const tabs: Tab[] = [
-    {
-      label: 'Resume Templates & resources',
-      dataCategory: 'Resume',
-      icon: <FileText className="w-3.5 h-3.5" />,
-    },
-    {
-      label: 'Core CS Subjects Study Resources',
-      dataCategory: 'Core CS Subjects',
-      icon: <BookOpen className="w-3.5 h-3.5" />,
-    },
-    {
-      label: 'Mock Interview Platforms',
-      dataCategory: 'Mock Interview Platforms',
-      icon: <MonitorPlay className="w-3.5 h-3.5" />,
-    },
-  ];
+  const [activeCategory, setActiveCategory] = useState<string>('Resume');
 
-  const [activeTab, setActiveTab] = useState<Tab>(tabs[0]);
-
-  const filteredResources = resourcesData.resources.filter(
-    (res) => res.category === activeTab.dataCategory
+  const filteredResources = useMemo(
+    () => resourcesData.resources.filter((res) => res.category === activeCategory),
+    [activeCategory]
   );
 
   return (
@@ -35,17 +36,17 @@ export const Resources: React.FC = () => {
       {/* Page Header */}
       <div>
         <h2 className="text-xl font-semibold text-zinc-100">Resources</h2>
-        <p className="text-sm text-zinc-500 mt-1">Reference material for core CS, system design, and interviews.</p>
+        <p className="text-sm text-zinc-500 mt-1">Resumes, CS/IT subject video playlists and mock interview platforms.</p>
       </div>
 
       {/* Filter Tabs */}
       <div className="flex flex-wrap gap-2 pb-4 border-b border-zinc-800">
-        {tabs.map((tab) => {
-          const isActive = activeTab.label === tab.label;
+        {TABS.map((tab) => {
+          const isActive = activeCategory === tab.dataCategory;
           return (
             <button
-              key={tab.label}
-              onClick={() => setActiveTab(tab)}
+              key={tab.dataCategory}
+              onClick={() => setActiveCategory(tab.dataCategory)}
               className={`flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs font-semibold transition-all duration-150 cursor-pointer ${isActive
                   ? 'bg-zinc-100 text-zinc-900 shadow-sm'
                   : 'bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-100 hover:border-zinc-600 hover:bg-zinc-800/60'

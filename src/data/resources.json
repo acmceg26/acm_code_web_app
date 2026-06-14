@@ -2,63 +2,68 @@
   "resources": [
     {
       "id": "res-os-1",
-      "category": "Core CS Subjects",
-      "title": "Operating Systems (OS) - Gate Smashers",
-      "description": "Premium free lecture series covering CPU scheduling, memory management, file systems, and concurrency.",
+      "category": "Video Playlists",
+      "title": "Algorithms Playlist - Abdul Bari",
+      "description": "Comprehensive playlist on Algorithms by Abdul Bari",
       "tags": [
-        "OS",
-        "Videos",
-        "Free"
+        "Algorithms",
+        "DSA"
       ],
-      "link": "https://www.youtube.com/playlist?list=PLmXKhU9FNesSFvj6gASuWmQd23Ul5omtD"
+      "link": "https://youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&si=IK-cxIkF4M2JbPo6"
     },
     {
-      "id": "res-dbms-1",
-      "category": "Core CS Subjects",
-      "title": "SQL & DBMS Masterclass - Love Babbar",
-      "description": "Deep-dive playlist covering normalization, keys, transactions, indexing, and SQL queries with live examples.",
+      "id": "res-ds-1",
+      "category": "Video Playlists",
+      "title": "Data Structures Playlist - Jenny Lectures CS IT",
+      "description": "Comprehensive playlist on Data Structures by Abdul Bari",
       "tags": [
-        "DBMS",
-        "SQL",
-        "Free"
+        "Algorithms",
+        "DSA"
       ],
-      "link": "https://www.youtube.com/playlist?list=PLDzeHZWIZsTp4x1l1B_rZqf6eLqpy4z6f"
+      "link": "https://youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU&si=9RllHAGGBcXT4plK"
+    },
+    {
+      "id": "res-os-2",
+      "category": "Video Playlists",
+      "title": "OS Playlist - Gate Smashers",
+      "description": "In-depth playlist on Operating Systems by Gate Smashers",
+      "tags": [
+        "OS"
+      ],
+      "link": "https://youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p&si=ccwna39DGFkXYkLZ"
     },
     {
       "id": "res-cn-1",
-      "category": "Core CS Subjects",
-      "title": "Computer Networks (CN) Lectures - Neso Academy",
+      "category": "Video Playlists",
+      "title": "Computer Networks (CN) Lectures - Gate Smashers",
       "description": "Excellent visual playlist explaining TCP/IP, OSI layers, IP addressing, subnetting, and protocols.",
       "tags": [
         "CN",
-        "Networking",
-        "Free"
+        "Networking"
       ],
-      "link": "https://www.youtube.com/playlist?list=PLBlnK6fEyqRgMCUAG0XRw78UA8qnv6jEx"
+      "link": "https://youtube.com/playlist?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_&si=y5g9LCrH4mz5scff"
     },
     {
-      "id": "res-sd-1",
-      "category": "System Design",
-      "title": "System Design Primer by Donne Martin",
-      "description": "The ultimate GitHub repository covering large-scale systems design, architectural patterns, scaling database servers, and microservices.",
+      "id": "res-dsa-1",
+      "category": "Video Playlists",
+      "title": "Striver A to Z solved example videos",
+      "description": "Playlist with videos solving all the problems of Striver Sheet A to Z.",
       "tags": [
-        "System Design",
-        "GitHub",
-        "Reading"
+        "DSA",
+        "StriverAtoZ"
       ],
-      "link": "https://github.com/donnemartin/system-design-primer"
+      "link": "https://youtube.com/playlist?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&si=4viDA1GhW8uvNac7"
     },
     {
-      "id": "res-sd-2",
-      "category": "System Design",
-      "title": "System Design Playlist - ByteByteGo",
-      "description": "Short, clear, and highly animated videos explaining system design concepts like CDNs, Load Balancers, Redis, and Kafka.",
+      "id": "res-dsa-2",
+      "category": "Video Playlists",
+      "title": "Neetcode 150 solved example videos",
+      "description": "Playlist with videos solving all the problems of Neetcode 150.",
       "tags": [
-        "System Design",
-        "Videos",
-        "Visual"
+        "DSA",
+        "Neetcode150"
       ],
-      "link": "https://www.youtube.com/@ByteByteGo"
+      "link": "https://youtube.com/playlist?list=PLPe9IkX86X3y5m_MvtNu2ughxsvkqUNKr&si=C7eJpQrzPShcs9uB"
     },
     {
       "id": "res-res-1",
@@ -83,7 +88,19 @@
         "Resume",
         "Guide"
       ],
-      "link": "https://drive.google.com/file/d/1AcqQBAbw19gKpargnG7j2dg36BCpQUj6/view?usp=sharing"
+      "link": "https://drive.google.com/file/d/1z6dYlHyCpUBWhWHkEiLrosg2aH4wFf77/view?usp=sharing"
+    },
+    {
+      "id": "res-mock-2",
+      "category": "Mock Interview Platforms",
+      "title": "Interviewing.io",
+      "description": "Anonymous mock interviews with staff engineers from Google, Facebook, Amazon, and Netflix. Includes excellent video archives.",
+      "tags": [
+        "Mocks",
+        "Premium",
+        "Video Archives"
+      ],
+      "link": "https://interviewing.io/"
     },
     {
       "id": "res-res-3",
@@ -106,18 +123,6 @@
         "Free"
       ],
       "link": "https://www.pramp.com/"
-    },
-    {
-      "id": "res-mock-2",
-      "category": "Mock Interview Platforms",
-      "title": "Interviewing.io",
-      "description": "Anonymous mock interviews with staff engineers from Google, Facebook, Amazon, and Netflix. Includes excellent video archives.",
-      "tags": [
-        "Mocks",
-        "Premium",
-        "Video Archives"
-      ],
-      "link": "https://interviewing.io/"
     }
   ]
 }
