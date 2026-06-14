@@ -26,28 +26,38 @@
         "id": "comp-goog-1",
         "title": "Median of Two Sorted Arrays",
         "difficulty": "Hard",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/median-of-two-sorted-arrays/"
-        },
+        "platforms": { "leetcode": "https://leetcode.com/problems/median-of-two-sorted-arrays/" },
         "videoSolution": "https://www.youtube.com/watch?v=NTop3WyJadw"
       },
       {
         "id": "comp-goog-2",
         "title": "Evaluate Division",
         "difficulty": "Medium",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/evaluate-division/"
-        },
+        "platforms": { "leetcode": "https://leetcode.com/problems/evaluate-division/" },
         "videoSolution": "https://www.youtube.com/watch?v=Uei1fwDoyK0"
       },
       {
         "id": "comp-goog-3",
         "title": "Cracking the Safe",
         "difficulty": "Hard",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/cracking-the-safe/"
-        },
+        "platforms": { "leetcode": "https://leetcode.com/problems/cracking-the-safe/" },
         "videoSolution": "https://www.youtube.com/watch?v=kR0g_S5YFQU"
+      }
+    ],
+    "tests": [
+      {
+        "id": "google-test-1",
+        "title": "Google — DSA Mock Test",
+        "description": "Timed test covering graphs, DP and segment trees in the style of the Google OA.",
+        "formUrl": "https://forms.google.com/"
+      }
+    ],
+    "studyMaterials": [
+      {
+        "id": "google-sm-1",
+        "title": "Google Interview Prep Guide",
+        "description": "Curated notes on advanced DSA patterns, system design, and Googliness tips.",
+        "driveUrl": "https://drive.google.com/"
       }
     ]
   },
@@ -78,28 +88,38 @@
         "id": "comp-amzn-1",
         "title": "LRU Cache",
         "difficulty": "Hard",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/lru-cache/"
-        },
+        "platforms": { "leetcode": "https://leetcode.com/problems/lru-cache/" },
         "videoSolution": "https://www.youtube.com/watch?v=xDEuM5qa0sg"
       },
       {
         "id": "comp-amzn-2",
         "title": "K Closest Points to Origin",
         "difficulty": "Medium",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/k-closest-points-to-origin/"
-        },
+        "platforms": { "leetcode": "https://leetcode.com/problems/k-closest-points-to-origin/" },
         "videoSolution": "https://www.youtube.com/watch?v=rI2EBUEMf9U"
       },
       {
         "id": "comp-amzn-3",
         "title": "Course Schedule II",
         "difficulty": "Medium",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/course-schedule-ii/"
-        },
+        "platforms": { "leetcode": "https://leetcode.com/problems/course-schedule-ii/" },
         "videoSolution": "https://www.youtube.com/watch?v=Akt3glAJDfY"
+      }
+    ],
+    "tests": [
+      {
+        "id": "amazon-test-1",
+        "title": "Amazon — DSA & LP Mock Test",
+        "description": "Covers heaps, hashing, greedy algorithms and Leadership Principles style questions.",
+        "formUrl": "https://forms.google.com/"
+      }
+    ],
+    "studyMaterials": [
+      {
+        "id": "amazon-sm-1",
+        "title": "Amazon Interview Prep Guide",
+        "description": "Notes on Amazon's OA patterns, LLD basics, and the 16 Leadership Principles.",
+        "driveUrl": "https://drive.google.com/"
       }
     ]
   },
@@ -129,19 +149,31 @@
         "id": "comp-msft-1",
         "title": "Reverse Nodes in k-Group",
         "difficulty": "Hard",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/reverse-nodes-in-k-group/"
-        },
+        "platforms": { "leetcode": "https://leetcode.com/problems/reverse-nodes-in-k-group/" },
         "videoSolution": "https://www.youtube.com/watch?v=1uRyGD5f77c"
       },
       {
         "id": "comp-msft-2",
         "title": "Spiral Matrix",
         "difficulty": "Medium",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/spiral-matrix/"
-        },
+        "platforms": { "leetcode": "https://leetcode.com/problems/spiral-matrix/" },
         "videoSolution": "https://www.youtube.com/watch?v=BJnMZNwUk1M"
+      }
+    ],
+    "tests": [
+      {
+        "id": "microsoft-test-1",
+        "title": "Microsoft — CS Fundamentals Mock Test",
+        "description": "Covers OS, networking, DSA and system design topics common in Microsoft interviews.",
+        "formUrl": "https://forms.google.com/"
+      }
+    ],
+    "studyMaterials": [
+      {
+        "id": "microsoft-sm-1",
+        "title": "Microsoft Interview Prep Guide",
+        "description": "Study notes on linked lists, trees, OS concepts and system design fundamentals.",
+        "driveUrl": "https://drive.google.com/"
       }
     ]
   },
@@ -171,19 +203,31 @@
         "id": "comp-gs-1",
         "title": "Fraction to Recurring Decimal",
         "difficulty": "Medium",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/fraction-to-recurring-decimal/"
-        },
+        "platforms": { "leetcode": "https://leetcode.com/problems/fraction-to-recurring-decimal/" },
         "videoSolution": "https://www.youtube.com/watch?v=2cRS9dNa780"
       },
       {
         "id": "comp-gs-2",
         "title": "Median in a Stream",
         "difficulty": "Hard",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/find-median-from-data-stream/"
-        },
+        "platforms": { "leetcode": "https://leetcode.com/problems/find-median-from-data-stream/" },
         "videoSolution": "https://www.youtube.com/watch?v=itmhHWaHupI"
+      }
+    ],
+    "tests": [
+      {
+        "id": "gs-test-1",
+        "title": "Goldman Sachs — Quant & DSA Mock Test",
+        "description": "Covers number theory, probability puzzles, DP and SQL in the style of GS OA.",
+        "formUrl": "https://forms.google.com/"
+      }
+    ],
+    "studyMaterials": [
+      {
+        "id": "gs-sm-1",
+        "title": "Goldman Sachs Interview Prep Guide",
+        "description": "Quantitative puzzles, OS/DBMS notes and DSA patterns curated for GS roles.",
+        "driveUrl": "https://drive.google.com/"
       }
     ]
   },
@@ -224,10 +268,24 @@
         "id": "comp-zoho-2",
         "title": "Print Matrix in Spiral form",
         "difficulty": "Medium",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/spiral-matrix/"
-        },
+        "platforms": { "leetcode": "https://leetcode.com/problems/spiral-matrix/" },
         "videoSolution": "https://www.youtube.com/watch?v=BJnMZNwUk1M"
+      }
+    ],
+    "tests": [
+      {
+        "id": "zoho-test-1",
+        "title": "Zoho — Implementation & OOP Mock Test",
+        "description": "Covers strings, matrices, OOP concepts and LLD basics in the style of Zoho rounds.",
+        "formUrl": "https://forms.google.com/"
+      }
+    ],
+    "studyMaterials": [
+      {
+        "id": "zoho-sm-1",
+        "title": "Zoho Interview Prep Guide",
+        "description": "Pattern printing, string manipulation, OOP principles and LLD design notes.",
+        "driveUrl": "https://drive.google.com/"
       }
     ]
   },
@@ -267,10 +325,24 @@
         "id": "comp-tcs-2",
         "title": "Leap Year & Leap Day calculations",
         "difficulty": "Easy",
-        "platforms": {
-          "gfg": "https://practice.geeksforgeeks.org/problems/is-leap-year5125/1"
-        },
+        "platforms": { "gfg": "https://practice.geeksforgeeks.org/problems/is-leap-year5125/1" },
         "videoSolution": "https://www.youtube.com/watch?v=example"
+      }
+    ],
+    "tests": [
+      {
+        "id": "tcs-test-1",
+        "title": "TCS — Ninja Mock Test",
+        "description": "Beginner-friendly test covering arrays, number logic and string problems typical of TCS Ninja.",
+        "formUrl": "https://forms.google.com/"
+      }
+    ],
+    "studyMaterials": [
+      {
+        "id": "tcs-sm-1",
+        "title": "TCS Interview Prep Guide",
+        "description": "Basics of DSA, SQL queries and resume project discussion tips for TCS interviews.",
+        "driveUrl": "https://drive.google.com/"
       }
     ]
   }
