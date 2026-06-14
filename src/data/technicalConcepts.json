@@ -16,8 +16,14 @@
       {
         "id": "dsa-sm-1",
         "title": "Data Structures — Quick Reference",
-        "description": "Cheat sheet covering time/space complexities of common data structures and key operations.",
-        "driveUrl": "https://drive.google.com/"
+        "description": "Notes covering time/space complexities of common data structures, algorithms and key functions.",
+        "driveUrl": "https://drive.google.com/file/d/12xp9bz0P2BelxvnDFTJNW6HBlpFTziw0/view?usp=sharing"
+      },
+      {
+        "id": "dsa-sm-2",
+        "title": "Striver hand-written solution reference",
+        "description": "Covers a subset of solutions from the Striver SDE Sheet.",
+        "driveUrl": "https://drive.google.com/file/d/17KOWPTIVozc9LT9BFRFCVA1lxGNaOjDf/view?usp=sharing"
       }
     ]
   },
@@ -47,7 +53,6 @@
         "description": "Question bank covering OS topics with company tags.",
         "driveUrl": "https://drive.google.com/file/d/1YC2Y39Jwa4EqLzcoiz2aO1RPn1ZZkjJo/view?usp=sharing"
       }
-
     ]
   },
   {
