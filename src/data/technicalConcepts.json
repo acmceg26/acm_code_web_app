@@ -28,34 +28,6 @@
     ]
   },
   {
-    "id": "os",
-    "subject": "Operating Systems",
-    "icon": "cpu",
-    "description": "Processes & threads, CPU scheduling, memory management, deadlocks, and concurrency.",
-    "tests": [
-      {
-        "id": "os-test-1",
-        "title": "Operating Systems — Mock Test 1",
-        "description": "30-question timed test covering scheduling, memory management, deadlocks, and concurrency.",
-        "formUrl": "https://forms.google.com/"
-      }
-    ],
-    "studyMaterials": [
-      {
-        "id": "os-sm-1",
-        "title": "OS Comprehensive Notes",
-        "description": "Comprehensive notes covering most topics of OS.",
-        "driveUrl": "https://drive.google.com/file/d/1o-xVjTQWxB9m47-3YC6Kasuiyd8Xxnlp/view?usp=sharing"
-      },
-      {
-        "id": "os-sm-1",
-        "title": "OS Question Bank",
-        "description": "Question bank covering OS topics with company tags.",
-        "driveUrl": "https://drive.google.com/file/d/1YC2Y39Jwa4EqLzcoiz2aO1RPn1ZZkjJo/view?usp=sharing"
-      }
-    ]
-  },
-  {
     "id": "dbms",
     "subject": "DBMS",
     "icon": "database",
@@ -86,6 +58,34 @@
         "title": "DBMS Quick Review Notes",
         "description": "DBMS notes for quick refresh of concepts.",
         "driveUrl": "https://drive.google.com/file/d/1K_s3ML4oNrm4n1xBRTmOh8EPg7Fv6jB-/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": "os",
+    "subject": "Operating Systems",
+    "icon": "cpu",
+    "description": "Processes & threads, CPU scheduling, memory management, deadlocks, and concurrency.",
+    "tests": [
+      {
+        "id": "os-test-1",
+        "title": "Operating Systems — Mock Test 1",
+        "description": "30-question timed test covering scheduling, memory management, deadlocks, and concurrency.",
+        "formUrl": "https://forms.google.com/"
+      }
+    ],
+    "studyMaterials": [
+      {
+        "id": "os-sm-1",
+        "title": "OS Comprehensive Notes",
+        "description": "Comprehensive notes covering most topics of OS.",
+        "driveUrl": "https://drive.google.com/file/d/1o-xVjTQWxB9m47-3YC6Kasuiyd8Xxnlp/view?usp=sharing"
+      },
+      {
+        "id": "os-sm-1",
+        "title": "OS Question Bank",
+        "description": "Question bank covering OS topics with company tags.",
+        "driveUrl": "https://drive.google.com/file/d/1YC2Y39Jwa4EqLzcoiz2aO1RPn1ZZkjJo/view?usp=sharing"
       }
     ]
   },
