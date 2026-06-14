@@ -9,6 +9,7 @@ import { AptitudePractice } from './views/AptitudePractice';
 import { TechnicalConcepts } from './views/TechnicalConcepts';
 import { Contests } from './views/Contests';
 import { Resources } from './views/Resources';
+import { Profile } from './views/Profile';
 import { Login } from './views/auth/Login';
 import { Signup } from './views/auth/Signup';
 import { ForgotPassword } from './views/auth/ForgotPassword';
@@ -19,7 +20,7 @@ import { signOut } from './services/authService';
 import acmLogoDark from './assets/acm-logo-dark.png';
 import acmLogoBright from './assets/acm-logo-bright.png';
 
-type ViewType = 'dashboard' | 'dsa' | 'company' | 'aptitude' | 'technical' | 'contests' | 'resources';
+type ViewType = 'dashboard' | 'dsa' | 'company' | 'aptitude' | 'technical' | 'contests' | 'resources' | 'profile';
 
 interface AppContentProps {
   theme: Theme;
@@ -49,6 +50,8 @@ function AppContent({ theme, toggleTheme, onLogout, user }: AppContentProps) {
         return <Contests />;
       case 'resources':
         return <Resources />;
+      case 'profile':
+        return <Profile user={user} />;
       default:
         return <Dashboard />;
     }

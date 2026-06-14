@@ -11,6 +11,7 @@ import {
   Sun,
   Moon,
   LogOut,
+  UserCircle,
   X
 } from 'lucide-react';
 import { useTracker } from '../../hooks/useTracker';
@@ -18,7 +19,7 @@ import type { Theme } from '../../hooks/useTheme';
 import acmLogoDark from '../../assets/acm-logo-dark.png';
 import acmLogoBright from '../../assets/acm-logo-bright.png';
 
-type ViewType = 'dashboard' | 'dsa' | 'company' | 'aptitude' | 'technical' | 'contests' | 'resources';
+type ViewType = 'dashboard' | 'dsa' | 'company' | 'aptitude' | 'technical' | 'contests' | 'resources' | 'profile';
 
 interface SidebarProps {
   activeView: ViewType;
@@ -128,6 +129,18 @@ export const Sidebar: React.FC<SidebarProps> = ({
               />
             </div>
           </div>
+
+          <button
+            onClick={() => handleSelect('profile')}
+            className={`w-full flex items-center justify-center gap-2 px-4 py-2.5 mb-2 rounded-lg border text-xs font-medium transition-colors cursor-pointer ${
+              activeView === 'profile'
+                ? 'border-blue-500/40 bg-blue-500/10 text-blue-300'
+                : 'border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800/50 text-zinc-400 hover:text-zinc-200'
+            }`}
+          >
+            <UserCircle className="w-3.5 h-3.5" />
+            <span>My Profile</span>
+          </button>
 
           <button
             onClick={toggleTheme}

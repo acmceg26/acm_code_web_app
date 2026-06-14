@@ -30,7 +30,10 @@ interface SignupErrors {
   name?: string;
   email?: string;
   rollNumber?: string;
+  department?: string;
+  campus?: string;
   year?: string;
+  batch?: string;
   password?: string;
   confirm?: string;
 }
@@ -66,11 +69,14 @@ export const Signup: React.FC<SignupProps> = ({ theme, toggleTheme }) => {
 
     if (!ROLL_RE.test(rollNumber.trim())) next.rollNumber = 'Roll number must be exactly 10 digits.';
 
+    if (!department.trim()) next.department = 'Department is required.';
+    if (!campus.trim()) next.campus = 'Campus is required.';
+
     if (!year) next.year = 'Select your year.';
     else if (!Number.isInteger(yearNum) || yearNum < 1 || yearNum > 4)
       next.year = 'Year must be between 1 and 4.';
 
-    // department, campus and batch have no validation rules.
+    if (!batch.trim()) next.batch = 'Batch is required.';
 
     if (!password) next.password = 'Password is required.';
     else if (password.length < MIN_PASSWORD) next.password = `Use at least ${MIN_PASSWORD} characters.`;
@@ -196,6 +202,7 @@ export const Signup: React.FC<SignupProps> = ({ theme, toggleTheme }) => {
             placeholder="e.g. Computer Science"
             value={department}
             onChange={(e) => setDepartment(e.target.value)}
+            error={errors.department}
           />
           <Input
             label="Campus"
@@ -203,6 +210,7 @@ export const Signup: React.FC<SignupProps> = ({ theme, toggleTheme }) => {
             placeholder="e.g. CEG"
             value={campus}
             onChange={(e) => setCampus(e.target.value)}
+            error={errors.campus}
           />
         </div>
 
@@ -222,6 +230,7 @@ export const Signup: React.FC<SignupProps> = ({ theme, toggleTheme }) => {
             placeholder="e.g. 1"
             value={batch}
             onChange={(e) => setBatch(e.target.value)}
+            error={errors.batch}
           />
         </div>
 
