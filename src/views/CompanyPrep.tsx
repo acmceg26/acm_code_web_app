@@ -4,10 +4,9 @@ import { Card } from '../components/ui/Card';
 import { ComingSoon } from '../components/ui/ComingSoon';
 import { ArrowLeft, ExternalLink, ClipboardList, FileText } from 'lucide-react';
 
-// ─── Feature flags ──────────────────────────────────────────────────────────
-// Set to `false` once the respective links are ready to publish.
-const TESTS_COMING_SOON = true;
-const MATERIALS_COMING_SOON = true;
+// ─── Feature flag ───────────────────────────────────────────────────────────
+// Set to `false` once company content is ready to publish.
+const COMING_SOON = true;
 // ────────────────────────────────────────────────────────────────────────────
 
 // Brand domains used to fetch each company's logo.
@@ -90,11 +89,7 @@ const CompanyDetailPage: React.FC<{
         </div>
       </div>
 
-      {/* ── Toggle: TESTS_COMING_SOON ── */}
-      {TESTS_COMING_SOON ? (
-        <ComingSoon message={`${company.name} MCQ tests are being set up. Check back soon!`} />
-      ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {company.tests.map((test) => (
             <a
               key={test.id}
@@ -121,7 +116,6 @@ const CompanyDetailPage: React.FC<{
             </a>
           ))}
         </div>
-      )}
     </div>
 
     {/* ── Study Materials ──────────────────────────────────── */}
@@ -136,11 +130,7 @@ const CompanyDetailPage: React.FC<{
         </div>
       </div>
 
-      {/* ── Toggle: MATERIALS_COMING_SOON ── */}
-      {MATERIALS_COMING_SOON ? (
-        <ComingSoon message={`${company.name} study materials are being compiled. Check back soon!`} />
-      ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {company.studyMaterials.map((material) => (
             <a
               key={material.id}
@@ -166,7 +156,6 @@ const CompanyDetailPage: React.FC<{
             </a>
           ))}
         </div>
-      )}
     </div>
   </div>
 );
@@ -174,6 +163,20 @@ const CompanyDetailPage: React.FC<{
 // ─── Main page ───────────────────────────────────────────────────────────────
 export const CompanyPrep: React.FC = () => {
   const [selectedCompanyId, setSelectedCompanyId] = useState<string | null>(null);
+
+  // ── Coming Soon screen ────────────────────────────────────────────────────
+  if (COMING_SOON) {
+    return (
+      <div className="space-y-6 animate-fade-in-up">
+        <div>
+          <h2 className="text-xl font-semibold text-zinc-100">Companies</h2>
+          <p className="text-sm text-zinc-500 mt-1">Mock tests and study materials for company-specific interview preparation.</p>
+        </div>
+        <ComingSoon message="Company-specific tests and study materials are being set up. Check back soon!" />
+      </div>
+    );
+  }
+  // ──────────────────────────────────────────────────────────────────────────
 
   const selectedCompany = companyData.find((c) => c.id === selectedCompanyId);
 
