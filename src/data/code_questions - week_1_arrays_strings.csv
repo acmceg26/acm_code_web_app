@@ -1,0 +1,57 @@
+,,,,
+,Question Title,Problem Link,Difficulty,Video Resource
+,Arrays:,,,
+,,,,
+,Contains Duplicate,https://leetcode.com/problems/contains-duplicate/,Easy,https://youtu.be/0LIctkgJ2hQ?si=_HCwpjCa9-u2X1i3
+,Two Sum,https://leetcode.com/problems/two-sum,Easy,https://youtu.be/UXDSeD9mN-k?si=ojEpmTrWYRgoBu3P
+,Reverse Array,https://www.geeksforgeeks.org/write-a-program-to-reverse-an-array-or-string/,Easy,https://youtu.be/gGtmacuQu-k?si=AL9GszfrM4QhUGUv
+,Move Zeroes,https://leetcode.com/problems/move-zeroes,Easy,https://youtu.be/k5lIW5XxC7g?si=h6MmcG-kxxATaU5U
+,Missing Number,https://leetcode.com/problems/missing-number,Easy,https://youtu.be/bYWLJb3vCWY?si=SWnZxxNprb_85pTc
+,Majority Element,https://leetcode.com/problems/majority-element/,Easy,https://youtu.be/nP_ns3uSh80?si=XxxF5L4jdd7a9G_b
+,Remove Duplicates from Sorted Array,https://leetcode.com/problems/removeduplicates-from-sorted-array,Easy,https://youtu.be/DEJAZBq0FDA?si=G2t7BaBgiCMuP4r1
+,Max Consecutive Ones,https://leetcode.com/problems/max-consecutive-ones/description,Easy,https://youtu.be/vLsRew-ABVs?si=AhebnJWH-C3WgX_r
+,Find Pivot Index,https://leetcode.com/problems/find-pivot-index/description/,Easy,https://youtu.be/2x5QL3Z_p8Y?si=7EuHIfilFAUp6vL6
+,Maximum Average Subarray I,https://leetcode.com/problems/maximum-average-subarray-i/description/,Easy,https://youtu.be/56TxHMG0qhQ?si=ySRl7xmF0qw_BbK8
+,Chocolate Distribution,https://www.geeksforgeeks.org/chocolate-distribution-problem,Easy,https://youtu.be/T3sWA_ha1-w?si=2vnJ5I_tngnCgXTC
+,Check if Array is Sorted and Rotated,https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/,Easy,https://youtu.be/Vzs_vlCIFEw?si=4UVasWpqNMuvIUCP
+,Longest Subarray of 1s After Deleting One Element,https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-oneelement/description/,Medium,https://youtu.be/nSI0-acwuPU?si=UD3cHc9FYhjAuyvt
+,3Sum,https://leetcode.com/problems/3sum,Medium,https://youtu.be/DhFh8Kw7ymk?si=-96dohkXpc3IVVNJ
+,Container With Most Water,https://leetcode.com/problems/container-with-most-water/,Medium,https://youtu.be/w7ftYsZtIbs?si=unUoI6hp9o2TprgS
+,Kth Largest Element in an Array,https://leetcode.com/problems/kth-largest-element-in-an-array,Medium,https://youtu.be/XEmy13g1Qxc?si=EFqPII9WATdmp6lM
+,Sort Colors,https://leetcode.com/problems/sort-colors/description/,Medium,https://youtu.be/6sMssUHgaBs?si=Ge031OWwAcLwQT1d
+,Product of Array Except Self,https://leetcode.com/problems/product-of-array-except-self,Medium,https://youtu.be/G9zKmhybKBM?si=Dqr2LU3hoPV_DQuu
+,Longest Consecutive Sequence,https://leetcode.com/problems/longest-consecutive-sequence,Medium,https://youtu.be/oO5uLE7EUlM?si=GLjaJNqlJqLiBN0C
+,Find Peak Element,https://leetcode.com/problems/find-peak-element,Medium,https://youtu.be/cXxmbemS6XM?si=Uv588l2hv_Z1zF5U
+,Best Time to Buy and Sell Stock,https://leetcode.com/problems/best-time-to-buy-and-sell-stock/,Medium,https://youtu.be/excAOvwF_Wk?si=v3H-M4qYsdjcGIKK
+,Maximum Product Subarray,https://leetcode.com/problems/maximum-product-subarray/,Medium,https://youtu.be/hnswaLJvr6g?si=ffDEGJ-Hm6f0RyaV
+,Set Matrix Zeroes,https://leetcode.com/problems/set-matrix-zeroes/,Medium,https://youtu.be/N0MgLvceX7M?si=eU56P4UsJPpeX1Kl
+,Spiral Matrix,https://leetcode.com/problems/spiral-matrix/description/,Medium,https://youtu.be/aqVW8IuXUF0?si=jvfgxDUT4JvH5uBk
+,Subarray Sum Equals K,https://leetcode.com/problems/subarray-sum-equals-k/description/,Medium,https://youtu.be/YxRmeRyVQm4?si=4so9m16Wru3aSg0A
+,Gas Station,https://leetcode.com/problems/gas-station/description/,Medium,https://youtu.be/fOaUh1_fJPw?si=3wJPaqpJRUZdGV0l
+,Matrix Block Sum,https://leetcode.com/problems/matrix-block-sum/description/,Medium,https://youtu.be/2RxD2GTzMLw?si=Bxu8iZ1E0EeGZMQo
+,Repeat and Missing Number Array,https://www.interviewbit.com/problems/repeat-and-missing-number-array/,Medium,https://youtu.be/2D0D8HE6uak?si=XBaVtu6uilh-Ml38
+,Trapping Rain Water,https://leetcode.com/problems/trapping-rain-water/,Medium,https://youtu.be/1_5VuquLbXg?si=b0Eg6Ipt1gigMyxt
+,Find All Numbers Disappeared in an Array,https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/,Medium,https://youtu.be/8i-f24YFWC4?si=SfW99Fl7FEzXE1Pr
+,,,,
+,Strings,,,
+,,,,
+,Valid Anagram,https://leetcode.com/problems/valid-anagram/,Easy,https://youtu.be/9UtInBqnCgA?si=ttSrLF5vYu44neNt
+,Reverse String,https://leetcode.com/problems/reverse-string/,Easy,https://youtu.be/_d0T_2Lk2qA?si=sTWPcP26YY55GRv0
+,Check for Palindrome,https://www.geeksforgeeks.org/c-program-check-given-string-palindrome/,Easy,https://youtu.be/jJXJ16kPFWg?si=GcE41o38qIDRx_vB
+,Group Anagrams,https://leetcode.com/problems/group-anagrams/,Easy,https://youtu.be/vzdNOK2oB2E?si=a98NonFDrKOcWldt
+,Remove All Adjacent Duplicates In String,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/,Easy,https://youtu.be/w6LcypDgC4w?si=z_kw5HzW0G39vy90
+,Balanced Brackets,https://www.hackerrank.com/challenges/balanced-brackets/problem,Easy,https://youtu.be/Otf9lp3DQJo?si=AE2xfNq61JElRzrb
+,Longest Substring Without Repeating Characters,https://leetcode.com/problems/longest-substring-without-repeating-characters/,Easy,https://youtu.be/-zSxTJkcdAo?si=4_WtSIH7S_gqN9Zv
+,Valid Parentheses,https://leetcode.com/problems/valid-parentheses/,Easy,https://youtu.be/cHT6sG_hUZI?si=pOalE3_ts7VNHQEm
+,String to Integer (atoi),https://leetcode.com/problems/string-to-integer-atoi/,Easy,https://youtu.be/2I9XO8jwZCA?si=eYxjSdnEWx5p0Kys
+,Longest Palindromic Substring,https://leetcode.com/problems/longest-palindromic-substring/,Medium,https://youtu.be/XYQecbcd6_c?si=trDF5TB2-NbnCbiL
+,Roman to Integer,https://leetcode.com/problems/roman-to-integer/,Medium,https://youtu.be/3jdxYj3DD98?si=MCkGMI2pVT10EDwn
+,Minimum Add to Make Parentheses Valid,https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/,Medium,https://youtu.be/UizI7R6ND9Q?si=GwZ2UzCb5w0trRA7
+,Sum of Beauty of All Substrings,https://leetcode.com/problems/sum-of-beauty-of-all-substrings/,Medium,https://youtu.be/PqxmZk_bdyw?si=c_NHBQNwP-Gvzwlu
+,Valid Palindrome II,https://leetcode.com/problems/valid-palindrome-ii/,Medium,https://youtu.be/JrxRYBwG6EI?si=ZWniHz2tck5OH3ft
+,String Rotated by 2 places,https://www.geeksforgeeks.org/problems/check-if-string-is-rotated-by-two-places-1587115620/1,Medium,https://youtu.be/S4arTLcCp6I?si=H1VDQ9An1OGmcTKn
+,Regular Expression Matching,https://leetcode.com/problems/regular-expression-matching/,Medium,https://youtu.be/HAA8mgxlov8?si=xOQbtqZ9N1Fl9Hbu
+,Longest Valid Parentheses,https://leetcode.com/problems/longest-valid-parentheses/,Medium,https://youtu.be/VdQuwtEd10M?si=RVcPBeJSsmyeEluk
+,Wildcard Matching,https://leetcode.com/problems/wildcard-matching/,Medium,https://youtu.be/ZmlQ3vgAOMo?si=RVvVYR53og_4GGwp
+,Shortest Uncommon Substring in an Array,https://leetcode.com/problems/shortest-uncommon-substring-in-an-array/description/,Medium,https://youtu.be/9rBWAbpPJvw?si=bD__31ZOmsPhkQrJ
+,Special Binary String,https://leetcode.com/problems/special-binary-string/,Medium,https://youtu.be/-Ru17k4TCI4?si=s2SmXxnypmLfsH_Z

@@ -1,364 +1,371 @@
 {
   "sheets": [
     {
-      "id": "placement",
-      "title": "Placement",
-      "description": "High-frequency interview questions from top product companies. Start with the Beginner set, then move on to the Advanced set for full-time placement rounds.",
+      "id": "dsa",
+      "title": "DSA",
+      "description": "Curated DSA practice problems, grouped by topic.",
       "levels": [
         {
-          "id": "placement-beginner",
-          "name": "Beginner",
+          "id": "dsa-all",
+          "name": "All",
           "topics": [
             {
-              "name": "Arrays & Hashing",
+              "name": "Arrays",
               "problems": [
                 {
-                  "id": "core-arr-1",
-                  "title": "Two Sum",
-                  "difficulty": "Easy",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/two-sum/"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=UXDSeD9mN-k"
-                },
-                {
-                  "id": "inc-ah-2",
-                  "title": "Valid Anagram",
-                  "difficulty": "Easy",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/valid-anagram/",
-                    "gfg": "https://practice.geeksforgeeks.org/problems/anagram-1587115620/1"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=g8cO0G4nC9A"
-                },
-                {
-                  "id": "core-arr-2",
-                  "title": "Top K Frequent Elements",
-                  "difficulty": "Medium",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/top-k-frequent-elements/"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=YPTqKIgVk-k"
-                }
-              ]
-            },
-            {
-              "name": "Trees & Graphs",
-              "problems": [
-                {
-                  "id": "core-tg-1",
-                  "title": "Invert Binary Tree",
-                  "difficulty": "Easy",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/invert-binary-tree/"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=OnSn2XEQ4MY"
-                },
-                {
-                  "id": "core-tg-3",
-                  "title": "Number of Islands",
-                  "difficulty": "Medium",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/number-of-islands/"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=pV2KPfyHnNo"
-                }
-              ]
-            },
-            {
-              "name": "Dynamic Programming",
-              "problems": [
-                {
-                  "id": "core-dp-1",
-                  "title": "Climbing Stairs",
-                  "difficulty": "Easy",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/climbing-stairs/"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=Y0lT9Fck7qI"
-                },
-                {
-                  "id": "core-dp-2",
-                  "title": "Coin Change",
-                  "difficulty": "Medium",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/coin-change/"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=H9bfqozjoqs"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "placement-advanced",
-          "name": "Advanced",
-          "topics": [
-            {
-              "name": "Arrays & Hashing",
-              "problems": [
-                {
-                  "id": "core-arr-3",
-                  "title": "Longest Consecutive Sequence",
-                  "difficulty": "Medium",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/longest-consecutive-sequence/"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=P6RZZMu1grM"
-                }
-              ]
-            },
-            {
-              "name": "Trees & Graphs",
-              "problems": [
-                {
-                  "id": "core-tg-2",
-                  "title": "Validate Binary Search Tree",
-                  "difficulty": "Medium",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/validate-binary-search-tree/"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=s6ATEkipzow"
-                },
-                {
-                  "id": "core-tg-4",
-                  "title": "Clone Graph",
-                  "difficulty": "Medium",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/clone-graph/"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=mQeF6bN8hMc"
-                }
-              ]
-            },
-            {
-              "name": "Dynamic Programming",
-              "problems": [
-                {
-                  "id": "core-dp-3",
-                  "title": "Longest Common Subsequence",
-                  "difficulty": "Medium",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/longest-common-subsequence/"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=Ua0G3YJKjvA"
-                }
-              ]
-            },
-            {
-              "name": "Bit Manipulation & Design",
-              "problems": [
-                {
-                  "id": "pc-bit-3",
-                  "title": "Reverse Bits of a 32-bit Integer",
-                  "difficulty": "Medium",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/reverse-bits/",
-                    "gfg": "https://practice.geeksforgeeks.org/problems/reverse-bits3556/1"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=UcoN6yAkIUk"
-                },
-                {
-                  "id": "pc-bit-4",
-                  "title": "Divide Two Integers (Bitwise Division)",
-                  "difficulty": "Hard",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/divide-two-integers/",
-                    "gfg": "https://practice.geeksforgeeks.org/problems/divide-two-integers-without-using-multiplication-division-and-mod-operator/1"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=m4L_5qG4vYs"
-                },
-                {
-                  "id": "ic-ll-3",
-                  "title": "LRU Cache Implementation",
-                  "difficulty": "Hard",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/lru-cache/",
-                    "gfg": "https://practice.geeksforgeeks.org/problems/lru-cache/1"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=xDEuM5qa0sg"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "intern",
-      "title": "Intern",
-      "description": "A foundation-first roadmap for internship rounds. Clear the Beginner basics first, then build up to the Advanced set covering sorting, linked lists, and design.",
-      "levels": [
-        {
-          "id": "intern-beginner",
-          "name": "Beginner",
-          "topics": [
-            {
-              "name": "Programming Foundations",
-              "problems": [
-                {
-                  "id": "pnc-base-1",
-                  "title": "Palindrome Number Check",
-                  "difficulty": "Easy",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/palindrome-number/",
-                    "gfg": "https://practice.geeksforgeeks.org/problems/palindrome0432/1"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=yubRKwEhKbQ"
-                },
-                {
-                  "id": "pnc-base-2",
-                  "title": "Fizz Buzz",
-                  "difficulty": "Easy",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/fizz-buzz/"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=QPZ0pIK_wsc"
-                },
-                {
-                  "id": "pnc-base-3",
-                  "title": "Fibonacci Number (DP Intro)",
-                  "difficulty": "Easy",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/fibonacci-number/",
-                    "gfg": "https://practice.geeksforgeeks.org/problems/introduction-to-dp/1"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=tyB0HAHQskg"
-                }
-              ]
-            },
-            {
-              "name": "Arrays & Hashing",
-              "problems": [
-                {
-                  "id": "pc-bit-1",
-                  "title": "Number of 1 Bits (Set Bits)",
-                  "difficulty": "Easy",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/number-of-1-bits/",
-                    "gfg": "https://practice.geeksforgeeks.org/problems/set-bits0143/1"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=5Km3utixwUA"
-                },
-                {
-                  "id": "core-arr-1",
-                  "title": "Two Sum",
-                  "difficulty": "Easy",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/two-sum/",
-                    "gfg": "https://practice.geeksforgeeks.org/problems/key-pair5616/1"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=UXDSeD9mN-k"
-                },
-                {
-                  "id": "inc-ah-1",
+                  "id": "arr-1",
                   "title": "Contains Duplicate",
                   "difficulty": "Easy",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/contains-duplicate/",
-                    "gfg": "https://practice.geeksforgeeks.org/problems/duplicate-elements-in-array/1"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=3OamzN90kPg"
+                  "platforms": { "leetcode": "https://leetcode.com/problems/contains-duplicate/" },
+                  "videoSolution": "https://youtu.be/0LIctkgJ2hQ?si=_HCwpjCa9-u2X1i3"
                 },
                 {
-                  "id": "pc-bit-2",
-                  "title": "Single Number",
+                  "id": "arr-2",
+                  "title": "Two Sum",
                   "difficulty": "Easy",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/single-number/",
-                    "gfg": "https://practice.geeksforgeeks.org/problems/single-number2711/1"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=qMPt5zshuoE"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "intern-advanced",
-          "name": "Advanced",
-          "topics": [
-            {
-              "name": "Arrays & Hashing",
-              "problems": [
-                {
-                  "id": "pc-arr-2",
-                  "title": "Merge Sorted Array",
-                  "difficulty": "Easy",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/merge-sorted-array/",
-                    "gfg": "https://practice.geeksforgeeks.org/problems/merge-two-sorted-arrays-1587115620/1"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=P1IcR5yET_U"
+                  "platforms": { "leetcode": "https://leetcode.com/problems/two-sum" },
+                  "videoSolution": "https://youtu.be/UXDSeD9mN-k?si=ojEpmTrWYRgoBu3P"
                 },
                 {
-                  "id": "inc-gr-1",
+                  "id": "arr-3",
+                  "title": "Reverse Array",
+                  "difficulty": "Easy",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/write-a-program-to-reverse-an-array-or-string/" },
+                  "videoSolution": "https://youtu.be/gGtmacuQu-k?si=AL9GszfrM4QhUGUv"
+                },
+                {
+                  "id": "arr-4",
+                  "title": "Move Zeroes",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/move-zeroes" },
+                  "videoSolution": "https://youtu.be/k5lIW5XxC7g?si=h6MmcG-kxxATaU5U"
+                },
+                {
+                  "id": "arr-5",
+                  "title": "Missing Number",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/missing-number" },
+                  "videoSolution": "https://youtu.be/bYWLJb3vCWY?si=SWnZxxNprb_85pTc"
+                },
+                {
+                  "id": "arr-6",
+                  "title": "Majority Element",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/majority-element/" },
+                  "videoSolution": "https://youtu.be/nP_ns3uSh80?si=XxxF5L4jdd7a9G_b"
+                },
+                {
+                  "id": "arr-7",
+                  "title": "Remove Duplicates from Sorted Array",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/" },
+                  "videoSolution": "https://youtu.be/DEJAZBq0FDA?si=G2t7BaBgiCMuP4r1"
+                },
+                {
+                  "id": "arr-8",
+                  "title": "Max Consecutive Ones",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/max-consecutive-ones/description" },
+                  "videoSolution": "https://youtu.be/vLsRew-ABVs?si=AhebnJWH-C3WgX_r"
+                },
+                {
+                  "id": "arr-9",
+                  "title": "Find Pivot Index",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/find-pivot-index/description/" },
+                  "videoSolution": "https://youtu.be/2x5QL3Z_p8Y?si=7EuHIfilFAUp6vL6"
+                },
+                {
+                  "id": "arr-10",
+                  "title": "Maximum Average Subarray I",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/maximum-average-subarray-i/description/" },
+                  "videoSolution": "https://youtu.be/56TxHMG0qhQ?si=ySRl7xmF0qw_BbK8"
+                },
+                {
+                  "id": "arr-11",
+                  "title": "Chocolate Distribution",
+                  "difficulty": "Easy",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/chocolate-distribution-problem" },
+                  "videoSolution": "https://youtu.be/T3sWA_ha1-w?si=2vnJ5I_tngnCgXTC"
+                },
+                {
+                  "id": "arr-12",
+                  "title": "Check if Array is Sorted and Rotated",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/" },
+                  "videoSolution": "https://youtu.be/Vzs_vlCIFEw?si=4UVasWpqNMuvIUCP"
+                },
+                {
+                  "id": "arr-13",
+                  "title": "Longest Subarray of 1s After Deleting One Element",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/description/" },
+                  "videoSolution": "https://youtu.be/nSI0-acwuPU?si=UD3cHc9FYhjAuyvt"
+                },
+                {
+                  "id": "arr-14",
+                  "title": "3Sum",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/3sum" },
+                  "videoSolution": "https://youtu.be/DhFh8Kw7ymk?si=-96dohkXpc3IVVNJ"
+                },
+                {
+                  "id": "arr-15",
+                  "title": "Container With Most Water",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/container-with-most-water/" },
+                  "videoSolution": "https://youtu.be/w7ftYsZtIbs?si=unUoI6hp9o2TprgS"
+                },
+                {
+                  "id": "arr-16",
+                  "title": "Kth Largest Element in an Array",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/kth-largest-element-in-an-array" },
+                  "videoSolution": "https://youtu.be/XEmy13g1Qxc?si=EFqPII9WATdmp6lM"
+                },
+                {
+                  "id": "arr-17",
+                  "title": "Sort Colors",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/sort-colors/description/" },
+                  "videoSolution": "https://youtu.be/6sMssUHgaBs?si=Ge031OWwAcLwQT1d"
+                },
+                {
+                  "id": "arr-18",
+                  "title": "Product of Array Except Self",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/product-of-array-except-self" },
+                  "videoSolution": "https://youtu.be/G9zKmhybKBM?si=Dqr2LU3hoPV_DQuu"
+                },
+                {
+                  "id": "arr-19",
+                  "title": "Longest Consecutive Sequence",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/longest-consecutive-sequence" },
+                  "videoSolution": "https://youtu.be/oO5uLE7EUlM?si=GLjaJNqlJqLiBN0C"
+                },
+                {
+                  "id": "arr-20",
+                  "title": "Find Peak Element",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/find-peak-element" },
+                  "videoSolution": "https://youtu.be/cXxmbemS6XM?si=Uv588l2hv_Z1zF5U"
+                },
+                {
+                  "id": "arr-21",
                   "title": "Best Time to Buy and Sell Stock",
-                  "difficulty": "Easy",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
-                    "gfg": "https://practice.geeksforgeeks.org/problems/stock-buy-and-sell-1587115621/1"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=1pkOgXDqqoc"
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" },
+                  "videoSolution": "https://youtu.be/excAOvwF_Wk?si=v3H-M4qYsdjcGIKK"
+                },
+                {
+                  "id": "arr-22",
+                  "title": "Maximum Product Subarray",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/maximum-product-subarray/" },
+                  "videoSolution": "https://youtu.be/hnswaLJvr6g?si=ffDEGJ-Hm6f0RyaV"
+                },
+                {
+                  "id": "arr-23",
+                  "title": "Set Matrix Zeroes",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/set-matrix-zeroes/" },
+                  "videoSolution": "https://youtu.be/N0MgLvceX7M?si=eU56P4UsJPpeX1Kl"
+                },
+                {
+                  "id": "arr-24",
+                  "title": "Spiral Matrix",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/spiral-matrix/description/" },
+                  "videoSolution": "https://youtu.be/aqVW8IuXUF0?si=jvfgxDUT4JvH5uBk"
+                },
+                {
+                  "id": "arr-25",
+                  "title": "Subarray Sum Equals K",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/subarray-sum-equals-k/description/" },
+                  "videoSolution": "https://youtu.be/YxRmeRyVQm4?si=4so9m16Wru3aSg0A"
+                },
+                {
+                  "id": "arr-26",
+                  "title": "Gas Station",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/gas-station/description/" },
+                  "videoSolution": "https://youtu.be/fOaUh1_fJPw?si=3wJPaqpJRUZdGV0l"
+                },
+                {
+                  "id": "arr-27",
+                  "title": "Matrix Block Sum",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/matrix-block-sum/description/" },
+                  "videoSolution": "https://youtu.be/2RxD2GTzMLw?si=Bxu8iZ1E0EeGZMQo"
+                },
+                {
+                  "id": "arr-28",
+                  "title": "Repeat and Missing Number Array",
+                  "difficulty": "Medium",
+                  "platforms": { "gfg": "https://www.interviewbit.com/problems/repeat-and-missing-number-array/" },
+                  "videoSolution": "https://youtu.be/2D0D8HE6uak?si=XBaVtu6uilh-Ml38"
+                },
+                {
+                  "id": "arr-29",
+                  "title": "Trapping Rain Water",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/trapping-rain-water/" },
+                  "videoSolution": "https://youtu.be/1_5VuquLbXg?si=b0Eg6Ipt1gigMyxt"
+                },
+                {
+                  "id": "arr-30",
+                  "title": "Find All Numbers Disappeared in an Array",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/" },
+                  "videoSolution": "https://youtu.be/8i-f24YFWC4?si=SfW99Fl7FEzXE1Pr"
                 }
               ]
             },
             {
-              "name": "Searching & Sorting",
+              "name": "Strings",
               "problems": [
                 {
-                  "id": "pnc-sort-1",
-                  "title": "Binary Search",
+                  "id": "str-1",
+                  "title": "Valid Anagram",
                   "difficulty": "Easy",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/binary-search/",
-                    "gfg": "https://practice.geeksforgeeks.org/problems/binary-search-1587115620/1"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=s4DPM8ct1Hs"
+                  "platforms": { "leetcode": "https://leetcode.com/problems/valid-anagram/" },
+                  "videoSolution": "https://youtu.be/9UtInBqnCgA?si=ttSrLF5vYu44neNt"
                 },
                 {
-                  "id": "pnc-sort-2",
-                  "title": "Merge Sort",
+                  "id": "str-2",
+                  "title": "Reverse String",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/reverse-string/" },
+                  "videoSolution": "https://youtu.be/_d0T_2Lk2qA?si=sTWPcP26YY55GRv0"
+                },
+                {
+                  "id": "str-3",
+                  "title": "Check for Palindrome",
+                  "difficulty": "Easy",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/c-program-check-given-string-palindrome/" },
+                  "videoSolution": "https://youtu.be/jJXJ16kPFWg?si=GcE41o38qIDRx_vB"
+                },
+                {
+                  "id": "str-4",
+                  "title": "Group Anagrams",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/group-anagrams/" },
+                  "videoSolution": "https://youtu.be/vzdNOK2oB2E?si=a98NonFDrKOcWldt"
+                },
+                {
+                  "id": "str-5",
+                  "title": "Remove All Adjacent Duplicates In String",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/" },
+                  "videoSolution": "https://youtu.be/w6LcypDgC4w?si=z_kw5HzW0G39vy90"
+                },
+                {
+                  "id": "str-6",
+                  "title": "Balanced Brackets",
+                  "difficulty": "Easy",
+                  "platforms": { "gfg": "https://www.hackerrank.com/challenges/balanced-brackets/problem" },
+                  "videoSolution": "https://youtu.be/Otf9lp3DQJo?si=AE2xfNq61JElRzrb"
+                },
+                {
+                  "id": "str-7",
+                  "title": "Longest Substring Without Repeating Characters",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/longest-substring-without-repeating-characters/" },
+                  "videoSolution": "https://youtu.be/-zSxTJkcdAo?si=4_WtSIH7S_gqN9Zv"
+                },
+                {
+                  "id": "str-8",
+                  "title": "Valid Parentheses",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/valid-parentheses/" },
+                  "videoSolution": "https://youtu.be/cHT6sG_hUZI?si=pOalE3_ts7VNHQEm"
+                },
+                {
+                  "id": "str-9",
+                  "title": "String to Integer (atoi)",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/string-to-integer-atoi/" },
+                  "videoSolution": "https://youtu.be/2I9XO8jwZCA?si=eYxjSdnEWx5p0Kys"
+                },
+                {
+                  "id": "str-10",
+                  "title": "Longest Palindromic Substring",
                   "difficulty": "Medium",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/sort-an-array/",
-                    "gfg": "https://practice.geeksforgeeks.org/problems/merge-sort/1"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=4VqmGXwpLqc"
-                }
-              ]
-            },
-            {
-              "name": "Linked Lists & Design",
-              "problems": [
-                {
-                  "id": "ic-ll-1",
-                  "title": "Reverse a Linked List",
-                  "difficulty": "Easy",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/reverse-linked-list/",
-                    "gfg": "https://practice.geeksforgeeks.org/problems/reverse-a-linked-list/1"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=iT1YJVhcD0o"
+                  "platforms": { "leetcode": "https://leetcode.com/problems/longest-palindromic-substring/" },
+                  "videoSolution": "https://youtu.be/XYQecbcd6_c?si=trDF5TB2-NbnCbiL"
                 },
                 {
-                  "id": "ic-ll-2",
-                  "title": "Detect Cycle in a Linked List",
-                  "difficulty": "Easy",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/linked-list-cycle/",
-                    "gfg": "https://practice.geeksforgeeks.org/problems/detect-loop-in-linked-list/1"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=gBTe7lFR3vc"
-                },
-                {
-                  "id": "pc-arr-3",
-                  "title": "Design a Memory Allocator",
+                  "id": "str-11",
+                  "title": "Roman to Integer",
                   "difficulty": "Medium",
-                  "platforms": {
-                    "leetcode": "https://leetcode.com/problems/design-a-memory-allocator/"
-                  },
-                  "videoSolution": "https://www.youtube.com/watch?v=J3Zf9hZ2RzU"
+                  "platforms": { "leetcode": "https://leetcode.com/problems/roman-to-integer/" },
+                  "videoSolution": "https://youtu.be/3jdxYj3DD98?si=MCkGMI2pVT10EDwn"
+                },
+                {
+                  "id": "str-12",
+                  "title": "Minimum Add to Make Parentheses Valid",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/" },
+                  "videoSolution": "https://youtu.be/UizI7R6ND9Q?si=GwZ2UzCb5w0trRA7"
+                },
+                {
+                  "id": "str-13",
+                  "title": "Sum of Beauty of All Substrings",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/sum-of-beauty-of-all-substrings/" },
+                  "videoSolution": "https://youtu.be/PqxmZk_bdyw?si=c_NHBQNwP-Gvzwlu"
+                },
+                {
+                  "id": "str-14",
+                  "title": "Valid Palindrome II",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/valid-palindrome-ii/" },
+                  "videoSolution": "https://youtu.be/JrxRYBwG6EI?si=ZWniHz2tck5OH3ft"
+                },
+                {
+                  "id": "str-15",
+                  "title": "String Rotated by 2 places",
+                  "difficulty": "Medium",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/problems/check-if-string-is-rotated-by-two-places-1587115620/1" },
+                  "videoSolution": "https://youtu.be/S4arTLcCp6I?si=H1VDQ9An1OGmcTKn"
+                },
+                {
+                  "id": "str-16",
+                  "title": "Regular Expression Matching",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/regular-expression-matching/" },
+                  "videoSolution": "https://youtu.be/HAA8mgxlov8?si=xOQbtqZ9N1Fl9Hbu"
+                },
+                {
+                  "id": "str-17",
+                  "title": "Longest Valid Parentheses",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/longest-valid-parentheses/" },
+                  "videoSolution": "https://youtu.be/VdQuwtEd10M?si=RVcPBeJSsmyeEluk"
+                },
+                {
+                  "id": "str-18",
+                  "title": "Wildcard Matching",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/wildcard-matching/" },
+                  "videoSolution": "https://youtu.be/ZmlQ3vgAOMo?si=RVvVYR53og_4GGwp"
+                },
+                {
+                  "id": "str-19",
+                  "title": "Shortest Uncommon Substring in an Array",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/shortest-uncommon-substring-in-an-array/description/" },
+                  "videoSolution": "https://youtu.be/9rBWAbpPJvw?si=bD__31ZOmsPhkQrJ"
+                },
+                {
+                  "id": "str-20",
+                  "title": "Special Binary String",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/special-binary-string/" },
+                  "videoSolution": "https://youtu.be/-Ru17k4TCI4?si=s2SmXxnypmLfsH_Z"
                 }
               ]
             }
