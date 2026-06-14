@@ -13,8 +13,8 @@ export const Resources: React.FC = () => {
       icon: <FileText className="w-3.5 h-3.5" />,
     },
     {
-      label: 'Core CS Subjects Study Resources',
-      dataCategory: 'Core CS Subjects',
+      label: 'Core Subjects Video Playlists',
+      dataCategory: 'Subject Video Playlists',
       icon: <BookOpen className="w-3.5 h-3.5" />,
     },
     {
@@ -35,7 +35,7 @@ export const Resources: React.FC = () => {
       {/* Page Header */}
       <div>
         <h2 className="text-xl font-semibold text-zinc-100">Resources</h2>
-        <p className="text-sm text-zinc-500 mt-1">Reference material for core CS, system design, and interviews.</p>
+        <p className="text-sm text-zinc-500 mt-1">Resumes, CS/IT subject video playlists and mock interview platforms.</p>
       </div>
 
       {/* Filter Tabs */}

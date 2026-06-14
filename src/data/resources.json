@@ -2,7 +2,7 @@
   "resources": [
     {
       "id": "res-os-1",
-      "category": "Core CS Subjects",
+      "category": "Subject Video Playlists",
       "title": "Operating Systems (OS) - Gate Smashers",
       "description": "Premium free lecture series covering CPU scheduling, memory management, file systems, and concurrency.",
       "tags": [
@@ -14,7 +14,7 @@
     },
     {
       "id": "res-dbms-1",
-      "category": "Core CS Subjects",
+      "category": "Subject Video Playlistss",
       "title": "SQL & DBMS Masterclass - Love Babbar",
       "description": "Deep-dive playlist covering normalization, keys, transactions, indexing, and SQL queries with live examples.",
       "tags": [
@@ -26,7 +26,7 @@
     },
     {
       "id": "res-cn-1",
-      "category": "Core CS Subjects",
+      "category": "Subject Video Playlists",
       "title": "Computer Networks (CN) Lectures - Neso Academy",
       "description": "Excellent visual playlist explaining TCP/IP, OSI layers, IP addressing, subnetting, and protocols.",
       "tags": [
@@ -86,6 +86,18 @@
       "link": "https://drive.google.com/file/d/1wlSo9QB4fUIZHDxDar8uziBeoBwip5WE/view?usp=sharing"
     },
     {
+      "id": "res-mock-2",
+      "category": "Mock Interview Platforms",
+      "title": "Interviewing.io",
+      "description": "Anonymous mock interviews with staff engineers from Google, Facebook, Amazon, and Netflix. Includes excellent video archives.",
+      "tags": [
+        "Mocks",
+        "Premium",
+        "Video Archives"
+      ],
+      "link": "https://interviewing.io/"
+    },
+    {
       "id": "res-res-3",
       "category": "Resume",
       "title": "ATS Checker - My Perfect Resume",
@@ -106,18 +118,6 @@
         "Free"
       ],
       "link": "https://www.pramp.com/"
-    },
-    {
-      "id": "res-mock-2",
-      "category": "Mock Interview Platforms",
-      "title": "Interviewing.io",
-      "description": "Anonymous mock interviews with staff engineers from Google, Facebook, Amazon, and Netflix. Includes excellent video archives.",
-      "tags": [
-        "Mocks",
-        "Premium",
-        "Video Archives"
-      ],
-      "link": "https://interviewing.io/"
     }
   ]
 }
