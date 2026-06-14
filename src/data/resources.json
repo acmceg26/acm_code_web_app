@@ -3,62 +3,67 @@
     {
       "id": "res-os-1",
       "category": "Subject Video Playlists",
-      "title": "Operating Systems (OS) - Gate Smashers",
-      "description": "Premium free lecture series covering CPU scheduling, memory management, file systems, and concurrency.",
+      "title": "Algorithms Playlist - Abdul Bari",
+      "description": "Comprehensive playlist on Algorithms by Abdul Bari",
       "tags": [
-        "OS",
-        "Videos",
-        "Free"
+        "Algorithms",
+        "DSA"
       ],
-      "link": "https://www.youtube.com/playlist?list=PLmXKhU9FNesSFvj6gASuWmQd23Ul5omtD"
+      "link": "https://youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&si=IK-cxIkF4M2JbPo6"
+    },
+    {
+      "id": "res-os-1",
+      "category": "Subject Video Playlists",
+      "title": "Data Structures Playlist - Jenny Lectures CS IT",
+      "description": "Comprehensive playlist on Data Structures by Abdul Bari",
+      "tags": [
+        "Algorithms",
+        "DSA"
+      ],
+      "link": "https://youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU&si=9RllHAGGBcXT4plK"
     },
     {
       "id": "res-dbms-1",
       "category": "Subject Video Playlistss",
-      "title": "SQL & DBMS Masterclass - Love Babbar",
-      "description": "Deep-dive playlist covering normalization, keys, transactions, indexing, and SQL queries with live examples.",
+      "title": "OS Playlist - Gate Smashers",
+      "description": "In-depth playlist on Operating Systems by Gate Smashers",
       "tags": [
-        "DBMS",
-        "SQL",
-        "Free"
+        "OS"
       ],
-      "link": "https://www.youtube.com/playlist?list=PLDzeHZWIZsTp4x1l1B_rZqf6eLqpy4z6f"
+      "link": "https://youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p&si=ccwna39DGFkXYkLZ"
     },
     {
       "id": "res-cn-1",
       "category": "Subject Video Playlists",
-      "title": "Computer Networks (CN) Lectures - Neso Academy",
+      "title": "Computer Networks (CN) Lectures - Gate Smashers",
       "description": "Excellent visual playlist explaining TCP/IP, OSI layers, IP addressing, subnetting, and protocols.",
       "tags": [
         "CN",
-        "Networking",
-        "Free"
+        "Networking"
       ],
-      "link": "https://www.youtube.com/playlist?list=PLBlnK6fEyqRgMCUAG0XRw78UA8qnv6jEx"
+      "link": "https://youtube.com/playlist?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_&si=y5g9LCrH4mz5scff"
     },
     {
-      "id": "res-sd-1",
-      "category": "System Design",
-      "title": "System Design Primer by Donne Martin",
-      "description": "The ultimate GitHub repository covering large-scale systems design, architectural patterns, scaling database servers, and microservices.",
+      "id": "res-cn-1",
+      "category": "Subject Video Playlists",
+      "title": "Striver A to Z solved example videos",
+      "description": "Playlist with videos solving all the problems of Striver Sheet A to Z.",
       "tags": [
-        "System Design",
-        "GitHub",
-        "Reading"
+        "DSA",
+        "StriverAtoZ"
       ],
-      "link": "https://github.com/donnemartin/system-design-primer"
+      "link": "https://youtube.com/playlist?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz&si=4viDA1GhW8uvNac7"
     },
     {
-      "id": "res-sd-2",
-      "category": "System Design",
-      "title": "System Design Playlist - ByteByteGo",
-      "description": "Short, clear, and highly animated videos explaining system design concepts like CDNs, Load Balancers, Redis, and Kafka.",
+      "id": "res-cn-1",
+      "category": "Subject Video Playlists",
+      "title": "Neetcode 150 solved example videos",
+      "description": "Playlist with videos solving all the problems of Neetcode 150.",
       "tags": [
-        "System Design",
-        "Videos",
-        "Visual"
+        "DSA",
+        "Neetcode150"
       ],
-      "link": "https://www.youtube.com/@ByteByteGo"
+      "link": "https://youtube.com/playlist?list=PLPe9IkX86X3y5m_MvtNu2ughxsvkqUNKr&si=C7eJpQrzPShcs9uB"
     },
     {
       "id": "res-res-1",

@@ -13,7 +13,7 @@ export const Resources: React.FC = () => {
       icon: <FileText className="w-3.5 h-3.5" />,
     },
     {
-      label: 'Core Subjects Video Playlists',
+      label: 'Video Playlists',
       dataCategory: 'Subject Video Playlists',
       icon: <BookOpen className="w-3.5 h-3.5" />,
     },
