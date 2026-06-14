@@ -8,8 +8,8 @@ type Tab = { label: string; dataCategory: string; icon: React.ReactNode };
 export const Resources: React.FC = () => {
   const tabs: Tab[] = [
     {
-      label: 'Resume Templates & Examples',
-      dataCategory: 'Resume Templates',
+      label: 'Resume Templates & resources',
+      dataCategory: 'Resume',
       icon: <FileText className="w-3.5 h-3.5" />,
     },
     {
@@ -46,11 +46,10 @@ export const Resources: React.FC = () => {
             <button
               key={tab.label}
               onClick={() => setActiveTab(tab)}
-              className={`flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs font-semibold transition-all duration-150 cursor-pointer ${
-                isActive
+              className={`flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs font-semibold transition-all duration-150 cursor-pointer ${isActive
                   ? 'bg-zinc-100 text-zinc-900 shadow-sm'
                   : 'bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-100 hover:border-zinc-600 hover:bg-zinc-800/60'
-              }`}
+                }`}
             >
               <span className={isActive ? 'text-zinc-700' : 'text-zinc-500'}>
                 {tab.icon}

@@ -62,7 +62,7 @@
     },
     {
       "id": "res-res-1",
-      "category": "Resume Templates",
+      "category": "Resume",
       "title": "Resume template - Clean and Formal",
       "description": "Adapated from /EngineeringResume - a clean, formal and effective resume template.\nNOTE: Click File, Make a Copy and then edit your resume. DO NOT REQUEST EDIT ACCESS IN THE ATTACHED DOCUMENT.",
       "tags": [
@@ -76,7 +76,7 @@
     },
     {
       "id": "res-res-2",
-      "category": "Resume Templates",
+      "category": "Resume",
       "title": "Comprehensive Resume Guidebook",
       "description": "Adapted from /EngineeringResume. A comprehensive guide on how to format resume, add appropriate content, write content and what to avoid.",
       "tags": [
@@ -84,6 +84,16 @@
         "Guide"
       ],
       "link": "https://drive.google.com/file/d/1AcqQBAbw19gKpargnG7j2dg36BCpQUj6/view?usp=sharing"
+    },
+    {
+      "id": "res-res-3",
+      "category": "Resume",
+      "title": "ATS Checker - My Perfect Resume",
+      "description": "Check your resume for ATS compatibility. (Not very important for AU Placements and Internship but good to check)",
+      "tags": [
+        "ATS"
+      ],
+      "link": "https://www.myperfectresume.com/"
     },
     {
       "id": "res-mock-1",
