@@ -2,7 +2,7 @@
   "resources": [
     {
       "id": "res-os-1",
-      "category": "Subject Video Playlists",
+      "category": "Video Playlists",
       "title": "Algorithms Playlist - Abdul Bari",
       "description": "Comprehensive playlist on Algorithms by Abdul Bari",
       "tags": [
@@ -13,7 +13,7 @@
     },
     {
       "id": "res-os-1",
-      "category": "Subject Video Playlists",
+      "category": "Video Playlists",
       "title": "Data Structures Playlist - Jenny Lectures CS IT",
       "description": "Comprehensive playlist on Data Structures by Abdul Bari",
       "tags": [
@@ -24,7 +24,7 @@
     },
     {
       "id": "res-dbms-1",
-      "category": "Subject Video Playlistss",
+      "category": "Video Playlistss",
       "title": "OS Playlist - Gate Smashers",
       "description": "In-depth playlist on Operating Systems by Gate Smashers",
       "tags": [
@@ -34,7 +34,7 @@
     },
     {
       "id": "res-cn-1",
-      "category": "Subject Video Playlists",
+      "category": "Video Playlists",
       "title": "Computer Networks (CN) Lectures - Gate Smashers",
       "description": "Excellent visual playlist explaining TCP/IP, OSI layers, IP addressing, subnetting, and protocols.",
       "tags": [
@@ -45,7 +45,7 @@
     },
     {
       "id": "res-cn-1",
-      "category": "Subject Video Playlists",
+      "category": "Video Playlists",
       "title": "Striver A to Z solved example videos",
       "description": "Playlist with videos solving all the problems of Striver Sheet A to Z.",
       "tags": [
@@ -56,7 +56,7 @@
     },
     {
       "id": "res-cn-1",
-      "category": "Subject Video Playlists",
+      "category": "Video Playlists",
       "title": "Neetcode 150 solved example videos",
       "description": "Playlist with videos solving all the problems of Neetcode 150.",
       "tags": [

@@ -14,7 +14,7 @@ export const Resources: React.FC = () => {
     },
     {
       label: 'Video Playlists',
-      dataCategory: 'Subject Video Playlists',
+      dataCategory: 'Video Playlists',
       icon: <BookOpen className="w-3.5 h-3.5" />,
     },
     {
