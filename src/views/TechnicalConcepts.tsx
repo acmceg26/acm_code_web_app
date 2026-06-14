@@ -165,7 +165,7 @@ export const TechnicalConcepts: React.FC = () => {
       <div>
         <h2 className="text-xl font-semibold text-zinc-100">Technical Concepts</h2>
         <p className="text-sm text-zinc-500 mt-1">
-          Mock tests and study materials for core CS subjects.
+          Tests and study materials for core CS subjects.
         </p>
       </div>
 
