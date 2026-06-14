@@ -1,5 +1,27 @@
 [
   {
+    "id": "dsa",
+    "subject": "Data Structures",
+    "icon": "binary",
+    "description": "Arrays, linked lists, trees, graphs, hashing, and complexity analysis.",
+    "tests": [
+      {
+        "id": "dsa-test-1",
+        "title": "Data Structures — Mock Test 1",
+        "description": "Covers arrays, linked lists, stacks, queues, trees, graphs, hashing, and Big-O complexity analysis.",
+        "formUrl": "https://forms.google.com/"
+      }
+    ],
+    "studyMaterials": [
+      {
+        "id": "dsa-sm-1",
+        "title": "Data Structures — Quick Reference",
+        "description": "Cheat sheet covering time/space complexities of common data structures and key operations.",
+        "driveUrl": "https://drive.google.com/"
+      }
+    ]
+  },
+  {
     "id": "os",
     "subject": "Operating Systems",
     "icon": "cpu",
@@ -15,10 +37,17 @@
     "studyMaterials": [
       {
         "id": "os-sm-1",
-        "title": "OS Concepts — Quick Reference",
-        "description": "Concise notes on CPU scheduling algorithms, memory management, deadlock conditions, and page replacement.",
-        "driveUrl": "https://drive.google.com/"
+        "title": "OS Comprehensive Notes",
+        "description": "Comprehensive notes covering most topics of OS.",
+        "driveUrl": "https://drive.google.com/file/d/1o-xVjTQWxB9m47-3YC6Kasuiyd8Xxnlp/view?usp=sharing"
+      },
+      {
+        "id": "os-sm-1",
+        "title": "OS Question Bank",
+        "description": "Question bank covering OS topics with company tags.",
+        "driveUrl": "https://drive.google.com/file/d/1YC2Y39Jwa4EqLzcoiz2aO1RPn1ZZkjJo/view?usp=sharing"
       }
+
     ]
   },
   {
@@ -96,28 +125,6 @@
         "title": "OOP Quick Reference",
         "description": "Concise explanations of encapsulation, inheritance, polymorphism, abstraction, and SOLID principles with examples.",
         "driveUrl": "https://drive.google.com/file/d/1a3FbGNGPOcy70aDY62gtIL_3y4O59Rvp/view?usp=sharing"
-      }
-    ]
-  },
-  {
-    "id": "dsa",
-    "subject": "Data Structures",
-    "icon": "binary",
-    "description": "Arrays, linked lists, trees, graphs, hashing, and complexity analysis.",
-    "tests": [
-      {
-        "id": "dsa-test-1",
-        "title": "Data Structures — Mock Test 1",
-        "description": "Covers arrays, linked lists, stacks, queues, trees, graphs, hashing, and Big-O complexity analysis.",
-        "formUrl": "https://forms.google.com/"
-      }
-    ],
-    "studyMaterials": [
-      {
-        "id": "dsa-sm-1",
-        "title": "Data Structures — Quick Reference",
-        "description": "Cheat sheet covering time/space complexities of common data structures and key operations.",
-        "driveUrl": "https://drive.google.com/"
       }
     ]
   },
