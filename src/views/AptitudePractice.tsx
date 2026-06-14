@@ -15,7 +15,7 @@ export const AptitudePractice: React.FC = () => {
       {/* Page Header */}
       <div>
         <h2 className="text-xl font-semibold text-zinc-100">Aptitude Practice</h2>
-        <p className="text-sm text-zinc-500 mt-1">Mock tests and study resources for aptitude preparation.</p>
+        <p className="text-sm text-zinc-500 mt-1">Tests and study resources for aptitude preparation.</p>
       </div>
 
       {/* ── Aptitude Tests ─────────────────────────────────── */}

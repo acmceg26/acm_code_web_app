@@ -85,7 +85,7 @@ const CompanyDetailPage: React.FC<{
         </div>
         <div>
           <h3 className="text-base font-semibold text-zinc-100">Technical MCQs</h3>
-          <p className="text-xs text-zinc-500">Company-specific mock tests via Google Forms</p>
+          <p className="text-xs text-zinc-500">Company-specific details and question banks.</p>
         </div>
       </div>
 
