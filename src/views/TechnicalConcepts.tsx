@@ -8,7 +8,7 @@ import type { LucideIcon } from 'lucide-react';
 // ─── Feature flags ──────────────────────────────────────────────────────────
 // Set to `false` once the respective links are ready to publish.
 const TESTS_COMING_SOON = true;
-const MATERIALS_COMING_SOON = true;
+const MATERIALS_COMING_SOON = false;
 // ────────────────────────────────────────────────────────────────────────────
 
 const ICONS: Record<string, LucideIcon> = {
