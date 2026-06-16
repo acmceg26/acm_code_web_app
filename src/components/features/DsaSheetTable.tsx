@@ -26,6 +26,10 @@ interface DsaSheetTableProps {
   topicName: string;
 }
 
+// Cap note length to keep the notes table small at scale (a few students can't
+// bloat storage). 2,000 chars is plenty for an approach / edge-case summary.
+const MAX_NOTE_LENGTH = 2000;
+
 export const DsaSheetTable: React.FC<DsaSheetTableProps> = ({ problems, topicName }) => {
   const { isSolved, toggleProblem, getNote, saveNote, noteStatus } = useTracker();
 
@@ -45,10 +49,12 @@ export const DsaSheetTable: React.FC<DsaSheetTableProps> = ({ problems, topicNam
   };
 
   const handleNotesChange = (problemId: string, text: string) => {
-    setEditingNoteText(text);
+    // Enforce the cap defensively (covers paste, not just typing).
+    const capped = text.slice(0, MAX_NOTE_LENGTH);
+    setEditingNoteText(capped);
     // Persistence + save status (saving → saved/error) is handled by the
     // tracker context and reflected via noteStatus[problemId].
-    saveNote(problemId, text);
+    saveNote(problemId, capped);
   };
 
   const getDifficultyStyles = (diff: string) => {
@@ -217,9 +223,21 @@ export const DsaSheetTable: React.FC<DsaSheetTableProps> = ({ problems, topicNam
                         <textarea
                           value={editingNoteText}
                           onChange={(e) => handleNotesChange(problem.id, e.target.value)}
+                          maxLength={MAX_NOTE_LENGTH}
                           placeholder="Approach, edge cases, patterns to remember..."
                           className="w-full min-h-[90px] p-3 text-xs bg-zinc-950 border border-zinc-800 hover:border-zinc-700 focus:border-blue-500 rounded-lg text-zinc-300 placeholder-zinc-600 focus:outline-none resize-y font-mono leading-relaxed"
                         />
+                        <div className="flex justify-end">
+                          <span className={`text-[10px] font-mono tracking-tight ${
+                            editingNoteText.length >= MAX_NOTE_LENGTH
+                              ? 'text-rose-400'
+                              : editingNoteText.length >= MAX_NOTE_LENGTH * 0.9
+                                ? 'text-amber-400'
+                                : 'text-zinc-600'
+                          }`}>
+                            {editingNoteText.length} / {MAX_NOTE_LENGTH}
+                          </span>
+                        </div>
                       </div>
                     </td>
                   </tr>
