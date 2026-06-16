@@ -28,9 +28,16 @@ async function currentUserId(): Promise<string | null> {
 
 /** All problems the signed-in user has marked solved, newest first. */
 export async function fetchSolvedProblems(): Promise<SolvedRow[]> {
+  const uid = await currentUserId();
+  if (!uid) return [];
+
+  // Filter by user_id explicitly. RLS should also enforce this, but we never
+  // rely on RLS alone — if a policy is misconfigured this still scopes the
+  // read to the current user instead of leaking everyone's progress.
   const { data, error } = await supabase
     .from('solved_problems')
     .select('problem_id, title, topic, difficulty, solved_at')
+    .eq('user_id', uid)
     .order('solved_at', { ascending: false });
 
   if (error) {
