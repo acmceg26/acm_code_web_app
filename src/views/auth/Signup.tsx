@@ -24,6 +24,7 @@ const YEAR_OPTIONS = [
   { value: '2', label: '2nd year' },
   { value: '3', label: '3rd year' },
   { value: '4', label: '4th year' },
+  { value: 'Alumni', label: 'Alumni' },
 ];
 
 const CAMPUS_OPTIONS = [
