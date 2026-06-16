@@ -4,7 +4,6 @@ import { supabase } from '../lib/supabase';
 import {
   fetchSolvedProblems,
   addSolvedProblem,
-  addSolvedProblems,
   removeSolvedProblem,
   clearSolvedProblems,
 } from '../services/progressService';
@@ -43,17 +42,6 @@ export interface TrackerContextType {
 
 const TrackerContext = createContext<TrackerContextType | undefined>(undefined);
 
-const LOCAL_SOLVED_KEY = 'dsa_tracker_solved';
-
-function readLocalSolved(): SolvedProblem[] {
-  try {
-    const raw = localStorage.getItem(LOCAL_SOLVED_KEY);
-    return raw ? (JSON.parse(raw) as SolvedProblem[]) : [];
-  } catch {
-    return [];
-  }
-}
-
 export const TrackerProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [solvedProblems, setSolvedProblems] = useState<SolvedProblem[]>([]);
   const [notes, setNotes] = useState<Record<string, string>>({});
@@ -83,29 +71,11 @@ export const TrackerProvider: React.FC<{ children: React.ReactNode }> = ({ child
         return;
       }
 
+      // The DB is the single source of truth for progress (cross-device, and
+      // never leaks one account's progress into another on a shared browser).
       const dbRows = await fetchSolvedProblems();
       if (!active) return;
-
-      // One-time migration: if this account has no DB progress yet but there's
-      // progress saved locally on this device, push it up so nothing is lost.
-      const local = readLocalSolved();
-      if (dbRows.length === 0 && local.length > 0) {
-        await addSolvedProblems(
-          local.map((p) => ({
-            problemId: p.problemId,
-            title: p.title,
-            topic: p.topic,
-            difficulty: p.difficulty,
-          })),
-        );
-        if (!active) return;
-        setSolvedProblems(local);
-      } else {
-        setSolvedProblems(dbRows.map((r) => ({ ...r, platform: '' })));
-      }
-
-      // The DB is now the source of truth; drop the local cache.
-      localStorage.removeItem(LOCAL_SOLVED_KEY);
+      setSolvedProblems(dbRows.map((r) => ({ ...r, platform: '' })));
     };
 
     supabase.auth.getSession().then(({ data }) => handleSession(data.session?.user?.id ?? null));
