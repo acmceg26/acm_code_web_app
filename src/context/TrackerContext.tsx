@@ -1,6 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, useRef } from 'react';
 import dsaData from '../data/dsaSheets.json';
-import companyData from '../data/companies.json';
 import { supabase } from '../lib/supabase';
 import {
   fetchSolvedProblems,
@@ -185,7 +184,10 @@ export const TrackerProvider: React.FC<{ children: React.ReactNode }> = ({ child
   // Extract all problems to find totals by difficulty/topic
   const allProblemsMap = new Map<string, { id: string; title: string; topic: string; difficulty: 'Easy' | 'Medium' | 'Hard' }>();
   
-  // 1. Gather from sheets (sheet -> level -> topic -> problems)
+  // Gather from sheets (sheet -> level -> topic -> problems).
+  // NOTE: Company & OA Prep is currently "coming soon" / disabled, so its core
+  // questions are intentionally excluded from the totals — only available
+  // sections count toward the problem total.
   dsaData.sheets.forEach((sheet) => {
     sheet.levels.forEach((level) => {
       level.topics.forEach((topic) => {
@@ -197,18 +199,6 @@ export const TrackerProvider: React.FC<{ children: React.ReactNode }> = ({ child
             difficulty: prob.difficulty as 'Easy' | 'Medium' | 'Hard',
           });
         });
-      });
-    });
-  });
-
-  // 2. Gather from companies (in case they aren't in the sheets)
-  companyData.forEach((company) => {
-    company.coreQuestions.forEach((prob) => {
-      allProblemsMap.set(prob.id, {
-        id: prob.id,
-        title: prob.title,
-        topic: 'Company Core',
-        difficulty: prob.difficulty as 'Easy' | 'Medium' | 'Hard',
       });
     });
   });
