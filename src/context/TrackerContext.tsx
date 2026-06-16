@@ -7,6 +7,11 @@ import {
   removeSolvedProblem,
   clearSolvedProblems,
 } from '../services/progressService';
+import {
+  fetchNotes,
+  saveNote as persistNote,
+  clearNotes,
+} from '../services/notesService';
 
 export interface SolvedProblem {
   problemId: string;
@@ -17,9 +22,12 @@ export interface SolvedProblem {
   solvedAtTimestamp: number;
 }
 
+export type NoteSaveState = 'saving' | 'saved' | 'error';
+
 export interface TrackerContextType {
   solvedProblems: SolvedProblem[];
   notes: Record<string, string>;
+  noteStatus: Record<string, NoteSaveState>;
   toggleProblem: (problem: Omit<SolvedProblem, 'solvedAtTimestamp'>) => void;
   isSolved: (problemId: string) => boolean;
   saveNote: (problemId: string, noteText: string) => void;
@@ -45,21 +53,17 @@ const TrackerContext = createContext<TrackerContextType | undefined>(undefined);
 export const TrackerProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [solvedProblems, setSolvedProblems] = useState<SolvedProblem[]>([]);
   const [notes, setNotes] = useState<Record<string, string>>({});
+  const [noteStatus, setNoteStatus] = useState<Record<string, NoteSaveState>>({});
   // Tracks which user's progress is currently loaded, so we only refetch when
   // the signed-in user actually changes (auth fires on every token refresh).
   const loadedUserRef = useRef<string | null>(null);
+  // Per-problem debounce timers for persisting notes to the DB.
+  const noteTimers = useRef<Record<string, ReturnType<typeof setTimeout>>>({});
 
-  // Solved problems are DB-backed (cross-device). Subscribe to auth: on sign-in
-  // (or session restore on a new device) fetch this user's progress; on sign-out
-  // clear it. Notes remain device-local (loaded from localStorage below).
+  // Solved problems AND notes are DB-backed (cross-device, per-user). Subscribe
+  // to auth: on sign-in (or session restore on a new device) fetch this user's
+  // progress and notes; on sign-out clear them so nothing leaks across accounts.
   useEffect(() => {
-    try {
-      const storedNotes = localStorage.getItem('dsa_tracker_notes');
-      if (storedNotes) setNotes(JSON.parse(storedNotes));
-    } catch (e) {
-      console.error('Error reading notes from localStorage:', e);
-    }
-
     let active = true;
 
     const handleSession = async (uid: string | null) => {
@@ -68,14 +72,15 @@ export const TrackerProvider: React.FC<{ children: React.ReactNode }> = ({ child
 
       if (!uid) {
         setSolvedProblems([]);
+        setNotes({});
+        setNoteStatus({});
         return;
       }
 
-      // The DB is the single source of truth for progress (cross-device, and
-      // never leaks one account's progress into another on a shared browser).
-      const dbRows = await fetchSolvedProblems();
+      const [dbRows, dbNotes] = await Promise.all([fetchSolvedProblems(), fetchNotes()]);
       if (!active) return;
       setSolvedProblems(dbRows.map((r) => ({ ...r, platform: '' })));
+      setNotes(dbNotes);
     };
 
     supabase.auth.getSession().then(({ data }) => handleSession(data.session?.user?.id ?? null));
@@ -88,12 +93,6 @@ export const TrackerProvider: React.FC<{ children: React.ReactNode }> = ({ child
       sub.subscription.unsubscribe();
     };
   }, []);
-
-  // Sync notes to localStorage
-  const saveNotesState = (updatedNotes: Record<string, string>) => {
-    setNotes(updatedNotes);
-    localStorage.setItem('dsa_tracker_notes', JSON.stringify(updatedNotes));
-  };
 
   const isSolved = (problemId: string) => {
     return solvedProblems.some((p) => p.problemId === problemId);
@@ -128,9 +127,19 @@ export const TrackerProvider: React.FC<{ children: React.ReactNode }> = ({ child
     }
   };
 
+  // Update the note locally right away (responsive typing), then debounce the
+  // DB write so we persist ~600ms after the user stops typing rather than on
+  // every keystroke.
   const saveNote = (problemId: string, noteText: string) => {
-    const updated = { ...notes, [problemId]: noteText };
-    saveNotesState(updated);
+    setNotes((prev) => ({ ...prev, [problemId]: noteText }));
+    setNoteStatus((prev) => ({ ...prev, [problemId]: 'saving' }));
+
+    if (noteTimers.current[problemId]) clearTimeout(noteTimers.current[problemId]);
+    noteTimers.current[problemId] = setTimeout(async () => {
+      const res = await persistNote(problemId, noteText);
+      setNoteStatus((prev) => ({ ...prev, [problemId]: res.ok ? 'saved' : 'error' }));
+      if (!res.ok) console.error('Failed to save note:', res.message);
+    }, 600);
   };
 
   const getNote = (problemId: string) => {
@@ -139,13 +148,19 @@ export const TrackerProvider: React.FC<{ children: React.ReactNode }> = ({ child
 
   const clearAllProgress = async () => {
     if (window.confirm('Are you sure you want to clear all your progress and notes? This cannot be undone.')) {
-      const prev = solvedProblems;
+      const prevSolved = solvedProblems;
+      const prevNotes = notes;
       setSolvedProblems([]);
-      saveNotesState({});
-      const res = await clearSolvedProblems();
-      if (!res.ok) {
-        console.error('Failed to clear progress:', res.message);
-        setSolvedProblems(prev);
+      setNotes({});
+
+      const [solvedRes, notesRes] = await Promise.all([clearSolvedProblems(), clearNotes()]);
+      if (!solvedRes.ok) {
+        console.error('Failed to clear progress:', solvedRes.message);
+        setSolvedProblems(prevSolved);
+      }
+      if (!notesRes.ok) {
+        console.error('Failed to clear notes:', notesRes.message);
+        setNotes(prevNotes);
       }
     }
   };
@@ -230,6 +245,7 @@ export const TrackerProvider: React.FC<{ children: React.ReactNode }> = ({ child
     <TrackerContext.Provider value={{
       solvedProblems,
       notes,
+      noteStatus,
       toggleProblem,
       isSolved,
       saveNote,

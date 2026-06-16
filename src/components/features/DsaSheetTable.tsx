@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { useTracker } from '../../hooks/useTracker';
 import { Checkbox } from '../ui/Checkbox';
-import { 
-  ExternalLink, 
-  Video, 
-  StickyNote, 
-  Check, 
-  Code2 
+import {
+  ExternalLink,
+  Video,
+  StickyNote,
+  Check,
+  Code2,
+  AlertCircle
 } from 'lucide-react';
 
 interface Problem {
@@ -26,14 +27,13 @@ interface DsaSheetTableProps {
 }
 
 export const DsaSheetTable: React.FC<DsaSheetTableProps> = ({ problems, topicName }) => {
-  const { isSolved, toggleProblem, getNote, saveNote } = useTracker();
-  
+  const { isSolved, toggleProblem, getNote, saveNote, noteStatus } = useTracker();
+
   // Track which problem IDs have notes expanded
   const [expandedNotesId, setExpandedNotesId] = useState<string | null>(null);
-  
+
   // Temp notes input state for currently editing notes
   const [editingNoteText, setEditingNoteText] = useState('');
-  const [saveStatus, setSaveStatus] = useState<'saved' | 'saving' | null>(null);
 
   const toggleNotes = (problemId: string) => {
     if (expandedNotesId === problemId) {
@@ -41,20 +41,14 @@ export const DsaSheetTable: React.FC<DsaSheetTableProps> = ({ problems, topicNam
     } else {
       setExpandedNotesId(problemId);
       setEditingNoteText(getNote(problemId));
-      setSaveStatus(null);
     }
   };
 
   const handleNotesChange = (problemId: string, text: string) => {
     setEditingNoteText(text);
-    setSaveStatus('saving');
+    // Persistence + save status (saving → saved/error) is handled by the
+    // tracker context and reflected via noteStatus[problemId].
     saveNote(problemId, text);
-    
-    // Simulate auto-save feedback delay
-    const timer = setTimeout(() => {
-      setSaveStatus('saved');
-    }, 400);
-    return () => clearTimeout(timer);
   };
 
   const getDifficultyStyles = (diff: string) => {
@@ -202,11 +196,21 @@ export const DsaSheetTable: React.FC<DsaSheetTableProps> = ({ problems, topicNam
                         <div className="flex justify-between items-center">
                           <span className="text-xs font-medium text-zinc-400 flex items-center gap-1.5">
                             <StickyNote className="w-3.5 h-3.5" />
-                            Notes (saved in this browser)
+                            Notes 
                           </span>
-                          {saveStatus && (
-                            <span className={`text-[10px] font-bold font-mono tracking-tight flex items-center gap-1 ${saveStatus === 'saving' ? 'text-zinc-500' : 'text-emerald-400'}`}>
-                              {saveStatus === 'saving' ? 'Saving...' : <><Check className="w-3 h-3" /> Saved</>}
+                          {noteStatus[problem.id] && (
+                            <span className={`text-[10px] font-bold font-mono tracking-tight flex items-center gap-1 ${
+                              noteStatus[problem.id] === 'saving'
+                                ? 'text-zinc-500'
+                                : noteStatus[problem.id] === 'error'
+                                  ? 'text-rose-400'
+                                  : 'text-emerald-400'
+                            }`}>
+                              {noteStatus[problem.id] === 'saving'
+                                ? 'Saving...'
+                                : noteStatus[problem.id] === 'error'
+                                  ? <><AlertCircle className="w-3 h-3" /> Couldn&apos;t save</>
+                                  : <><Check className="w-3 h-3" /> Saved</>}
                             </span>
                           )}
                         </div>
