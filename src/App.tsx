@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, Outlet } from 'react-router-dom';
 import { TrackerProvider } from './context/TrackerContext';
 import { Sidebar } from './components/features/Sidebar';
 import { Dashboard } from './views/Dashboard';
@@ -15,54 +15,27 @@ import { Signup } from './views/auth/Signup';
 import { ForgotPassword } from './views/auth/ForgotPassword';
 import { Menu, Sun, Moon } from 'lucide-react';
 import { useTheme, type Theme } from './hooks/useTheme';
-import { useAuth, getFirstName, type User } from './hooks/useAuth';
+import { useAuth, getFirstName } from './hooks/useAuth';
 import { signOut } from './services/authService';
 import acmLogoDark from './assets/acm-logo-dark.png';
 import acmLogoBright from './assets/acm-logo-bright.png';
 
-type ViewType = 'dashboard' | 'dsa' | 'company' | 'aptitude' | 'technical' | 'contests' | 'resources' | 'profile';
-
-interface AppContentProps {
+interface AppLayoutProps {
   theme: Theme;
   toggleTheme: () => void;
   onLogout: () => void;
-  user: User | null;
 }
 
-function AppContent({ theme, toggleTheme, onLogout, user }: AppContentProps) {
-  const [activeView, setActiveView] = useState<ViewType>('dashboard');
+// Shared shell for all authenticated pages. The active section is rendered by
+// the router via <Outlet />, so the URL is the single source of truth for which
+// page is shown (refresh, back/forward, and shareable links all work).
+function AppLayout({ theme, toggleTheme, onLogout }: AppLayoutProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const firstName = getFirstName(user);
-
-  const renderView = () => {
-    switch (activeView) {
-      case 'dashboard':
-        return <Dashboard userName={firstName} />;
-      case 'dsa':
-        return <DsaSheets />;
-      case 'company':
-        return <CompanyPrep />;
-      case 'aptitude':
-        return <AptitudePractice />;
-      case 'technical':
-        return <TechnicalConcepts />;
-      case 'contests':
-        return <Contests />;
-      case 'resources':
-        return <Resources />;
-      case 'profile':
-        return <Profile user={user} />;
-      default:
-        return <Dashboard />;
-    }
-  };
 
   return (
     <div className="min-h-screen app-bg text-zinc-100 flex">
       {/* Navigation Sidebar */}
       <Sidebar
-        activeView={activeView}
-        setActiveView={setActiveView}
         mobileOpen={mobileOpen}
         setMobileOpen={setMobileOpen}
         theme={theme}
@@ -82,7 +55,7 @@ function AppContent({ theme, toggleTheme, onLogout, user }: AppContentProps) {
             />
             <span className="font-bold text-zinc-100 text-sm tracking-tight">C.O.D.E</span>
           </div>
-          
+
           <div className="flex items-center gap-2">
             <button
               onClick={toggleTheme}
@@ -103,7 +76,7 @@ function AppContent({ theme, toggleTheme, onLogout, user }: AppContentProps) {
 
         {/* View Content Area */}
         <main className="flex-grow p-6 lg:p-10 max-w-7xl w-full mx-auto pb-20">
-          {renderView()}
+          <Outlet />
         </main>
       </div>
     </div>
@@ -123,48 +96,47 @@ function Root() {
     );
   }
 
+  const firstName = getFirstName(user);
+
   return (
     <Routes>
+      {/* Public auth routes — redirect away if already signed in. */}
       <Route
         path="/login"
-        element={
-          isAuthenticated ? (
-            <Navigate to="/" replace />
-          ) : (
-            <Login theme={theme} toggleTheme={toggleTheme} />
-          )
-        }
+        element={isAuthenticated ? <Navigate to="/dashboard" replace /> : <Login theme={theme} toggleTheme={toggleTheme} />}
       />
       <Route
         path="/signup"
-        element={
-          isAuthenticated ? (
-            <Navigate to="/" replace />
-          ) : (
-            <Signup theme={theme} toggleTheme={toggleTheme} />
-          )
-        }
+        element={isAuthenticated ? <Navigate to="/dashboard" replace /> : <Signup theme={theme} toggleTheme={toggleTheme} />}
       />
       <Route
         path="/forgot-password"
-        element={
-          isAuthenticated ? (
-            <Navigate to="/" replace />
-          ) : (
-            <ForgotPassword theme={theme} toggleTheme={toggleTheme} />
-          )
-        }
+        element={isAuthenticated ? <Navigate to="/dashboard" replace /> : <ForgotPassword theme={theme} toggleTheme={toggleTheme} />}
       />
+
+      {/* Protected app — one URL per section, under a shared layout. The layout
+          element doubles as the auth guard: unauthenticated users are bounced
+          to /login before any child page renders. */}
       <Route
-        path="*"
         element={
           isAuthenticated ? (
-            <AppContent theme={theme} toggleTheme={toggleTheme} onLogout={signOut} user={user} />
+            <AppLayout theme={theme} toggleTheme={toggleTheme} onLogout={signOut} />
           ) : (
             <Navigate to="/login" replace />
           )
         }
-      />
+      >
+        <Route path="/" element={<Navigate to="/dashboard" replace />} />
+        <Route path="/dashboard" element={<Dashboard userName={firstName} />} />
+        <Route path="/dsa" element={<DsaSheets />} />
+        <Route path="/company" element={<CompanyPrep />} />
+        <Route path="/aptitude" element={<AptitudePractice />} />
+        <Route path="/technical" element={<TechnicalConcepts />} />
+        <Route path="/contests" element={<Contests />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/profile" element={<Profile user={user} />} />
+        <Route path="*" element={<Navigate to="/dashboard" replace />} />
+      </Route>
     </Routes>
   );
 }

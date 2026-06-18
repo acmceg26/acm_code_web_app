@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import {
   LayoutDashboard,
   BookOpen,
@@ -19,11 +20,7 @@ import type { Theme } from '../../hooks/useTheme';
 import acmLogoDark from '../../assets/acm-logo-dark.png';
 import acmLogoBright from '../../assets/acm-logo-bright.png';
 
-type ViewType = 'dashboard' | 'dsa' | 'company' | 'aptitude' | 'technical' | 'contests' | 'resources' | 'profile';
-
 interface SidebarProps {
-  activeView: ViewType;
-  setActiveView: (view: ViewType) => void;
   mobileOpen: boolean;
   setMobileOpen: (open: boolean) => void;
   theme: Theme;
@@ -32,8 +29,6 @@ interface SidebarProps {
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({
-  activeView,
-  setActiveView,
   mobileOpen,
   setMobileOpen,
   theme,
@@ -43,19 +38,17 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const { metrics, clearAllProgress } = useTracker();
 
   const navItems = [
-    { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
-    { id: 'dsa', label: 'DSA Sheets', icon: BookOpen },
-    { id: 'company', label: 'Company & OA Prep', icon: Building2 },
-    { id: 'technical', label: 'Technical Concepts', icon: Cpu },
-    { id: 'aptitude', label: 'Aptitude Practice', icon: Brain },
-    { id: 'contests', label: 'Contests', icon: Trophy },
-    { id: 'resources', label: 'Other Resources', icon: FolderOpen },
+    { to: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
+    { to: '/dsa', label: 'DSA Sheets', icon: BookOpen },
+    { to: '/company', label: 'Company & OA Prep', icon: Building2 },
+    { to: '/technical', label: 'Technical Concepts', icon: Cpu },
+    { to: '/aptitude', label: 'Aptitude Practice', icon: Brain },
+    { to: '/contests', label: 'Contests', icon: Trophy },
+    { to: '/resources', label: 'Other Resources', icon: FolderOpen },
   ] as const;
 
-  const handleSelect = (view: ViewType) => {
-    setActiveView(view);
-    setMobileOpen(false);
-  };
+  // Close the mobile drawer after navigating.
+  const handleNavigate = () => setMobileOpen(false);
 
   return (
     <>
@@ -96,20 +89,26 @@ export const Sidebar: React.FC<SidebarProps> = ({
         <nav className="flex-1 px-4 py-6 space-y-1 overflow-y-auto">
           {navItems.map((item) => {
             const Icon = item.icon;
-            const isActive = activeView === item.id;
             return (
-              <button
-                key={item.id}
-                onClick={() => handleSelect(item.id)}
-                className={`w-full flex items-center gap-3.5 px-4 py-2.5 rounded-lg text-sm font-medium transition-colors duration-150 group ${
-                  isActive
-                    ? 'bg-zinc-800 text-zinc-100'
-                    : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50'
-                }`}
+              <NavLink
+                key={item.to}
+                to={item.to}
+                onClick={handleNavigate}
+                className={({ isActive }) =>
+                  `w-full flex items-center gap-3.5 px-4 py-2.5 rounded-lg text-sm font-medium transition-colors duration-150 group ${
+                    isActive
+                      ? 'bg-zinc-800 text-zinc-100'
+                      : 'text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50'
+                  }`
+                }
               >
-                <Icon className={`w-5 h-5 ${isActive ? 'text-blue-400' : 'text-zinc-500 group-hover:text-zinc-300'}`} />
-                <span>{item.label}</span>
-              </button>
+                {({ isActive }) => (
+                  <>
+                    <Icon className={`w-5 h-5 ${isActive ? 'text-blue-400' : 'text-zinc-500 group-hover:text-zinc-300'}`} />
+                    <span>{item.label}</span>
+                  </>
+                )}
+              </NavLink>
             );
           })}
         </nav>
@@ -130,17 +129,20 @@ export const Sidebar: React.FC<SidebarProps> = ({
             </div>
           </div>
 
-          <button
-            onClick={() => handleSelect('profile')}
-            className={`w-full flex items-center justify-center gap-2 px-4 py-2.5 mb-2 rounded-lg border text-xs font-medium transition-colors cursor-pointer ${
-              activeView === 'profile'
-                ? 'border-blue-500/40 bg-blue-500/10 text-blue-300'
-                : 'border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800/50 text-zinc-400 hover:text-zinc-200'
-            }`}
+          <NavLink
+            to="/profile"
+            onClick={handleNavigate}
+            className={({ isActive }) =>
+              `w-full flex items-center justify-center gap-2 px-4 py-2.5 mb-2 rounded-lg border text-xs font-medium transition-colors cursor-pointer ${
+                isActive
+                  ? 'border-blue-500/40 bg-blue-500/10 text-blue-300'
+                  : 'border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800/50 text-zinc-400 hover:text-zinc-200'
+              }`
+            }
           >
             <UserCircle className="w-3.5 h-3.5" />
             <span>My Profile</span>
-          </button>
+          </NavLink>
 
           <button
             onClick={toggleTheme}

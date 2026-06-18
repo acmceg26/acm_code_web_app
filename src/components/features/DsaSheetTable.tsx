@@ -27,8 +27,8 @@ interface DsaSheetTableProps {
 }
 
 // Cap note length to keep the notes table small at scale (a few students can't
-// bloat storage). 2,000 chars is plenty for an approach / edge-case summary.
-const MAX_NOTE_LENGTH = 2000;
+// bloat storage). 1,000 chars is plenty for an approach / edge-case summary.
+const MAX_NOTE_LENGTH = 1000;
 
 export const DsaSheetTable: React.FC<DsaSheetTableProps> = ({ problems, topicName }) => {
   const { isSolved, toggleProblem, getNote, saveNote, noteStatus } = useTracker();
