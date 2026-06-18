@@ -225,7 +225,7 @@ export const Profile: React.FC<ProfileProps> = ({ user }) => {
           <Input
             label="Batch"
             icon={Users}
-            placeholder="e.g. 1"
+            placeholder="e.g. N, P, Q"
             value={batch}
             onChange={(e) => setBatch(e.target.value)}
             error={errors.batch}
