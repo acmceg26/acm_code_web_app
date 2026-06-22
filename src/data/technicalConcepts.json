@@ -1,192 +1,161 @@
-[
-  {
-    "id": "dsa",
-    "subject": "Data Structures",
-    "icon": "binary",
-    "description": "Arrays, linked lists, trees, graphs, hashing, and complexity analysis.",
-    "tests": [
-      {
-        "id": "dsa-test-1",
-        "title": "Data Structures — Mock Test 1",
-        "description": "Covers arrays, linked lists, stacks, queues, trees, graphs, hashing, and Big-O complexity analysis.",
-        "formUrl": "https://forms.google.com/"
-      }
-    ],
-    "studyMaterials": [
-      {
-        "id": "dsa-sm-1",
-        "title": "Data Structures — Quick Reference",
-        "description": "Notes covering time/space complexities of common data structures, algorithms and key functions.",
-        "driveUrl": "https://drive.google.com/file/d/12xp9bz0P2BelxvnDFTJNW6HBlpFTziw0/view?usp=sharing"
-      },
-      {
-        "id": "dsa-sm-2",
-        "title": "Striver hand-written solution reference",
-        "description": "Covers a subset of solutions from the Striver SDE Sheet.",
-        "driveUrl": "https://drive.google.com/file/d/17KOWPTIVozc9LT9BFRFCVA1lxGNaOjDf/view?usp=sharing"
-      }
-    ]
-  },
-  {
-    "id": "dbms",
-    "subject": "DBMS",
-    "icon": "database",
-    "description": "Normalization, indexing, transactions, ACID properties, and SQL query reasoning.",
-    "tests": [
-      {
-        "id": "dbms-test-1",
-        "title": "DBMS — Mock Test 1",
-        "description": "Covers normalization forms, ACID properties, SQL joins, indexing, and transaction management.",
-        "formUrl": "https://forms.google.com/"
-      }
-    ],
-    "studyMaterials": [
-      {
-        "id": "dbms-sm-1",
-        "title": "SQL Practice Sheet (Codechef)",
-        "description": "SQL Practice sheet from beginner to advanced SQL on Codechef.",
-        "driveUrl": "https://www.codechef.com/practice/sql-case-studies-topic-wise"
-      },
-      {
-        "id": "dbms-sm-2",
-        "title": "SQL Cheat Sheets",
-        "description": "Comprehensive SQL Cheat sheet with basics, joins, standard functions and data analysis. From LearnSQL.com",
-        "driveUrl": "https://drive.google.com/file/d/1ZKOHYROiGMbrabqn1rsKFqOF2tLSW8V4/view?usp=sharing"
-      },
-      {
-        "id": "dbms-sm-3",
-        "title": "DBMS Quick Review Notes",
-        "description": "DBMS notes for quick refresh of concepts.",
-        "driveUrl": "https://drive.google.com/file/d/1K_s3ML4oNrm4n1xBRTmOh8EPg7Fv6jB-/view?usp=sharing"
-      }
-    ]
-  },
-  {
-    "id": "os",
-    "subject": "Operating Systems",
-    "icon": "cpu",
-    "description": "Processes & threads, CPU scheduling, memory management, deadlocks, and concurrency.",
-    "tests": [
-      {
-        "id": "os-test-1",
-        "title": "Operating Systems — Mock Test 1",
-        "description": "30-question timed test covering scheduling, memory management, deadlocks, and concurrency.",
-        "formUrl": "https://forms.google.com/"
-      }
-    ],
-    "studyMaterials": [
-      {
-        "id": "os-sm-1",
-        "title": "OS Comprehensive Notes",
-        "description": "Comprehensive notes covering most topics of OS.",
-        "driveUrl": "https://drive.google.com/file/d/1o-xVjTQWxB9m47-3YC6Kasuiyd8Xxnlp/view?usp=sharing"
-      },
-      {
-        "id": "os-sm-2",
-        "title": "OS Question Bank",
-        "description": "Question bank covering OS topics with company tags.",
-        "driveUrl": "https://drive.google.com/file/d/1YC2Y39Jwa4EqLzcoiz2aO1RPn1ZZkjJo/view?usp=sharing"
-      }
-    ]
-  },
-  {
-    "id": "cn",
-    "subject": "Computer Networks",
-    "icon": "network",
-    "description": "OSI & TCP/IP layers, routing, common protocols, and IP addressing.",
-    "tests": [
-      {
-        "id": "cn-test-1",
-        "title": "Computer Networks — Mock Test 1",
-        "description": "Covers OSI & TCP/IP layers, routing protocols, IP addressing, subnetting, and common application-layer protocols.",
-        "formUrl": "https://forms.google.com/"
-      }
-    ],
-    "studyMaterials": [
-      {
-        "id": "cn-sm-1",
-        "title": "Computer Networks — Quick Reference",
-        "description": "Summary notes for OSI and TCP Layers, IP addressing, protocols, addresses and routing.",
-        "driveUrl": "https://drive.google.com/file/d/1QcCnZgTmHnPT5fC_ivPia-qXez9DObaV/view?usp=sharing"
-      }
-    ]
-  },
-  {
-    "id": "oop",
-    "subject": "OOP Concepts",
-    "icon": "boxes",
-    "description": "Encapsulation, inheritance, polymorphism, abstraction, and SOLID basics.",
-    "tests": [
-      {
-        "id": "oop-test-1",
-        "title": "OOP Concepts — Mock Test 1",
-        "description": "Covers the four pillars of OOP, SOLID principles, design patterns basics, and class/object relationships.",
-        "formUrl": "https://forms.google.com/"
-      }
-    ],
-    "studyMaterials": [
-      {
-        "id": "oop-sm-1",
-        "title": "OOP Quick Reference",
-        "description": "Concise explanations of encapsulation, inheritance, polymorphism, abstraction, and SOLID principles with examples.",
-        "driveUrl": "https://drive.google.com/file/d/1a3FbGNGPOcy70aDY62gtIL_3y4O59Rvp/view?usp=sharing"
-      }
-    ]
-  },
-  {
-    "id": "sd",
-    "subject": "System Design Basics",
-    "icon": "server",
-    "description": "Scaling, caching, load balancing, and high-level design trade-offs.",
-    "tests": [
-      {
-        "id": "sd-test-1",
-        "title": "System Design — Mock Test 1",
-        "description": "Covers caching, load balancing, horizontal vs vertical scaling, CAP theorem, and microservices basics.",
-        "formUrl": "https://forms.google.com/"
-      }
-    ],
-    "studyMaterials": [
-      {
-        "id": "sd-sm-1",
-        "title": "System Design - A Quick Reference",
-        "description": "Overview of core system design concepts: caching, sharding, replication, load balancing, and CAP theorem.",
-        "driveUrl": "https://drive.google.com/file/d/1VhE4zBFX86QKphjaj-eN6yzMLIg-UcvX/view?usp=sharing"
-      },
-      {
-        "id": "sd-sm-2",
-        "title": "System Design - Textbook",
-        "description": "System Design Interview - Alex Xu, comprehensive textbook on all System Design concepts.",
-        "driveUrl": "https://drive.google.com/file/d/1XnoU2z1V0jQhSVXDhqYKAkdFX887k39i/view?usp=sharing"
-      }
-    ]
-  },
-  {
-    "id": "misc",
-    "subject": "Miscellaneous",
-    "icon": "server",
-    "description": "Time complexity and other concepts",
-    "tests": [
-      {
-        "id": "misc-test-1",
-        "title": "Miscellaneous — Mock Test 1",
-        "description": "Covers caching, load balancing, horizontal vs vertical scaling, CAP theorem, and microservices basics.",
-        "formUrl": "https://forms.google.com/"
-      }
-    ],
-    "studyMaterials": [
-      {
-        "id": "misc-sm-1",
-        "title": "System Design - A Quick Reference",
-        "description": "Overview of core system design concepts: caching, sharding, replication, load balancing, and CAP theorem.",
-        "driveUrl": "https://drive.google.com/file/d/1VhE4zBFX86QKphjaj-eN6yzMLIg-UcvX/view?usp=sharing"
-      },
-      {
-        "id": "misc-sm-2",
-        "title": "System Design - Textbook",
-        "description": "System Design Interview - Alex Xu, comprehensive textbook on all System Design concepts.",
-        "driveUrl": "https://drive.google.com/file/d/1XnoU2z1V0jQhSVXDhqYKAkdFX887k39i/view?usp=sharing"
-      }
-    ]
-  }
-]
+{
+  "tests": [
+    {
+      "id": "test-1",
+      "subjectId": "misc",
+      "title": "Time and Space Complexity",
+      "description": "Clck here to access the timed Google Form test. Question and answers PDF is available below.",
+      "formUrl": "https://forms.google.com/"
+    }
+  ],
+  "resources": [
+    {
+      "id": "test",
+      "subject": "Technical Concepts Tests - Question Bank",
+      "icon": "binary",
+      "description": "Drive link containing all question banks of weekly tests in PDF.",
+      "studyMaterials": [
+        {
+          "id": "test-1",
+          "title": "Time Complexity",
+          "description": "PDF WILL BE ADDED SOON!.",
+          "driveUrl": "https://drive.google.com/file/d/12xp9bz0P2BelxvnDFTJNW6HBlpFTziw0/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      "id": "dsa",
+      "subject": "Data Structures",
+      "icon": "binary",
+      "description": "Arrays, linked lists, trees, graphs, hashing, and complexity analysis.",
+      "studyMaterials": [
+        {
+          "id": "dsa-sm-1",
+          "title": "Data Structures — Quick Reference",
+          "description": "Notes covering time/space complexities of common data structures, algorithms and key functions.",
+          "driveUrl": "https://drive.google.com/file/d/12xp9bz0P2BelxvnDFTJNW6HBlpFTziw0/view?usp=sharing"
+        },
+        {
+          "id": "dsa-sm-2",
+          "title": "Striver hand-written solution reference",
+          "description": "Covers a subset of solutions from the Striver SDE Sheet.",
+          "driveUrl": "https://drive.google.com/file/d/17KOWPTIVozc9LT9BFRFCVA1lxGNaOjDf/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      "id": "dbms",
+      "subject": "DBMS",
+      "icon": "database",
+      "description": "Normalization, indexing, transactions, ACID properties, and SQL query reasoning.",
+      "studyMaterials": [
+        {
+          "id": "dbms-sm-1",
+          "title": "SQL Practice Sheet (Codechef)",
+          "description": "SQL Practice sheet from beginner to advanced SQL on Codechef.",
+          "driveUrl": "https://www.codechef.com/practice/sql-case-studies-topic-wise"
+        },
+        {
+          "id": "dbms-sm-2",
+          "title": "SQL Cheat Sheets",
+          "description": "Comprehensive SQL Cheat sheet with basics, joins, standard functions and data analysis. From LearnSQL.com",
+          "driveUrl": "https://drive.google.com/file/d/1ZKOHYROiGMbrabqn1rsKFqOF2tLSW8V4/view?usp=sharing"
+        },
+        {
+          "id": "dbms-sm-3",
+          "title": "DBMS Quick Review Notes",
+          "description": "DBMS notes for quick refresh of concepts.",
+          "driveUrl": "https://drive.google.com/file/d/1K_s3ML4oNrm4n1xBRTmOh8EPg7Fv6jB-/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      "id": "os",
+      "subject": "Operating Systems",
+      "icon": "cpu",
+      "description": "Processes & threads, CPU scheduling, memory management, deadlocks, and concurrency.",
+      "studyMaterials": [
+        {
+          "id": "os-sm-1",
+          "title": "OS Comprehensive Notes",
+          "description": "Comprehensive notes covering most topics of OS.",
+          "driveUrl": "https://drive.google.com/file/d/1o-xVjTQWxB9m47-3YC6Kasuiyd8Xxnlp/view?usp=sharing"
+        },
+        {
+          "id": "os-sm-2",
+          "title": "OS Question Bank",
+          "description": "Question bank covering OS topics with company tags.",
+          "driveUrl": "https://drive.google.com/file/d/1YC2Y39Jwa4EqLzcoiz2aO1RPn1ZZkjJo/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      "id": "cn",
+      "subject": "Computer Networks",
+      "icon": "network",
+      "description": "OSI & TCP/IP layers, routing, common protocols, and IP addressing.",
+      "studyMaterials": [
+        {
+          "id": "cn-sm-1",
+          "title": "Computer Networks — Quick Reference",
+          "description": "Summary notes for OSI and TCP Layers, IP addressing, protocols, addresses and routing.",
+          "driveUrl": "https://drive.google.com/file/d/1QcCnZgTmHnPT5fC_ivPia-qXez9DObaV/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      "id": "oop",
+      "subject": "OOP Concepts",
+      "icon": "boxes",
+      "description": "Encapsulation, inheritance, polymorphism, abstraction, and SOLID basics.",
+      "studyMaterials": [
+        {
+          "id": "oop-sm-1",
+          "title": "OOP Quick Reference",
+          "description": "Concise explanations of encapsulation, inheritance, polymorphism, abstraction, and SOLID principles with examples.",
+          "driveUrl": "https://drive.google.com/file/d/1a3FbGNGPOcy70aDY62gtIL_3y4O59Rvp/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      "id": "sd",
+      "subject": "System Design Basics",
+      "icon": "server",
+      "description": "Scaling, caching, load balancing, and high-level design trade-offs.",
+      "studyMaterials": [
+        {
+          "id": "sd-sm-1",
+          "title": "System Design - A Quick Reference",
+          "description": "Overview of core system design concepts: caching, sharding, replication, load balancing, and CAP theorem.",
+          "driveUrl": "https://drive.google.com/file/d/1VhE4zBFX86QKphjaj-eN6yzMLIg-UcvX/view?usp=sharing"
+        },
+        {
+          "id": "sd-sm-2",
+          "title": "System Design - Textbook",
+          "description": "System Design Interview - Alex Xu, comprehensive textbook on all System Design concepts.",
+          "driveUrl": "https://drive.google.com/file/d/1XnoU2z1V0jQhSVXDhqYKAkdFX887k39i/view?usp=sharing"
+        }
+      ]
+    },
+    {
+      "id": "misc",
+      "subject": "Miscellaneous",
+      "icon": "server",
+      "description": "Time complexity and other concepts",
+      "studyMaterials": [
+        {
+          "id": "misc-sm-1",
+          "title": "Time Complexity Quick Reference",
+          "description": "Overview of Big-O, Big-Theta, and Big-Omega notation with examples.",
+          "driveUrl": "https://drive.google.com/file/d/1VhE4zBFX86QKphjaj-eN6yzMLIg-UcvX/view?usp=sharing"
+        },
+        {
+          "id": "misc-sm-2",
+          "title": "System Design - Textbook",
+          "description": "System Design Interview - Alex Xu, comprehensive textbook on core design concepts.",
+          "driveUrl": "https://drive.google.com/file/d/1XnoU2z1V0jQhSVXDhqYKAkdFX887k39i/view?usp=sharing"
+        }
+      ]
+    }
+  ]
+}

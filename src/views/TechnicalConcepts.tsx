@@ -13,21 +13,26 @@ type StudyMaterial = {
 
 type TechnicalTest = {
   id: string;
+  subjectId: string;
   title: string;
   description: string;
   formUrl: string;
 };
 
-type Concept = {
+type ResourceConcept = {
   id: string;
   subject: string;
   icon: string;
   description: string;
-  tests: TechnicalTest[];
   studyMaterials: StudyMaterial[];
 };
 
-const technicalConcepts = rawTechnicalConcepts as Concept[];
+type TechnicalConceptsData = {
+  tests: TechnicalTest[];
+  resources: ResourceConcept[];
+};
+
+const technicalConceptsData = rawTechnicalConcepts as TechnicalConceptsData;
 
 const ICONS: Record<string, LucideIcon> = {
   cpu: Cpu,
@@ -40,7 +45,7 @@ const ICONS: Record<string, LucideIcon> = {
 
 const QUESTION_BANK_KEYWORDS = ['question bank', 'practice sheet', 'question-bank', 'q&a', 'questions'];
 
-const getQuestionBankResource = (concept: Concept): StudyMaterial => {
+const getQuestionBankResource = (concept: ResourceConcept): StudyMaterial | undefined => {
   const matchedResource = concept.studyMaterials.find((material) => {
     const searchableText = `${material.title} ${material.description}`.toLowerCase();
     return QUESTION_BANK_KEYWORDS.some((keyword) => searchableText.includes(keyword));
@@ -50,10 +55,14 @@ const getQuestionBankResource = (concept: Concept): StudyMaterial => {
 };
 
 const TechnicalTestCard: React.FC<{
-  concept: Concept;
+  concept: ResourceConcept;
   test: TechnicalTest;
 }> = ({ concept, test }) => {
   const questionBankResource = getQuestionBankResource(concept);
+
+  if (!questionBankResource) {
+    return null;
+  }
 
   return (
     <Card className="flex flex-col justify-between h-full">
@@ -100,14 +109,13 @@ const TechnicalTestCard: React.FC<{
 };
 
 const SubjectResourcesPage: React.FC<{
-  concept: Concept;
+  concept: ResourceConcept;
   onBack: () => void;
 }> = ({ concept, onBack }) => {
   const Icon = ICONS[concept.icon] ?? FileQuestion;
 
   return (
     <div className="space-y-8 animate-fade-in-up">
-      {/* Header */}
       <div className="flex items-center gap-4">
         <button
           onClick={onBack}
@@ -126,7 +134,6 @@ const SubjectResourcesPage: React.FC<{
         </div>
       </div>
 
-      {/* ── Study Materials ──────────────────────────────────── */}
       <div>
         <div className="flex items-center gap-2 mb-4">
           <div className="w-8 h-8 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center">
@@ -169,24 +176,17 @@ const SubjectResourcesPage: React.FC<{
   );
 };
 
-// ─── Main page ────────────────────────────────────────────────────────────────
 export const TechnicalConcepts: React.FC = () => {
   const [activeId, setActiveId] = useState<string | null>(null);
 
-  const activeConcept = technicalConcepts.find((c) => c.id === activeId);
+  const activeConcept = technicalConceptsData.resources.find((resource) => resource.id === activeId);
 
   if (activeConcept) {
-    return (
-      <SubjectResourcesPage
-        concept={activeConcept}
-        onBack={() => setActiveId(null)}
-      />
-    );
+    return <SubjectResourcesPage concept={activeConcept} onBack={() => setActiveId(null)} />;
   }
 
   return (
     <div className="space-y-10 animate-fade-in-up">
-      {/* Page Header */}
       <div>
         <h2 className="text-xl font-semibold text-zinc-100">Technical Concepts</h2>
         <p className="text-sm text-zinc-500 mt-1">
@@ -194,7 +194,6 @@ export const TechnicalConcepts: React.FC = () => {
         </p>
       </div>
 
-      {/* Technical tests */}
       <div className="space-y-4">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center">
@@ -207,15 +206,18 @@ export const TechnicalConcepts: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {technicalConcepts.flatMap((concept) =>
-            concept.tests.map((test) => (
-              <TechnicalTestCard key={`${concept.id}-${test.id}`} concept={concept} test={test} />
-            ))
-          )}
+          {technicalConceptsData.tests.map((test) => {
+            const concept = technicalConceptsData.resources.find((resource) => resource.id === test.subjectId);
+
+            if (!concept) {
+              return null;
+            }
+
+            return <TechnicalTestCard key={test.id} concept={concept} test={test} />;
+          })}
         </div>
       </div>
 
-      {/* Subject resources */}
       <div className="space-y-4">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center">
@@ -228,7 +230,7 @@ export const TechnicalConcepts: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {technicalConcepts.map((concept) => {
+          {technicalConceptsData.resources.map((concept) => {
             const Icon = ICONS[concept.icon] ?? FileQuestion;
             return (
               <Card
