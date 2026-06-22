@@ -36,14 +36,8 @@ export const AptitudePractice: React.FC = () => {
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {aptitudeData.tests.map((test) => (
-              <a
-                key={test.id}
-                href={test.formUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block group"
-              >
-                <Card className="flex flex-col justify-between h-full cursor-pointer group-hover:border-blue-500/40 transition-colors">
+              <div key={test.id} className="group block">
+                <Card className="flex flex-col justify-between h-full cursor-default group-hover:border-blue-500/40 transition-colors">
                   <div>
                     <div className="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-4">
                       <ClipboardList className="w-5 h-5 text-blue-400" />
@@ -51,14 +45,30 @@ export const AptitudePractice: React.FC = () => {
                     <h4 className="text-sm font-semibold text-zinc-100 mb-1">{test.title}</h4>
                     <p className="text-xs text-zinc-400 leading-relaxed">{test.description}</p>
                   </div>
-                  <div className="flex items-center justify-between pt-4 border-t border-zinc-800 text-xs font-medium mt-4">
-                    <span className="text-zinc-500">Google Forms</span>
-                    <span className="flex items-center gap-1 text-blue-400 group-hover:text-blue-300 transition-colors">
+                  <div className="flex items-center justify-between pt-4 border-t border-zinc-800 text-xs font-medium mt-4 gap-3">
+                    <a
+                      href={test.formUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 text-blue-400 hover:text-blue-300 transition-colors"
+                    >
                       Open Test <ExternalLink className="w-3 h-3" />
-                    </span>
+                    </a>
+                    {test.bankUrl ? (
+                      <a
+                        href={test.bankUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-1 text-emerald-400 hover:text-emerald-300 transition-colors"
+                      >
+                        Question Bank <ExternalLink className="w-3 h-3" />
+                      </a>
+                    ) : (
+                      <span className="text-zinc-500">Question Bank unavailable</span>
+                    )}
                   </div>
                 </Card>
-              </a>
+              </div>
             ))}
           </div>
         )}

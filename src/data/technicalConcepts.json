@@ -18,12 +18,18 @@
       "studyMaterials": [
         {
           "id": "dsa-sm-1",
+          "title": "Big-O Reference",
+          "description": "Covers major searching and sorting algorithms and their complexities..",
+          "driveUrl": "https://drive.google.com/file/d/1G2djBnDRTV4fEn-h_y0Z9z0ajKxFWI1G/view?usp=sharing"
+        },
+        {
+          "id": "dsa-sm-2",
           "title": "Data Structures — Quick Reference",
           "description": "Notes covering time/space complexities of common data structures, algorithms and key functions.",
           "driveUrl": "https://drive.google.com/file/d/12xp9bz0P2BelxvnDFTJNW6HBlpFTziw0/view?usp=sharing"
         },
         {
-          "id": "dsa-sm-2",
+          "id": "dsa-sm-3",
           "title": "Striver hand-written solution reference",
           "description": "Covers a subset of solutions from the Striver SDE Sheet.",
           "driveUrl": "https://drive.google.com/file/d/17KOWPTIVozc9LT9BFRFCVA1lxGNaOjDf/view?usp=sharing"
@@ -123,25 +129,7 @@
           "driveUrl": "https://drive.google.com/file/d/1XnoU2z1V0jQhSVXDhqYKAkdFX887k39i/view?usp=sharing"
         }
       ]
-    },
-    {
-      "id": "misc",
-      "subject": "Miscellaneous",
-      "icon": "server",
-      "description": "Time complexity and other concepts",
-      "studyMaterials": [
-        {
-          "id": "misc-sm-1",
-          "title": "Time Complexity Quick Reference",
-          "description": "Overview of Big-O, Big-Theta, and Big-Omega notation with examples.",
-          "driveUrl": "https://drive.google.com/file/d/1VhE4zBFX86QKphjaj-eN6yzMLIg-UcvX/view?usp=sharing"
-        },
-        {
-          "id": "misc-sm-2",
-          "title": "System Design - Textbook",
-          "description": "System Design Interview - Alex Xu, comprehensive textbook on core design concepts.",
-          "driveUrl": "https://drive.google.com/file/d/1XnoU2z1V0jQhSVXDhqYKAkdFX887k39i/view?usp=sharing"
-        }
+    }
       ]
     }
   ]

@@ -4,25 +4,29 @@
       "id": "test-1",
       "title": "Quantitative Aptitude – Mock Test 1",
       "description": "30-question timed test covering arithmetic, algebra, and number systems.",
-      "formUrl": "https://forms.google.com/"
+      "formUrl": "https://forms.google.com/",
+      "bankUrl": "https://drive.google.com/file/d/1Qt5nWMAFQy0nFC_HP2LKqzw4nnGV24c8/view?usp=sharing"
     },
     {
       "id": "test-2",
       "title": "Logical Reasoning – Mock Test 1",
       "description": "25-question test on syllogisms, blood relations, and seating arrangements.",
-      "formUrl": "https://forms.google.com/"
+      "formUrl": "https://forms.google.com/",
+      "bankUrl": "https://drive.google.com/file/d/17e_cKU18-oT2NRVNwH_uUWYO5ZxYprK0/view?usp=sharing"
     },
     {
       "id": "test-3",
       "title": "Verbal Ability – Mock Test 1",
       "description": "Reading comprehension, sentence correction, and vocabulary exercises.",
-      "formUrl": "https://forms.google.com/"
+      "formUrl": "https://forms.google.com/",
+      "bankUrl": "https://drive.google.com/file/d/17e_cKU18-oT2NRVNwH_uUWYO5ZxYprK0/view?usp=sharing"
     },
     {
       "id": "test-4",
       "title": "Full Aptitude – Grand Mock Test",
       "description": "Comprehensive 60-question test covering all three aptitude sections.",
-      "formUrl": "https://forms.google.com/"
+      "formUrl": "https://forms.google.com/",
+      "bankUrl": "https://drive.google.com/file/d/1GfbiTu5FVSj0L3UZBxjnUQffjEC4bxn6/view?usp=sharing"
     }
   ],
   "studyMaterials": [
