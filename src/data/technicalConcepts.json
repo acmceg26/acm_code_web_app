@@ -2,27 +2,14 @@
   "tests": [
     {
       "id": "test-1",
-      "subjectId": "misc",
+      "subjectId": "dsa",
       "title": "Time and Space Complexity",
       "description": "Clck here to access the timed Google Form test. Question and answers PDF is available below.",
-      "formUrl": "https://forms.google.com/"
+      "formUrl": "https://form-timer.com/start/1ed0763f",
+      "bankUrl": "https://drive.google.com/file/d/1JYBo5CpW5miXwyCTfLYL3MC9tiy4knYF/view?usp=sharing"
     }
   ],
   "resources": [
-    {
-      "id": "test",
-      "subject": "Technical Concepts Tests - Question Bank",
-      "icon": "binary",
-      "description": "Drive link containing all question banks of weekly tests in PDF.",
-      "studyMaterials": [
-        {
-          "id": "test-1",
-          "title": "Time Complexity",
-          "description": "PDF WILL BE ADDED SOON!.",
-          "driveUrl": "https://drive.google.com/file/d/12xp9bz0P2BelxvnDFTJNW6HBlpFTziw0/view?usp=sharing"
-        }
-      ]
-    },
     {
       "id": "dsa",
       "subject": "Data Structures",
