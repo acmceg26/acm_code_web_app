@@ -52,7 +52,7 @@
         "title": "SQL Cheat Sheets",
         "description": "Comprehensive SQL Cheat sheet with basics, joins, standard functions and data analysis. From LearnSQL.com",
         "driveUrl": "https://drive.google.com/file/d/1ZKOHYROiGMbrabqn1rsKFqOF2tLSW8V4/view?usp=sharing"
-      }, 
+      },
       {
         "id": "dbms-sm-3",
         "title": "DBMS Quick Review Notes",
@@ -82,7 +82,7 @@
         "driveUrl": "https://drive.google.com/file/d/1o-xVjTQWxB9m47-3YC6Kasuiyd8Xxnlp/view?usp=sharing"
       },
       {
-        "id": "os-sm-1",
+        "id": "os-sm-2",
         "title": "OS Question Bank",
         "description": "Question bank covering OS topics with company tags.",
         "driveUrl": "https://drive.google.com/file/d/1YC2Y39Jwa4EqLzcoiz2aO1RPn1ZZkjJo/view?usp=sharing"
@@ -154,9 +154,37 @@
         "driveUrl": "https://drive.google.com/file/d/1VhE4zBFX86QKphjaj-eN6yzMLIg-UcvX/view?usp=sharing"
       },
       {
-        "id": "sd-sm-1",
+        "id": "sd-sm-2",
         "title": "System Design - Textbook",
-        "description": "System Design Interview - Alex Xu, xomprehensive textbook on all System Design concepts",
+        "description": "System Design Interview - Alex Xu, comprehensive textbook on all System Design concepts.",
+        "driveUrl": "https://drive.google.com/file/d/1XnoU2z1V0jQhSVXDhqYKAkdFX887k39i/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": "misc",
+    "subject": "Miscellaneous",
+    "icon": "server",
+    "description": "Time complexity and other concepts",
+    "tests": [
+      {
+        "id": "misc-test-1",
+        "title": "Miscellaneous — Mock Test 1",
+        "description": "Covers caching, load balancing, horizontal vs vertical scaling, CAP theorem, and microservices basics.",
+        "formUrl": "https://forms.google.com/"
+      }
+    ],
+    "studyMaterials": [
+      {
+        "id": "misc-sm-1",
+        "title": "System Design - A Quick Reference",
+        "description": "Overview of core system design concepts: caching, sharding, replication, load balancing, and CAP theorem.",
+        "driveUrl": "https://drive.google.com/file/d/1VhE4zBFX86QKphjaj-eN6yzMLIg-UcvX/view?usp=sharing"
+      },
+      {
+        "id": "misc-sm-2",
+        "title": "System Design - Textbook",
+        "description": "System Design Interview - Alex Xu, comprehensive textbook on all System Design concepts.",
         "driveUrl": "https://drive.google.com/file/d/1XnoU2z1V0jQhSVXDhqYKAkdFX887k39i/view?usp=sharing"
       }
     ]

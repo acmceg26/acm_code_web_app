@@ -1,15 +1,33 @@
 import React, { useState } from 'react';
-import technicalConcepts from '../data/technicalConcepts.json';
+import rawTechnicalConcepts from '../data/technicalConcepts.json';
 import { Card } from '../components/ui/Card';
-import { ComingSoon } from '../components/ui/ComingSoon';
 import { Cpu, Database, Network, Boxes, Binary, Server, FileQuestion, ArrowLeft, ExternalLink, ClipboardList, FileText } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
-// ─── Feature flags ──────────────────────────────────────────────────────────
-// Set to `false` once the respective links are ready to publish.
-const TESTS_COMING_SOON = true;
-const MATERIALS_COMING_SOON = false;
-// ────────────────────────────────────────────────────────────────────────────
+type StudyMaterial = {
+  id: string;
+  title: string;
+  description: string;
+  driveUrl: string;
+};
+
+type TechnicalTest = {
+  id: string;
+  title: string;
+  description: string;
+  formUrl: string;
+};
+
+type Concept = {
+  id: string;
+  subject: string;
+  icon: string;
+  description: string;
+  tests: TechnicalTest[];
+  studyMaterials: StudyMaterial[];
+};
+
+const technicalConcepts = rawTechnicalConcepts as Concept[];
 
 const ICONS: Record<string, LucideIcon> = {
   cpu: Cpu,
@@ -20,10 +38,68 @@ const ICONS: Record<string, LucideIcon> = {
   server: Server,
 };
 
-type Concept = (typeof technicalConcepts)[number];
+const QUESTION_BANK_KEYWORDS = ['question bank', 'practice sheet', 'question-bank', 'q&a', 'questions'];
 
-// ─── Subject detail page ─────────────────────────────────────────────────────
-const SubjectDetailPage: React.FC<{
+const getQuestionBankResource = (concept: Concept): StudyMaterial => {
+  const matchedResource = concept.studyMaterials.find((material) => {
+    const searchableText = `${material.title} ${material.description}`.toLowerCase();
+    return QUESTION_BANK_KEYWORDS.some((keyword) => searchableText.includes(keyword));
+  });
+
+  return matchedResource ?? concept.studyMaterials[0];
+};
+
+const TechnicalTestCard: React.FC<{
+  concept: Concept;
+  test: TechnicalTest;
+}> = ({ concept, test }) => {
+  const questionBankResource = getQuestionBankResource(concept);
+
+  return (
+    <Card className="flex flex-col justify-between h-full">
+      <div>
+        <div className="flex items-center justify-between gap-3 mb-4">
+          <div className="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0">
+            <ClipboardList className="w-5 h-5" />
+          </div>
+          <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-zinc-500">
+            {concept.subject}
+          </span>
+        </div>
+        <h4 className="text-sm font-semibold text-zinc-100 mb-1">{test.title}</h4>
+        <p className="text-xs text-zinc-400 leading-relaxed">{test.description}</p>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4 border-t border-zinc-800 mt-4">
+        <a
+          href={test.formUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-center gap-2 rounded-lg border border-blue-500/20 bg-blue-500/10 px-3 py-2.5 text-xs font-semibold text-blue-300 transition-colors hover:border-blue-400/40 hover:bg-blue-500/15 hover:text-blue-200"
+        >
+          Open Test
+          <ExternalLink className="w-3 h-3" />
+        </a>
+        <a
+          href={questionBankResource.driveUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center justify-between gap-3 rounded-lg border border-emerald-500/20 bg-emerald-500/10 px-3 py-2.5 text-xs font-semibold text-emerald-300 transition-colors hover:border-emerald-400/40 hover:bg-emerald-500/15 hover:text-emerald-200"
+        >
+          <span className="flex min-w-0 flex-col items-start text-left">
+            <span>Question Bank</span>
+            <span className="truncate text-[10px] font-medium text-emerald-400/80">
+              {questionBankResource.title}
+            </span>
+          </span>
+          <ExternalLink className="w-3 h-3 shrink-0" />
+        </a>
+      </div>
+    </Card>
+  );
+};
+
+const SubjectResourcesPage: React.FC<{
   concept: Concept;
   onBack: () => void;
 }> = ({ concept, onBack }) => {
@@ -50,52 +126,6 @@ const SubjectDetailPage: React.FC<{
         </div>
       </div>
 
-      {/* ── Technical MCQs ───────────────────────────────────── */}
-      <div>
-        <div className="flex items-center gap-2 mb-4">
-          <div className="w-8 h-8 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center">
-            <ClipboardList className="w-4 h-4 text-zinc-300" />
-          </div>
-          <div>
-            <h3 className="text-base font-semibold text-zinc-100">Technical MCQs</h3>
-            <p className="text-xs text-zinc-500">Subject-specific mock tests via Google Forms</p>
-          </div>
-        </div>
-
-        {/* ── Toggle: TESTS_COMING_SOON ── */}
-        {TESTS_COMING_SOON ? (
-          <ComingSoon message={`${concept.subject} MCQ tests are being set up. Check back soon!`} />
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {concept.tests.map((test) => (
-              <a
-                key={test.id}
-                href={test.formUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block group"
-              >
-                <Card className="flex flex-col justify-between h-full cursor-pointer group-hover:border-blue-500/40 transition-colors">
-                  <div>
-                    <div className="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-4">
-                      <ClipboardList className="w-5 h-5 text-blue-400" />
-                    </div>
-                    <h4 className="text-sm font-semibold text-zinc-100 mb-1">{test.title}</h4>
-                    <p className="text-xs text-zinc-400 leading-relaxed">{test.description}</p>
-                  </div>
-                  <div className="flex items-center justify-between pt-4 border-t border-zinc-800 text-xs font-medium mt-4">
-                    <span className="text-zinc-500">Google Forms</span>
-                    <span className="flex items-center gap-1 text-blue-400 group-hover:text-blue-300 transition-colors">
-                      Open Test <ExternalLink className="w-3 h-3" />
-                    </span>
-                  </div>
-                </Card>
-              </a>
-            ))}
-          </div>
-        )}
-      </div>
-
       {/* ── Study Materials ──────────────────────────────────── */}
       <div>
         <div className="flex items-center gap-2 mb-4">
@@ -104,41 +134,36 @@ const SubjectDetailPage: React.FC<{
           </div>
           <div>
             <h3 className="text-base font-semibold text-zinc-100">Study Materials</h3>
-            <p className="text-xs text-zinc-500">Notes and quick references via Google Drive</p>
+            <p className="text-xs text-zinc-500">Question banks, notes, and quick references via Google Drive</p>
           </div>
         </div>
 
-        {/* ── Toggle: MATERIALS_COMING_SOON ── */}
-        {MATERIALS_COMING_SOON ? (
-          <ComingSoon message={`${concept.subject} study materials are being compiled. Check back soon!`} />
-        ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {concept.studyMaterials.map((material) => (
-              <a
-                key={material.id}
-                href={material.driveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block group"
-              >
-                <Card className="flex flex-col justify-between h-full cursor-pointer group-hover:border-emerald-500/40 transition-colors">
-                  <div>
-                    <div className="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-4">
-                      <FileText className="w-5 h-5 text-emerald-400" />
-                    </div>
-                    <h4 className="text-sm font-semibold text-zinc-100 mb-1">{material.title}</h4>
-                    <p className="text-xs text-zinc-400 leading-relaxed">{material.description}</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {concept.studyMaterials.map((material) => (
+            <a
+              key={material.id}
+              href={material.driveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block group"
+            >
+              <Card className="flex flex-col justify-between h-full cursor-pointer group-hover:border-emerald-500/40 transition-colors">
+                <div>
+                  <div className="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-4">
+                    <FileText className="w-5 h-5 text-emerald-400" />
                   </div>
-                  <div className="flex items-center justify-between pt-4 border-t border-zinc-800 text-xs font-medium mt-4">
-                    <span className="flex items-center gap-1 text-emerald-400 group-hover:text-emerald-300 transition-colors">
-                      Open Material <ExternalLink className="w-3 h-3" />
-                    </span>
-                  </div>
-                </Card>
-              </a>
-            ))}
-          </div>
-        )}
+                  <h4 className="text-sm font-semibold text-zinc-100 mb-1">{material.title}</h4>
+                  <p className="text-xs text-zinc-400 leading-relaxed">{material.description}</p>
+                </div>
+                <div className="flex items-center justify-between pt-4 border-t border-zinc-800 text-xs font-medium mt-4">
+                  <span className="flex items-center gap-1 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                    Open Material <ExternalLink className="w-3 h-3" />
+                  </span>
+                </div>
+              </Card>
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -152,7 +177,7 @@ export const TechnicalConcepts: React.FC = () => {
 
   if (activeConcept) {
     return (
-      <SubjectDetailPage
+      <SubjectResourcesPage
         concept={activeConcept}
         onBack={() => setActiveId(null)}
       />
@@ -160,39 +185,72 @@ export const TechnicalConcepts: React.FC = () => {
   }
 
   return (
-    <div className="space-y-6 animate-fade-in-up">
+    <div className="space-y-10 animate-fade-in-up">
       {/* Page Header */}
       <div>
         <h2 className="text-xl font-semibold text-zinc-100">Technical Concepts</h2>
         <p className="text-sm text-zinc-500 mt-1">
-          Tests and study materials for core CS subjects.
+          A test hub for Google Forms mock tests and a separate resource library for each subject.
         </p>
       </div>
 
-      {/* Subject cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {technicalConcepts.map((concept) => {
-          const Icon = ICONS[concept.icon] ?? FileQuestion;
-          return (
-            <Card
-              key={concept.id}
-              onClick={() => setActiveId(concept.id)}
-              className="flex flex-col justify-between h-full group cursor-pointer"
-            >
-              <div>
-                <div className="w-11 h-11 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center mb-5 text-zinc-300">
-                  <Icon className="w-5 h-5" />
-                </div>
-                <h3 className="text-base font-semibold text-zinc-100 mb-2">{concept.subject}</h3>
-                <p className="text-xs text-zinc-400 leading-relaxed mb-6">{concept.description}</p>
-              </div>
+      {/* Technical tests */}
+      <div className="space-y-4">
+        <div className="flex items-center gap-2">
+          <div className="w-8 h-8 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center">
+            <ClipboardList className="w-4 h-4 text-zinc-300" />
+          </div>
+          <div>
+            <h3 className="text-base font-semibold text-zinc-100">Technical Tests</h3>
+            <p className="text-xs text-zinc-500">Google Form mock tests with a question-bank shortcut in each card</p>
+          </div>
+        </div>
 
-              <div className="flex items-center justify-between pt-4 border-t border-zinc-800 text-xs font-medium">
-                <span className="text-zinc-400 group-hover:text-zinc-200 transition-colors">View &rarr;</span>
-              </div>
-            </Card>
-          );
-        })}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {technicalConcepts.flatMap((concept) =>
+            concept.tests.map((test) => (
+              <TechnicalTestCard key={`${concept.id}-${test.id}`} concept={concept} test={test} />
+            ))
+          )}
+        </div>
+      </div>
+
+      {/* Subject resources */}
+      <div className="space-y-4">
+        <div className="flex items-center gap-2">
+          <div className="w-8 h-8 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center">
+            <FileText className="w-4 h-4 text-zinc-300" />
+          </div>
+          <div>
+            <h3 className="text-base font-semibold text-zinc-100">Subject Resources</h3>
+            <p className="text-xs text-zinc-500">Open a subject to view only its study materials</p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {technicalConcepts.map((concept) => {
+            const Icon = ICONS[concept.icon] ?? FileQuestion;
+            return (
+              <Card
+                key={concept.id}
+                onClick={() => setActiveId(concept.id)}
+                className="flex flex-col justify-between h-full group cursor-pointer"
+              >
+                <div>
+                  <div className="w-11 h-11 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center mb-5 text-zinc-300">
+                    <Icon className="w-5 h-5" />
+                  </div>
+                  <h3 className="text-base font-semibold text-zinc-100 mb-2">{concept.subject}</h3>
+                  <p className="text-xs text-zinc-400 leading-relaxed mb-6">{concept.description}</p>
+                </div>
+
+                <div className="flex items-center justify-between pt-4 border-t border-zinc-800 text-xs font-medium">
+                  <span className="text-zinc-400 group-hover:text-zinc-200 transition-colors">View resources &rarr;</span>
+                </div>
+              </Card>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
