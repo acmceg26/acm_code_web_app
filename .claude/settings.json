@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import json; d=json.load\\(open\\('src/data/dsaSheets.json'\\)\\); ts=d['sheets'][0]['levels'][0]['topics']; print\\('Topics:', [\\(t['name'], len\\(t['problems']\\)\\) for t in ts]\\); ids=[p['id'] for t in ts for p in t['problems']]; print\\('Total problem entries:', len\\(ids\\)\\); import collections; dups={k:v for k,v in collections.Counter\\(ids\\).items\\(\\) if v>1}; print\\('Duplicate IDs \\(expected only str-8\\):', dups\\)\")"
+    ]
+  }
+}

@@ -368,6 +368,211 @@
                   "videoSolution": "https://youtu.be/-Ru17k4TCI4?si=s2SmXxnypmLfsH_Z"
                 }
               ]
+            },
+            {
+              "name": "Stacks",
+              "problems": [
+                {
+                  "id": "stk-1",
+                  "title": "Min Stack",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/min-stack/" },
+                  "videoSolution": "https://youtu.be/qkLl7nAwDPo?si=7rlyGjGcjLRzI5ZY"
+                },
+                {
+                  "id": "stk-2",
+                  "title": "Implement Queue using Stack",
+                  "difficulty": "Easy",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/queue-using-stacks/" },
+                  "videoSolution": "https://youtu.be/xxytjNGFsdQ?si=iW_uLKPuvAeYYdsy"
+                },
+                {
+                  "id": "stk-3",
+                  "title": "Implement Two Stacks using an Array",
+                  "difficulty": "Medium",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/dsa/implement-two-stacks-in-an-array/" },
+                  "videoSolution": "https://youtu.be/cJgVdvWz4iU?si=5Bfgu1rrXQINeHns"
+                },
+                {
+                  "id": "stk-4",
+                  "title": "Implement Three Stacks using a Single Array",
+                  "difficulty": "Medium",
+                  "platforms": {},
+                  "videoSolution": "https://youtu.be/S5cYO9k1Ja8?si=nGDH6oxx-l0zr9at"
+                },
+                {
+                  "id": "stk-5",
+                  "title": "Check if Stack is Valid given Push/Pop Operations",
+                  "difficulty": "Medium",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/check-if-the-given-push-and-pop-sequences-of-stack-is-valid-or-not/" },
+                  "videoSolution": "https://youtu.be/mzua0r94kb8?si=67ki6BVDfU94oH4l"
+                },
+                {
+                  "id": "stk-6",
+                  "title": "Undo-Redo Operations (Validate Stack Sequences)",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/validate-stack-sequences/description" },
+                  "videoSolution": "https://youtu.be/mzua0r94kb8?si=91gXIR_9Uhjra4ZP"
+                },
+                {
+                  "id": "stk-7",
+                  "title": "Asteroid Collision",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/asteroid-collision/description/" },
+                  "videoSolution": "https://youtu.be/LN7KjRszjk4?si=9hR6HNOrQH9wZFRC"
+                },
+                {
+                  "id": "stk-8",
+                  "title": "Remove Stars From a String",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/removing-stars-from-a-string/" },
+                  "videoSolution": "https://youtu.be/ixz709f7oh8?si=MMG4Gx_2_RtVS63E"
+                },
+                {
+                  "id": "stk-9",
+                  "title": "Implement Stack using Queue",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/implement-stack-using-queues/description/" },
+                  "videoSolution": "https://youtu.be/rW4vm0-DLYc?si=S9Jf3cKBVHeKZt8L"
+                },
+                {
+                  "id": "stk-10",
+                  "title": "Stack with Min/Max Operations",
+                  "difficulty": "Medium",
+                  "platforms": {}
+                },
+                {
+                  "id": "stk-11",
+                  "title": "Final Prices With a Special Discount in a Shop",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/description/" },
+                  "videoSolution": "https://youtu.be/BYushAxaQOg?si=Z5XuypBQWAxuT4PS"
+                },
+                {
+                  "id": "stk-12",
+                  "title": "Restrictive Candy Crush (Remove All Adjacent Duplicates II)",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/description/" },
+                  "videoSolution": "https://youtu.be/6rBdWEZJtSM?si=JoRiOXjQgw-MhMek"
+                },
+                {
+                  "id": "str-8",
+                  "title": "Valid Parentheses",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/valid-parentheses/" },
+                  "videoSolution": "https://youtu.be/WTzjTskDFMg?si=MRyPVrjPqtqROYBg"
+                },
+                {
+                  "id": "stk-13",
+                  "title": "Maximal Rectangle",
+                  "difficulty": "Hard",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/maximal-rectangle/description" },
+                  "videoSolution": "https://youtu.be/dAVF2NpC3j4?si=IslCsbZTZdTF9eoL"
+                },
+                {
+                  "id": "stk-14",
+                  "title": "Daily Temperatures",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/daily-temperatures/description" },
+                  "videoSolution": "https://youtu.be/cTBiBSnjO3c?si=Jvj99qq0KrwsKYTY"
+                },
+                {
+                  "id": "stk-15",
+                  "title": "Next Greater Element I",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/next-greater-element-i" },
+                  "videoSolution": "https://youtu.be/68a1Dc_qVq4?si=I4M1FhDR3IR2U-Mi"
+                },
+                {
+                  "id": "stk-16",
+                  "title": "Basic Calculator",
+                  "difficulty": "Hard",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/basic-calculator/description" },
+                  "videoSolution": "https://youtu.be/zsJ-J08Qgdk?si=_IG27Su4aldAtkqb"
+                },
+                {
+                  "id": "stk-17",
+                  "title": "Backspace String Compare",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/backspace-string-compare/description" },
+                  "videoSolution": "https://youtu.be/nxo_4FzXLxU?si=pg7c6tZLa5pMmjbi"
+                },
+                {
+                  "id": "stk-18",
+                  "title": "Basic Calculator II",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/basic-calculator-ii/description" },
+                  "videoSolution": "https://youtu.be/RcL4RqtgaRU?si=9CYEoD4QppqrZpXL"
+                }
+              ]
+            },
+            {
+              "name": "Queues",
+              "problems": [
+                {
+                  "id": "que-1",
+                  "title": "Implement Queue using Two Stacks",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/implement-queue-using-stacks/description/" },
+                  "videoSolution": "https://youtu.be/xxytjNGFsdQ?si=SUNSY1OOwA0XgUUJ"
+                },
+                {
+                  "id": "que-2",
+                  "title": "Reverse a Queue",
+                  "difficulty": "Easy",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/problems/queue-reversal/1" },
+                  "videoSolution": "https://youtu.be/aUU23JDaErs?si=YqZNNTBwvHDY2jwD"
+                },
+                {
+                  "id": "que-3",
+                  "title": "Design Circular Queue",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/design-circular-queue/description" },
+                  "videoSolution": "https://youtu.be/Q2YhZ6Pq0GQ?si=MB-CiVJEWFJao60_"
+                },
+                {
+                  "id": "que-4",
+                  "title": "Maximum Sum Circular Subarray",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/maximum-sum-circular-subarray/description" },
+                  "videoSolution": "https://youtu.be/fxT9KjakYPM?si=abplLyf3j7hviPAk"
+                },
+                {
+                  "id": "que-5",
+                  "title": "Number of Recent Calls",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/number-of-recent-calls/description" },
+                  "videoSolution": "https://youtu.be/HlmNEfcgyjM?si=-k3tUmFnfY9BZ7h3"
+                },
+                {
+                  "id": "que-6",
+                  "title": "Number of Students Unable to Eat Lunch",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/description" },
+                  "videoSolution": "https://youtu.be/d_cvtFwnOZg?si=lKOr8ZDTJNmrrcVD"
+                },
+                {
+                  "id": "que-7",
+                  "title": "Time Needed to Buy Tickets",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/time-needed-to-buy-tickets" },
+                  "videoSolution": "https://youtu.be/cVmS9N6kf2Y?si=JPiWESDrpjfD6fwP"
+                },
+                {
+                  "id": "que-8",
+                  "title": "Number of People Aware of a Secret",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/number-of-people-aware-of-a-secret/description" },
+                  "videoSolution": "https://youtu.be/V7QVZY84KQ8?si=zVzSdoEyU6NbUpSx"
+                },
+                {
+                  "id": "que-9",
+                  "title": "Design Circular Deque",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/design-circular-deque/description" },
+                  "videoSolution": "https://youtu.be/J4mk0tbIi8w?si=xsqZX3fItAD54OCf"
+                }
+              ]
             }
           ]
         }
