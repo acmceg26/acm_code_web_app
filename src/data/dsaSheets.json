@@ -573,6 +573,296 @@
                   "videoSolution": "https://youtu.be/J4mk0tbIi8w?si=xsqZX3fItAD54OCf"
                 }
               ]
+            },
+            {
+              "name": "Heap",
+              "problems": [
+                {
+                  "id": "heap-1",
+                  "title": "Implement Min Heap (from scratch)",
+                  "difficulty": "Easy",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/problems/min-heap-implementation/1" },
+                  "videoSolution": "https://www.youtube.com/watch?v=Qf-TDPr0nYw"
+                },
+                {
+                  "id": "heap-2",
+                  "title": "Kth Largest Element in a Stream",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/kth-largest-element-in-a-stream/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=hOjcdrqMoQ8"
+                },
+                {
+                  "id": "heap-3",
+                  "title": "Last Stone Weight",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/last-stone-weight/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=B-QCq79-Vfw"
+                },
+                {
+                  "id": "arr-16",
+                  "title": "Kth Largest Element in an Array",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/kth-largest-element-in-an-array/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=XEmy13g1Qxc"
+                },
+                {
+                  "id": "heap-5",
+                  "title": "K Closest Points to Origin",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/k-closest-points-to-origin/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=rI2EBUEMfTk"
+                },
+                {
+                  "id": "heap-6",
+                  "title": "Top K Frequent Elements",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/top-k-frequent-elements/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=Wh3A29psE_Y"
+                },
+                {
+                  "id": "heap-7",
+                  "title": "Sort Characters by Frequency",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/sort-characters-by-frequency/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=OXdXc9HTrIg"
+                },
+                {
+                  "id": "heap-8",
+                  "title": "Reorganize String",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/reorganize-string/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=2g_b1aYTHeg"
+                },
+                {
+                  "id": "heap-9",
+                  "title": "Task Scheduler",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/task-scheduler/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=s8p8ukTyA2I"
+                },
+                {
+                  "id": "heap-10",
+                  "title": "Find K Pairs with Smallest Sums",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/find-k-pairs-with-smallest-sums/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=Youk8DDnLU8"
+                },
+                {
+                  "id": "heap-11",
+                  "title": "Maximum Subsequence Score",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/maximum-subsequence-score/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=ax1DKi5lJwk"
+                },
+                {
+                  "id": "heap-12",
+                  "title": "Seat Reservation Manager",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/seat-reservation-manager/" },
+                  "videoSolution": "https://youtu.be/ahobllKXEEY?si=U64xUFYld_CfJdbq"
+                },
+                {
+                  "id": "heap-13",
+                  "title": "Furthest Building You Can Reach",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/furthest-building-you-can-reach/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=zyTeznvXCtg"
+                },
+                {
+                  "id": "heap-14",
+                  "title": "Find Median from Data Stream",
+                  "difficulty": "Hard",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/find-median-from-data-stream/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=itmhHWaHupI"
+                },
+                {
+                  "id": "heap-15",
+                  "title": "Merge K Sorted Lists",
+                  "difficulty": "Hard",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/merge-k-sorted-lists/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=ptYUCjfNhJY"
+                },
+                {
+                  "id": "heap-16",
+                  "title": "Sliding Window Median",
+                  "difficulty": "Hard",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/sliding-window-median/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=oKwmSnmEFpY"
+                },
+                {
+                  "id": "heap-17",
+                  "title": "Maximum Frequency Stack",
+                  "difficulty": "Hard",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/maximum-frequency-stack/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=Z6idIicFDOE"
+                },
+                {
+                  "id": "heap-18",
+                  "title": "Minimum Cost to Hire K Workers",
+                  "difficulty": "Hard",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/minimum-cost-to-hire-k-workers/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=f879mUH6vJk"
+                }
+              ]
+            },
+            {
+              "name": "Recursion & Backtracking",
+              "problems": [
+                {
+                  "id": "rec-1",
+                  "title": "Fibonacci Number",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/fibonacci-number/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=tyB0ztf0DNY"
+                },
+                {
+                  "id": "rec-2",
+                  "title": "Climbing Stairs",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/climbing-stairs/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=Y0lT9Fck7qI"
+                },
+                {
+                  "id": "rec-3",
+                  "title": "Tower of Hanoi",
+                  "difficulty": "Easy",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/problems/tower-of-hanoi-1587115621/1" },
+                  "videoSolution": "https://www.youtube.com/watch?v=rf6uf3jNjbo"
+                },
+                {
+                  "id": "rec-4",
+                  "title": "Subsets II",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/subsets-ii/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=RIn3gOkbhQE"
+                },
+                {
+                  "id": "rec-5",
+                  "title": "Permutations",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/permutations/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=YK78FU5Ffjw"
+                },
+                {
+                  "id": "rec-6",
+                  "title": "Permutations II (Distinct Perms with Duplicates)",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/permutations-ii/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=is_T6uzlTyg"
+                },
+                {
+                  "id": "rec-7",
+                  "title": "Combination Sum",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/combination-sum/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=OyZFFqQtu98"
+                },
+                {
+                  "id": "rec-8",
+                  "title": "Combination Sum II",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/combination-sum-ii/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=G1fRTGRxXU8"
+                },
+                {
+                  "id": "rec-9",
+                  "title": "Generate Parentheses",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/generate-parentheses/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=eyCj_u3PoJE"
+                },
+                {
+                  "id": "rec-10",
+                  "title": "Letter Combinations of a Phone Number",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=0snEunUacZY"
+                },
+                {
+                  "id": "rec-11",
+                  "title": "Target Sum",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/target-sum/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=g0npyaQtAQM"
+                },
+                {
+                  "id": "rec-12",
+                  "title": "Partition Equal Subset Sum",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/partition-equal-subset-sum/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=7win3dcgo3k"
+                },
+                {
+                  "id": "rec-13",
+                  "title": "Palindrome Partitioning",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/palindrome-partitioning/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=WBgsABoClE0"
+                },
+                {
+                  "id": "rec-14",
+                  "title": "Rat in a Maze",
+                  "difficulty": "Medium",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/problems/rat-in-a-maze-problem/1" },
+                  "videoSolution": "https://www.youtube.com/watch?v=bLGZhJlt4y0"
+                },
+                {
+                  "id": "rec-15",
+                  "title": "Word Search",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/word-search/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=vYYNp0Jrdv0"
+                },
+                {
+                  "id": "rec-16",
+                  "title": "Partition to K Equal Sum Subsets",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=mBk4I0X46oI"
+                },
+                {
+                  "id": "rec-17",
+                  "title": "Generate All Binary Strings from Pattern",
+                  "difficulty": "Medium",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/problems/generate-binary-string3642/1" },
+                  "videoSolution": "https://youtube.com/playlist?list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9"
+                },
+                {
+                  "id": "rec-18",
+                  "title": "Josephus Problem",
+                  "difficulty": "Medium",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/problems/josephus-problem/1" },
+                  "videoSolution": "https://www.youtube.com/watch?v=ULUNeD0N9yI"
+                },
+                {
+                  "id": "rec-19",
+                  "title": "Word Break II",
+                  "difficulty": "Hard",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/word-break-ii/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=QgLKdluDo08"
+                },
+                {
+                  "id": "rec-20",
+                  "title": "N-Queens",
+                  "difficulty": "Hard",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/n-queens/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=i05Ju7AftcM"
+                },
+                {
+                  "id": "rec-21",
+                  "title": "Sudoku Solver",
+                  "difficulty": "Hard",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/sudoku-solver/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=FWAIf_EVUKE"
+                },
+                {
+                  "id": "rec-22",
+                  "title": "M-Coloring Problem",
+                  "difficulty": "Hard",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/problems/m-coloring-problem-1587115620/1" },
+                  "videoSolution": "https://www.youtube.com/watch?v=wuVwUK25Rfc"
+                }
+              ]
             }
           ]
         }
