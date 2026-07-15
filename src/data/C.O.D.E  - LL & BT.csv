@@ -1,0 +1,56 @@
+,,LinkedLists,,,
+S No,Name,Level,Link,Company,Youtube
+1,Remove Duplicates from an sorted Linked List,Easy,https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/,"Khoros ,DE Shaw, western digital",https://youtu.be/Nvf9Yt1EElg?si=KO-nfJbJpQceooE7
+2,Merge two sorted Linked Lists,Easy,https://leetcode.com/problems/merge-two-sorted-lists/description/,"walmart labs,morgan stanley , vegrow, western digital",https://youtu.be/XIdigk956u0?si=TPhnrERlt44ZREnF
+3,Reverse Linked List ,Easy,https://leetcode.com/problems/reverse-linked-list/description/,"Alstom transport , acolite , sap labs , visa , tekion , nokia",https://youtu.be/G0_I-ZF0S38?si=3kwsCIv8VfplTt0n
+4,Intersection  of two linked lists,Easy,https://leetcode.com/problems/intersection-of-two-linked-lists/description/,"walmart ,tekion ,sap labs",https://youtu.be/D0X0BONOQhI?si=pbUU_ZNgMwqfR_uJ
+5,Linked list cycle,Easy,https://leetcode.com/problems/linked-list-cycle/description/,"chronus , visa+ ,checktronix , DE Shaw , BNY mellon, vegrow , amazon+, alstom,western digital , ramco systems+",https://youtu.be/gBTe7lFR3vc?si=RZZHTfxn8MwjwGP0
+6,Convert  binary number linked list to integer,Easy,https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/description/,GEN(Norton lifelock),https://youtu.be/yxyNQZASQsU?si=9SnJNpCPY1I9jKED
+7,Remove Nth node from end of list,Medium,https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/,"Quantiphi , tekion",https://youtu.be/XVuQxVej6y8?si=fYhyBLTm2IxhEeFD
+8,Convert binary tree to linked list,Medium,https://www.geeksforgeeks.org/problems/binary-tree-to-dll/1,"Acolite , walmart",https://youtu.be/kNZ5VIkqReU?si=jhtRfKEdfoM661Jo
+9,Delete node in a linked list,Medium,https://leetcode.com/problems/delete-node-in-a-linked-list/description/,"visa , bny",https://youtu.be/kaEiCq2rZJY?si=Ept7CLPkjYWfn8eB
+10,Add two numbers,Medium,https://leetcode.com/problems/add-two-numbers/description/,Acolite,https://youtu.be/wgFPrzTjm7s?si=pmcq2RFgQryCIYVJ
+11,Pairwise swap of elements in a linked list,Medium,https://leetcode.com/problems/swap-nodes-in-pairs/description/,GEN(Norton lifelock),https://youtu.be/o811TZLAWOo?si=yuPQbGSxbnhn2Pfy
+12,sort list,Medium,https://leetcode.com/problems/sort-list/description/,ramco systems,https://youtu.be/TGveA1oFhrc?si=ZCzqPm6-TGQhF_3a
+13,start of loop,Medium,https://leetcode.com/problems/linked-list-cycle-ii/description/,ramco systems,https://youtu.be/95ZfuoSAUPI?si=4YhSA2aJmKpZEN5o
+14,Flatten a multilevel doubly linked list,Medium,https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/,Infibeam,https://youtu.be/hRHa96QFdNA?si=VXxvXb-gH_YCs2eg
+15,Remove Duplicates from an Unsorted Linked List,Medium,https://www.geeksforgeeks.org/dsa/remove-duplicates-from-an-unsorted-linked-list/, ,https://youtu.be/dAZJgVFHpqA?si=qKVPU2eN8G0FED60
+16,Design linked list,Medium,https://leetcode.com/problems/design-linked-list?envType=problem-list-v2&envId=linked-list,,https://youtu.be/Wf4QhpdVFQo?si=uNG4eK_w7EDOg2BL
+17,Reverse Linked List in group of k,Hard,https://leetcode.com/problems/reverse-nodes-in-k-group/description/,"walmart labs, nvidia",https://youtu.be/1UOPsfP85V4?si=GfGVTTiVfZ-cCHy8
+18,Merge K sorted lists,Hard,https://leetcode.com/problems/merge-k-sorted-lists?envType=problem-list-v2&envId=linked-list, ,https://youtu.be/q5a5OiGbT6Q?si=jLTuYgFmXjtB4jVo
+19,Design a text editor,Hard,https://leetcode.com/problems/design-a-text-editor/description, ,https://youtu.be/ASWavSuip1I?si=umyXrzFLeNORXz-H
+,"two numbers , make diff min",,,microsoft,
+,,Binary Tree,,,
+S No,Name,Level,Link,Company,Youtube
+1,diameter of binary tree,Easy,https://leetcode.com/problems/diameter-of-binary-tree/description,,
+2,Invert binary tree,Easy,https://leetcode.com/problems/invert-binary-tree/description/,"walmart,quantiphi",https://youtu.be/OnSn2XEQ4MY?si=Z5GlbmQTq2exmd3A
+3,Inorder traversal,Easy,https://leetcode.com/problems/binary-tree-inorder-traversal/description/,"acolite , arcesium ,bny",https://youtu.be/-b2lciNd2L4?si=t7TcXe9dei4xRI7W
+4,Preorder traversal,Easy,https://leetcode.com/problems/binary-tree-preorder-traversal/description/,"acolite , arcesium ,bny",https://youtu.be/-b2lciNd2L4?si=t7TcXe9dei4xRI7W
+5,Postorder traversal,Easy,https://leetcode.com/problems/binary-tree-postorder-traversal/,"acolite , arcesium ,bny",https://youtu.be/-b2lciNd2L4?si=t7TcXe9dei4xRI7W
+6,Height of binary tree,Easy,https://leetcode.com/problems/maximum-depth-of-binary-tree/description/,versa,https://youtu.be/Y0m0v3P1UOw?si=C0hTY7v4oIAuN7I_
+7,Cousins in binary tree,Easy,https://leetcode.com/problems/cousins-in-binary-tree/description/,amazon,https://youtu.be/1ybprmfjpGY?si=vD4VYLJ50i1awMxm
+8,Binary tree paths,Easy,https://leetcode.com/problems/binary-tree-paths/description, ,https://youtu.be/H2D4HcVZq_g?si=qRQj0AUecDflTNcp
+9,check if binary tree is heap,Easy,https://www.geeksforgeeks.org/dsa/check-if-a-given-binary-tree-is-heap/,amazon,https://youtu.be/qNID9jDx0IA?si=F8nJM3Z9_j2khAHF
+10,find parent,Easy,https://www.geeksforgeeks.org/dsa/find-the-parent-of-a-node-in-the-given-binary-tree/,tekion,https://youtu.be/4p4EI3whzr0?si=QZa8tx14v3-5PEV7
+11,minimum depth of binary tree,Easy,https://leetcode.com/problems/minimum-depth-of-binary-tree/description/,trimble,https://youtu.be/nEJtZZM011c?si=JbdpBet18AD1Hgxu
+12,check whether two binary tree is identical,Easy,https://leetcode.com/problems/same-tree/description/,ramco,https://youtu.be/vRbbcKXCxOw?si=NNxWP2FCcBvcsJiO
+13,Connect nodes in same level of a binary tree,Medium,https://leetcode.com/problems/populating-next-right-pointers-in-each-node/,Amazon,https://youtu.be/ofIl2f2YHSc?si=sjkVpl9ksYliWEEt
+14,Maximum level sum of a binary tree,Medium,https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/description/,amazon,https://youtu.be/ROX1vjoBqPs?si=olxITVymJPHnR4nK
+15,Binary tree level order traversal,Medium,https://leetcode.com/problems/binary-tree-level-order-traversal/,"Wells Fargo , acolite",https://youtu.be/6ZnyEApgFYg?si=7SWV_1KVkuckl5OY
+16,Zigzag traversal of binary tree,Medium,https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/,"Wells Fargo , walmart , samsung",https://youtu.be/y3lJY5ofLro?si=FdUTEVu7f01Mr7MP
+17,Left view of binary tree,Medium,https://www.geeksforgeeks.org/dsa/print-left-view-binary-tree/,acolite,https://youtu.be/KV4mRzTjlAk?si=X-MEaaF_vivUf8Et
+18,Binary tree right side view,Medium,https://leetcode.com/problems/binary-tree-right-side-view/description/,acolite,https://youtu.be/KV4mRzTjlAk?si=X-MEaaF_vivUf8Et
+19,"Find Inorder predecessor,successor",Medium,https://www.geeksforgeeks.org/dsa/inorder-predecessor-successor-given-key-bst/,wells fargo,https://youtu.be/SXKAD2svfmI?si=EZW8-Pv_o50s_Ijp
+20,directions from one tree node to another,Medium,https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/description/,amazon,https://youtu.be/JegJNGcwtFg?si=_nrCeCN9QCNIv_YJ
+21,Print alternate nodes from all levels of a binary tree,Medium,https://www.geeksforgeeks.org/print-alternate-nodes-from-all-levels-of-a-binary-tree/,samsung,https://youtu.be/yXbkd0MJZfw?si=M4OgeOWt04Sn6fLK
+22,lowest common ancestor,Medium,https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/,"bank of america,vegrow",https://youtu.be/gs2LMfuOR9k?si=nCxx_nLIGIbSpNWc
+23,construct tree from inorder and preorder,Medium,https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/,appian,https://youtu.be/ihj4IQGZ2zc?si=cxXlrPbdpvru5CZB
+24,Trie,Medium,https://leetcode.com/problems/implement-trie-prefix-tree/description,not the exact question but similar question was asked multiple times (breadcrumbs problem),
+25,duplicate subtrees,Medium,https://leetcode.com/problems/find-duplicate-subtrees/description/,ramco systems+,https://youtu.be/kn0Z5_qPPzY?si=teGSHVi3VI85j6Mc
+26,Flatten binary tree,Medium,https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/, ,https://youtu.be/rKnD7rLT0lI?si=wxw1VMknRMFAiL-c
+27,Check completeness of a binary tree,Medium,https://leetcode.com/problems/check-completeness-of-a-binary-tree/description/, ,https://youtu.be/olbiZ-EOSig?si=4eiCpm8q1iz5-GLh
+28,Largest subtree sum,Hard,https://www.geeksforgeeks.org/dsa/find-largest-subtree-sum-tree/,samsung,https://youtu.be/7opoOv7SVko?si=-ci49AFoLHynedsD
+29,boundary of tree,Hard,https://www.geeksforgeeks.org/dsa/boundary-traversal-of-binary-tree/,vegrow+,https://youtu.be/0ca1nvR0be4?si=wCgvIAWq969wVYmj
+30,Binary tree maximum path sum,Hard,https://leetcode.com/problems/binary-tree-maximum-path-sum/description/,walmart,https://youtu.be/Hr5cWUld4vU?si=0PdTNsxCCa91SJ85
+,,,,,
+,Find the level in a binary tree upto which it is a complete binary tree.,,,amazon,

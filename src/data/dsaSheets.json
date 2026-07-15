@@ -863,6 +863,357 @@
                   "videoSolution": "https://www.youtube.com/watch?v=wuVwUK25Rfc"
                 }
               ]
+            },
+            {
+              "name": "Linked Lists",
+              "problems": [
+                {
+                  "id": "ll-1",
+                  "title": "Remove Duplicates from a Sorted Linked List",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/" },
+                  "videoSolution": "https://youtu.be/Nvf9Yt1EElg?si=KO-nfJbJpQceooE7"
+                },
+                {
+                  "id": "ll-2",
+                  "title": "Merge Two Sorted Linked Lists",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/merge-two-sorted-lists/description/" },
+                  "videoSolution": "https://youtu.be/XIdigk956u0?si=TPhnrERlt44ZREnF"
+                },
+                {
+                  "id": "ll-3",
+                  "title": "Reverse Linked List",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/reverse-linked-list/description/" },
+                  "videoSolution": "https://youtu.be/G0_I-ZF0S38?si=3kwsCIv8VfplTt0n"
+                },
+                {
+                  "id": "ll-4",
+                  "title": "Intersection of Two Linked Lists",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/intersection-of-two-linked-lists/description/" },
+                  "videoSolution": "https://youtu.be/D0X0BONOQhI?si=pbUU_ZNgMwqfR_uJ"
+                },
+                {
+                  "id": "ll-5",
+                  "title": "Linked List Cycle",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/linked-list-cycle/description/" },
+                  "videoSolution": "https://youtu.be/gBTe7lFR3vc?si=RZZHTfxn8MwjwGP0"
+                },
+                {
+                  "id": "ll-6",
+                  "title": "Convert Binary Number in a Linked List to Integer",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/description/" },
+                  "videoSolution": "https://youtu.be/yxyNQZASQsU?si=9SnJNpCPY1I9jKED"
+                },
+                {
+                  "id": "ll-7",
+                  "title": "Remove Nth Node From End of List",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/" },
+                  "videoSolution": "https://youtu.be/XVuQxVej6y8?si=fYhyBLTm2IxhEeFD"
+                },
+                {
+                  "id": "ll-8",
+                  "title": "Convert Binary Tree to Doubly Linked List",
+                  "difficulty": "Medium",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/problems/binary-tree-to-dll/1" },
+                  "videoSolution": "https://youtu.be/kNZ5VIkqReU?si=jhtRfKEdfoM661Jo"
+                },
+                {
+                  "id": "ll-9",
+                  "title": "Delete Node in a Linked List",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/delete-node-in-a-linked-list/description/" },
+                  "videoSolution": "https://youtu.be/kaEiCq2rZJY?si=Ept7CLPkjYWfn8eB"
+                },
+                {
+                  "id": "ll-10",
+                  "title": "Add Two Numbers",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/add-two-numbers/description/" },
+                  "videoSolution": "https://youtu.be/wgFPrzTjm7s?si=pmcq2RFgQryCIYVJ"
+                },
+                {
+                  "id": "ll-11",
+                  "title": "Pairwise Swap of Elements (Swap Nodes in Pairs)",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/swap-nodes-in-pairs/description/" },
+                  "videoSolution": "https://youtu.be/o811TZLAWOo?si=yuPQbGSxbnhn2Pfy"
+                },
+                {
+                  "id": "ll-12",
+                  "title": "Sort List",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/sort-list/description/" },
+                  "videoSolution": "https://youtu.be/TGveA1oFhrc?si=ZCzqPm6-TGQhF_3a"
+                },
+                {
+                  "id": "ll-13",
+                  "title": "Start of Loop (Linked List Cycle II)",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/linked-list-cycle-ii/description/" },
+                  "videoSolution": "https://youtu.be/95ZfuoSAUPI?si=4YhSA2aJmKpZEN5o"
+                },
+                {
+                  "id": "ll-14",
+                  "title": "Flatten a Multilevel Doubly Linked List",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/" },
+                  "videoSolution": "https://youtu.be/hRHa96QFdNA?si=VXxvXb-gH_YCs2eg"
+                },
+                {
+                  "id": "ll-15",
+                  "title": "Remove Duplicates from an Unsorted Linked List",
+                  "difficulty": "Medium",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/dsa/remove-duplicates-from-an-unsorted-linked-list/" },
+                  "videoSolution": "https://youtu.be/dAZJgVFHpqA?si=qKVPU2eN8G0FED60"
+                },
+                {
+                  "id": "ll-16",
+                  "title": "Design Linked List",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/design-linked-list/" },
+                  "videoSolution": "https://youtu.be/Wf4QhpdVFQo?si=uNG4eK_w7EDOg2BL"
+                },
+                {
+                  "id": "ll-17",
+                  "title": "Reverse Nodes in k-Group",
+                  "difficulty": "Hard",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/reverse-nodes-in-k-group/description/" },
+                  "videoSolution": "https://youtu.be/1UOPsfP85V4?si=GfGVTTiVfZ-cCHy8"
+                },
+                {
+                  "id": "heap-15",
+                  "title": "Merge K Sorted Lists",
+                  "difficulty": "Hard",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/merge-k-sorted-lists/" },
+                  "videoSolution": "https://youtu.be/q5a5OiGbT6Q?si=jLTuYgFmXjtB4jVo"
+                },
+                {
+                  "id": "ll-19",
+                  "title": "Design a Text Editor",
+                  "difficulty": "Hard",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/design-a-text-editor/description" },
+                  "videoSolution": "https://youtu.be/ASWavSuip1I?si=umyXrzFLeNORXz-H"
+                }
+              ]
+            },
+            {
+              "name": "Binary Tree",
+              "problems": [
+                {
+                  "id": "bt-1",
+                  "title": "Diameter of Binary Tree",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/diameter-of-binary-tree/description" }
+                },
+                {
+                  "id": "bt-2",
+                  "title": "Invert Binary Tree",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/invert-binary-tree/description/" },
+                  "videoSolution": "https://youtu.be/OnSn2XEQ4MY?si=Z5GlbmQTq2exmd3A"
+                },
+                {
+                  "id": "bt-3",
+                  "title": "Inorder Traversal",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/binary-tree-inorder-traversal/description/" },
+                  "videoSolution": "https://youtu.be/-b2lciNd2L4?si=t7TcXe9dei4xRI7W"
+                },
+                {
+                  "id": "bt-4",
+                  "title": "Preorder Traversal",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/binary-tree-preorder-traversal/description/" },
+                  "videoSolution": "https://youtu.be/-b2lciNd2L4?si=t7TcXe9dei4xRI7W"
+                },
+                {
+                  "id": "bt-5",
+                  "title": "Postorder Traversal",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/binary-tree-postorder-traversal/" },
+                  "videoSolution": "https://youtu.be/-b2lciNd2L4?si=t7TcXe9dei4xRI7W"
+                },
+                {
+                  "id": "bt-6",
+                  "title": "Height of Binary Tree (Maximum Depth)",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/maximum-depth-of-binary-tree/description/" },
+                  "videoSolution": "https://youtu.be/Y0m0v3P1UOw?si=C0hTY7v4oIAuN7I_"
+                },
+                {
+                  "id": "bt-7",
+                  "title": "Cousins in Binary Tree",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/cousins-in-binary-tree/description/" },
+                  "videoSolution": "https://youtu.be/1ybprmfjpGY?si=vD4VYLJ50i1awMxm"
+                },
+                {
+                  "id": "bt-8",
+                  "title": "Binary Tree Paths",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/binary-tree-paths/description" },
+                  "videoSolution": "https://youtu.be/H2D4HcVZq_g?si=qRQj0AUecDflTNcp"
+                },
+                {
+                  "id": "bt-9",
+                  "title": "Check if Binary Tree is Heap",
+                  "difficulty": "Easy",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/dsa/check-if-a-given-binary-tree-is-heap/" },
+                  "videoSolution": "https://youtu.be/qNID9jDx0IA?si=F8nJM3Z9_j2khAHF"
+                },
+                {
+                  "id": "bt-10",
+                  "title": "Find Parent of a Node",
+                  "difficulty": "Easy",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/dsa/find-the-parent-of-a-node-in-the-given-binary-tree/" },
+                  "videoSolution": "https://youtu.be/4p4EI3whzr0?si=QZa8tx14v3-5PEV7"
+                },
+                {
+                  "id": "bt-11",
+                  "title": "Minimum Depth of Binary Tree",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/minimum-depth-of-binary-tree/description/" },
+                  "videoSolution": "https://youtu.be/nEJtZZM011c?si=JbdpBet18AD1Hgxu"
+                },
+                {
+                  "id": "bt-12",
+                  "title": "Check if Two Binary Trees are Identical (Same Tree)",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/same-tree/description/" },
+                  "videoSolution": "https://youtu.be/vRbbcKXCxOw?si=NNxWP2FCcBvcsJiO"
+                },
+                {
+                  "id": "bt-13",
+                  "title": "Connect Nodes in Same Level (Populating Next Right Pointers)",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/populating-next-right-pointers-in-each-node/" },
+                  "videoSolution": "https://youtu.be/ofIl2f2YHSc?si=sjkVpl9ksYliWEEt"
+                },
+                {
+                  "id": "bt-14",
+                  "title": "Maximum Level Sum of a Binary Tree",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/description/" },
+                  "videoSolution": "https://youtu.be/ROX1vjoBqPs?si=olxITVymJPHnR4nK"
+                },
+                {
+                  "id": "bt-15",
+                  "title": "Binary Tree Level Order Traversal",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/binary-tree-level-order-traversal/" },
+                  "videoSolution": "https://youtu.be/6ZnyEApgFYg?si=7SWV_1KVkuckl5OY"
+                },
+                {
+                  "id": "bt-16",
+                  "title": "Zigzag Level Order Traversal",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/" },
+                  "videoSolution": "https://youtu.be/y3lJY5ofLro?si=FdUTEVu7f01Mr7MP"
+                },
+                {
+                  "id": "bt-17",
+                  "title": "Left View of Binary Tree",
+                  "difficulty": "Medium",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/dsa/print-left-view-binary-tree/" },
+                  "videoSolution": "https://youtu.be/KV4mRzTjlAk?si=X-MEaaF_vivUf8Et"
+                },
+                {
+                  "id": "bt-18",
+                  "title": "Binary Tree Right Side View",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/binary-tree-right-side-view/description/" },
+                  "videoSolution": "https://youtu.be/KV4mRzTjlAk?si=X-MEaaF_vivUf8Et"
+                },
+                {
+                  "id": "bt-19",
+                  "title": "Find Inorder Predecessor and Successor",
+                  "difficulty": "Medium",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/dsa/inorder-predecessor-successor-given-key-bst/" },
+                  "videoSolution": "https://youtu.be/SXKAD2svfmI?si=EZW8-Pv_o50s_Ijp"
+                },
+                {
+                  "id": "bt-20",
+                  "title": "Step-By-Step Directions From One Tree Node to Another",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/description/" },
+                  "videoSolution": "https://youtu.be/JegJNGcwtFg?si=_nrCeCN9QCNIv_YJ"
+                },
+                {
+                  "id": "bt-21",
+                  "title": "Print Alternate Nodes from All Levels",
+                  "difficulty": "Medium",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/print-alternate-nodes-from-all-levels-of-a-binary-tree/" },
+                  "videoSolution": "https://youtu.be/yXbkd0MJZfw?si=M4OgeOWt04Sn6fLK"
+                },
+                {
+                  "id": "bt-22",
+                  "title": "Lowest Common Ancestor",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/" },
+                  "videoSolution": "https://youtu.be/gs2LMfuOR9k?si=nCxx_nLIGIbSpNWc"
+                },
+                {
+                  "id": "bt-23",
+                  "title": "Construct Tree from Inorder and Preorder",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/" },
+                  "videoSolution": "https://youtu.be/ihj4IQGZ2zc?si=cxXlrPbdpvru5CZB"
+                },
+                {
+                  "id": "bt-24",
+                  "title": "Implement Trie (Prefix Tree)",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/implement-trie-prefix-tree/description" }
+                },
+                {
+                  "id": "bt-25",
+                  "title": "Find Duplicate Subtrees",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/find-duplicate-subtrees/description/" },
+                  "videoSolution": "https://youtu.be/kn0Z5_qPPzY?si=teGSHVi3VI85j6Mc"
+                },
+                {
+                  "id": "bt-26",
+                  "title": "Flatten Binary Tree to Linked List",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/" },
+                  "videoSolution": "https://youtu.be/rKnD7rLT0lI?si=wxw1VMknRMFAiL-c"
+                },
+                {
+                  "id": "bt-27",
+                  "title": "Check Completeness of a Binary Tree",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/check-completeness-of-a-binary-tree/description/" },
+                  "videoSolution": "https://youtu.be/olbiZ-EOSig?si=4eiCpm8q1iz5-GLh"
+                },
+                {
+                  "id": "bt-28",
+                  "title": "Largest Subtree Sum",
+                  "difficulty": "Hard",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/dsa/find-largest-subtree-sum-tree/" },
+                  "videoSolution": "https://youtu.be/7opoOv7SVko?si=-ci49AFoLHynedsD"
+                },
+                {
+                  "id": "bt-29",
+                  "title": "Boundary Traversal of Binary Tree",
+                  "difficulty": "Hard",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/dsa/boundary-traversal-of-binary-tree/" },
+                  "videoSolution": "https://youtu.be/0ca1nvR0be4?si=wCgvIAWq969wVYmj"
+                },
+                {
+                  "id": "bt-30",
+                  "title": "Binary Tree Maximum Path Sum",
+                  "difficulty": "Hard",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/binary-tree-maximum-path-sum/description/" },
+                  "videoSolution": "https://youtu.be/Hr5cWUld4vU?si=0PdTNsxCCa91SJ85"
+                }
+              ]
             }
           ]
         }
