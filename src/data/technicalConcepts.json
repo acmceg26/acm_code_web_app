@@ -7,6 +7,38 @@
       "description": "Clck here to access the timed Google Form test. Question and answers PDF is available below.",
       "formUrl": "https://form-timer.com/start/1ed0763f",
       "bankUrl": "https://drive.google.com/file/d/1JYBo5CpW5miXwyCTfLYL3MC9tiy4knYF/view?usp=sharing"
+    },
+    {
+      "id": "test-2",
+      "subjectId": "oop",
+      "title": "OOPS",
+      "description": "Clck here to access the timed Google Form test. Question and answers PDF is available below.",
+      "formUrl": "https://form-timer.com/start/348e0367",
+      "bankUrl": "https://drive.google.com/file/d/1JYBo5CpW5miXwyCTfLYL3MC9tiy4knYF/view?usp=sharing"
+    },
+    {
+      "id": "test-3",
+      "subjectId": "dbms",
+      "title": "DBMS Test 1 - basic concepts",
+      "description": "Clck here to access the timed Google Form test. Question and answers PDF is available below.",
+      "formUrl": "https://form-timer.com/start/b5383810",
+      "bankUrl": "https://drive.google.com/file/d/1JYBo5CpW5miXwyCTfLYL3MC9tiy4knYF/view?usp=sharing"
+    },
+    {
+      "id": "test-4",
+      "subjectId": "dbms",
+      "title": "DBMS Test 2 - advanced concepts",
+      "description": "Clck here to access the timed Google Form test. Question and answers PDF is available below.",
+      "formUrl": "https://form-timer.com/start/00a62694",
+      "bankUrl": "https://drive.google.com/file/d/1JYBo5CpW5miXwyCTfLYL3MC9tiy4knYF/view?usp=sharing"
+    },
+    {
+      "id": "test-5",
+      "subjectId": "os",
+      "title": "OS Test",
+      "description": "Clck here to access the timed Google Form test. Question and answers PDF is available below.",
+      "formUrl": "https://form-timer.com/start/adfb6bce",
+      "bankUrl": "https://drive.google.com/file/d/1JYBo5CpW5miXwyCTfLYL3MC9tiy4knYF/view?usp=sharing"
     }
   ],
   "resources": [
