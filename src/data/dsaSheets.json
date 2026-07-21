@@ -1214,6 +1214,338 @@
                   "videoSolution": "https://youtu.be/Hr5cWUld4vU?si=0PdTNsxCCa91SJ85"
                 }
               ]
+            },
+            {
+              "name": "Binary Search Trees",
+              "problems": [
+                {
+                  "id": "bst-1",
+                  "title": "Search in a Binary Search Tree",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/search-in-a-binary-search-tree/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=KcNt6v_56cc"
+                },
+                {
+                  "id": "bst-2",
+                  "title": "Range Sum of BST",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/range-sum-of-bst/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=SuGq2s_FBHo"
+                },
+                {
+                  "id": "bst-3",
+                  "title": "Minimum Absolute Difference in BST",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/minimum-absolute-difference-in-bst/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=joxx4hTYwcw"
+                },
+                {
+                  "id": "bst-4",
+                  "title": "Convert Sorted Array to Binary Search Tree",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=0K0uCMYq5ng"
+                },
+                {
+                  "id": "bst-5",
+                  "title": "Two Sum IV - Input is a BST",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/two-sum-iv-input-is-a-bst/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=ssL3sHwPeb4"
+                },
+                {
+                  "id": "bst-6",
+                  "title": "Insert into a Binary Search Tree",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/insert-into-a-binary-search-tree/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=FiFiNvM29ps"
+                },
+                {
+                  "id": "bst-7",
+                  "title": "Validate Binary Search Tree",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/validate-binary-search-tree/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=s6ATEkipzow"
+                },
+                {
+                  "id": "bst-8",
+                  "title": "Lowest Common Ancestor of a BST",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=gs2LMfuOR9k"
+                },
+                {
+                  "id": "bst-9",
+                  "title": "Kth Smallest Element in a BST",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=C6r1fDKAW_o"
+                },
+                {
+                  "id": "bst-10",
+                  "title": "Delete Node in a BST",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/delete-node-in-a-bst/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=kouxiP_H5WE"
+                },
+                {
+                  "id": "bst-11",
+                  "title": "Binary Search Tree Iterator",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/binary-search-tree-iterator/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=RXy5RzGF5wo"
+                },
+                {
+                  "id": "bst-12",
+                  "title": "Convert BST to Greater Tree",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/convert-bst-to-greater-tree/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=7vVEJwVvAlI"
+                },
+                {
+                  "id": "bst-13",
+                  "title": "Inorder Successor / Predecessor in BST",
+                  "difficulty": "Medium",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/problems/predecessor-and-successor/1" },
+                  "videoSolution": "https://www.youtube.com/watch?v=SXKAD2svfmI"
+                },
+                {
+                  "id": "bst-14",
+                  "title": "Trim a Binary Search Tree",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/trim-a-binary-search-tree/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=jwt5mTjEXGc"
+                },
+                {
+                  "id": "bst-15",
+                  "title": "Recover Binary Search Tree",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/recover-binary-search-tree/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=ZWGW7FminDM"
+                },
+                {
+                  "id": "bst-16",
+                  "title": "All Elements in Two Binary Search Trees",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/all-elements-in-two-binary-search-trees/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=A3_xMeT_VjY"
+                },
+                {
+                  "id": "bst-17",
+                  "title": "Balance a Binary Search Tree",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/balance-a-binary-search-tree/" },
+                  "videoSolution": "https://youtube.com/playlist?list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk"
+                },
+                {
+                  "id": "bst-18",
+                  "title": "Construct BST from Preorder Traversal",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=UmJT3j26t1I"
+                },
+                {
+                  "id": "bst-19",
+                  "title": "Serialize and Deserialize BST",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/serialize-and-deserialize-bst/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=u4JAi2JJhI8"
+                },
+                {
+                  "id": "bst-20",
+                  "title": "Largest BST Subtree",
+                  "difficulty": "Medium",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/problems/largest-bst/1" },
+                  "videoSolution": "https://www.youtube.com/watch?v=X0oXMdtUDwo"
+                },
+                {
+                  "id": "bst-21",
+                  "title": "Maximum Sum BST in Binary Tree",
+                  "difficulty": "Hard",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=Zz7R9I9j2kI"
+                }
+              ]
+            },
+            {
+              "name": "Greedy Algorithms",
+              "problems": [
+                {
+                  "id": "grd-1",
+                  "title": "Assign Cookies",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/assign-cookies/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=DIX2p7vb9co"
+                },
+                {
+                  "id": "grd-2",
+                  "title": "Lemonade Change",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/lemonade-change/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=n_tmibEhO6Q"
+                },
+                {
+                  "id": "grd-3",
+                  "title": "Maximum Units on a Truck",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/maximum-units-on-a-truck/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=RkBHYAoZaeg"
+                },
+                {
+                  "id": "grd-4",
+                  "title": "Buy Two Chocolates",
+                  "difficulty": "Easy",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/buy-two-chocolates/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=ueaSIxBI1RQ"
+                },
+                {
+                  "id": "grd-5",
+                  "title": "Jump Game",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/jump-game/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=tZAa_jJ3SwQ"
+                },
+                {
+                  "id": "grd-6",
+                  "title": "Non-overlapping Intervals",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/non-overlapping-intervals/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=nONCGxWoUfM"
+                },
+                {
+                  "id": "grd-7",
+                  "title": "Merge Intervals",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/merge-intervals/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=44H3cEC2fFM"
+                },
+                {
+                  "id": "grd-8",
+                  "title": "Insert Interval",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/insert-interval/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=A8NUOmlR6PQ"
+                },
+                {
+                  "id": "grd-9",
+                  "title": "Minimum Number of Arrows to Burst Balloons",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=lPmkKnvNPrw"
+                },
+                {
+                  "id": "grd-10",
+                  "title": "Partition Labels",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/partition-labels/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=B7m8UmZE-vw"
+                },
+                {
+                  "id": "arr-26",
+                  "title": "Gas Station",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/gas-station/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=lJwbPZGo05A"
+                },
+                {
+                  "id": "grd-12",
+                  "title": "Hand of Straights",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/hand-of-straights/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=amnrMCVd2YI"
+                },
+                {
+                  "id": "grd-13",
+                  "title": "Job Sequencing Problem",
+                  "difficulty": "Medium",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1" },
+                  "videoSolution": "https://www.youtube.com/watch?v=LjPx4wQaRIs"
+                },
+                {
+                  "id": "grd-14",
+                  "title": "Minimum Platforms",
+                  "difficulty": "Medium",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/problems/minimum-platforms-1587115620/1" },
+                  "videoSolution": "https://www.youtube.com/watch?v=dxVcMDI7vyI"
+                },
+                {
+                  "id": "grd-15",
+                  "title": "Activity Selection / N Meetings in One Room",
+                  "difficulty": "Medium",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1" },
+                  "videoSolution": "https://www.youtube.com/watch?v=II6ziNnub1Q"
+                },
+                {
+                  "id": "grd-16",
+                  "title": "Maximum Length of Pair Chain",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/maximum-length-of-pair-chain/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=K4LAB1Bxmvo"
+                },
+                {
+                  "id": "grd-17",
+                  "title": "Valid Parenthesis String",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/valid-parenthesis-string/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=QhPdNS143Qg"
+                },
+                {
+                  "id": "grd-18",
+                  "title": "Longest Happy String",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/longest-happy-string/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=8u-H6O_XQKE"
+                },
+                {
+                  "id": "grd-19",
+                  "title": "Queue Reconstruction by Height",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/queue-reconstruction-by-height/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=khddrw6Bfyw"
+                },
+                {
+                  "id": "grd-20",
+                  "title": "Remove Duplicate Letters",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/remove-duplicate-letters/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=zhU7JhNRLEk"
+                },
+                {
+                  "id": "grd-21",
+                  "title": "Fractional Knapsack",
+                  "difficulty": "Medium",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1" },
+                  "videoSolution": "https://www.youtube.com/watch?v=F_DDzYnxO14"
+                },
+                {
+                  "id": "grd-22",
+                  "title": "Huffman Encoding",
+                  "difficulty": "Medium",
+                  "platforms": { "gfg": "https://www.geeksforgeeks.org/problems/huffman-encoding3345/1" },
+                  "videoSolution": "https://www.youtube.com/watch?v=HZKUhnNYxms"
+                },
+                {
+                  "id": "grd-23",
+                  "title": "Wiggle Subsequence",
+                  "difficulty": "Medium",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/wiggle-subsequence/" },
+                  "videoSolution": "https://youtube.com/playlist?list=PLgUwDviBIf0rF1w2Koyh78zafB0cz7tea"
+                },
+                {
+                  "id": "grd-24",
+                  "title": "IPO",
+                  "difficulty": "Hard",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/ipo/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=1IUzNJ6TPEM"
+                },
+                {
+                  "id": "heap-18",
+                  "title": "Minimum Cost to Hire K Workers",
+                  "difficulty": "Hard",
+                  "platforms": { "leetcode": "https://leetcode.com/problems/minimum-cost-to-hire-k-workers/" },
+                  "videoSolution": "https://www.youtube.com/watch?v=o2Tgkkjfmag"
+                }
+              ]
             }
           ]
         }
