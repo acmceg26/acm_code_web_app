@@ -2,21 +2,30 @@ import React, { useState } from 'react';
 import companyData from '../data/companies.json';
 import { Card } from '../components/ui/Card';
 import { ComingSoon } from '../components/ui/ComingSoon';
-import { ArrowLeft, ExternalLink, ClipboardList, FileText } from 'lucide-react';
+import { ArrowLeft, ExternalLink, ClipboardList, Users } from 'lucide-react';
 
 // ─── Feature flag ───────────────────────────────────────────────────────────
-// Set to `false` once company content is ready to publish.
-const COMING_SOON = true;
+// Set to `true` to hide the section behind a "Coming Soon" screen.
+const COMING_SOON = false;
 // ────────────────────────────────────────────────────────────────────────────
 
 // Brand domains used to fetch each company's logo.
 const COMPANY_DOMAINS: Record<string, string> = {
-  google: 'google.com',
   amazon: 'amazon.com',
-  microsoft: 'microsoft.com',
-  'goldman-sachs': 'goldmansachs.com',
+  appian: 'appian.com',
+  'wells-fargo': 'wellsfargo.com',
+  accolite: 'accolite.com',
+  apple: 'apple.com',
+  'american-express': 'americanexpress.com',
+  walmart: 'walmart.com',
+  aptiv: 'aptiv.com',
+  'athena-health': 'athenahealth.com',
+  'arista-networks': 'arista.com',
+  'aspire-systems': 'aspiresys.com',
+  'western-digital': 'westerndigital.com',
+  accenture: 'accenture.com',
+  bny: 'bny.com',
   zoho: 'zoho.com',
-  tcs: 'www.tcs.com',
 };
 
 // Renders the real company logo on a white tile, falling back to the
@@ -52,9 +61,16 @@ const CompanyLogo: React.FC<{ companyId: string; name: string; size?: 'sm' | 'lg
   );
 };
 
-// ─── Company detail page ─────────────────────────────────────────────────────
 type Company = (typeof companyData)[number];
+type Question = Company['questions'][number];
 
+// Badge colour by question type (OA vs Interview).
+const typeStyles = (type: string) =>
+  type === 'OA'
+    ? 'text-amber-400 bg-amber-400/10 border-amber-500/20'
+    : 'text-blue-400 bg-blue-400/10 border-blue-500/20';
+
+// ─── Company detail page ─────────────────────────────────────────────────────
 const CompanyDetailPage: React.FC<{
   company: Company;
   onBack: () => void;
@@ -77,85 +93,59 @@ const CompanyDetailPage: React.FC<{
       </div>
     </div>
 
-    {/* ── Technical MCQs ───────────────────────────────────── */}
+    {/* ── Questions asked ──────────────────────────────────── */}
     <div>
       <div className="flex items-center gap-2 mb-4">
         <div className="w-8 h-8 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center">
           <ClipboardList className="w-4 h-4 text-zinc-300" />
         </div>
         <div>
-          <h3 className="text-base font-semibold text-zinc-100">Technical MCQs</h3>
-          <p className="text-xs text-zinc-500">Company-specific details and question banks.</p>
+          <h3 className="text-base font-semibold text-zinc-100">Questions Asked</h3>
+          <p className="text-xs text-zinc-500">
+            OA & interview questions shared by students who interviewed here.
+          </p>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {company.tests.map((test) => (
-            <a
-              key={test.id}
-              href={test.formUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block group"
-            >
-              <Card className="flex flex-col justify-between h-full cursor-pointer group-hover:border-blue-500/40 transition-colors">
-                <div>
-                  <div className="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-4">
-                    <ClipboardList className="w-5 h-5 text-blue-400" />
-                  </div>
-                  <h4 className="text-sm font-semibold text-zinc-100 mb-1">{test.title}</h4>
-                  <p className="text-xs text-zinc-400 leading-relaxed">{test.description}</p>
-                </div>
-                <div className="flex items-center justify-between pt-4 border-t border-zinc-800 text-xs font-medium mt-4">
-                  <span className="text-zinc-500">Google Forms</span>
-                  <span className="flex items-center gap-1 text-blue-400 group-hover:text-blue-300 transition-colors">
-                    Open Test <ExternalLink className="w-3 h-3" />
-                  </span>
-                </div>
-              </Card>
-            </a>
-          ))}
-        </div>
+      <div className="space-y-2">
+        {company.questions.map((q: Question) => (
+          <a
+            key={q.id}
+            href={q.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-3 rounded-lg border border-zinc-800 bg-zinc-900/40 hover:border-blue-500/40 hover:bg-zinc-900/70 transition-colors px-4 py-3"
+          >
+            <span className="flex-1 text-sm font-medium text-zinc-200 group-hover:text-zinc-100">
+              {q.title}
+            </span>
+            <span className={`shrink-0 px-2 py-0.5 text-[10px] font-bold rounded-md border ${typeStyles(q.type)}`}>
+              {q.type}
+            </span>
+            {q.year && (
+              <span className="shrink-0 text-[10px] font-mono font-bold text-zinc-500">{q.year}</span>
+            )}
+            <ExternalLink className="w-3.5 h-3.5 shrink-0 text-zinc-500 group-hover:text-blue-400 transition-colors" />
+          </a>
+        ))}
+      </div>
     </div>
 
-    {/* ── Study Materials ──────────────────────────────────── */}
+    {/* ── Placement Experiences (inactive for now) ─────────── */}
     <div>
       <div className="flex items-center gap-2 mb-4">
         <div className="w-8 h-8 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center">
-          <FileText className="w-4 h-4 text-zinc-300" />
+          <Users className="w-4 h-4 text-zinc-300" />
         </div>
         <div>
-          <h3 className="text-base font-semibold text-zinc-100">Study Materials</h3>
-          <p className="text-xs text-zinc-500">Interview prep guides and notes via Google Drive</p>
+          <h3 className="text-base font-semibold text-zinc-100">Placement Experiences</h3>
+          <p className="text-xs text-zinc-500">First-hand interview write-ups from students.</p>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {company.studyMaterials.map((material) => (
-            <a
-              key={material.id}
-              href={material.driveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block group"
-            >
-              <Card className="flex flex-col justify-between h-full cursor-pointer group-hover:border-emerald-500/40 transition-colors">
-                <div>
-                  <div className="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-4">
-                    <FileText className="w-5 h-5 text-emerald-400" />
-                  </div>
-                  <h4 className="text-sm font-semibold text-zinc-100 mb-1">{material.title}</h4>
-                  <p className="text-xs text-zinc-400 leading-relaxed">{material.description}</p>
-                </div>
-                <div className="flex items-center justify-between pt-4 border-t border-zinc-800 text-xs font-medium mt-4">
-                  <span className="flex items-center gap-1 text-emerald-400 group-hover:text-emerald-300 transition-colors">
-                    Open Material <ExternalLink className="w-3 h-3" />
-                  </span>
-                </div>
-              </Card>
-            </a>
-          ))}
-        </div>
+      <div className="rounded-lg border border-dashed border-zinc-800 bg-zinc-900/30 px-4 py-6 text-center">
+        <p className="text-sm text-zinc-500">Placement experiences will be added soon.</p>
+      </div>
     </div>
   </div>
 );
@@ -170,9 +160,9 @@ export const CompanyPrep: React.FC = () => {
       <div className="space-y-6 animate-fade-in-up">
         <div>
           <h2 className="text-xl font-semibold text-zinc-100">Companies</h2>
-          <p className="text-sm text-zinc-500 mt-1">Mock tests and study materials for company-specific interview preparation.</p>
+          <p className="text-sm text-zinc-500 mt-1">Company-specific OA & interview questions shared by students.</p>
         </div>
-        <ComingSoon message="Company-specific tests and study materials are being set up. Check back soon!" />
+        <ComingSoon message="Company-specific questions are being set up. Check back soon!" />
       </div>
     );
   }
@@ -195,7 +185,7 @@ export const CompanyPrep: React.FC = () => {
       <div>
         <h2 className="text-xl font-semibold text-zinc-100">Companies</h2>
         <p className="text-sm text-zinc-500 mt-1">
-          Mock tests and study materials for company-specific interview preparation.
+          Company-specific OA &amp; interview questions shared by students.
         </p>
       </div>
 
@@ -211,26 +201,18 @@ export const CompanyPrep: React.FC = () => {
               <div className="flex items-center justify-between mb-5">
                 <CompanyLogo companyId={company.id} name={company.name} />
                 <span className="text-[10px] font-bold text-zinc-500 font-mono tracking-tight bg-blue-500/15 border border-blue-500/20 px-2 py-0.5 rounded-md">
-                  {company.tests.length} test{company.tests.length !== 1 ? 's' : ''}
+                  {company.questions.length} question{company.questions.length !== 1 ? 's' : ''}
                 </span>
               </div>
 
               <h3 className="text-base font-semibold text-zinc-100 mb-2">{company.name}</h3>
-
-              <div className="space-y-2 text-xs text-zinc-400">
-                <p className="line-clamp-1">
-                  <span className="font-semibold text-zinc-500">OA:</span>{' '}
-                  {company.oaDetails.duration} · {company.oaDetails.questionsCount} Questions
-                </p>
-                <p className="line-clamp-1">
-                  <span className="font-semibold text-zinc-500">Difficulty:</span>{' '}
-                  {company.oaDetails.difficulty}
-                </p>
-              </div>
+              <p className="text-xs text-zinc-400 leading-relaxed">
+                OA &amp; interview questions from students who interviewed at {company.name}.
+              </p>
             </div>
 
             <div className="flex items-center justify-between mt-6 pt-4 border-t border-zinc-800 text-xs font-medium">
-              <span className="text-zinc-500">Tests &amp; study materials</span>
+              <span className="text-zinc-500">Questions &amp; experiences</span>
               <span className="text-zinc-400 group-hover:text-zinc-200 transition-colors">View &rarr;</span>
             </div>
           </Card>

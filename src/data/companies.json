@@ -1,349 +1,688 @@
 [
   {
-    "id": "google",
-    "name": "Google",
-    "logo": "Google",
-    "placementExperiences": [
-      { "name": "Aarav Mehta", "year": "2024", "role": "6-month intern + FTE", "link": "" },
-      { "name": "Sneha Iyer", "year": "2023", "role": "Summer intern", "link": "" },
-      { "name": "Rahul Verma", "year": "2024", "role": "FTE", "link": "" }
-    ],
-    "oaDetails": {
-      "duration": "90 mins",
-      "questionsCount": 2,
-      "difficulty": "Medium to Hard",
-      "description": "Two algorithmic problems, usually on graphs and dynamic programming, with hidden edge cases that reward optimal time and space complexity.",
-      "patterns": ["Graphs (DFS/BFS)", "Dynamic Programming", "Segment Trees"]
-    },
-    "interviewFormats": {
-      "technicalRounds": 3,
-      "hrCriteria": "Googliness & Leadership Principles",
-      "description": "Three live coding-and-design rounds on a shared editor that assess problem-solving clarity, communication, and code quality alongside 'Googliness'.",
-      "focusAreas": ["Advanced DSA", "System Design", "Scalability", "Clean Code"]
-    },
-    "coreQuestions": [
+    "id": "wells-fargo",
+    "name": "Wells Fargo",
+    "questions": [
       {
-        "id": "comp-goog-1",
-        "title": "Median of Two Sorted Arrays",
-        "difficulty": "Hard",
-        "platforms": { "leetcode": "https://leetcode.com/problems/median-of-two-sorted-arrays/" },
-        "videoSolution": "https://www.youtube.com/watch?v=NTop3WyJadw"
+        "title": "N meetings in one room",
+        "link": "https://www.geeksforgeeks.org/find-maximum-meetings-in-one-room/",
+        "type": "Interview",
+        "year": "2021",
+        "id": "wells-fargo-q1"
       },
       {
-        "id": "comp-goog-2",
-        "title": "Evaluate Division",
-        "difficulty": "Medium",
-        "platforms": { "leetcode": "https://leetcode.com/problems/evaluate-division/" },
-        "videoSolution": "https://www.youtube.com/watch?v=Uei1fwDoyK0"
+        "title": "min - stack",
+        "link": "https://leetcode.com/problems/min-stack/",
+        "type": "Interview",
+        "year": "2021",
+        "id": "wells-fargo-q2"
       },
       {
-        "id": "comp-goog-3",
-        "title": "Cracking the Safe",
-        "difficulty": "Hard",
-        "platforms": { "leetcode": "https://leetcode.com/problems/cracking-the-safe/" },
-        "videoSolution": "https://www.youtube.com/watch?v=kR0g_S5YFQU"
+        "title": "Level order traversal in binary tree",
+        "link": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+        "type": "Interview",
+        "year": "2021",
+        "id": "wells-fargo-q3"
+      },
+      {
+        "title": "zig zag level order traversal in binary tree",
+        "link": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
+        "type": "Interview",
+        "year": "2021",
+        "id": "wells-fargo-q4"
+      },
+      {
+        "title": "Missing point of a parallelogram",
+        "link": "https://www.geeksforgeeks.org/problems/missing-point-of-a-parallelogram0146/1",
+        "type": "Interview",
+        "year": "2023",
+        "id": "wells-fargo-q5"
+      },
+      {
+        "title": "Given a string of length N, which contains ‘1’ , ‘0’ and ‘?’ . Return all the binary strings that can be formed by replacing the ‘?’ with ‘0’ or ‘1’.",
+        "link": "https://www.geeksforgeeks.org/generate-all-binary-strings-from-given-pattern/",
+        "type": "Interview",
+        "year": "2023",
+        "id": "wells-fargo-q6"
+      },
+      {
+        "title": "A balloon game is being played among people numbered from 1 to n in circle. Given an integer k which is the number of balloon pass, after which the person should be eliminated. The condition is before elimination of a particular person, the balloon should be passed to the next one. Find the winner ? (one who remains at last)",
+        "link": "https://www.geeksforgeeks.org/josephus-problem-set-1-a-on-solution/",
+        "type": "Interview",
+        "year": "2023",
+        "id": "wells-fargo-q7"
+      },
+      {
+        "title": "Program to convert a given number to words",
+        "link": "https://www.geeksforgeeks.org/convert-number-to-words/",
+        "type": "Interview",
+        "year": "2023",
+        "id": "wells-fargo-q8"
+      },
+      {
+        "title": "Find the occurrences of digit d in the range [0..n]",
+        "link": "https://www.geeksforgeeks.org/find-the-occurrences-of-y-in-the-range-of-x/",
+        "type": "Interview",
+        "year": "2023",
+        "id": "wells-fargo-q9"
+      },
+      {
+        "title": "Generate binary string",
+        "link": "https://practice.geeksforgeeks.org/problems/generate-binary-string3642/1",
+        "type": "OA",
+        "year": "2023",
+        "id": "wells-fargo-q10"
+      },
+      {
+        "title": "Find Minimum sum of product of two arrays",
+        "link": "https://iq.opengenus.org/minimum-sum-of-product-of-two-arrays/",
+        "type": "OA",
+        "year": "2023",
+        "id": "wells-fargo-q11"
+      },
+      {
+        "title": "Number of overtakes",
+        "link": "https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/practice-problems/algorithm/overtakes-count-33746e3a/",
+        "type": "Interview",
+        "year": "2023",
+        "id": "wells-fargo-q12"
+      },
+      {
+        "title": "Find missing element in a sorted array of consecutive numbers.",
+        "link": "https://www.geeksforgeeks.org/find-missing-element-in-a-sorted-array-of-consecutive-numbers/",
+        "type": "Interview",
+        "year": "2023",
+        "id": "wells-fargo-q13"
+      },
+      {
+        "title": "Palindrome String",
+        "link": "https://practice.geeksforgeeks.org/problems/palindrome-string0817/1",
+        "type": "Interview",
+        "year": "2023",
+        "id": "wells-fargo-q14"
+      },
+      {
+        "title": "Merge Sort",
+        "link": "https://www.geeksforgeeks.org/merge-sort/",
+        "type": "Interview",
+        "year": "2023",
+        "id": "wells-fargo-q15"
+      },
+      {
+        "title": "longest common prefix string",
+        "link": "https://leetcode.com/problems/longest-common-prefix/",
+        "type": "OA",
+        "year": "2025",
+        "id": "wells-fargo-q16"
+      },
+      {
+        "title": "Segregate Even and Odd numbers",
+        "link": "https://www.geeksforgeeks.org/problems/segregate-even-and-odd-numbers4629/1",
+        "type": "OA",
+        "year": "2025",
+        "id": "wells-fargo-q17"
+      },
+      {
+        "title": "Sum of an array using pthreads",
+        "link": "https://www.geeksforgeeks.org/sum-array-using-pthreads/",
+        "type": "OA",
+        "year": "2025",
+        "id": "wells-fargo-q18"
+      },
+      {
+        "title": "Area of Intersection of two circles",
+        "link": "https://www.geeksforgeeks.org/area-of-intersection-of-two-circles/",
+        "type": "OA",
+        "year": "2026",
+        "id": "wells-fargo-q19"
+      },
+      {
+        "title": "Zellers congruence find day date",
+        "link": "https://www.geeksforgeeks.org/zellers-congruence-find-day-date/",
+        "type": "OA",
+        "year": "2026",
+        "id": "wells-fargo-q20"
+      },
+      {
+        "title": "Seven Bridges of Königsberg",
+        "link": "https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg",
+        "type": "OA",
+        "year": "2026",
+        "id": "wells-fargo-q21"
+      },
+      {
+        "title": "Remove Duplicates from the sorted array",
+        "link": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+        "type": "Interview",
+        "year": "2026",
+        "id": "wells-fargo-q22"
+      },
+      {
+        "title": "Minimum length of Anagram Concatenation",
+        "link": "https://leetcode.com/problems/minimum-length-of-anagram-concatenation/",
+        "type": "OA",
+        "year": "2026",
+        "id": "wells-fargo-q23"
+      },
+      {
+        "title": "Count Vowel Substrings of a String",
+        "link": "https://leetcode.com/problems/count-vowel-substrings-of-a-string/",
+        "type": "OA",
+        "year": "2026",
+        "id": "wells-fargo-q24"
       }
     ],
-    "tests": [
-      {
-        "id": "google-test-1",
-        "title": "Google — DSA Mock Test",
-        "description": "Timed test covering graphs, DP and segment trees in the style of the Google OA.",
-        "formUrl": "https://forms.google.com/"
-      }
-    ],
-    "studyMaterials": [
-      {
-        "id": "google-sm-1",
-        "title": "Google Interview Prep Guide",
-        "description": "Curated notes on advanced DSA patterns, system design, and Googliness tips.",
-        "driveUrl": "https://drive.google.com/"
-      }
-    ]
+    "placementExperiences": []
   },
   {
     "id": "amazon",
     "name": "Amazon",
-    "logo": "Amazon",
-    "placementExperiences": [
-      { "name": "Priya Nair", "year": "2024", "role": "6-month intern + FTE", "link": "" },
-      { "name": "Karthik Reddy", "year": "2023", "role": "FTE", "link": "" },
-      { "name": "Ananya Gupta", "year": "2022", "role": "Summer intern", "link": "" }
-    ],
-    "oaDetails": {
-      "duration": "70 mins",
-      "questionsCount": 2,
-      "difficulty": "Medium",
-      "description": "Two coding problems plus a work-style assessment; the Leadership Principles sections carry real weight alongside the coding score.",
-      "patterns": ["Heaps", "Hashing", "Greedy algorithms", "Sliding Window"]
-    },
-    "interviewFormats": {
-      "technicalRounds": 2,
-      "hrCriteria": "Amazon Leadership Principles (LP) integrated deeply into tech questions",
-      "description": "Two technical rounds mixing DSA and low-level design, where every answer is probed against Amazon's Leadership Principles via behavioral follow-ups.",
-      "focusAreas": ["Data Structures", "System Design", "Object Oriented Design (LLD)"]
-    },
-    "coreQuestions": [
+    "questions": [
       {
-        "id": "comp-amzn-1",
-        "title": "LRU Cache",
-        "difficulty": "Hard",
-        "platforms": { "leetcode": "https://leetcode.com/problems/lru-cache/" },
-        "videoSolution": "https://www.youtube.com/watch?v=xDEuM5qa0sg"
+        "title": "Reorder List",
+        "link": "https://leetcode.com/problems/reorder-list/description/",
+        "type": "Interview",
+        "year": "2026",
+        "id": "amazon-q1"
       },
       {
-        "id": "comp-amzn-2",
-        "title": "K Closest Points to Origin",
-        "difficulty": "Medium",
-        "platforms": { "leetcode": "https://leetcode.com/problems/k-closest-points-to-origin/" },
-        "videoSolution": "https://www.youtube.com/watch?v=rI2EBUEMf9U"
+        "title": "Koko eating bananas",
+        "link": "https://leetcode.com/problems/koko-eating-bananas/description/",
+        "type": "Interview",
+        "year": "2026",
+        "id": "amazon-q2"
       },
       {
-        "id": "comp-amzn-3",
-        "title": "Course Schedule II",
-        "difficulty": "Medium",
-        "platforms": { "leetcode": "https://leetcode.com/problems/course-schedule-ii/" },
-        "videoSolution": "https://www.youtube.com/watch?v=Akt3glAJDfY"
+        "title": "Find k pairs with smallest sum",
+        "link": "https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/",
+        "type": "OA",
+        "year": "2026",
+        "id": "amazon-q3"
+      },
+      {
+        "title": "Occurrene of character in a given string",
+        "link": "https://www.geeksforgeeks.org/program-count-occurrence-given-character-string/",
+        "type": "Interview",
+        "year": "2025",
+        "id": "amazon-q4"
+      },
+      {
+        "title": "Find missing number",
+        "link": "https://leetcode.com/problems/missing-number/",
+        "type": "Interview",
+        "year": "2025",
+        "id": "amazon-q5"
+      },
+      {
+        "title": "Find cycle in linked list",
+        "link": "https://leetcode.com/problems/linked-list-cycle/",
+        "type": "Interview",
+        "year": "2025",
+        "id": "amazon-q6"
+      },
+      {
+        "title": "Detonate the maximum bombs",
+        "link": "https://leetcode.com/problems/detonate-the-maximum-bombs/description/",
+        "type": "Interview",
+        "year": "2026",
+        "id": "amazon-q7"
+      },
+      {
+        "title": "Sort array of 0s and 1s",
+        "link": "https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/",
+        "type": "Interview",
+        "year": "2026",
+        "id": "amazon-q8"
+      },
+      {
+        "title": "Step by step directions from a binary tree node to another",
+        "link": "https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/",
+        "type": "Interview",
+        "year": "2025",
+        "id": "amazon-q9"
+      },
+      {
+        "title": "Wildcard matching",
+        "link": "https://leetcode.com/problems/wildcard-matching/description/",
+        "type": "OA",
+        "year": "2026",
+        "id": "amazon-q10"
+      },
+      {
+        "title": "Removing stars from a string",
+        "link": "https://leetcode.com/problems/removing-stars-from-a-string/",
+        "type": "Interview",
+        "year": "2026",
+        "id": "amazon-q11"
+      },
+      {
+        "title": "Print cousins of a given node of a binary tree",
+        "link": "https://www.geeksforgeeks.org/print-cousins-of-a-given-node-in-binary-tree",
+        "type": "Interview",
+        "year": "2025",
+        "id": "amazon-q12"
+      },
+      {
+        "title": "Equilibrium index of an array",
+        "link": "https://www.geeksforgeeks.org/equilibrium-index-of-an-array",
+        "type": "Interview",
+        "year": "2025",
+        "id": "amazon-q13"
+      },
+      {
+        "title": "Run length encoding",
+        "link": "https://www.geeksforgeeks.org/run-length-encoding/",
+        "type": "Interview",
+        "year": "2024",
+        "id": "amazon-q14"
+      },
+      {
+        "title": "Longest happy string",
+        "link": "https://leetcode.com/problems/longest-happy-string/",
+        "type": "Interview",
+        "year": "2024",
+        "id": "amazon-q15"
       }
     ],
-    "tests": [
-      {
-        "id": "amazon-test-1",
-        "title": "Amazon — DSA & LP Mock Test",
-        "description": "Covers heaps, hashing, greedy algorithms and Leadership Principles style questions.",
-        "formUrl": "https://forms.google.com/"
-      }
-    ],
-    "studyMaterials": [
-      {
-        "id": "amazon-sm-1",
-        "title": "Amazon Interview Prep Guide",
-        "description": "Notes on Amazon's OA patterns, LLD basics, and the 16 Leadership Principles.",
-        "driveUrl": "https://drive.google.com/"
-      }
-    ]
+    "placementExperiences": []
   },
   {
-    "id": "microsoft",
-    "name": "Microsoft",
-    "logo": "Microsoft",
-    "placementExperiences": [
-      { "name": "Vikram Singh", "year": "2024", "role": "Summer intern + FTE", "link": "" },
-      { "name": "Meera Krishnan", "year": "2023", "role": "FTE", "link": "" }
-    ],
-    "oaDetails": {
-      "duration": "120 mins",
-      "questionsCount": 3,
-      "difficulty": "Medium",
-      "description": "Three medium problems on linked lists, trees, and strings; partial scoring rewards working solutions even before they are fully optimized.",
-      "patterns": ["Linked Lists", "Trees & Recursion", "Strings"]
-    },
-    "interviewFormats": {
-      "technicalRounds": 3,
-      "hrCriteria": "Cultural Fit & Engineering Excellence",
-      "description": "Three rounds covering DSA, CS fundamentals, and a design discussion, with emphasis on clean, maintainable code and clear reasoning out loud.",
-      "focusAreas": ["Operating Systems", "Networking", "DSA", "System Design"]
-    },
-    "coreQuestions": [
+    "id": "appian",
+    "name": "Appian",
+    "questions": [
       {
-        "id": "comp-msft-1",
-        "title": "Reverse Nodes in k-Group",
-        "difficulty": "Hard",
-        "platforms": { "leetcode": "https://leetcode.com/problems/reverse-nodes-in-k-group/" },
-        "videoSolution": "https://www.youtube.com/watch?v=1uRyGD5f77c"
+        "title": "Insert Interval",
+        "link": "https://leetcode.com/problems/insert-interval/description/",
+        "type": "OA",
+        "year": "2027",
+        "id": "appian-q1"
       },
       {
-        "id": "comp-msft-2",
-        "title": "Spiral Matrix",
-        "difficulty": "Medium",
-        "platforms": { "leetcode": "https://leetcode.com/problems/spiral-matrix/" },
-        "videoSolution": "https://www.youtube.com/watch?v=BJnMZNwUk1M"
+        "title": "Find first and last position of element in sorted array",
+        "link": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/",
+        "type": "OA",
+        "year": "2027",
+        "id": "appian-q2"
+      },
+      {
+        "title": "Find missing and repeating",
+        "link": "https://www.geeksforgeeks.org/problems/find-missing-and-repeating2512/1",
+        "type": "OA",
+        "year": "2027",
+        "id": "appian-q3"
+      },
+      {
+        "title": "Construct binary tree from preorder and inorder traversal",
+        "link": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+        "type": "OA",
+        "year": "2027",
+        "id": "appian-q4"
+      },
+      {
+        "title": "Single Number",
+        "link": "https://leetcode.com/problems/single-number/",
+        "type": "OA",
+        "year": "2027",
+        "id": "appian-q5"
+      },
+      {
+        "title": "Two sum",
+        "link": "https://leetcode.com/problems/two-sum/",
+        "type": "OA",
+        "year": "2027",
+        "id": "appian-q6"
+      },
+      {
+        "title": "Set-mismatch",
+        "link": "https://leetcode.com/problems/set-mismatch/description/",
+        "type": "OA",
+        "year": "2027",
+        "id": "appian-q7"
+      },
+      {
+        "title": "Find duplicate and missing elements and return the status of the team",
+        "link": "https://www.geeksforgeeks.org/problems/find-missing-and-repeating2512/1",
+        "type": "OA",
+        "year": "2027",
+        "id": "appian-q8"
+      },
+      {
+        "title": "Find first and last occurences of an array",
+        "link": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/",
+        "type": "OA",
+        "year": "2027",
+        "id": "appian-q9"
+      },
+      {
+        "title": "8 ball puzzle problem",
+        "link": "https://www.geeksforgeeks.org/aptitude/puzzle-8-balls-problem/",
+        "type": "Interview",
+        "year": "2025",
+        "id": "appian-q10"
+      },
+      {
+        "title": "Josephus Problem",
+        "link": "https://www.geeksforgeeks.org/josephus-problem/",
+        "type": "OA",
+        "year": "2026",
+        "id": "appian-q11"
+      },
+      {
+        "title": "Majority Element",
+        "link": "https://leetcode.com/problems/majority-element/",
+        "type": "Interview",
+        "year": "2024",
+        "id": "appian-q12"
+      },
+      {
+        "title": "Bayer Moore Majority Voting",
+        "link": "https://www.geeksforgeeks.org/boyer-moore-majority-voting-algorithm",
+        "type": "Interview",
+        "year": "2024",
+        "id": "appian-q13"
       }
     ],
-    "tests": [
-      {
-        "id": "microsoft-test-1",
-        "title": "Microsoft — CS Fundamentals Mock Test",
-        "description": "Covers OS, networking, DSA and system design topics common in Microsoft interviews.",
-        "formUrl": "https://forms.google.com/"
-      }
-    ],
-    "studyMaterials": [
-      {
-        "id": "microsoft-sm-1",
-        "title": "Microsoft Interview Prep Guide",
-        "description": "Study notes on linked lists, trees, OS concepts and system design fundamentals.",
-        "driveUrl": "https://drive.google.com/"
-      }
-    ]
+    "placementExperiences": []
   },
   {
-    "id": "goldman-sachs",
-    "name": "Goldman Sachs",
-    "logo": "GoldmanSachs",
-    "placementExperiences": [
-      { "name": "Aditya Rao", "year": "2024", "role": "Summer intern", "link": "" },
-      { "name": "Ishita Bose", "year": "2023", "role": "6-month intern + FTE", "link": "" }
-    ],
-    "oaDetails": {
-      "duration": "120 mins",
-      "questionsCount": 3,
-      "difficulty": "Medium to Hard",
-      "description": "A mix of math-heavy coding problems and section-based aptitude; expect number theory, probability, and dynamic programming under a tight clock.",
-      "patterns": ["Number Theory & Math", "Dynamic Programming", "Subarrays"]
-    },
-    "interviewFormats": {
-      "technicalRounds": 3,
-      "hrCriteria": "Quantitative aptitude & communication skills",
-      "description": "Three rounds spanning DSA, CS core (OS/DBMS), and quantitative puzzles, with strong weight on structured communication.",
-      "focusAreas": ["Puzzles & Probabilities", "Operating Systems", "DSA", "DBMS/SQL"]
-    },
-    "coreQuestions": [
+    "id": "accolite",
+    "name": "Accolite",
+    "questions": [
       {
-        "id": "comp-gs-1",
-        "title": "Fraction to Recurring Decimal",
-        "difficulty": "Medium",
-        "platforms": { "leetcode": "https://leetcode.com/problems/fraction-to-recurring-decimal/" },
-        "videoSolution": "https://www.youtube.com/watch?v=2cRS9dNa780"
+        "title": "Trapping Rain water",
+        "link": "https://www.geeksforgeeks.org/trapping-rain-water/",
+        "type": "OA",
+        "year": "2021",
+        "id": "accolite-q1"
       },
       {
-        "id": "comp-gs-2",
-        "title": "Median in a Stream",
-        "difficulty": "Hard",
-        "platforms": { "leetcode": "https://leetcode.com/problems/find-median-from-data-stream/" },
-        "videoSolution": "https://www.youtube.com/watch?v=itmhHWaHupI"
+        "title": "Level order tree traversal",
+        "link": "https://www.geeksforgeeks.org/level-order-tree-traversal/",
+        "type": "Interview",
+        "year": "2021",
+        "id": "accolite-q2"
+      },
+      {
+        "title": "Print left view of bin tree",
+        "link": "https://www.geeksforgeeks.org/iterative-method-to-print-left-view-of-a-binary-tree/",
+        "type": "Interview",
+        "year": "2021",
+        "id": "accolite-q3"
+      },
+      {
+        "title": "Right view bin tree using queue",
+        "link": "https://www.geeksforgeeks.org/right-view-binary-tree-using-queue/",
+        "type": "Interview",
+        "year": "2021",
+        "id": "accolite-q4"
+      },
+      {
+        "title": "Rearrange a given linked list in place",
+        "link": "https://www.geeksforgeeks.org/rearrange-a-given-linked-list-in-place/",
+        "type": "Interview",
+        "year": "2021",
+        "id": "accolite-q5"
+      },
+      {
+        "title": "Add two numbers represented by linked list",
+        "link": "https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists/",
+        "type": "Interview",
+        "year": "2021",
+        "id": "accolite-q6"
+      },
+      {
+        "title": "Reverse string without affecting special characters",
+        "link": "https://www.geeksforgeeks.org/reverse-a-string-without-affecting-special-characters/",
+        "type": "Interview",
+        "year": "2021",
+        "id": "accolite-q7"
+      },
+      {
+        "title": "Dijkstra shortest path using greedy approach",
+        "link": "https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/",
+        "type": "Interview",
+        "year": "2021",
+        "id": "accolite-q8"
+      },
+      {
+        "title": "Dijkstra shortest path using priority queue",
+        "link": "https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-priority_queue-stl/",
+        "type": "Interview",
+        "year": "2021",
+        "id": "accolite-q9"
+      },
+      {
+        "title": "Partition set k subests equal sum",
+        "link": "https://www.geeksforgeeks.org/partition-set-k-subsets-equal-sum/",
+        "type": "Interview",
+        "year": "2021",
+        "id": "accolite-q10"
+      },
+      {
+        "title": "Split given array into k sub arrays such that maximum sum of all sub arrays is minimum",
+        "link": "https://www.geeksforgeeks.org/split-the-given-array-into-k-sub-arrays-such-that-maximum-sum-of-all-sub-arrays-is-minimum/",
+        "type": "Interview",
+        "year": "2021",
+        "id": "accolite-q11"
+      },
+      {
+        "title": "Find a triplet that sum to a givne value",
+        "link": "https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/",
+        "type": "Interview",
+        "year": "2021",
+        "id": "accolite-q12"
       }
     ],
-    "tests": [
+    "placementExperiences": []
+  },
+  {
+    "id": "walmart",
+    "name": "Walmart",
+    "questions": [
       {
-        "id": "gs-test-1",
-        "title": "Goldman Sachs — Quant & DSA Mock Test",
-        "description": "Covers number theory, probability puzzles, DP and SQL in the style of GS OA.",
-        "formUrl": "https://forms.google.com/"
+        "title": "Maximum Absolute Difference",
+        "link": "https://www.geeksforgeeks.org/maximum-absolute-difference-value-index-sums/",
+        "type": "OA",
+        "year": "2021",
+        "id": "walmart-q1"
+      },
+      {
+        "title": "Reverse Linked List in group of 3",
+        "link": "https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/",
+        "type": "Interview",
+        "year": "2021",
+        "id": "walmart-q2"
+      },
+      {
+        "title": "Merge two sorted Linked Lists",
+        "link": "https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/",
+        "type": "Interview",
+        "year": "2021",
+        "id": "walmart-q3"
+      },
+      {
+        "title": "4 Tyres and 1 Spare Tyre Puzzle",
+        "link": "https://www.geeksforgeeks.org/puzzle-29-car-wheel-puzzle/",
+        "type": "Interview",
+        "year": "2021",
+        "id": "walmart-q4"
+      },
+      {
+        "title": "DFS of a Graph",
+        "link": "https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/",
+        "type": "Interview",
+        "year": "2021",
+        "id": "walmart-q5"
+      },
+      {
+        "title": "Grouping Anagrams",
+        "link": "https://leetcode.com/problems/group-anagrams/description/",
+        "type": "Interview",
+        "year": "2025",
+        "id": "walmart-q6"
+      },
+      {
+        "title": "Kth smallest element in a BST",
+        "link": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/",
+        "type": "Interview",
+        "year": "2025",
+        "id": "walmart-q7"
       }
     ],
-    "studyMaterials": [
+    "placementExperiences": []
+  },
+  {
+    "id": "western-digital",
+    "name": "Western Digital",
+    "questions": [
       {
-        "id": "gs-sm-1",
-        "title": "Goldman Sachs Interview Prep Guide",
-        "description": "Quantitative puzzles, OS/DBMS notes and DSA patterns curated for GS roles.",
-        "driveUrl": "https://drive.google.com/"
+        "title": "Find the 2nd maximum element in the array",
+        "link": "https://www.geeksforgeeks.org/dsa/find-second-largest-element-array/",
+        "type": "Interview",
+        "year": "2027",
+        "id": "western-digital-q1"
+      },
+      {
+        "title": "Reverse words in a string",
+        "link": "https://leetcode.com/problems/reverse-words-in-a-string/description/",
+        "type": "Interview",
+        "year": "2027",
+        "id": "western-digital-q2"
+      },
+      {
+        "title": "Find the kth maximum element in the array",
+        "link": "https://leetcode.com/problems/kth-largest-element-in-an-array/description/",
+        "type": "Interview",
+        "year": "2027",
+        "id": "western-digital-q3"
+      },
+      {
+        "title": "Find if a linked list has a cycle",
+        "link": "https://leetcode.com/problems/linked-list-cycle/description/",
+        "type": "Interview",
+        "year": "2027",
+        "id": "western-digital-q4"
       }
-    ]
+    ],
+    "placementExperiences": []
+  },
+  {
+    "id": "athena-health",
+    "name": "Athena Health",
+    "questions": [
+      {
+        "title": "Subarrays with k different integers",
+        "link": "https://leetcode.com/problems/subarrays-with-k-different-integers/",
+        "type": "OA",
+        "year": "2026",
+        "id": "athena-health-q1"
+      },
+      {
+        "title": "Implement stack using queues",
+        "link": "https://leetcode.com/problems/implement-stack-using-queues/",
+        "type": "Interview",
+        "year": "2026",
+        "id": "athena-health-q2"
+      },
+      {
+        "title": "Remove nth node from the end of the list",
+        "link": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+        "type": "Interview",
+        "year": "2026",
+        "id": "athena-health-q3"
+      }
+    ],
+    "placementExperiences": []
+  },
+  {
+    "id": "american-express",
+    "name": "American Express",
+    "questions": [
+      {
+        "title": "Nearest exit from entrance in maze",
+        "link": "https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/description/",
+        "type": "OA",
+        "year": "2027",
+        "id": "american-express-q1"
+      },
+      {
+        "title": "Mimimum amount of time to collect garbage",
+        "link": "https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/",
+        "type": "OA",
+        "year": "2027",
+        "id": "american-express-q2"
+      }
+    ],
+    "placementExperiences": []
+  },
+  {
+    "id": "aptiv",
+    "name": "Aptiv",
+    "questions": [
+      {
+        "title": "Missing number",
+        "link": "https://leetcode.com/problems/missing-number/",
+        "type": "Interview",
+        "year": "2026",
+        "id": "aptiv-q1"
+      },
+      {
+        "title": "Maximum consecutive ones",
+        "link": "https://leetcode.com/problems/max-consecutive-ones/",
+        "type": "Interview",
+        "year": "2026",
+        "id": "aptiv-q2"
+      }
+    ],
+    "placementExperiences": []
+  },
+  {
+    "id": "arista-networks",
+    "name": "Arista Networks",
+    "questions": [
+      {
+        "title": "Total cost to hire K workers",
+        "link": "https://leetcode.com/problems/total-cost-to-hire-k-workers/description/",
+        "type": "OA",
+        "year": "2026",
+        "id": "arista-networks-q1"
+      },
+      {
+        "title": "Simplify path",
+        "link": "https://leetcode.com/problems/simplify-path/description/",
+        "type": "Interview",
+        "year": "2026",
+        "id": "arista-networks-q2"
+      }
+    ],
+    "placementExperiences": []
+  },
+  {
+    "id": "apple",
+    "name": "Apple",
+    "questions": [
+      {
+        "title": "Restrictive Candy Crush",
+        "link": "https://www.geeksforgeeks.org/problems/restrictive-candy-crush--141631/1",
+        "type": "Interview",
+        "year": "2026",
+        "id": "apple-q1"
+      }
+    ],
+    "placementExperiences": []
   },
   {
     "id": "zoho",
     "name": "Zoho",
-    "logo": "Zoho",
-    "placementExperiences": [
-      { "name": "Harish Kumar", "year": "2024", "role": "FTE", "link": "" },
-      { "name": "Divya Lakshmi", "year": "2023", "role": "FTE", "link": "" },
-      { "name": "Naveen Raj", "year": "2022", "role": "Summer intern", "link": "" }
-    ],
-    "oaDetails": {
-      "duration": "90 mins",
-      "questionsCount": 5,
-      "difficulty": "Easy to Medium",
-      "description": "Five implementation-heavy problems on strings, matrices, and pattern printing — correctness across all hidden test cases matters more than cleverness.",
-      "patterns": ["String manipulation", "Matrix operations", "Pattern printing"]
-    },
-    "interviewFormats": {
-      "technicalRounds": 2,
-      "hrCriteria": "Hands-on application development round (1-day LLD round)",
-      "description": "A hands-on, full-day application-building round followed by technical and HR discussions on OOP, projects, and low-level design.",
-      "focusAreas": ["Basic Algorithms", "Core Java/C++ OOPs", "LLD / Project Design"]
-    },
-    "coreQuestions": [
+    "questions": [
       {
-        "id": "comp-zoho-1",
-        "title": "Look and Say Sequence",
-        "difficulty": "Medium",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/count-and-say/",
-          "gfg": "https://practice.geeksforgeeks.org/problems/look-and-say-pattern3543/1"
-        },
-        "videoSolution": "https://www.youtube.com/watch?v=1Sgt93d-u6M"
-      },
-      {
-        "id": "comp-zoho-2",
-        "title": "Print Matrix in Spiral form",
-        "difficulty": "Medium",
-        "platforms": { "leetcode": "https://leetcode.com/problems/spiral-matrix/" },
-        "videoSolution": "https://www.youtube.com/watch?v=BJnMZNwUk1M"
+        "title": "Minimum  number of platforms required for a railway",
+        "link": "https://takeuforward.org/data-structure/minimum-number-of-platforms-required-for-a-railway",
+        "type": "OA",
+        "year": "2026",
+        "id": "zoho-q1"
       }
     ],
-    "tests": [
-      {
-        "id": "zoho-test-1",
-        "title": "Zoho — Implementation & OOP Mock Test",
-        "description": "Covers strings, matrices, OOP concepts and LLD basics in the style of Zoho rounds.",
-        "formUrl": "https://forms.google.com/"
-      }
-    ],
-    "studyMaterials": [
-      {
-        "id": "zoho-sm-1",
-        "title": "Zoho Interview Prep Guide",
-        "description": "Pattern printing, string manipulation, OOP principles and LLD design notes.",
-        "driveUrl": "https://drive.google.com/"
-      }
-    ]
-  },
-  {
-    "id": "tcs",
-    "name": "TCS (Digital / Ninja)",
-    "logo": "TCS",
-    "placementExperiences": [
-      { "name": "Pooja Menon", "year": "2024", "role": "FTE", "link": "" },
-      { "name": "Sanjay Pillai", "year": "2023", "role": "6-month intern + FTE", "link": "" }
-    ],
-    "oaDetails": {
-      "duration": "180 mins",
-      "questionsCount": 2,
-      "difficulty": "Easy to Medium",
-      "description": "Two beginner-friendly problems on arrays, number logic, and string validation within a generous time window, preceded by aptitude sections.",
-      "patterns": ["Basic arrays", "Number logic (Primes, GCD)", "String validation"]
-    },
-    "interviewFormats": {
-      "technicalRounds": 1,
-      "hrCriteria": "Basic programming checks and project discussion",
-      "description": "A single technical round centered on basic coding, resume projects, and core CS, followed by a managerial/HR conversation.",
-      "focusAreas": ["Basic Coding", "Resume Projects", "Database Queries", "Core CS"]
-    },
-    "coreQuestions": [
-      {
-        "id": "comp-tcs-1",
-        "title": "Palindrome String Check",
-        "difficulty": "Easy",
-        "platforms": {
-          "leetcode": "https://leetcode.com/problems/valid-palindrome/",
-          "gfg": "https://practice.geeksforgeeks.org/problems/palindrome-string0817/1"
-        },
-        "videoSolution": "https://www.youtube.com/watch?v=jJXJ14c1JDg"
-      },
-      {
-        "id": "comp-tcs-2",
-        "title": "Leap Year & Leap Day calculations",
-        "difficulty": "Easy",
-        "platforms": { "gfg": "https://practice.geeksforgeeks.org/problems/is-leap-year5125/1" },
-        "videoSolution": "https://www.youtube.com/watch?v=example"
-      }
-    ],
-    "tests": [
-      {
-        "id": "tcs-test-1",
-        "title": "TCS — Ninja Mock Test",
-        "description": "Beginner-friendly test covering arrays, number logic and string problems typical of TCS Ninja.",
-        "formUrl": "https://forms.google.com/"
-      }
-    ],
-    "studyMaterials": [
-      {
-        "id": "tcs-sm-1",
-        "title": "TCS Interview Prep Guide",
-        "description": "Basics of DSA, SQL queries and resume project discussion tips for TCS interviews.",
-        "driveUrl": "https://drive.google.com/"
-      }
-    ]
+    "placementExperiences": []
   }
 ]
