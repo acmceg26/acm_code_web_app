@@ -172,7 +172,7 @@
         "id": "wells-fargo-q24"
       }
     ],
-    "placementExperiences": []
+    "oaFormat": []
   },
   {
     "id": "amazon",
@@ -284,7 +284,7 @@
         "id": "amazon-q15"
       }
     ],
-    "placementExperiences": []
+    "oaFormat": []
   },
   {
     "id": "appian",
@@ -382,7 +382,7 @@
         "id": "appian-q13"
       }
     ],
-    "placementExperiences": []
+    "oaFormat": []
   },
   {
     "id": "accolite",
@@ -473,7 +473,7 @@
         "id": "accolite-q12"
       }
     ],
-    "placementExperiences": []
+    "oaFormat": []
   },
   {
     "id": "walmart",
@@ -529,7 +529,7 @@
         "id": "walmart-q7"
       }
     ],
-    "placementExperiences": []
+    "oaFormat": []
   },
   {
     "id": "western-digital",
@@ -564,7 +564,7 @@
         "id": "western-digital-q4"
       }
     ],
-    "placementExperiences": []
+    "oaFormat": []
   },
   {
     "id": "athena-health",
@@ -592,7 +592,7 @@
         "id": "athena-health-q3"
       }
     ],
-    "placementExperiences": []
+    "oaFormat": []
   },
   {
     "id": "american-express",
@@ -613,7 +613,7 @@
         "id": "american-express-q2"
       }
     ],
-    "placementExperiences": []
+    "oaFormat": []
   },
   {
     "id": "aptiv",
@@ -634,7 +634,7 @@
         "id": "aptiv-q2"
       }
     ],
-    "placementExperiences": []
+    "oaFormat": []
   },
   {
     "id": "arista-networks",
@@ -655,7 +655,7 @@
         "id": "arista-networks-q2"
       }
     ],
-    "placementExperiences": []
+    "oaFormat": []
   },
   {
     "id": "apple",
@@ -669,7 +669,7 @@
         "id": "apple-q1"
       }
     ],
-    "placementExperiences": []
+    "oaFormat": []
   },
   {
     "id": "zoho",
@@ -683,6 +683,6 @@
         "id": "zoho-q1"
       }
     ],
-    "placementExperiences": []
+    "oaFormat": []
   }
 ]

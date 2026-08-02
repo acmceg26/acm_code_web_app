@@ -1,8 +1,31 @@
 import React, { useState } from 'react';
-import companyData from '../data/companies.json';
+import rawCompanyData from '../data/companies.json';
 import { Card } from '../components/ui/Card';
 import { ComingSoon } from '../components/ui/ComingSoon';
-import { ArrowLeft, ExternalLink, ClipboardList, Users } from 'lucide-react';
+import { ArrowLeft, ExternalLink, ClipboardList, Layers } from 'lucide-react';
+
+interface Question {
+  id: string;
+  title: string;
+  link: string;
+  type: string;
+  year: string;
+}
+interface OaFormatItem {
+  label: string;
+  value: string;
+}
+interface Company {
+  id: string;
+  name: string;
+  questions: Question[];
+  oaFormat: OaFormatItem[];
+}
+
+const companyData = rawCompanyData as Company[];
+
+// CSEA placement portal — real, first-hand placement experiences live here.
+const CSEA_PLACEMENT_URL = 'https://placement.cseaceg.org.in/';
 
 // ─── Feature flag ───────────────────────────────────────────────────────────
 // Set to `true` to hide the section behind a "Coming Soon" screen.
@@ -61,9 +84,6 @@ const CompanyLogo: React.FC<{ companyId: string; name: string; size?: 'sm' | 'lg
   );
 };
 
-type Company = (typeof companyData)[number];
-type Question = Company['questions'][number];
-
 // Badge colour by question type (OA vs Interview).
 const typeStyles = (type: string) =>
   type === 'OA'
@@ -92,6 +112,33 @@ const CompanyDetailPage: React.FC<{
         </div>
       </div>
     </div>
+
+    {/* ── OA & Interview Format ────────────────────────────── */}
+    {company.oaFormat.length > 0 && (
+      <div>
+        <div className="flex items-center gap-2 mb-4">
+          <div className="w-8 h-8 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center">
+            <Layers className="w-4 h-4 text-zinc-300" />
+          </div>
+          <div>
+            <h3 className="text-base font-semibold text-zinc-100">OA &amp; Interview Format</h3>
+            <p className="text-xs text-zinc-500">Rounds, platform and process for {company.name}.</p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {company.oaFormat.map((item) => (
+            <div
+              key={item.label}
+              className="rounded-lg border border-zinc-800 bg-zinc-900/40 px-4 py-3"
+            >
+              <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-500">{item.label}</p>
+              <p className="text-sm font-medium text-zinc-200 mt-0.5">{item.value}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
 
     {/* ── Questions asked ──────────────────────────────────── */}
     <div>
@@ -131,22 +178,6 @@ const CompanyDetailPage: React.FC<{
       </div>
     </div>
 
-    {/* ── Placement Experiences (inactive for now) ─────────── */}
-    <div>
-      <div className="flex items-center gap-2 mb-4">
-        <div className="w-8 h-8 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center">
-          <Users className="w-4 h-4 text-zinc-300" />
-        </div>
-        <div>
-          <h3 className="text-base font-semibold text-zinc-100">Placement Experiences</h3>
-          <p className="text-xs text-zinc-500">First-hand interview write-ups from students.</p>
-        </div>
-      </div>
-
-      <div className="rounded-lg border border-dashed border-zinc-800 bg-zinc-900/30 px-4 py-6 text-center">
-        <p className="text-sm text-zinc-500">Placement experiences will be added soon.</p>
-      </div>
-    </div>
   </div>
 );
 
@@ -188,6 +219,37 @@ export const CompanyPrep: React.FC = () => {
           Company-specific OA &amp; interview questions shared by students.
         </p>
       </div>
+
+      {/* CSEA placement portal banner — full placement experiences live here */}
+      <a
+        href={CSEA_PLACEMENT_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group relative flex items-center gap-4 overflow-hidden rounded-xl border border-blue-500/50 bg-gradient-to-r from-blue-600/25 via-indigo-600/20 to-blue-600/25 px-5 py-4 shadow-lg shadow-blue-900/20 ring-1 ring-inset ring-white/5 transition-all hover:border-blue-400/70 hover:from-blue-600/35 hover:via-indigo-600/30 hover:to-blue-600/35"
+      >
+        <div className="w-12 h-12 shrink-0 rounded-xl bg-white border border-black/10 flex items-center justify-center overflow-hidden shadow-md">
+          <img
+            src="https://www.google.com/s2/favicons?domain=placement.cseaceg.org.in&sz=128"
+            alt="CSEA logo"
+            className="w-8 h-8 object-contain"
+            loading="lazy"
+          />
+        </div>
+        <div className="min-w-0 flex-1">
+          <div className="flex items-center gap-2">
+            <p className="text-sm font-bold text-white">CSEA Placement Portal</p>
+            <span className="rounded-full bg-blue-500/30 border border-blue-400/40 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-blue-100">
+              Experiences
+            </span>
+          </div>
+          <p className="text-xs text-blue-100/80 mt-0.5">
+            Read full first-hand placement &amp; interview experiences on the CSEA portal.
+          </p>
+        </div>
+        <span className="flex items-center gap-1.5 shrink-0 rounded-lg bg-blue-500 px-3.5 py-2 text-xs font-semibold text-white shadow-sm transition-colors group-hover:bg-blue-400">
+          Visit <ExternalLink className="w-3.5 h-3.5" />
+        </span>
+      </a>
 
       {/* Grid of company cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
