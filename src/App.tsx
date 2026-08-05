@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, Outlet } from 'react-router-dom';
+import { DsaDataProvider } from './context/DsaDataContext';
 import { TrackerProvider } from './context/TrackerContext';
 import { Sidebar } from './components/features/Sidebar';
 import { Dashboard } from './views/Dashboard';
@@ -143,11 +144,13 @@ function Root() {
 
 function App() {
   return (
-    <TrackerProvider>
-      <BrowserRouter>
-        <Root />
-      </BrowserRouter>
-    </TrackerProvider>
+    <DsaDataProvider>
+      <TrackerProvider>
+        <BrowserRouter>
+          <Root />
+        </BrowserRouter>
+      </TrackerProvider>
+    </DsaDataProvider>
   );
 }
 

@@ -2373,6 +2373,532 @@
                   }
                 }
               ]
+            },
+            {
+              "name": "Graphs",
+              "problems": [
+                {
+                  "id": "gph-1",
+                  "title": "BFS",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1"
+                  },
+                  "videoSolution": "https://youtu.be/pcKY4hjDrxk?si=JZJ0KDI9OKcjsG5T"
+                },
+                {
+                  "id": "gph-2",
+                  "title": "DFS",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1"
+                  },
+                  "videoSolution": "https://youtu.be/pcKY4hjDrxk?si=JZJ0KDI9OKcjsG5T"
+                },
+                {
+                  "id": "gph-3",
+                  "title": "Create Adjacency List",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/problems/print-adjacency-list-1587115620/1"
+                  },
+                  "videoSolution": "https://youtu.be/5hPfm_uqXmw?si=zeDdJcrrgVdWyqlf"
+                },
+                {
+                  "id": "gph-4",
+                  "title": "Number of Connected Components (Provinces)",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/problems/number-of-provinces/1"
+                  },
+                  "videoSolution": "https://youtu.be/8f1XPm4WOUc?si=2XQmkzQFGpbHFPmQ"
+                },
+                {
+                  "id": "gph-5",
+                  "title": "Island Perimeter",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/island-perimeter/description"
+                  },
+                  "videoSolution": "https://youtu.be/fISIuAFRM2s?si=yQAYT_fXgFC-G9xo"
+                },
+                {
+                  "id": "gph-6",
+                  "title": "Is Graph Bipartite?",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/is-graph-bipartite/description/"
+                  },
+                  "videoSolution": "https://youtu.be/-vu34sct1g8?si=Y7UbBYh_WprJKdWo"
+                },
+                {
+                  "id": "gph-7",
+                  "title": "Surrounded Regions",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/surrounded-regions/description"
+                  },
+                  "videoSolution": "https://youtu.be/BtdgAys4yMk?si=M1GcK_IwmCqlgSfF"
+                },
+                {
+                  "id": "rec-15",
+                  "title": "Word Search",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/word-search/description"
+                  },
+                  "videoSolution": "https://youtu.be/pfiQ_PS1g8E?si=wTbcJ1A54uhR1Y0W"
+                },
+                {
+                  "id": "gph-9",
+                  "title": "Number of Islands",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/number-of-islands/description"
+                  },
+                  "videoSolution": "https://youtu.be/muncqlKJrH0?si=7hMHCbN9AEML9h7K"
+                },
+                {
+                  "id": "gph-10",
+                  "title": "Detect Cycles in 2D Grid",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/detect-cycles-in-2d-grid/description/"
+                  },
+                  "videoSolution": "https://youtu.be/9twcmtQj4DU?si=sjGGtnudNiVDWc2S"
+                },
+                {
+                  "id": "gph-11",
+                  "title": "Course Schedule",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/course-schedule/description"
+                  },
+                  "videoSolution": "https://youtu.be/EgI5nU9etnU?si=MuBlBEznj92UGDIS"
+                },
+                {
+                  "id": "gph-12",
+                  "title": "Course Schedule II",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/course-schedule-ii/description"
+                  },
+                  "videoSolution": "https://youtu.be/Akt3glAwyfY?si=OE6v_ybU6p9R0HyT"
+                },
+                {
+                  "id": "gph-13",
+                  "title": "Minesweeper",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/minesweeper/description"
+                  },
+                  "videoSolution": "https://youtu.be/zPmuqLKPbE8?si=296YNpkfkQ0K-uDZ"
+                },
+                {
+                  "id": "gph-14",
+                  "title": "01 Matrix",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/01-matrix/description"
+                  },
+                  "videoSolution": "https://youtu.be/edXdVwkYHF8?si=szlH7nCoYwHdQ0O9"
+                },
+                {
+                  "id": "gph-15",
+                  "title": "Minimum Height Trees",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/minimum-height-trees/description"
+                  },
+                  "videoSolution": "https://youtu.be/ivl6BHJVcB0?si=RH9illRQdFqjQIW4"
+                },
+                {
+                  "id": "gph-16",
+                  "title": "Topological Sort",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/problems/topological-sort/1"
+                  },
+                  "videoSolution": "https://youtu.be/73sneFXuTEg?si=v3GDq-_SAov5jTDk"
+                },
+                {
+                  "id": "gph-17",
+                  "title": "Number of Ways to Arrive at Destination",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/description/"
+                  },
+                  "videoSolution": "https://youtu.be/_-0mx0SmYxA?si=rf4pf_Ss7m2HeVjD"
+                },
+                {
+                  "id": "gph-18",
+                  "title": "Prim's Minimum Spanning Tree",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1"
+                  },
+                  "videoSolution": "https://youtu.be/4ZlRH0eK-qQ?si=r6o8sZ06V0PqFOCN"
+                },
+                {
+                  "id": "gph-19",
+                  "title": "Disjoint Set Union",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1"
+                  },
+                  "videoSolution": "https://youtu.be/aBxjDBC4M1U?si=UJ3ztvankqrZW1-7"
+                },
+                {
+                  "id": "gph-20",
+                  "title": "Kruskal's Minimum Spanning Tree",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1"
+                  },
+                  "videoSolution": "https://youtu.be/4ZlRH0eK-qQ?si=r6o8sZ06V0PqFOCN"
+                },
+                {
+                  "id": "gph-21",
+                  "title": "Dijkstra's Algorithm",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1"
+                  },
+                  "videoSolution": "https://youtu.be/XB4MIexjvY0?si=49SHAev2fsjZ-3zy"
+                },
+                {
+                  "id": "gph-22",
+                  "title": "Longest Increasing Path in a Matrix",
+                  "difficulty": "Hard",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description"
+                  },
+                  "videoSolution": "https://youtu.be/wCc_nd-GiEc?si=HQVqhX2Ce8ogT3q_"
+                },
+                {
+                  "id": "gph-23",
+                  "title": "Bellman-Ford",
+                  "difficulty": "Hard",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1"
+                  },
+                  "videoSolution": "https://youtu.be/0vVofAhAYjc?si=ASEyYZLtdNMko2CX"
+                },
+                {
+                  "id": "gph-24",
+                  "title": "Cheapest Flights Within K Stops",
+                  "difficulty": "Hard",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/cheapest-flights-within-k-stops/description/"
+                  },
+                  "videoSolution": "https://youtu.be/vWgoPTvQ3Rw?si=Ee54AbjUMXFuCljT"
+                },
+                {
+                  "id": "gph-25",
+                  "title": "Floyd-Warshall",
+                  "difficulty": "Hard",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1"
+                  },
+                  "videoSolution": "https://youtu.be/YbY8cVwWAvw?si=3AfWglH1GFVZNDMC"
+                }
+              ]
+            },
+            {
+              "name": "Searching",
+              "problems": [
+                {
+                  "id": "srch-1",
+                  "title": "Binary Search",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/binary-search/description/"
+                  },
+                  "videoSolution": "https://youtu.be/MFhxShGxHWc?si=vNMyH_8rY20KkZ74"
+                },
+                {
+                  "id": "srch-2",
+                  "title": "Square Root (Sqrt(x))",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/sqrtx/description"
+                  },
+                  "videoSolution": "https://youtu.be/zdMhGxRWutQ?si=9idCPq_XIVbZ76l7"
+                },
+                {
+                  "id": "srch-3",
+                  "title": "Search in Rotated Sorted Array",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/search-in-rotated-sorted-array/description"
+                  },
+                  "videoSolution": "https://youtu.be/5qGrJbHhqFs?si=d9zX7f1BY_t4MLw9"
+                },
+                {
+                  "id": "srch-4",
+                  "title": "Search in Rotated Sorted Array II",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description"
+                  },
+                  "videoSolution": "https://youtu.be/w2G2W8l__pc?si=vsZJE3jqwiW-OqIw"
+                },
+                {
+                  "id": "srch-5",
+                  "title": "Search a 2D Matrix",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/search-a-2d-matrix/description/"
+                  },
+                  "videoSolution": "https://youtu.be/JXU4Akft7yk?si=xA07wuNuRTmZAgFT"
+                },
+                {
+                  "id": "srch-6",
+                  "title": "Search a 2D Matrix II",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/search-a-2d-matrix-ii/description"
+                  },
+                  "videoSolution": "https://youtu.be/9ZbB397jU4k?si=eG_CZQqXhjOj33Qh"
+                },
+                {
+                  "id": "srch-7",
+                  "title": "Find Minimum in Rotated Sorted Array",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description"
+                  },
+                  "videoSolution": "https://youtu.be/nhEMDKMB44g?si=aDHN-tI4sHgTZ4E1"
+                },
+                {
+                  "id": "srch-8",
+                  "title": "Kth Smallest Element in a Sorted Matrix",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description"
+                  },
+                  "videoSolution": "https://youtu.be/16YmDvztm8I?si=my6RgbHc3rv5agH0"
+                },
+                {
+                  "id": "srch-9",
+                  "title": "Aggressive Cows",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/problems/aggressive-cows/1"
+                  },
+                  "videoSolution": "https://youtu.be/WMtvM9BrrM0?si=VtuZPgdrMcjyoDrq"
+                },
+                {
+                  "id": "srch-10",
+                  "title": "Find Minimum in Rotated Sorted Array II",
+                  "difficulty": "Hard",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description"
+                  },
+                  "videoSolution": "https://youtu.be/w2G2W8l__pc?si=mhoBVbtU6hfVWdAY"
+                },
+                {
+                  "id": "srch-11",
+                  "title": "Median of Two Sorted Arrays",
+                  "difficulty": "Hard",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/median-of-two-sorted-arrays/description"
+                  },
+                  "videoSolution": "https://youtu.be/F9c7LpRZWVQ?si=OSKWB25BV3AlEQ4T"
+                }
+              ]
+            },
+            {
+              "name": "Sorting",
+              "problems": [
+                {
+                  "id": "sort-1",
+                  "title": "Quick Sort",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/problems/quick-sort/1"
+                  },
+                  "videoSolution": "https://youtu.be/7h1s2SojIRw?si=4aJ0MmnbxPEQRtSd"
+                },
+                {
+                  "id": "sort-2",
+                  "title": "Merge Sort",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/problems/merge-sort/1"
+                  },
+                  "videoSolution": "https://youtu.be/4VqmGXwpLqc?si=MRqI9-1t3O_mcY0B"
+                },
+                {
+                  "id": "sort-3",
+                  "title": "Bubble Sort",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/problems/bubble-sort/1"
+                  },
+                  "videoSolution": "https://youtu.be/xli_FI7CuzA?si=oh8_LyL6ZFJ_5uF6"
+                },
+                {
+                  "id": "sort-4",
+                  "title": "Insertion Sort",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/problems/insertion-sort/1"
+                  },
+                  "videoSolution": "https://youtu.be/JU767SDMDvA?si=nzOld8-2URgQAJq0"
+                },
+                {
+                  "id": "sort-5",
+                  "title": "Selection Sort",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/problems/selection-sort/1"
+                  },
+                  "videoSolution": "https://youtu.be/9oWd4VJOwr0?si=zmKvTFPhiXwiL1jR"
+                },
+                {
+                  "id": "sort-6",
+                  "title": "Sort an Array",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/sort-an-array/description/"
+                  },
+                  "videoSolution": "https://youtu.be/4VqmGXwpLqc?si=MRqI9-1t3O_mcY0B"
+                },
+                {
+                  "id": "sort-7",
+                  "title": "Sort Array by Parity",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/sort-array-by-parity/description"
+                  },
+                  "videoSolution": "https://youtu.be/QC4c9fyr8As?si=l7jCOWy1PuJQtL3p"
+                },
+                {
+                  "id": "sort-8",
+                  "title": "Sort Integers by Number of 1 Bits",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/description/"
+                  },
+                  "videoSolution": "https://youtu.be/mzw8UjjQRyA?si=LVMWKm-JCOv4evBT"
+                },
+                {
+                  "id": "sort-9",
+                  "title": "Count 1's in a Sorted Binary Array",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/dsa/count-1s-sorted-binary-array/"
+                  },
+                  "videoSolution": "https://youtu.be/EoO9c9UOyww?si=98BOvEigpN_CQnPg"
+                },
+                {
+                  "id": "arr-12",
+                  "title": "Check if Array is Sorted and Rotated",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/"
+                  },
+                  "videoSolution": "https://youtu.be/Vzs_vlCIFEw?si=U76rblXEocyxcrAH"
+                },
+                {
+                  "id": "sort-11",
+                  "title": "Sort Array by Increasing Frequency",
+                  "difficulty": "Easy",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/sort-array-by-increasing-frequency/description/"
+                  },
+                  "videoSolution": "https://youtu.be/Evq1SfUbhBg?si=bJFbSkOsbvH4mrWw"
+                },
+                {
+                  "id": "arr-17",
+                  "title": "Sort Colors",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/sort-colors/description/"
+                  },
+                  "videoSolution": "https://youtu.be/4xbWSRZHqac?si=YG68MRmemVdzCEj2"
+                },
+                {
+                  "id": "ll-12",
+                  "title": "Sort List",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/sort-list/description"
+                  },
+                  "videoSolution": "https://youtu.be/TGveA1oFhrc?si=dHw-pu9htPYSU4Br"
+                },
+                {
+                  "id": "heap-7",
+                  "title": "Sort Characters by Frequency",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/sort-characters-by-frequency/description"
+                  },
+                  "videoSolution": "https://youtu.be/OXdXc9HTrIg?si=188Te8vDyFRWcoaw"
+                },
+                {
+                  "id": "sort-15",
+                  "title": "Insertion Sort List",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/insertion-sort-list"
+                  },
+                  "videoSolution": "https://youtu.be/Kk6mXAzqX3Y?si=tUWRm9HP7LquInQ2"
+                },
+                {
+                  "id": "sort-16",
+                  "title": "Heap Sort",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/problems/heap-sort/1"
+                  },
+                  "videoSolution": "https://youtu.be/2DmK_H7IdTo?si=yJsXdCM7YM_IC9F3"
+                },
+                {
+                  "id": "sort-17",
+                  "title": "Counting Sort",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/dsa/counting-sort/"
+                  },
+                  "videoSolution": "https://youtu.be/OKd534EWcdk?si=dYEAStX_7FCAlW7e"
+                },
+                {
+                  "id": "sort-18",
+                  "title": "Sort Array By Parity II",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "leetcode": "https://leetcode.com/problems/sort-array-by-parity-ii/description/"
+                  },
+                  "videoSolution": "https://youtu.be/pHRFRZGbK5s?si=_D8LitDT5PQMucJi"
+                },
+                {
+                  "id": "sort-19",
+                  "title": "Sort an Array of Roman Numerals",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/dsa/sort-an-array-of-roman-numerals-in-ascending-order/"
+                  }
+                },
+                {
+                  "id": "sort-20",
+                  "title": "Radix Sort",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/problems/radix-sort/1"
+                  },
+                  "videoSolution": "https://youtu.be/M2cCN7Gzl9U?si=vD37xP4okdKSTyEq"
+                },
+                {
+                  "id": "sort-21",
+                  "title": "Count Sorted Rows",
+                  "difficulty": "Medium",
+                  "platforms": {
+                    "gfg": "https://www.geeksforgeeks.org/problems/count-sorted-rows2702/1"
+                  }
+                }
+              ]
             }
           ]
         }

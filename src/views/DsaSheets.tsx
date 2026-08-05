@@ -1,53 +1,27 @@
 import React from 'react';
 import { useTracker } from '../hooks/useTracker';
-import dsaData from '../data/dsaSheets.json';
+import { useDsaData } from '../context/DsaDataContext';
 import { Accordion } from '../components/ui/Accordion';
 import { DsaSheetTable } from '../components/features/DsaSheetTable';
 import { CheckCircle } from 'lucide-react';
 
-interface Problem {
-  id: string;
-  title: string;
-  difficulty: string;
-  platforms: { leetcode?: string; gfg?: string };
-  videoSolution?: string;
-}
-
 export const DsaSheets: React.FC = () => {
   const { isSolved } = useTracker();
+  const { topics } = useDsaData();
 
-  // Flatten every sheet → level → topic into a single list of topics, grouped
-  // by topic name. Problems that repeat across sheets/levels (same id) are
-  // de-duplicated so each question shows once.
-  const topicsMap = new Map<string, { name: string; problems: Problem[]; seen: Set<string> }>();
+  // Overall progress counts each problem id once, even if it appears in
+  // multiple topics (e.g. a problem shared between Arrays and Heap).
   const globalSeen = new Set<string>();
   let totalProblems = 0;
   let solvedProblemsCount = 0;
-
-  dsaData.sheets.forEach((sheet) => {
-    sheet.levels.forEach((level) => {
-      level.topics.forEach((topic) => {
-        let entry = topicsMap.get(topic.name);
-        if (!entry) {
-          entry = { name: topic.name, problems: [], seen: new Set() };
-          topicsMap.set(topic.name, entry);
-        }
-        topic.problems.forEach((prob) => {
-          if (!entry!.seen.has(prob.id)) {
-            entry!.seen.add(prob.id);
-            entry!.problems.push(prob as Problem);
-          }
-          if (!globalSeen.has(prob.id)) {
-            globalSeen.add(prob.id);
-            totalProblems++;
-            if (isSolved(prob.id)) solvedProblemsCount++;
-          }
-        });
-      });
+  topics.forEach((topic) => {
+    topic.problems.forEach((prob) => {
+      if (globalSeen.has(prob.id)) return;
+      globalSeen.add(prob.id);
+      totalProblems++;
+      if (isSolved(prob.id)) solvedProblemsCount++;
     });
   });
-
-  const topics = Array.from(topicsMap.values());
 
   const activeSheetPercent = totalProblems > 0
     ? Math.round((solvedProblemsCount / totalProblems) * 100)

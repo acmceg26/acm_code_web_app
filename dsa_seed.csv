@@ -1,0 +1,321 @@
+Topic,ID,Title,Difficulty,LeetCode,GFG,Video
+Arrays,arr-1,Contains Duplicate,Easy,https://leetcode.com/problems/contains-duplicate/,,https://youtu.be/0LIctkgJ2hQ?si=_HCwpjCa9-u2X1i3
+Arrays,arr-2,Two Sum,Easy,https://leetcode.com/problems/two-sum,,https://youtu.be/UXDSeD9mN-k?si=ojEpmTrWYRgoBu3P
+Arrays,arr-3,Reverse Array,Easy,,https://www.geeksforgeeks.org/write-a-program-to-reverse-an-array-or-string/,https://youtu.be/gGtmacuQu-k?si=AL9GszfrM4QhUGUv
+Arrays,arr-4,Move Zeroes,Easy,https://leetcode.com/problems/move-zeroes,,https://youtu.be/k5lIW5XxC7g?si=h6MmcG-kxxATaU5U
+Arrays,arr-5,Missing Number,Easy,https://leetcode.com/problems/missing-number,,https://youtu.be/bYWLJb3vCWY?si=SWnZxxNprb_85pTc
+Arrays,arr-6,Majority Element,Easy,https://leetcode.com/problems/majority-element/,,https://youtu.be/nP_ns3uSh80?si=XxxF5L4jdd7a9G_b
+Arrays,arr-7,Remove Duplicates from Sorted Array,Easy,https://leetcode.com/problems/remove-duplicates-from-sorted-array/,,https://youtu.be/DEJAZBq0FDA?si=G2t7BaBgiCMuP4r1
+Arrays,arr-8,Max Consecutive Ones,Easy,https://leetcode.com/problems/max-consecutive-ones/description,,https://youtu.be/vLsRew-ABVs?si=AhebnJWH-C3WgX_r
+Arrays,arr-9,Find Pivot Index,Easy,https://leetcode.com/problems/find-pivot-index/description/,,https://youtu.be/2x5QL3Z_p8Y?si=7EuHIfilFAUp6vL6
+Arrays,arr-10,Maximum Average Subarray I,Easy,https://leetcode.com/problems/maximum-average-subarray-i/description/,,https://youtu.be/56TxHMG0qhQ?si=ySRl7xmF0qw_BbK8
+Arrays,arr-11,Chocolate Distribution,Easy,,https://www.geeksforgeeks.org/chocolate-distribution-problem,https://youtu.be/T3sWA_ha1-w?si=2vnJ5I_tngnCgXTC
+Arrays,arr-12,Check if Array is Sorted and Rotated,Easy,https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/,,https://youtu.be/Vzs_vlCIFEw?si=4UVasWpqNMuvIUCP
+Arrays,arr-13,Longest Subarray of 1s After Deleting One Element,Medium,https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/description/,,https://youtu.be/nSI0-acwuPU?si=UD3cHc9FYhjAuyvt
+Arrays,arr-14,3Sum,Medium,https://leetcode.com/problems/3sum,,https://youtu.be/DhFh8Kw7ymk?si=-96dohkXpc3IVVNJ
+Arrays,arr-15,Container With Most Water,Medium,https://leetcode.com/problems/container-with-most-water/,,https://youtu.be/w7ftYsZtIbs?si=unUoI6hp9o2TprgS
+Arrays,arr-16,Kth Largest Element in an Array,Medium,https://leetcode.com/problems/kth-largest-element-in-an-array,,https://youtu.be/XEmy13g1Qxc?si=EFqPII9WATdmp6lM
+Arrays,arr-17,Sort Colors,Medium,https://leetcode.com/problems/sort-colors/description/,,https://youtu.be/6sMssUHgaBs?si=Ge031OWwAcLwQT1d
+Arrays,arr-18,Product of Array Except Self,Medium,https://leetcode.com/problems/product-of-array-except-self,,https://youtu.be/G9zKmhybKBM?si=Dqr2LU3hoPV_DQuu
+Arrays,arr-19,Longest Consecutive Sequence,Medium,https://leetcode.com/problems/longest-consecutive-sequence,,https://youtu.be/oO5uLE7EUlM?si=GLjaJNqlJqLiBN0C
+Arrays,arr-20,Find Peak Element,Medium,https://leetcode.com/problems/find-peak-element,,https://youtu.be/cXxmbemS6XM?si=Uv588l2hv_Z1zF5U
+Arrays,arr-21,Best Time to Buy and Sell Stock,Medium,https://leetcode.com/problems/best-time-to-buy-and-sell-stock/,,https://youtu.be/excAOvwF_Wk?si=v3H-M4qYsdjcGIKK
+Arrays,arr-22,Maximum Product Subarray,Medium,https://leetcode.com/problems/maximum-product-subarray/,,https://youtu.be/hnswaLJvr6g?si=ffDEGJ-Hm6f0RyaV
+Arrays,arr-23,Set Matrix Zeroes,Medium,https://leetcode.com/problems/set-matrix-zeroes/,,https://youtu.be/N0MgLvceX7M?si=eU56P4UsJPpeX1Kl
+Arrays,arr-24,Spiral Matrix,Medium,https://leetcode.com/problems/spiral-matrix/description/,,https://youtu.be/aqVW8IuXUF0?si=jvfgxDUT4JvH5uBk
+Arrays,arr-25,Subarray Sum Equals K,Medium,https://leetcode.com/problems/subarray-sum-equals-k/description/,,https://youtu.be/YxRmeRyVQm4?si=4so9m16Wru3aSg0A
+Arrays,arr-26,Gas Station,Medium,https://leetcode.com/problems/gas-station/description/,,https://youtu.be/fOaUh1_fJPw?si=3wJPaqpJRUZdGV0l
+Arrays,arr-27,Matrix Block Sum,Medium,https://leetcode.com/problems/matrix-block-sum/description/,,https://youtu.be/2RxD2GTzMLw?si=Bxu8iZ1E0EeGZMQo
+Arrays,arr-28,Repeat and Missing Number Array,Medium,,https://www.interviewbit.com/problems/repeat-and-missing-number-array/,https://youtu.be/2D0D8HE6uak?si=XBaVtu6uilh-Ml38
+Arrays,arr-29,Trapping Rain Water,Medium,https://leetcode.com/problems/trapping-rain-water/,,https://youtu.be/1_5VuquLbXg?si=b0Eg6Ipt1gigMyxt
+Arrays,arr-30,Find All Numbers Disappeared in an Array,Medium,https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/,,https://youtu.be/8i-f24YFWC4?si=SfW99Fl7FEzXE1Pr
+Strings,str-1,Valid Anagram,Easy,https://leetcode.com/problems/valid-anagram/,,https://youtu.be/9UtInBqnCgA?si=ttSrLF5vYu44neNt
+Strings,str-2,Reverse String,Easy,https://leetcode.com/problems/reverse-string/,,https://youtu.be/_d0T_2Lk2qA?si=sTWPcP26YY55GRv0
+Strings,str-3,Check for Palindrome,Easy,,https://www.geeksforgeeks.org/c-program-check-given-string-palindrome/,https://youtu.be/jJXJ16kPFWg?si=GcE41o38qIDRx_vB
+Strings,str-4,Group Anagrams,Easy,https://leetcode.com/problems/group-anagrams/,,https://youtu.be/vzdNOK2oB2E?si=a98NonFDrKOcWldt
+Strings,str-5,Remove All Adjacent Duplicates In String,Easy,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/,,https://youtu.be/w6LcypDgC4w?si=z_kw5HzW0G39vy90
+Strings,str-6,Balanced Brackets,Easy,,https://www.hackerrank.com/challenges/balanced-brackets/problem,https://youtu.be/Otf9lp3DQJo?si=AE2xfNq61JElRzrb
+Strings,str-7,Longest Substring Without Repeating Characters,Easy,https://leetcode.com/problems/longest-substring-without-repeating-characters/,,https://youtu.be/-zSxTJkcdAo?si=4_WtSIH7S_gqN9Zv
+Strings,str-8,Valid Parentheses,Easy,https://leetcode.com/problems/valid-parentheses/,,https://youtu.be/cHT6sG_hUZI?si=pOalE3_ts7VNHQEm
+Strings,str-9,String to Integer (atoi),Easy,https://leetcode.com/problems/string-to-integer-atoi/,,https://youtu.be/2I9XO8jwZCA?si=eYxjSdnEWx5p0Kys
+Strings,str-10,Longest Palindromic Substring,Medium,https://leetcode.com/problems/longest-palindromic-substring/,,https://youtu.be/XYQecbcd6_c?si=trDF5TB2-NbnCbiL
+Strings,str-11,Roman to Integer,Medium,https://leetcode.com/problems/roman-to-integer/,,https://youtu.be/3jdxYj3DD98?si=MCkGMI2pVT10EDwn
+Strings,str-12,Minimum Add to Make Parentheses Valid,Medium,https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/,,https://youtu.be/UizI7R6ND9Q?si=GwZ2UzCb5w0trRA7
+Strings,str-13,Sum of Beauty of All Substrings,Medium,https://leetcode.com/problems/sum-of-beauty-of-all-substrings/,,https://youtu.be/PqxmZk_bdyw?si=c_NHBQNwP-Gvzwlu
+Strings,str-14,Valid Palindrome II,Medium,https://leetcode.com/problems/valid-palindrome-ii/,,https://youtu.be/JrxRYBwG6EI?si=ZWniHz2tck5OH3ft
+Strings,str-15,String Rotated by 2 places,Medium,,https://www.geeksforgeeks.org/problems/check-if-string-is-rotated-by-two-places-1587115620/1,https://youtu.be/S4arTLcCp6I?si=H1VDQ9An1OGmcTKn
+Strings,str-16,Regular Expression Matching,Medium,https://leetcode.com/problems/regular-expression-matching/,,https://youtu.be/HAA8mgxlov8?si=xOQbtqZ9N1Fl9Hbu
+Strings,str-17,Longest Valid Parentheses,Medium,https://leetcode.com/problems/longest-valid-parentheses/,,https://youtu.be/VdQuwtEd10M?si=RVcPBeJSsmyeEluk
+Strings,str-18,Wildcard Matching,Medium,https://leetcode.com/problems/wildcard-matching/,,https://youtu.be/ZmlQ3vgAOMo?si=RVvVYR53og_4GGwp
+Strings,str-19,Shortest Uncommon Substring in an Array,Medium,https://leetcode.com/problems/shortest-uncommon-substring-in-an-array/description/,,https://youtu.be/9rBWAbpPJvw?si=bD__31ZOmsPhkQrJ
+Strings,str-20,Special Binary String,Medium,https://leetcode.com/problems/special-binary-string/,,https://youtu.be/-Ru17k4TCI4?si=s2SmXxnypmLfsH_Z
+Stacks,stk-1,Min Stack,Medium,https://leetcode.com/problems/min-stack/,,https://youtu.be/qkLl7nAwDPo?si=7rlyGjGcjLRzI5ZY
+Stacks,stk-2,Implement Queue using Stack,Easy,,https://www.geeksforgeeks.org/queue-using-stacks/,https://youtu.be/xxytjNGFsdQ?si=iW_uLKPuvAeYYdsy
+Stacks,stk-3,Implement Two Stacks using an Array,Medium,,https://www.geeksforgeeks.org/dsa/implement-two-stacks-in-an-array/,https://youtu.be/cJgVdvWz4iU?si=5Bfgu1rrXQINeHns
+Stacks,stk-4,Implement Three Stacks using a Single Array,Medium,,,https://youtu.be/S5cYO9k1Ja8?si=nGDH6oxx-l0zr9at
+Stacks,stk-5,Check if Stack is Valid given Push/Pop Operations,Medium,,https://www.geeksforgeeks.org/check-if-the-given-push-and-pop-sequences-of-stack-is-valid-or-not/,https://youtu.be/mzua0r94kb8?si=67ki6BVDfU94oH4l
+Stacks,stk-6,Undo-Redo Operations (Validate Stack Sequences),Medium,https://leetcode.com/problems/validate-stack-sequences/description,,https://youtu.be/mzua0r94kb8?si=91gXIR_9Uhjra4ZP
+Stacks,stk-7,Asteroid Collision,Medium,https://leetcode.com/problems/asteroid-collision/description/,,https://youtu.be/LN7KjRszjk4?si=9hR6HNOrQH9wZFRC
+Stacks,stk-8,Remove Stars From a String,Medium,https://leetcode.com/problems/removing-stars-from-a-string/,,https://youtu.be/ixz709f7oh8?si=MMG4Gx_2_RtVS63E
+Stacks,stk-9,Implement Stack using Queue,Easy,https://leetcode.com/problems/implement-stack-using-queues/description/,,https://youtu.be/rW4vm0-DLYc?si=S9Jf3cKBVHeKZt8L
+Stacks,stk-10,Stack with Min/Max Operations,Medium,,,
+Stacks,stk-11,Final Prices With a Special Discount in a Shop,Easy,https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/description/,,https://youtu.be/BYushAxaQOg?si=Z5XuypBQWAxuT4PS
+Stacks,stk-12,Restrictive Candy Crush (Remove All Adjacent Duplicates II),Medium,https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/description/,,https://youtu.be/6rBdWEZJtSM?si=JoRiOXjQgw-MhMek
+Stacks,str-8,Valid Parentheses,Easy,https://leetcode.com/problems/valid-parentheses/,,https://youtu.be/WTzjTskDFMg?si=MRyPVrjPqtqROYBg
+Stacks,stk-13,Maximal Rectangle,Hard,https://leetcode.com/problems/maximal-rectangle/description,,https://youtu.be/dAVF2NpC3j4?si=IslCsbZTZdTF9eoL
+Stacks,stk-14,Daily Temperatures,Medium,https://leetcode.com/problems/daily-temperatures/description,,https://youtu.be/cTBiBSnjO3c?si=Jvj99qq0KrwsKYTY
+Stacks,stk-15,Next Greater Element I,Easy,https://leetcode.com/problems/next-greater-element-i,,https://youtu.be/68a1Dc_qVq4?si=I4M1FhDR3IR2U-Mi
+Stacks,stk-16,Basic Calculator,Hard,https://leetcode.com/problems/basic-calculator/description,,https://youtu.be/zsJ-J08Qgdk?si=_IG27Su4aldAtkqb
+Stacks,stk-17,Backspace String Compare,Easy,https://leetcode.com/problems/backspace-string-compare/description,,https://youtu.be/nxo_4FzXLxU?si=pg7c6tZLa5pMmjbi
+Stacks,stk-18,Basic Calculator II,Medium,https://leetcode.com/problems/basic-calculator-ii/description,,https://youtu.be/RcL4RqtgaRU?si=9CYEoD4QppqrZpXL
+Queues,que-1,Implement Queue using Two Stacks,Easy,https://leetcode.com/problems/implement-queue-using-stacks/description/,,https://youtu.be/xxytjNGFsdQ?si=SUNSY1OOwA0XgUUJ
+Queues,que-2,Reverse a Queue,Easy,,https://www.geeksforgeeks.org/problems/queue-reversal/1,https://youtu.be/aUU23JDaErs?si=YqZNNTBwvHDY2jwD
+Queues,que-3,Design Circular Queue,Medium,https://leetcode.com/problems/design-circular-queue/description,,https://youtu.be/Q2YhZ6Pq0GQ?si=MB-CiVJEWFJao60_
+Queues,que-4,Maximum Sum Circular Subarray,Medium,https://leetcode.com/problems/maximum-sum-circular-subarray/description,,https://youtu.be/fxT9KjakYPM?si=abplLyf3j7hviPAk
+Queues,que-5,Number of Recent Calls,Easy,https://leetcode.com/problems/number-of-recent-calls/description,,https://youtu.be/HlmNEfcgyjM?si=-k3tUmFnfY9BZ7h3
+Queues,que-6,Number of Students Unable to Eat Lunch,Easy,https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/description,,https://youtu.be/d_cvtFwnOZg?si=lKOr8ZDTJNmrrcVD
+Queues,que-7,Time Needed to Buy Tickets,Easy,https://leetcode.com/problems/time-needed-to-buy-tickets,,https://youtu.be/cVmS9N6kf2Y?si=JPiWESDrpjfD6fwP
+Queues,que-8,Number of People Aware of a Secret,Medium,https://leetcode.com/problems/number-of-people-aware-of-a-secret/description,,https://youtu.be/V7QVZY84KQ8?si=zVzSdoEyU6NbUpSx
+Queues,que-9,Design Circular Deque,Medium,https://leetcode.com/problems/design-circular-deque/description,,https://youtu.be/J4mk0tbIi8w?si=xsqZX3fItAD54OCf
+Heap,heap-1,Implement Min Heap (from scratch),Easy,,https://www.geeksforgeeks.org/problems/min-heap-implementation/1,https://www.youtube.com/watch?v=Qf-TDPr0nYw
+Heap,heap-2,Kth Largest Element in a Stream,Easy,https://leetcode.com/problems/kth-largest-element-in-a-stream/,,https://www.youtube.com/watch?v=hOjcdrqMoQ8
+Heap,heap-3,Last Stone Weight,Easy,https://leetcode.com/problems/last-stone-weight/,,https://www.youtube.com/watch?v=B-QCq79-Vfw
+Heap,arr-16,Kth Largest Element in an Array,Medium,https://leetcode.com/problems/kth-largest-element-in-an-array/,,https://www.youtube.com/watch?v=XEmy13g1Qxc
+Heap,heap-5,K Closest Points to Origin,Medium,https://leetcode.com/problems/k-closest-points-to-origin/,,https://www.youtube.com/watch?v=rI2EBUEMfTk
+Heap,heap-6,Top K Frequent Elements,Medium,https://leetcode.com/problems/top-k-frequent-elements/,,https://www.youtube.com/watch?v=Wh3A29psE_Y
+Heap,heap-7,Sort Characters by Frequency,Medium,https://leetcode.com/problems/sort-characters-by-frequency/,,https://www.youtube.com/watch?v=OXdXc9HTrIg
+Heap,heap-8,Reorganize String,Medium,https://leetcode.com/problems/reorganize-string/,,https://www.youtube.com/watch?v=2g_b1aYTHeg
+Heap,heap-9,Task Scheduler,Medium,https://leetcode.com/problems/task-scheduler/,,https://www.youtube.com/watch?v=s8p8ukTyA2I
+Heap,heap-10,Find K Pairs with Smallest Sums,Medium,https://leetcode.com/problems/find-k-pairs-with-smallest-sums/,,https://www.youtube.com/watch?v=Youk8DDnLU8
+Heap,heap-11,Maximum Subsequence Score,Medium,https://leetcode.com/problems/maximum-subsequence-score/,,https://www.youtube.com/watch?v=ax1DKi5lJwk
+Heap,heap-12,Seat Reservation Manager,Medium,https://leetcode.com/problems/seat-reservation-manager/,,https://youtu.be/ahobllKXEEY?si=U64xUFYld_CfJdbq
+Heap,heap-13,Furthest Building You Can Reach,Medium,https://leetcode.com/problems/furthest-building-you-can-reach/,,https://www.youtube.com/watch?v=zyTeznvXCtg
+Heap,heap-14,Find Median from Data Stream,Hard,https://leetcode.com/problems/find-median-from-data-stream/,,https://www.youtube.com/watch?v=itmhHWaHupI
+Heap,heap-15,Merge K Sorted Lists,Hard,https://leetcode.com/problems/merge-k-sorted-lists/,,https://www.youtube.com/watch?v=ptYUCjfNhJY
+Heap,heap-16,Sliding Window Median,Hard,https://leetcode.com/problems/sliding-window-median/,,https://www.youtube.com/watch?v=oKwmSnmEFpY
+Heap,heap-17,Maximum Frequency Stack,Hard,https://leetcode.com/problems/maximum-frequency-stack/,,https://www.youtube.com/watch?v=Z6idIicFDOE
+Heap,heap-18,Minimum Cost to Hire K Workers,Hard,https://leetcode.com/problems/minimum-cost-to-hire-k-workers/,,https://www.youtube.com/watch?v=f879mUH6vJk
+Recursion & Backtracking,rec-1,Fibonacci Number,Easy,https://leetcode.com/problems/fibonacci-number/,,https://www.youtube.com/watch?v=tyB0ztf0DNY
+Recursion & Backtracking,rec-2,Climbing Stairs,Easy,https://leetcode.com/problems/climbing-stairs/,,https://www.youtube.com/watch?v=Y0lT9Fck7qI
+Recursion & Backtracking,rec-3,Tower of Hanoi,Easy,,https://www.geeksforgeeks.org/problems/tower-of-hanoi-1587115621/1,https://www.youtube.com/watch?v=rf6uf3jNjbo
+Recursion & Backtracking,rec-4,Subsets II,Medium,https://leetcode.com/problems/subsets-ii/,,https://www.youtube.com/watch?v=RIn3gOkbhQE
+Recursion & Backtracking,rec-5,Permutations,Medium,https://leetcode.com/problems/permutations/,,https://www.youtube.com/watch?v=YK78FU5Ffjw
+Recursion & Backtracking,rec-6,Permutations II (Distinct Perms with Duplicates),Medium,https://leetcode.com/problems/permutations-ii/,,https://www.youtube.com/watch?v=is_T6uzlTyg
+Recursion & Backtracking,rec-7,Combination Sum,Medium,https://leetcode.com/problems/combination-sum/,,https://www.youtube.com/watch?v=OyZFFqQtu98
+Recursion & Backtracking,rec-8,Combination Sum II,Medium,https://leetcode.com/problems/combination-sum-ii/,,https://www.youtube.com/watch?v=G1fRTGRxXU8
+Recursion & Backtracking,rec-9,Generate Parentheses,Medium,https://leetcode.com/problems/generate-parentheses/,,https://www.youtube.com/watch?v=eyCj_u3PoJE
+Recursion & Backtracking,rec-10,Letter Combinations of a Phone Number,Medium,https://leetcode.com/problems/letter-combinations-of-a-phone-number/,,https://www.youtube.com/watch?v=0snEunUacZY
+Recursion & Backtracking,rec-11,Target Sum,Medium,https://leetcode.com/problems/target-sum/,,https://www.youtube.com/watch?v=g0npyaQtAQM
+Recursion & Backtracking,rec-12,Partition Equal Subset Sum,Medium,https://leetcode.com/problems/partition-equal-subset-sum/,,https://www.youtube.com/watch?v=7win3dcgo3k
+Recursion & Backtracking,rec-13,Palindrome Partitioning,Medium,https://leetcode.com/problems/palindrome-partitioning/,,https://www.youtube.com/watch?v=WBgsABoClE0
+Recursion & Backtracking,rec-14,Rat in a Maze,Medium,,https://www.geeksforgeeks.org/problems/rat-in-a-maze-problem/1,https://www.youtube.com/watch?v=bLGZhJlt4y0
+Recursion & Backtracking,rec-15,Word Search,Medium,https://leetcode.com/problems/word-search/,,https://www.youtube.com/watch?v=vYYNp0Jrdv0
+Recursion & Backtracking,rec-16,Partition to K Equal Sum Subsets,Medium,https://leetcode.com/problems/partition-to-k-equal-sum-subsets/,,https://www.youtube.com/watch?v=mBk4I0X46oI
+Recursion & Backtracking,rec-17,Generate All Binary Strings from Pattern,Medium,,https://www.geeksforgeeks.org/problems/generate-binary-string3642/1,https://youtube.com/playlist?list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9
+Recursion & Backtracking,rec-18,Josephus Problem,Medium,,https://www.geeksforgeeks.org/problems/josephus-problem/1,https://www.youtube.com/watch?v=ULUNeD0N9yI
+Recursion & Backtracking,rec-19,Word Break II,Hard,https://leetcode.com/problems/word-break-ii/,,https://www.youtube.com/watch?v=QgLKdluDo08
+Recursion & Backtracking,rec-20,N-Queens,Hard,https://leetcode.com/problems/n-queens/,,https://www.youtube.com/watch?v=i05Ju7AftcM
+Recursion & Backtracking,rec-21,Sudoku Solver,Hard,https://leetcode.com/problems/sudoku-solver/,,https://www.youtube.com/watch?v=FWAIf_EVUKE
+Recursion & Backtracking,rec-22,M-Coloring Problem,Hard,,https://www.geeksforgeeks.org/problems/m-coloring-problem-1587115620/1,https://www.youtube.com/watch?v=wuVwUK25Rfc
+Linked Lists,ll-1,Remove Duplicates from a Sorted Linked List,Easy,https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/,,https://youtu.be/Nvf9Yt1EElg?si=KO-nfJbJpQceooE7
+Linked Lists,ll-2,Merge Two Sorted Linked Lists,Easy,https://leetcode.com/problems/merge-two-sorted-lists/description/,,https://youtu.be/XIdigk956u0?si=TPhnrERlt44ZREnF
+Linked Lists,ll-3,Reverse Linked List,Easy,https://leetcode.com/problems/reverse-linked-list/description/,,https://youtu.be/G0_I-ZF0S38?si=3kwsCIv8VfplTt0n
+Linked Lists,ll-4,Intersection of Two Linked Lists,Easy,https://leetcode.com/problems/intersection-of-two-linked-lists/description/,,https://youtu.be/D0X0BONOQhI?si=pbUU_ZNgMwqfR_uJ
+Linked Lists,ll-5,Linked List Cycle,Easy,https://leetcode.com/problems/linked-list-cycle/description/,,https://youtu.be/gBTe7lFR3vc?si=RZZHTfxn8MwjwGP0
+Linked Lists,ll-6,Convert Binary Number in a Linked List to Integer,Easy,https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/description/,,https://youtu.be/yxyNQZASQsU?si=9SnJNpCPY1I9jKED
+Linked Lists,ll-7,Remove Nth Node From End of List,Medium,https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/,,https://youtu.be/XVuQxVej6y8?si=fYhyBLTm2IxhEeFD
+Linked Lists,ll-8,Convert Binary Tree to Doubly Linked List,Medium,,https://www.geeksforgeeks.org/problems/binary-tree-to-dll/1,https://youtu.be/kNZ5VIkqReU?si=jhtRfKEdfoM661Jo
+Linked Lists,ll-9,Delete Node in a Linked List,Medium,https://leetcode.com/problems/delete-node-in-a-linked-list/description/,,https://youtu.be/kaEiCq2rZJY?si=Ept7CLPkjYWfn8eB
+Linked Lists,ll-10,Add Two Numbers,Medium,https://leetcode.com/problems/add-two-numbers/description/,,https://youtu.be/wgFPrzTjm7s?si=pmcq2RFgQryCIYVJ
+Linked Lists,ll-11,Pairwise Swap of Elements (Swap Nodes in Pairs),Medium,https://leetcode.com/problems/swap-nodes-in-pairs/description/,,https://youtu.be/o811TZLAWOo?si=yuPQbGSxbnhn2Pfy
+Linked Lists,ll-12,Sort List,Medium,https://leetcode.com/problems/sort-list/description/,,https://youtu.be/TGveA1oFhrc?si=ZCzqPm6-TGQhF_3a
+Linked Lists,ll-13,Start of Loop (Linked List Cycle II),Medium,https://leetcode.com/problems/linked-list-cycle-ii/description/,,https://youtu.be/95ZfuoSAUPI?si=4YhSA2aJmKpZEN5o
+Linked Lists,ll-14,Flatten a Multilevel Doubly Linked List,Medium,https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/description/,,https://youtu.be/hRHa96QFdNA?si=VXxvXb-gH_YCs2eg
+Linked Lists,ll-15,Remove Duplicates from an Unsorted Linked List,Medium,,https://www.geeksforgeeks.org/dsa/remove-duplicates-from-an-unsorted-linked-list/,https://youtu.be/dAZJgVFHpqA?si=qKVPU2eN8G0FED60
+Linked Lists,ll-16,Design Linked List,Medium,https://leetcode.com/problems/design-linked-list/,,https://youtu.be/Wf4QhpdVFQo?si=uNG4eK_w7EDOg2BL
+Linked Lists,ll-17,Reverse Nodes in k-Group,Hard,https://leetcode.com/problems/reverse-nodes-in-k-group/description/,,https://youtu.be/1UOPsfP85V4?si=GfGVTTiVfZ-cCHy8
+Linked Lists,heap-15,Merge K Sorted Lists,Hard,https://leetcode.com/problems/merge-k-sorted-lists/,,https://youtu.be/q5a5OiGbT6Q?si=jLTuYgFmXjtB4jVo
+Linked Lists,ll-19,Design a Text Editor,Hard,https://leetcode.com/problems/design-a-text-editor/description,,https://youtu.be/ASWavSuip1I?si=umyXrzFLeNORXz-H
+Binary Tree,bt-1,Diameter of Binary Tree,Easy,https://leetcode.com/problems/diameter-of-binary-tree/description,,
+Binary Tree,bt-2,Invert Binary Tree,Easy,https://leetcode.com/problems/invert-binary-tree/description/,,https://youtu.be/OnSn2XEQ4MY?si=Z5GlbmQTq2exmd3A
+Binary Tree,bt-3,Inorder Traversal,Easy,https://leetcode.com/problems/binary-tree-inorder-traversal/description/,,https://youtu.be/-b2lciNd2L4?si=t7TcXe9dei4xRI7W
+Binary Tree,bt-4,Preorder Traversal,Easy,https://leetcode.com/problems/binary-tree-preorder-traversal/description/,,https://youtu.be/-b2lciNd2L4?si=t7TcXe9dei4xRI7W
+Binary Tree,bt-5,Postorder Traversal,Easy,https://leetcode.com/problems/binary-tree-postorder-traversal/,,https://youtu.be/-b2lciNd2L4?si=t7TcXe9dei4xRI7W
+Binary Tree,bt-6,Height of Binary Tree (Maximum Depth),Easy,https://leetcode.com/problems/maximum-depth-of-binary-tree/description/,,https://youtu.be/Y0m0v3P1UOw?si=C0hTY7v4oIAuN7I_
+Binary Tree,bt-7,Cousins in Binary Tree,Easy,https://leetcode.com/problems/cousins-in-binary-tree/description/,,https://youtu.be/1ybprmfjpGY?si=vD4VYLJ50i1awMxm
+Binary Tree,bt-8,Binary Tree Paths,Easy,https://leetcode.com/problems/binary-tree-paths/description,,https://youtu.be/H2D4HcVZq_g?si=qRQj0AUecDflTNcp
+Binary Tree,bt-9,Check if Binary Tree is Heap,Easy,,https://www.geeksforgeeks.org/dsa/check-if-a-given-binary-tree-is-heap/,https://youtu.be/qNID9jDx0IA?si=F8nJM3Z9_j2khAHF
+Binary Tree,bt-10,Find Parent of a Node,Easy,,https://www.geeksforgeeks.org/dsa/find-the-parent-of-a-node-in-the-given-binary-tree/,https://youtu.be/4p4EI3whzr0?si=QZa8tx14v3-5PEV7
+Binary Tree,bt-11,Minimum Depth of Binary Tree,Easy,https://leetcode.com/problems/minimum-depth-of-binary-tree/description/,,https://youtu.be/nEJtZZM011c?si=JbdpBet18AD1Hgxu
+Binary Tree,bt-12,Check if Two Binary Trees are Identical (Same Tree),Easy,https://leetcode.com/problems/same-tree/description/,,https://youtu.be/vRbbcKXCxOw?si=NNxWP2FCcBvcsJiO
+Binary Tree,bt-13,Connect Nodes in Same Level (Populating Next Right Pointers),Medium,https://leetcode.com/problems/populating-next-right-pointers-in-each-node/,,https://youtu.be/ofIl2f2YHSc?si=sjkVpl9ksYliWEEt
+Binary Tree,bt-14,Maximum Level Sum of a Binary Tree,Medium,https://leetcode.com/problems/maximum-level-sum-of-a-binary-tree/description/,,https://youtu.be/ROX1vjoBqPs?si=olxITVymJPHnR4nK
+Binary Tree,bt-15,Binary Tree Level Order Traversal,Medium,https://leetcode.com/problems/binary-tree-level-order-traversal/,,https://youtu.be/6ZnyEApgFYg?si=7SWV_1KVkuckl5OY
+Binary Tree,bt-16,Zigzag Level Order Traversal,Medium,https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/,,https://youtu.be/y3lJY5ofLro?si=FdUTEVu7f01Mr7MP
+Binary Tree,bt-17,Left View of Binary Tree,Medium,,https://www.geeksforgeeks.org/dsa/print-left-view-binary-tree/,https://youtu.be/KV4mRzTjlAk?si=X-MEaaF_vivUf8Et
+Binary Tree,bt-18,Binary Tree Right Side View,Medium,https://leetcode.com/problems/binary-tree-right-side-view/description/,,https://youtu.be/KV4mRzTjlAk?si=X-MEaaF_vivUf8Et
+Binary Tree,bt-19,Find Inorder Predecessor and Successor,Medium,,https://www.geeksforgeeks.org/dsa/inorder-predecessor-successor-given-key-bst/,https://youtu.be/SXKAD2svfmI?si=EZW8-Pv_o50s_Ijp
+Binary Tree,bt-20,Step-By-Step Directions From One Tree Node to Another,Medium,https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/description/,,https://youtu.be/JegJNGcwtFg?si=_nrCeCN9QCNIv_YJ
+Binary Tree,bt-21,Print Alternate Nodes from All Levels,Medium,,https://www.geeksforgeeks.org/print-alternate-nodes-from-all-levels-of-a-binary-tree/,https://youtu.be/yXbkd0MJZfw?si=M4OgeOWt04Sn6fLK
+Binary Tree,bt-22,Lowest Common Ancestor,Medium,https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/,,https://youtu.be/gs2LMfuOR9k?si=nCxx_nLIGIbSpNWc
+Binary Tree,bt-23,Construct Tree from Inorder and Preorder,Medium,https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/,,https://youtu.be/ihj4IQGZ2zc?si=cxXlrPbdpvru5CZB
+Binary Tree,bt-24,Implement Trie (Prefix Tree),Medium,https://leetcode.com/problems/implement-trie-prefix-tree/description,,
+Binary Tree,bt-25,Find Duplicate Subtrees,Medium,https://leetcode.com/problems/find-duplicate-subtrees/description/,,https://youtu.be/kn0Z5_qPPzY?si=teGSHVi3VI85j6Mc
+Binary Tree,bt-26,Flatten Binary Tree to Linked List,Medium,https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/,,https://youtu.be/rKnD7rLT0lI?si=wxw1VMknRMFAiL-c
+Binary Tree,bt-27,Check Completeness of a Binary Tree,Medium,https://leetcode.com/problems/check-completeness-of-a-binary-tree/description/,,https://youtu.be/olbiZ-EOSig?si=4eiCpm8q1iz5-GLh
+Binary Tree,bt-28,Largest Subtree Sum,Hard,,https://www.geeksforgeeks.org/dsa/find-largest-subtree-sum-tree/,https://youtu.be/7opoOv7SVko?si=-ci49AFoLHynedsD
+Binary Tree,bt-29,Boundary Traversal of Binary Tree,Hard,,https://www.geeksforgeeks.org/dsa/boundary-traversal-of-binary-tree/,https://youtu.be/0ca1nvR0be4?si=wCgvIAWq969wVYmj
+Binary Tree,bt-30,Binary Tree Maximum Path Sum,Hard,https://leetcode.com/problems/binary-tree-maximum-path-sum/description/,,https://youtu.be/Hr5cWUld4vU?si=0PdTNsxCCa91SJ85
+Binary Search Trees,bst-1,Search in a Binary Search Tree,Easy,https://leetcode.com/problems/search-in-a-binary-search-tree/,,https://www.youtube.com/watch?v=KcNt6v_56cc
+Binary Search Trees,bst-2,Range Sum of BST,Easy,https://leetcode.com/problems/range-sum-of-bst/,,https://www.youtube.com/watch?v=SuGq2s_FBHo
+Binary Search Trees,bst-3,Minimum Absolute Difference in BST,Easy,https://leetcode.com/problems/minimum-absolute-difference-in-bst/,,https://www.youtube.com/watch?v=joxx4hTYwcw
+Binary Search Trees,bst-4,Convert Sorted Array to Binary Search Tree,Easy,https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/,,https://www.youtube.com/watch?v=0K0uCMYq5ng
+Binary Search Trees,bst-5,Two Sum IV - Input is a BST,Easy,https://leetcode.com/problems/two-sum-iv-input-is-a-bst/,,https://www.youtube.com/watch?v=ssL3sHwPeb4
+Binary Search Trees,bst-6,Insert into a Binary Search Tree,Medium,https://leetcode.com/problems/insert-into-a-binary-search-tree/,,https://www.youtube.com/watch?v=FiFiNvM29ps
+Binary Search Trees,bst-7,Validate Binary Search Tree,Medium,https://leetcode.com/problems/validate-binary-search-tree/,,https://www.youtube.com/watch?v=s6ATEkipzow
+Binary Search Trees,bst-8,Lowest Common Ancestor of a BST,Medium,https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/,,https://www.youtube.com/watch?v=gs2LMfuOR9k
+Binary Search Trees,bst-9,Kth Smallest Element in a BST,Medium,https://leetcode.com/problems/kth-smallest-element-in-a-bst/,,https://www.youtube.com/watch?v=C6r1fDKAW_o
+Binary Search Trees,bst-10,Delete Node in a BST,Medium,https://leetcode.com/problems/delete-node-in-a-bst/,,https://www.youtube.com/watch?v=kouxiP_H5WE
+Binary Search Trees,bst-11,Binary Search Tree Iterator,Medium,https://leetcode.com/problems/binary-search-tree-iterator/,,https://www.youtube.com/watch?v=RXy5RzGF5wo
+Binary Search Trees,bst-12,Convert BST to Greater Tree,Medium,https://leetcode.com/problems/convert-bst-to-greater-tree/,,https://www.youtube.com/watch?v=7vVEJwVvAlI
+Binary Search Trees,bst-13,Inorder Successor / Predecessor in BST,Medium,,https://www.geeksforgeeks.org/problems/predecessor-and-successor/1,https://www.youtube.com/watch?v=SXKAD2svfmI
+Binary Search Trees,bst-14,Trim a Binary Search Tree,Medium,https://leetcode.com/problems/trim-a-binary-search-tree/,,https://www.youtube.com/watch?v=jwt5mTjEXGc
+Binary Search Trees,bst-15,Recover Binary Search Tree,Medium,https://leetcode.com/problems/recover-binary-search-tree/,,https://www.youtube.com/watch?v=ZWGW7FminDM
+Binary Search Trees,bst-16,All Elements in Two Binary Search Trees,Medium,https://leetcode.com/problems/all-elements-in-two-binary-search-trees/,,https://www.youtube.com/watch?v=A3_xMeT_VjY
+Binary Search Trees,bst-17,Balance a Binary Search Tree,Medium,https://leetcode.com/problems/balance-a-binary-search-tree/,,https://youtube.com/playlist?list=PLgUwDviBIf0q8Hkd7bK2Bpryj2xVJk8Vk
+Binary Search Trees,bst-18,Construct BST from Preorder Traversal,Medium,https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/,,https://www.youtube.com/watch?v=UmJT3j26t1I
+Binary Search Trees,bst-19,Serialize and Deserialize BST,Medium,https://leetcode.com/problems/serialize-and-deserialize-bst/,,https://www.youtube.com/watch?v=u4JAi2JJhI8
+Binary Search Trees,bst-20,Largest BST Subtree,Medium,,https://www.geeksforgeeks.org/problems/largest-bst/1,https://www.youtube.com/watch?v=X0oXMdtUDwo
+Binary Search Trees,bst-21,Maximum Sum BST in Binary Tree,Hard,https://leetcode.com/problems/maximum-sum-bst-in-binary-tree/,,https://www.youtube.com/watch?v=Zz7R9I9j2kI
+Greedy Algorithms,grd-1,Assign Cookies,Easy,https://leetcode.com/problems/assign-cookies/,,https://www.youtube.com/watch?v=DIX2p7vb9co
+Greedy Algorithms,grd-2,Lemonade Change,Easy,https://leetcode.com/problems/lemonade-change/,,https://www.youtube.com/watch?v=n_tmibEhO6Q
+Greedy Algorithms,grd-3,Maximum Units on a Truck,Easy,https://leetcode.com/problems/maximum-units-on-a-truck/,,https://www.youtube.com/watch?v=RkBHYAoZaeg
+Greedy Algorithms,grd-4,Buy Two Chocolates,Easy,https://leetcode.com/problems/buy-two-chocolates/,,https://www.youtube.com/watch?v=ueaSIxBI1RQ
+Greedy Algorithms,grd-5,Jump Game,Medium,https://leetcode.com/problems/jump-game/,,https://www.youtube.com/watch?v=tZAa_jJ3SwQ
+Greedy Algorithms,grd-6,Non-overlapping Intervals,Medium,https://leetcode.com/problems/non-overlapping-intervals/,,https://www.youtube.com/watch?v=nONCGxWoUfM
+Greedy Algorithms,grd-7,Merge Intervals,Medium,https://leetcode.com/problems/merge-intervals/,,https://www.youtube.com/watch?v=44H3cEC2fFM
+Greedy Algorithms,grd-8,Insert Interval,Medium,https://leetcode.com/problems/insert-interval/,,https://www.youtube.com/watch?v=A8NUOmlR6PQ
+Greedy Algorithms,grd-9,Minimum Number of Arrows to Burst Balloons,Medium,https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/,,https://www.youtube.com/watch?v=lPmkKnvNPrw
+Greedy Algorithms,grd-10,Partition Labels,Medium,https://leetcode.com/problems/partition-labels/,,https://www.youtube.com/watch?v=B7m8UmZE-vw
+Greedy Algorithms,arr-26,Gas Station,Medium,https://leetcode.com/problems/gas-station/,,https://www.youtube.com/watch?v=lJwbPZGo05A
+Greedy Algorithms,grd-12,Hand of Straights,Medium,https://leetcode.com/problems/hand-of-straights/,,https://www.youtube.com/watch?v=amnrMCVd2YI
+Greedy Algorithms,grd-13,Job Sequencing Problem,Medium,,https://www.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1,https://www.youtube.com/watch?v=LjPx4wQaRIs
+Greedy Algorithms,grd-14,Minimum Platforms,Medium,,https://www.geeksforgeeks.org/problems/minimum-platforms-1587115620/1,https://www.youtube.com/watch?v=dxVcMDI7vyI
+Greedy Algorithms,grd-15,Activity Selection / N Meetings in One Room,Medium,,https://www.geeksforgeeks.org/problems/n-meetings-in-one-room-1587115620/1,https://www.youtube.com/watch?v=II6ziNnub1Q
+Greedy Algorithms,grd-16,Maximum Length of Pair Chain,Medium,https://leetcode.com/problems/maximum-length-of-pair-chain/,,https://www.youtube.com/watch?v=K4LAB1Bxmvo
+Greedy Algorithms,grd-17,Valid Parenthesis String,Medium,https://leetcode.com/problems/valid-parenthesis-string/,,https://www.youtube.com/watch?v=QhPdNS143Qg
+Greedy Algorithms,grd-18,Longest Happy String,Medium,https://leetcode.com/problems/longest-happy-string/,,https://www.youtube.com/watch?v=8u-H6O_XQKE
+Greedy Algorithms,grd-19,Queue Reconstruction by Height,Medium,https://leetcode.com/problems/queue-reconstruction-by-height/,,https://www.youtube.com/watch?v=khddrw6Bfyw
+Greedy Algorithms,grd-20,Remove Duplicate Letters,Medium,https://leetcode.com/problems/remove-duplicate-letters/,,https://www.youtube.com/watch?v=zhU7JhNRLEk
+Greedy Algorithms,grd-21,Fractional Knapsack,Medium,,https://www.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1,https://www.youtube.com/watch?v=F_DDzYnxO14
+Greedy Algorithms,grd-22,Huffman Encoding,Medium,,https://www.geeksforgeeks.org/problems/huffman-encoding3345/1,https://www.youtube.com/watch?v=HZKUhnNYxms
+Greedy Algorithms,grd-23,Wiggle Subsequence,Medium,https://leetcode.com/problems/wiggle-subsequence/,,https://youtube.com/playlist?list=PLgUwDviBIf0rF1w2Koyh78zafB0cz7tea
+Greedy Algorithms,grd-24,IPO,Hard,https://leetcode.com/problems/ipo/,,https://www.youtube.com/watch?v=1IUzNJ6TPEM
+Greedy Algorithms,heap-18,Minimum Cost to Hire K Workers,Hard,https://leetcode.com/problems/minimum-cost-to-hire-k-workers/,,https://www.youtube.com/watch?v=o2Tgkkjfmag
+Dynamic Programming,dp-1,Introduction to DP (Fibonacci),Easy,,https://practice.geeksforgeeks.org/problems/introduction-to-dp/1,
+Dynamic Programming,rec-2,Climbing Stairs,Easy,https://leetcode.com/problems/climbing-stairs/,,
+Dynamic Programming,dp-3,Frog Jump (Geek Jump),Easy,,https://practice.geeksforgeeks.org/problems/geek-jump/1,
+Dynamic Programming,dp-4,House Robber,Medium,https://leetcode.com/problems/house-robber/,,
+Dynamic Programming,dp-5,House Robber II (circular),Medium,https://leetcode.com/problems/house-robber-ii/,,
+Dynamic Programming,dp-6,Maximum Subarray (Kadane's),Medium,https://leetcode.com/problems/maximum-subarray/,,
+Dynamic Programming,arr-22,Maximum Product Subarray,Medium,https://leetcode.com/problems/maximum-product-subarray/,,
+Dynamic Programming,dp-8,Decode Ways,Medium,https://leetcode.com/problems/decode-ways/,,
+Dynamic Programming,dp-9,Word Break,Medium,https://leetcode.com/problems/word-break/,,
+Dynamic Programming,grd-5,Jump Game,Medium,https://leetcode.com/problems/jump-game/,,
+Dynamic Programming,dp-11,Jump Game II,Medium,https://leetcode.com/problems/jump-game-ii/,,
+Dynamic Programming,dp-12,Unique Paths,Medium,https://leetcode.com/problems/unique-paths/,,
+Dynamic Programming,dp-13,Unique Paths II (with obstacles),Medium,,https://practice.geeksforgeeks.org/problems/grid-path-2/1,
+Dynamic Programming,dp-14,Minimum Path Sum,Medium,https://leetcode.com/problems/minimum-path-sum/,,
+Dynamic Programming,dp-15,Minimum Falling Path Sum,Medium,https://leetcode.com/problems/minimum-falling-path-sum/,,
+Dynamic Programming,dp-16,Triangle,Medium,https://leetcode.com/problems/triangle/,,
+Dynamic Programming,dp-17,Chocolates Pickup (3D DP),Hard,,https://practice.geeksforgeeks.org/problems/chocolates-pickup/1,
+Dynamic Programming,dp-18,Subset Sum Problem,Medium,,https://practice.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1,
+Dynamic Programming,rec-12,Partition Equal Subset Sum,Medium,https://leetcode.com/problems/partition-equal-subset-sum/,,
+Dynamic Programming,dp-20,0-1 Knapsack,Medium,,https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1,
+Dynamic Programming,dp-21,Coin Change (min coins),Medium,https://leetcode.com/problems/coin-change/,,
+Dynamic Programming,dp-22,Coin Change II (count ways),Medium,https://leetcode.com/problems/coin-change-ii/,,
+Dynamic Programming,rec-11,Target Sum,Medium,https://leetcode.com/problems/target-sum/,,
+Dynamic Programming,dp-24,Rod Cutting (unbounded knapsack),Medium,,https://practice.geeksforgeeks.org/problems/rod-cutting0840/1,
+Dynamic Programming,dp-25,Longest Common Subsequence,Medium,https://leetcode.com/problems/longest-common-subsequence/,,
+Dynamic Programming,dp-26,Longest Common Substring,Medium,,https://practice.geeksforgeeks.org/problems/longest-common-substring1452/1,
+Dynamic Programming,dp-27,Longest Palindromic Subsequence,Medium,https://leetcode.com/problems/longest-palindromic-subsequence/,,
+Dynamic Programming,dp-28,Min Insertions to Make String Palindrome,Hard,https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/,,
+Dynamic Programming,dp-29,Edit Distance,Medium,https://leetcode.com/problems/edit-distance/,,
+Dynamic Programming,dp-30,Shortest Common Supersequence,Hard,https://leetcode.com/problems/shortest-common-supersequence/,,
+Dynamic Programming,str-10,Longest Palindromic Substring,Medium,https://leetcode.com/problems/longest-palindromic-substring/,,
+Dynamic Programming,dp-32,Distinct Subsequences,Hard,https://leetcode.com/problems/distinct-subsequences/,,
+Dynamic Programming,str-18,Wildcard Matching,Hard,https://leetcode.com/problems/wildcard-matching/,,
+Dynamic Programming,arr-21,Best Time to Buy and Sell Stock,Easy,https://leetcode.com/problems/best-time-to-buy-and-sell-stock/,,
+Dynamic Programming,dp-35,Best Time to Buy and Sell Stock II,Medium,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/,,
+Dynamic Programming,dp-36,Best Time to Buy and Sell Stock III,Hard,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/,,
+Dynamic Programming,dp-37,Best Time to Buy and Sell Stock with Cooldown,Medium,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/,,
+Dynamic Programming,dp-38,Longest Increasing Subsequence,Medium,https://leetcode.com/problems/longest-increasing-subsequence/,,
+Dynamic Programming,dp-39,Longest String Chain,Medium,https://leetcode.com/problems/longest-string-chain/,,
+Dynamic Programming,dp-40,Russian Doll Envelopes,Hard,https://leetcode.com/problems/russian-doll-envelopes/,,
+Dynamic Programming,dp-41,Matrix Chain Multiplication,Hard,,https://practice.geeksforgeeks.org/problems/matrix-chain-multiplication0303/1,
+Dynamic Programming,dp-42,Minimum Cost to Cut a Stick,Hard,https://leetcode.com/problems/minimum-cost-to-cut-a-stick/,,
+Dynamic Programming,dp-43,Palindrome Partitioning II,Hard,https://leetcode.com/problems/palindrome-partitioning-ii/,,
+Dynamic Programming,dp-44,Parsing A Boolean Expression,Hard,https://leetcode.com/problems/parsing-a-boolean-expression/,,
+Dynamic Programming,dp-45,Partition Array for Maximum Sum,Medium,https://leetcode.com/problems/partition-array-for-maximum-sum/,,
+Dynamic Programming,dp-46,Burst Balloons,Hard,https://leetcode.com/problems/burst-balloons/,,
+Dynamic Programming,dp-47,Egg Dropping Puzzle,Hard,,https://www.geeksforgeeks.org/egg-dropping-puzzle-dp-11/,
+Dynamic Programming,dp-48,Maximal Square,Medium,https://leetcode.com/problems/maximal-square/,,
+Dynamic Programming,stk-13,Maximal Rectangle,Hard,https://leetcode.com/problems/maximal-rectangle/,,
+Dynamic Programming,dp-50,House Robber III (tree DP),Medium,https://leetcode.com/problems/house-robber-iii/,,
+Graphs,gph-1,BFS,Easy,,https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1,https://youtu.be/pcKY4hjDrxk?si=JZJ0KDI9OKcjsG5T
+Graphs,gph-2,DFS,Easy,,https://www.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1,https://youtu.be/pcKY4hjDrxk?si=JZJ0KDI9OKcjsG5T
+Graphs,gph-3,Create Adjacency List,Easy,,https://www.geeksforgeeks.org/problems/print-adjacency-list-1587115620/1,https://youtu.be/5hPfm_uqXmw?si=zeDdJcrrgVdWyqlf
+Graphs,gph-4,Number of Connected Components (Provinces),Easy,,https://www.geeksforgeeks.org/problems/number-of-provinces/1,https://youtu.be/8f1XPm4WOUc?si=2XQmkzQFGpbHFPmQ
+Graphs,gph-5,Island Perimeter,Easy,https://leetcode.com/problems/island-perimeter/description,,https://youtu.be/fISIuAFRM2s?si=yQAYT_fXgFC-G9xo
+Graphs,gph-6,Is Graph Bipartite?,Medium,https://leetcode.com/problems/is-graph-bipartite/description/,,https://youtu.be/-vu34sct1g8?si=Y7UbBYh_WprJKdWo
+Graphs,gph-7,Surrounded Regions,Medium,https://leetcode.com/problems/surrounded-regions/description,,https://youtu.be/BtdgAys4yMk?si=M1GcK_IwmCqlgSfF
+Graphs,rec-15,Word Search,Medium,https://leetcode.com/problems/word-search/description,,https://youtu.be/pfiQ_PS1g8E?si=wTbcJ1A54uhR1Y0W
+Graphs,gph-9,Number of Islands,Medium,https://leetcode.com/problems/number-of-islands/description,,https://youtu.be/muncqlKJrH0?si=7hMHCbN9AEML9h7K
+Graphs,gph-10,Detect Cycles in 2D Grid,Medium,https://leetcode.com/problems/detect-cycles-in-2d-grid/description/,,https://youtu.be/9twcmtQj4DU?si=sjGGtnudNiVDWc2S
+Graphs,gph-11,Course Schedule,Medium,https://leetcode.com/problems/course-schedule/description,,https://youtu.be/EgI5nU9etnU?si=MuBlBEznj92UGDIS
+Graphs,gph-12,Course Schedule II,Medium,https://leetcode.com/problems/course-schedule-ii/description,,https://youtu.be/Akt3glAwyfY?si=OE6v_ybU6p9R0HyT
+Graphs,gph-13,Minesweeper,Medium,https://leetcode.com/problems/minesweeper/description,,https://youtu.be/zPmuqLKPbE8?si=296YNpkfkQ0K-uDZ
+Graphs,gph-14,01 Matrix,Medium,https://leetcode.com/problems/01-matrix/description,,https://youtu.be/edXdVwkYHF8?si=szlH7nCoYwHdQ0O9
+Graphs,gph-15,Minimum Height Trees,Medium,https://leetcode.com/problems/minimum-height-trees/description,,https://youtu.be/ivl6BHJVcB0?si=RH9illRQdFqjQIW4
+Graphs,gph-16,Topological Sort,Medium,,https://www.geeksforgeeks.org/problems/topological-sort/1,https://youtu.be/73sneFXuTEg?si=v3GDq-_SAov5jTDk
+Graphs,gph-17,Number of Ways to Arrive at Destination,Medium,https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/description/,,https://youtu.be/_-0mx0SmYxA?si=rf4pf_Ss7m2HeVjD
+Graphs,gph-18,Prim's Minimum Spanning Tree,Medium,,https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1,https://youtu.be/4ZlRH0eK-qQ?si=r6o8sZ06V0PqFOCN
+Graphs,gph-19,Disjoint Set Union,Medium,,https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1,https://youtu.be/aBxjDBC4M1U?si=UJ3ztvankqrZW1-7
+Graphs,gph-20,Kruskal's Minimum Spanning Tree,Medium,,https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1,https://youtu.be/4ZlRH0eK-qQ?si=r6o8sZ06V0PqFOCN
+Graphs,gph-21,Dijkstra's Algorithm,Medium,,https://www.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1,https://youtu.be/XB4MIexjvY0?si=49SHAev2fsjZ-3zy
+Graphs,gph-22,Longest Increasing Path in a Matrix,Hard,https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description,,https://youtu.be/wCc_nd-GiEc?si=HQVqhX2Ce8ogT3q_
+Graphs,gph-23,Bellman-Ford,Hard,,https://www.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1,https://youtu.be/0vVofAhAYjc?si=ASEyYZLtdNMko2CX
+Graphs,gph-24,Cheapest Flights Within K Stops,Hard,https://leetcode.com/problems/cheapest-flights-within-k-stops/description/,,https://youtu.be/vWgoPTvQ3Rw?si=Ee54AbjUMXFuCljT
+Graphs,gph-25,Floyd-Warshall,Hard,,https://www.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1,https://youtu.be/YbY8cVwWAvw?si=3AfWglH1GFVZNDMC
+Searching,srch-1,Binary Search,Easy,https://leetcode.com/problems/binary-search/description/,,https://youtu.be/MFhxShGxHWc?si=vNMyH_8rY20KkZ74
+Searching,srch-2,Square Root (Sqrt(x)),Easy,https://leetcode.com/problems/sqrtx/description,,https://youtu.be/zdMhGxRWutQ?si=9idCPq_XIVbZ76l7
+Searching,srch-3,Search in Rotated Sorted Array,Medium,https://leetcode.com/problems/search-in-rotated-sorted-array/description,,https://youtu.be/5qGrJbHhqFs?si=d9zX7f1BY_t4MLw9
+Searching,srch-4,Search in Rotated Sorted Array II,Medium,https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description,,https://youtu.be/w2G2W8l__pc?si=vsZJE3jqwiW-OqIw
+Searching,srch-5,Search a 2D Matrix,Medium,https://leetcode.com/problems/search-a-2d-matrix/description/,,https://youtu.be/JXU4Akft7yk?si=xA07wuNuRTmZAgFT
+Searching,srch-6,Search a 2D Matrix II,Medium,https://leetcode.com/problems/search-a-2d-matrix-ii/description,,https://youtu.be/9ZbB397jU4k?si=eG_CZQqXhjOj33Qh
+Searching,srch-7,Find Minimum in Rotated Sorted Array,Medium,https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description,,https://youtu.be/nhEMDKMB44g?si=aDHN-tI4sHgTZ4E1
+Searching,srch-8,Kth Smallest Element in a Sorted Matrix,Medium,https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description,,https://youtu.be/16YmDvztm8I?si=my6RgbHc3rv5agH0
+Searching,srch-9,Aggressive Cows,Medium,,https://www.geeksforgeeks.org/problems/aggressive-cows/1,https://youtu.be/WMtvM9BrrM0?si=VtuZPgdrMcjyoDrq
+Searching,srch-10,Find Minimum in Rotated Sorted Array II,Hard,https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description,,https://youtu.be/w2G2W8l__pc?si=mhoBVbtU6hfVWdAY
+Searching,srch-11,Median of Two Sorted Arrays,Hard,https://leetcode.com/problems/median-of-two-sorted-arrays/description,,https://youtu.be/F9c7LpRZWVQ?si=OSKWB25BV3AlEQ4T
+Sorting,sort-1,Quick Sort,Easy,,https://www.geeksforgeeks.org/problems/quick-sort/1,https://youtu.be/7h1s2SojIRw?si=4aJ0MmnbxPEQRtSd
+Sorting,sort-2,Merge Sort,Easy,,https://www.geeksforgeeks.org/problems/merge-sort/1,https://youtu.be/4VqmGXwpLqc?si=MRqI9-1t3O_mcY0B
+Sorting,sort-3,Bubble Sort,Easy,,https://www.geeksforgeeks.org/problems/bubble-sort/1,https://youtu.be/xli_FI7CuzA?si=oh8_LyL6ZFJ_5uF6
+Sorting,sort-4,Insertion Sort,Easy,,https://www.geeksforgeeks.org/problems/insertion-sort/1,https://youtu.be/JU767SDMDvA?si=nzOld8-2URgQAJq0
+Sorting,sort-5,Selection Sort,Easy,,https://www.geeksforgeeks.org/problems/selection-sort/1,https://youtu.be/9oWd4VJOwr0?si=zmKvTFPhiXwiL1jR
+Sorting,sort-6,Sort an Array,Easy,https://leetcode.com/problems/sort-an-array/description/,,https://youtu.be/4VqmGXwpLqc?si=MRqI9-1t3O_mcY0B
+Sorting,sort-7,Sort Array by Parity,Easy,https://leetcode.com/problems/sort-array-by-parity/description,,https://youtu.be/QC4c9fyr8As?si=l7jCOWy1PuJQtL3p
+Sorting,sort-8,Sort Integers by Number of 1 Bits,Easy,https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/description/,,https://youtu.be/mzw8UjjQRyA?si=LVMWKm-JCOv4evBT
+Sorting,sort-9,Count 1's in a Sorted Binary Array,Easy,,https://www.geeksforgeeks.org/dsa/count-1s-sorted-binary-array/,https://youtu.be/EoO9c9UOyww?si=98BOvEigpN_CQnPg
+Sorting,arr-12,Check if Array is Sorted and Rotated,Easy,https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/,,https://youtu.be/Vzs_vlCIFEw?si=U76rblXEocyxcrAH
+Sorting,sort-11,Sort Array by Increasing Frequency,Easy,https://leetcode.com/problems/sort-array-by-increasing-frequency/description/,,https://youtu.be/Evq1SfUbhBg?si=bJFbSkOsbvH4mrWw
+Sorting,arr-17,Sort Colors,Medium,https://leetcode.com/problems/sort-colors/description/,,https://youtu.be/4xbWSRZHqac?si=YG68MRmemVdzCEj2
+Sorting,ll-12,Sort List,Medium,https://leetcode.com/problems/sort-list/description,,https://youtu.be/TGveA1oFhrc?si=dHw-pu9htPYSU4Br
+Sorting,heap-7,Sort Characters by Frequency,Medium,https://leetcode.com/problems/sort-characters-by-frequency/description,,https://youtu.be/OXdXc9HTrIg?si=188Te8vDyFRWcoaw
+Sorting,sort-15,Insertion Sort List,Medium,https://leetcode.com/problems/insertion-sort-list,,https://youtu.be/Kk6mXAzqX3Y?si=tUWRm9HP7LquInQ2
+Sorting,sort-16,Heap Sort,Medium,,https://www.geeksforgeeks.org/problems/heap-sort/1,https://youtu.be/2DmK_H7IdTo?si=yJsXdCM7YM_IC9F3
+Sorting,sort-17,Counting Sort,Medium,,https://www.geeksforgeeks.org/dsa/counting-sort/,https://youtu.be/OKd534EWcdk?si=dYEAStX_7FCAlW7e
+Sorting,sort-18,Sort Array By Parity II,Medium,https://leetcode.com/problems/sort-array-by-parity-ii/description/,,https://youtu.be/pHRFRZGbK5s?si=_D8LitDT5PQMucJi
+Sorting,sort-19,Sort an Array of Roman Numerals,Medium,,https://www.geeksforgeeks.org/dsa/sort-an-array-of-roman-numerals-in-ascending-order/,
+Sorting,sort-20,Radix Sort,Medium,,https://www.geeksforgeeks.org/problems/radix-sort/1,https://youtu.be/M2cCN7Gzl9U?si=vD37xP4okdKSTyEq
+Sorting,sort-21,Count Sorted Rows,Medium,,https://www.geeksforgeeks.org/problems/count-sorted-rows2702/1,

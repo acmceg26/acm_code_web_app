@@ -1,0 +1,61 @@
+,,Graphs,,,
+No,Name,Difficulty,Link,company,video link
+1,BFS,Easy,https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1, ,https://youtu.be/pcKY4hjDrxk?si=JZJ0KDI9OKcjsG5T
+2,DFS,Easy,https://www.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1, ,https://youtu.be/pcKY4hjDrxk?si=JZJ0KDI9OKcjsG5T
+3,Create adjacency list,Easy,https://www.geeksforgeeks.org/problems/print-adjacency-list-1587115620/1, ,https://youtu.be/5hPfm_uqXmw?si=zeDdJcrrgVdWyqlf
+4,Number of connected components,Easy,https://www.geeksforgeeks.org/problems/number-of-provinces/1, ,https://youtu.be/8f1XPm4WOUc?si=2XQmkzQFGpbHFPmQ
+5,Island perimeter,Easy,https://leetcode.com/problems/island-perimeter/description, ,https://youtu.be/fISIuAFRM2s?si=yQAYT_fXgFC-G9xo
+6,Is bipartite?,Medium,https://leetcode.com/problems/is-graph-bipartite/description/, ,https://youtu.be/-vu34sct1g8?si=Y7UbBYh_WprJKdWo
+7,Surrounded regions,Medium,https://leetcode.com/problems/surrounded-regions/description, ,https://youtu.be/BtdgAys4yMk?si=M1GcK_IwmCqlgSfF
+8,Word search,Medium,https://leetcode.com/problems/word-search/description, ,https://youtu.be/pfiQ_PS1g8E?si=wTbcJ1A54uhR1Y0W
+9,Number of islands,Medium,https://leetcode.com/problems/number-of-islands/description, ,https://youtu.be/muncqlKJrH0?si=7hMHCbN9AEML9h7K
+10,Detect cycles,Medium,https://leetcode.com/problems/detect-cycles-in-2d-grid/description/, ,https://youtu.be/9twcmtQj4DU?si=sjGGtnudNiVDWc2S
+11,Course schedule,Medium,https://leetcode.com/problems/course-schedule/description, ,https://youtu.be/EgI5nU9etnU?si=MuBlBEznj92UGDIS
+12,Course schedule ||,Medium,https://leetcode.com/problems/course-schedule-ii/description, ,https://youtu.be/Akt3glAwyfY?si=OE6v_ybU6p9R0HyT
+13,Minesweeper,Medium,https://leetcode.com/problems/minesweeper/description, ,https://youtu.be/zPmuqLKPbE8?si=296YNpkfkQ0K-uDZ
+14,01 matrix,Medium,https://leetcode.com/problems/01-matrix/description, ,https://youtu.be/edXdVwkYHF8?si=szlH7nCoYwHdQ0O9
+15,Minimum height tree,Medium,https://leetcode.com/problems/minimum-height-trees/description, ,https://youtu.be/ivl6BHJVcB0?si=RH9illRQdFqjQIW4
+16,Topological sort,Medium,https://www.geeksforgeeks.org/problems/topological-sort/1, ,https://youtu.be/73sneFXuTEg?si=v3GDq-_SAov5jTDk
+17,Number of ways to get to destination,Medium,https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/description/, ,https://youtu.be/_-0mx0SmYxA?si=rf4pf_Ss7m2HeVjD
+18,Prims minimum spanning tree,Medium,https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1, ,https://youtu.be/4ZlRH0eK-qQ?si=r6o8sZ06V0PqFOCN
+19,Disjoint set union,Medium,https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1, ,https://youtu.be/aBxjDBC4M1U?si=UJ3ztvankqrZW1-7
+20,Kruskal minimum spanning tree,Medium,https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1, ,https://youtu.be/4ZlRH0eK-qQ?si=r6o8sZ06V0PqFOCN
+21,Dijkstra ,Medium,https://www.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1, ,https://youtu.be/XB4MIexjvY0?si=49SHAev2fsjZ-3zy
+22,Longest increasing path in a matrix,Hard,https://leetcode.com/problems/longest-increasing-path-in-a-matrix/description, ,https://youtu.be/wCc_nd-GiEc?si=HQVqhX2Ce8ogT3q_
+23,Bellman ford,Hard,https://www.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1, ,https://youtu.be/0vVofAhAYjc?si=ASEyYZLtdNMko2CX
+24,Cheapest flights within K stops,Hard,https://leetcode.com/problems/cheapest-flights-within-k-stops/description/, ,https://youtu.be/vWgoPTvQ3Rw?si=Ee54AbjUMXFuCljT
+25,Floyd warshall,Hard,https://www.geeksforgeeks.org/problems/implementing-floyd-warshall2042/1, ,https://youtu.be/YbY8cVwWAvw?si=3AfWglH1GFVZNDMC
+,,Searching,,,
+1,Search,Easy,https://leetcode.com/problems/binary-search/description/, ,https://youtu.be/MFhxShGxHWc?si=vNMyH_8rY20KkZ74
+2,Square root,Easy,https://leetcode.com/problems/sqrtx/description, ,https://youtu.be/zdMhGxRWutQ?si=9idCPq_XIVbZ76l7
+3,search in rotated sorted array,Medium,https://leetcode.com/problems/search-in-rotated-sorted-array/description, ,https://youtu.be/5qGrJbHhqFs?si=d9zX7f1BY_t4MLw9
+4,search in rotated sorted array II,Medium,https://leetcode.com/problems/search-in-rotated-sorted-array-ii/description, ,https://youtu.be/w2G2W8l__pc?si=vsZJE3jqwiW-OqIw
+5,Search a 2D matrix,Medium,https://leetcode.com/problems/search-a-2d-matrix/description/, ,https://youtu.be/JXU4Akft7yk?si=xA07wuNuRTmZAgFT
+6,Search a 2D matrix II,Medium,https://leetcode.com/problems/search-a-2d-matrix-ii/description,amazon,https://youtu.be/9ZbB397jU4k?si=eG_CZQqXhjOj33Qh
+7,Find minimum in rotated sorted array,Medium,https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description, ,https://youtu.be/nhEMDKMB44g?si=aDHN-tI4sHgTZ4E1
+8,K th smallest element in sorted matrix,Medium,https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description, ,https://youtu.be/16YmDvztm8I?si=my6RgbHc3rv5agH0
+9,Aggressive cows,Medium,https://www.geeksforgeeks.org/problems/aggressive-cows/1,amazon,https://youtu.be/WMtvM9BrrM0?si=VtuZPgdrMcjyoDrq
+10,Find minimum in rotated sorted array ||,Hard,https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description, ,https://youtu.be/w2G2W8l__pc?si=mhoBVbtU6hfVWdAY
+11,Median of two sorted arrays,Hard,https://leetcode.com/problems/median-of-two-sorted-arrays/description, ,https://youtu.be/F9c7LpRZWVQ?si=OSKWB25BV3AlEQ4T
+,,Sorting,,,
+1,Quick sort,Easy,https://www.geeksforgeeks.org/problems/quick-sort/1,lot,https://youtu.be/7h1s2SojIRw?si=4aJ0MmnbxPEQRtSd
+2,Merge sort,Easy,https://www.geeksforgeeks.org/problems/merge-sort/1,lot,https://youtu.be/4VqmGXwpLqc?si=MRqI9-1t3O_mcY0B
+3,Bubble sort,Easy,https://www.geeksforgeeks.org/problems/bubble-sort/1,lot,https://youtu.be/xli_FI7CuzA?si=oh8_LyL6ZFJ_5uF6
+4,Insertion sort,Easy,https://www.geeksforgeeks.org/problems/insertion-sort/1,lot,https://youtu.be/JU767SDMDvA?si=nzOld8-2URgQAJq0
+5,Selection sort,Easy,https://www.geeksforgeeks.org/problems/selection-sort/1,lot,https://youtu.be/9oWd4VJOwr0?si=zmKvTFPhiXwiL1jR
+6,Sort an array,Easy,https://leetcode.com/problems/sort-an-array/description/, ,https://youtu.be/4VqmGXwpLqc?si=MRqI9-1t3O_mcY0B
+7,Sort array by parity,Easy,https://leetcode.com/problems/sort-array-by-parity/description,wellsFargo,https://youtu.be/QC4c9fyr8As?si=l7jCOWy1PuJQtL3p
+8,Sort integers by number of 1 bits,Easy,https://leetcode.com/problems/sort-integers-by-the-number-of-1-bits/description/,bny,https://youtu.be/mzw8UjjQRyA?si=LVMWKm-JCOv4evBT
+9,Count 1's in a sorted binary array,Easy,https://www.geeksforgeeks.org/dsa/count-1s-sorted-binary-array/, ,https://youtu.be/EoO9c9UOyww?si=98BOvEigpN_CQnPg
+10,Check if array is sorted and rotated,Easy,https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/,Chronous,https://youtu.be/Vzs_vlCIFEw?si=U76rblXEocyxcrAH
+11,Sort array by increasing frequency,Easy,https://leetcode.com/problems/sort-array-by-increasing-frequency/description/,natwest,https://youtu.be/Evq1SfUbhBg?si=bJFbSkOsbvH4mrWw
+12,Sort colors,Medium,https://leetcode.com/problems/sort-colors/description/,"DE Shaw ,vegrow",https://youtu.be/4xbWSRZHqac?si=YG68MRmemVdzCEj2
+13,Sort list,Medium,https://leetcode.com/problems/sort-list/description, ,https://youtu.be/TGveA1oFhrc?si=dHw-pu9htPYSU4Br
+14,Sort characters by frequency,Medium,https://leetcode.com/problems/sort-characters-by-frequency/description, ,https://youtu.be/OXdXc9HTrIg?si=188Te8vDyFRWcoaw
+15,Insertion sort list,Medium,https://leetcode.com/problems/insertion-sort-list, ,https://youtu.be/Kk6mXAzqX3Y?si=tUWRm9HP7LquInQ2
+16,Heap sort,Medium,https://www.geeksforgeeks.org/problems/heap-sort/1,lot,https://youtu.be/2DmK_H7IdTo?si=yJsXdCM7YM_IC9F3
+17,Counting sort,Medium,https://www.geeksforgeeks.org/dsa/counting-sort/,lot,https://youtu.be/OKd534EWcdk?si=dYEAStX_7FCAlW7e
+18,Sort array by parity II,Medium,https://leetcode.com/problems/sort-array-by-parity-ii/description/?envType=problem-list-v2&envId=sorting, ,https://youtu.be/pHRFRZGbK5s?si=_D8LitDT5PQMucJi
+19,Sort an array of Roman Numerals in ascending order,Medium,https://www.geeksforgeeks.org/dsa/sort-an-array-of-roman-numerals-in-ascending-order/,kla tencor,
+20,Radix sort,Medium,https://www.geeksforgeeks.org/problems/radix-sort/1,lot,https://youtu.be/M2cCN7Gzl9U?si=vD37xP4okdKSTyEq
+21,Count sorted rows,Medium,https://www.geeksforgeeks.org/problems/count-sorted-rows2702/1, ,
