@@ -45,7 +45,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { to: '/aptitude', label: 'Aptitude Practice', icon: Brain },
     { to: '/contests', label: 'Contests', icon: Trophy },
     { to: '/resources', label: 'Other Resources', icon: FolderOpen },
-    { to: '/contact', label: 'Contact Us', icon: MessageCircle },
   ] as const;
 
   // Close the mobile drawer after navigating.
@@ -143,6 +142,21 @@ export const Sidebar: React.FC<SidebarProps> = ({
           >
             <UserCircle className="w-3.5 h-3.5" />
             <span>My Profile</span>
+          </NavLink>
+
+          <NavLink
+            to="/contact"
+            onClick={handleNavigate}
+            className={({ isActive }) =>
+              `w-full flex items-center justify-center gap-2 px-4 py-2.5 mb-2 rounded-lg border text-xs font-medium transition-colors cursor-pointer ${
+                isActive
+                  ? 'border-blue-500/40 bg-blue-500/10 text-blue-300'
+                  : 'border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800/50 text-zinc-400 hover:text-zinc-200'
+              }`
+            }
+          >
+            <MessageCircle className="w-3.5 h-3.5" />
+            <span>Contact Us</span>
           </NavLink>
 
           <button

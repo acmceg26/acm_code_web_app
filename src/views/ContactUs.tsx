@@ -15,20 +15,20 @@ interface Contact {
 const CONTACTS: Contact[] = [
   {
     role: 'Chairperson · ACM-CEG',
-    name: 'Chairperson name (to be added)',
-    whatsapp: '+91 00000 00000',
-    linkedin: 'https://www.linkedin.com/',
+    name: 'Visvam Srinivasan',
+    whatsapp: '+91 6385050355',
+    linkedin: 'www.linkedin.com/in/visvam-srinivasan',
   },
   {
     role: 'Vice Chairperson · ACM-CEG',
-    name: 'Vice Chairperson name (to be added)',
-    whatsapp: '+91 00000 00000',
-    linkedin: 'https://www.linkedin.com/',
+    name: 'Sankara Krishnan P',
+    whatsapp: '+91 8870393359',
+    linkedin: 'https://www.linkedin.com/in/sankara-krishnan-p-3ab7bb28a/',
   },
 ];
 
 // TODO: point this at the real Google Form.
-const SUGGESTION_FORM_URL = 'https://forms.gle/';
+const SUGGESTION_FORM_URL = 'https://docs.google.com/forms/d/1YImhlhogDg7FAXy6IxZPrzKKVr7ebC3jfDc2Khowq_I/edit';
 // ────────────────────────────────────────────────────────────────────────────
 
 const waLink = (num: string) => `https://wa.me/${num.replace(/\D/g, '')}`;
