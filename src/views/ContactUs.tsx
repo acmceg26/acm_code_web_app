@@ -29,13 +29,17 @@ const CONTACTS: Contact[] = [
 
 // TODO: point this at the real Google Form.
 const SUGGESTION_FORM_URL = 'https://docs.google.com/forms/d/1YImhlhogDg7FAXy6IxZPrzKKVr7ebC3jfDc2Khowq_I/edit';
+
+// Short blurb about the chapter — edit freely.
+const ABOUT_ACM_CEG =
+  'ACM-CEG is the Association for Computing Machinery student chapter at the College of Engineering, Guindy, Anna University. We run workshops, talks, hackathons and peer-learning initiatives across computing, and we build C.O.D.E to help students prepare for internships and placements.';
 // ────────────────────────────────────────────────────────────────────────────
 
 const waLink = (num: string) => `https://wa.me/${num.replace(/\D/g, '')}`;
 
 export const ContactUs: React.FC = () => {
   return (
-    <div className="space-y-6 animate-fade-in-up max-w-3xl">
+    <div className="space-y-6 animate-fade-in-up">
       {/* Page Header */}
       <div>
         <h2 className="text-xl font-semibold text-zinc-100">Contact Us</h2>
@@ -44,7 +48,18 @@ export const ContactUs: React.FC = () => {
         </p>
       </div>
 
-      {/* Office bearers */}
+      {/* About ACM-CEG — full-width */}
+      <div className="glass-panel p-6 rounded-xl border border-zinc-800/80 flex flex-col sm:flex-row items-center gap-6">
+        <div className="shrink-0 rounded-xl bg-white border border-black/10 px-5 py-4 flex items-center justify-center">
+          <img src="/favicon.png" alt="ACM-CEG logo" className="h-14 w-auto" />
+        </div>
+        <div className="min-w-0 flex-1">
+          <h3 className="text-base font-semibold text-zinc-100">About ACM-CEG</h3>
+          <p className="text-sm text-zinc-400 mt-1.5 leading-relaxed">{ABOUT_ACM_CEG}</p>
+        </div>
+      </div>
+
+      {/* Office bearers — full-width */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         {CONTACTS.map((c) => (
           <div key={c.role} className="glass-panel p-6 rounded-xl border border-zinc-800/80 flex flex-col">

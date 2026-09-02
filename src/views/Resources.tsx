@@ -29,7 +29,8 @@ const TABS: Tab[] = [
 ];
 
 export const Resources: React.FC = () => {
-  const [activeCategory, setActiveCategory] = useState<string>('Resume');
+  // Default to the first tab (CUIC Rules and Resources) on every visit.
+  const [activeCategory, setActiveCategory] = useState<string>(TABS[0].dataCategory);
 
   const filteredResources = useMemo(
     () => resourcesData.resources.filter((res) => res.category === activeCategory),

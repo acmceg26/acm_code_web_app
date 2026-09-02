@@ -42,10 +42,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { to: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
     { to: '/dsa', label: 'DSA Sheets', icon: BookOpen },
     { to: '/company', label: 'Company & OA Prep', icon: Building2 },
-    { to: '/interview-prep', label: 'Interview Prep', icon: Speech },
     { to: '/technical', label: 'Technical Concepts', icon: Cpu },
     { to: '/aptitude', label: 'Aptitude Practice', icon: Brain },
     { to: '/contests', label: 'Contests', icon: Trophy },
+    { to: '/interview-prep', label: 'Interview Prep', icon: Speech },
     { to: '/resources', label: 'Other Resources', icon: FolderOpen },
   ] as const;
 
