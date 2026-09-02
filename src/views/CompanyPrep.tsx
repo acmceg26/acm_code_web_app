@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import rawCompanyData from '../data/companies.json';
+import { useTracker } from '../hooks/useTracker';
 import { Card } from '../components/ui/Card';
+import { Checkbox } from '../components/ui/Checkbox';
 import { ComingSoon } from '../components/ui/ComingSoon';
-import { ArrowLeft, ExternalLink, ClipboardList, Layers } from 'lucide-react';
+import { ArrowLeft, ExternalLink, ClipboardList, Layers, BarChart2, Target } from 'lucide-react';
+
+type Difficulty = 'Easy' | 'Medium' | 'Hard';
 
 interface Question {
   id: string;
@@ -10,6 +14,8 @@ interface Question {
   link: string;
   type: string;
   year: string;
+  topic: string;
+  difficulty: Difficulty;
 }
 interface OaFormatItem {
   label: string;
@@ -22,7 +28,7 @@ interface Company {
   oaFormat: OaFormatItem[];
 }
 
-const companyData = rawCompanyData as Company[];
+const companyData = rawCompanyData as unknown as Company[];
 
 // CSEA placement portal — real, first-hand placement experiences live here.
 const CSEA_PLACEMENT_URL = 'https://placement.cseaceg.org.in/';
@@ -90,11 +96,47 @@ const typeStyles = (type: string) =>
     ? 'text-amber-400 bg-amber-400/10 border-amber-500/20'
     : 'text-blue-400 bg-blue-400/10 border-blue-500/20';
 
+// Difficulty palette — matches DsaSheetTable / DashboardStats.
+const DIFFICULTIES: Difficulty[] = ['Easy', 'Medium', 'Hard'];
+const diffBadge: Record<Difficulty, string> = {
+  Easy: 'text-emerald-400 bg-emerald-400/10 border-emerald-500/20',
+  Medium: 'text-amber-400 bg-amber-400/10 border-amber-500/20',
+  Hard: 'text-rose-400 bg-rose-400/10 border-rose-500/20',
+};
+const diffBar: Record<Difficulty, string> = {
+  Easy: 'bg-emerald-500',
+  Medium: 'bg-amber-500',
+  Hard: 'bg-rose-500',
+};
+
 // ─── Company detail page ─────────────────────────────────────────────────────
 const CompanyDetailPage: React.FC<{
   company: Company;
   onBack: () => void;
-}> = ({ company, onBack }) => (
+}> = ({ company, onBack }) => {
+  const { isSolved, toggleProblem } = useTracker();
+
+  const questions = company.questions as Question[];
+  const solvedCount = questions.filter((q) => isSolved(q.id)).length;
+  const progressPct = questions.length ? Math.round((solvedCount / questions.length) * 100) : 0;
+
+  // Difficulty split + topic distribution across this company's questions only.
+  const diffCounts = useMemo(() => {
+    const counts: Record<Difficulty, number> = { Easy: 0, Medium: 0, Hard: 0 };
+    questions.forEach((q) => { counts[q.difficulty] = (counts[q.difficulty] ?? 0) + 1; });
+    return counts;
+  }, [questions]);
+
+  const topicCounts = useMemo(() => {
+    const map = new Map<string, number>();
+    questions.forEach((q) => map.set(q.topic, (map.get(q.topic) ?? 0) + 1));
+    return [...map.entries()]
+      .map(([name, count]) => ({ name, count }))
+      .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+  }, [questions]);
+  const maxTopicCount = topicCounts[0]?.count ?? 1;
+
+  return (
   <div className="space-y-8 animate-fade-in-up">
     {/* Header */}
     <div className="flex items-center gap-4">
@@ -110,6 +152,92 @@ const CompanyDetailPage: React.FC<{
           <span className="text-xs font-medium text-zinc-500">Companies</span>
           <h2 className="text-xl font-semibold text-zinc-100">{company.name}</h2>
         </div>
+      </div>
+    </div>
+
+    {/* ── Progress + question analytics ─────────────────────── */}
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+      {/* Progress tracker (this company's questions only) */}
+      <div className="glass-panel p-6 rounded-xl border border-zinc-800/80 flex flex-col justify-between">
+        <div className="flex items-center gap-2 mb-4">
+          <Target className="w-5 h-5 text-blue-400" />
+          <h3 className="font-bold text-zinc-200 text-base">Your Progress</h3>
+        </div>
+        <div>
+          <div className="flex items-baseline gap-1.5 mb-2">
+            <span className="text-3xl font-bold text-zinc-100 font-mono">{solvedCount}</span>
+            <span className="text-sm text-zinc-500">/ {questions.length} solved</span>
+          </div>
+          <div className="w-full h-1.5 bg-zinc-900 rounded-full overflow-hidden">
+            <div
+              className="h-full bg-blue-500 rounded-full transition-all duration-500 ease-out"
+              style={{ width: `${progressPct}%` }}
+            />
+          </div>
+          <div className="flex justify-between items-center mt-1.5">
+            <span className="text-[10px] text-zinc-500 font-semibold uppercase tracking-wider">Completion</span>
+            <span className="text-xs font-bold font-mono text-blue-400">{progressPct}%</span>
+          </div>
+        </div>
+      </div>
+
+      {/* Difficulty breakdown */}
+      <div className="glass-panel p-6 rounded-xl border border-zinc-800/80">
+        <div className="flex items-center gap-2 mb-4">
+          <Layers className="w-5 h-5 text-emerald-400" />
+          <h3 className="font-bold text-zinc-200 text-base">By Difficulty</h3>
+        </div>
+        <div className="flex w-full h-2 rounded-full overflow-hidden bg-zinc-900 mb-4">
+          {DIFFICULTIES.map((d) =>
+            diffCounts[d] > 0 ? (
+              <div
+                key={d}
+                className={diffBar[d]}
+                style={{ width: `${(diffCounts[d] / questions.length) * 100}%` }}
+                title={`${d}: ${diffCounts[d]}`}
+              />
+            ) : null,
+          )}
+        </div>
+        <div className="space-y-2">
+          {DIFFICULTIES.map((d) => (
+            <div key={d} className="flex items-center justify-between text-xs">
+              <span className="flex items-center gap-2 text-zinc-400">
+                <span className={`w-2.5 h-2.5 rounded-full ${diffBar[d]}`} />
+                {d}
+              </span>
+              <span className="font-mono text-zinc-300">{diffCounts[d]}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Topics asked */}
+      <div className="glass-panel p-6 rounded-xl border border-zinc-800/80">
+        <div className="flex items-center gap-2 mb-4">
+          <BarChart2 className="w-5 h-5 text-blue-400" />
+          <h3 className="font-bold text-zinc-200 text-base">Topics Asked</h3>
+        </div>
+        {topicCounts.length === 0 ? (
+          <p className="text-sm text-zinc-500">No topic data.</p>
+        ) : (
+          <div className="space-y-2.5 max-h-56 overflow-y-auto pr-1">
+            {topicCounts.map((t) => (
+              <div key={t.name} className="space-y-1">
+                <div className="flex justify-between text-xs font-semibold">
+                  <span className="text-zinc-400 truncate pr-2" title={t.name}>{t.name}</span>
+                  <span className="text-zinc-400 font-mono shrink-0">{t.count}</span>
+                </div>
+                <div className="w-full h-1.5 bg-zinc-900/60 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-blue-500/80 rounded-full transition-all duration-500"
+                    style={{ width: `${(t.count / maxTopicCount) * 100}%` }}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
 
@@ -149,37 +277,68 @@ const CompanyDetailPage: React.FC<{
         <div>
           <h3 className="text-base font-semibold text-zinc-100">Questions Asked</h3>
           <p className="text-xs text-zinc-500">
-            OA & interview questions shared by students who interviewed here.
+            Check off the ones you&apos;ve solved — progress is tracked per company.
           </p>
         </div>
       </div>
 
       <div className="space-y-2">
-        {company.questions.map((q: Question) => (
-          <a
-            key={q.id}
-            href={q.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex items-center gap-3 rounded-lg border border-zinc-800 bg-zinc-900/40 hover:border-blue-500/40 hover:bg-zinc-900/70 transition-colors px-4 py-3"
-          >
-            <span className="flex-1 text-sm font-medium text-zinc-200 group-hover:text-zinc-100">
-              {q.title}
-            </span>
-            <span className={`shrink-0 px-2 py-0.5 text-[10px] font-bold rounded-md border ${typeStyles(q.type)}`}>
-              {q.type}
-            </span>
-            {q.year && (
-              <span className="shrink-0 text-[10px] font-mono font-bold text-zinc-500">{q.year}</span>
-            )}
-            <ExternalLink className="w-3.5 h-3.5 shrink-0 text-zinc-500 group-hover:text-blue-400 transition-colors" />
-          </a>
-        ))}
+        {questions.map((q) => {
+          const solved = isSolved(q.id);
+          return (
+            <div
+              key={q.id}
+              className="group flex items-center gap-3 rounded-lg border border-zinc-800 bg-zinc-900/40 hover:border-blue-500/40 hover:bg-zinc-900/70 transition-colors px-4 py-3"
+            >
+              <Checkbox
+                checked={solved}
+                id={`chk-${q.id}`}
+                onChange={() =>
+                  toggleProblem({
+                    problemId: q.id,
+                    title: q.title,
+                    topic: q.topic,
+                    difficulty: q.difficulty,
+                    platform: '',
+                  })
+                }
+              />
+              <a
+                href={q.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-1 items-center gap-3 min-w-0"
+              >
+                <span
+                  className={`flex-1 min-w-0 text-sm font-medium ${
+                    solved
+                      ? 'text-zinc-500 line-through decoration-zinc-600'
+                      : 'text-zinc-200 group-hover:text-zinc-100'
+                  }`}
+                >
+                  {q.title}
+                </span>
+                <span className={`shrink-0 px-2 py-0.5 text-[10px] font-bold rounded-md border ${diffBadge[q.difficulty]}`}>
+                  {q.difficulty}
+                </span>
+                <span className="hidden md:inline shrink-0 text-[10px] font-medium text-zinc-500">{q.topic}</span>
+                <span className={`shrink-0 px-2 py-0.5 text-[10px] font-bold rounded-md border ${typeStyles(q.type)}`}>
+                  {q.type}
+                </span>
+                {q.year && (
+                  <span className="shrink-0 text-[10px] font-mono font-bold text-zinc-500">{q.year}</span>
+                )}
+                <ExternalLink className="w-3.5 h-3.5 shrink-0 text-zinc-500 group-hover:text-blue-400 transition-colors" />
+              </a>
+            </div>
+          );
+        })}
       </div>
     </div>
 
   </div>
-);
+  );
+};
 
 // ─── Main page ───────────────────────────────────────────────────────────────
 export const CompanyPrep: React.FC = () => {

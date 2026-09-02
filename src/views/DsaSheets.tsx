@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { useTracker } from '../hooks/useTracker';
 import { useDsaData } from '../context/DsaDataContext';
+import { slugify } from '../lib/dsaData';
 import { Accordion } from '../components/ui/Accordion';
 import { DsaSheetTable } from '../components/features/DsaSheetTable';
 import { CheckCircle } from 'lucide-react';
@@ -8,6 +10,28 @@ import { CheckCircle } from 'lucide-react';
 export const DsaSheets: React.FC = () => {
   const { isSolved } = useTracker();
   const { topics } = useDsaData();
+  const location = useLocation();
+
+  // A topic can be deep-linked with a `#topic-<slug>` hash (e.g. from the
+  // Dashboard's "Solved Problems by Topic" list): that accordion opens and
+  // scrolls into view. `userOpen` holds explicit toggles, which win over the
+  // hash so the user can still collapse a topic they were linked to.
+  const hashTopicSlug = location.hash.startsWith('#topic-')
+    ? location.hash.slice('#topic-'.length)
+    : null;
+  const [userOpen, setUserOpen] = useState<Record<string, boolean>>({});
+  const isTopicOpen = (name: string) =>
+    userOpen[name] ?? (hashTopicSlug !== null && slugify(name) === hashTopicSlug);
+
+  useEffect(() => {
+    if (!hashTopicSlug) return;
+    const el = document.getElementById(`topic-${hashTopicSlug}`);
+    if (!el) return; // topic not present (yet) — nothing to scroll to
+    const id = requestAnimationFrame(() =>
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' }),
+    );
+    return () => cancelAnimationFrame(id);
+  }, [hashTopicSlug, topics.length]);
 
   // Overall progress counts each problem id once, even if it appears in
   // multiple topics (e.g. a problem shared between Arrays and Heap).
@@ -103,6 +127,11 @@ export const DsaSheets: React.FC = () => {
           return (
             <Accordion
               key={topic.name}
+              id={`topic-${slugify(topic.name)}`}
+              open={isTopicOpen(topic.name)}
+              onOpenChange={(next) =>
+                setUserOpen((prev) => ({ ...prev, [topic.name]: next }))
+              }
               title={
                 <span className="flex items-center gap-2">
                   {isTopicFinished && <CheckCircle className="w-4 h-4 text-emerald-400" />}

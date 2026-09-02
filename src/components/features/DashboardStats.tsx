@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useTracker } from '../../hooks/useTracker';
+import { slugify } from '../../lib/dsaData';
 import { Award, Zap, Flame, BarChart2 } from 'lucide-react';
 
 export const DashboardStats: React.FC = () => {
@@ -108,7 +110,13 @@ export const DashboardStats: React.FC = () => {
             {topics.map((topic) => (
               <div key={topic.name} className="space-y-1.5">
                 <div className="flex justify-between text-xs font-semibold">
-                  <span className="text-zinc-400 truncate pr-2" title={topic.name}>{topic.name}</span>
+                  <Link
+                    to={`/dsa#topic-${slugify(topic.name)}`}
+                    className="text-zinc-400 truncate pr-2 hover:text-blue-400 hover:underline underline-offset-2 transition-colors"
+                    title={`Go to ${topic.name} on DSA Sheets`}
+                  >
+                    {topic.name}
+                  </Link>
                   <span className="text-zinc-400 font-mono shrink-0">
                     {topic.solved}/{topic.total} <span className="text-blue-400/80 ml-1.5">({topic.percentage}%)</span>
                   </span>

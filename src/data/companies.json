@@ -8,168 +8,216 @@
         "link": "https://www.geeksforgeeks.org/find-maximum-meetings-in-one-room/",
         "type": "Interview",
         "year": "2021",
-        "id": "wells-fargo-q1"
+        "id": "wells-fargo-q1",
+        "topic": "Greedy Algorithms",
+        "difficulty": "Medium"
       },
       {
         "title": "min - stack",
         "link": "https://leetcode.com/problems/min-stack/",
         "type": "Interview",
         "year": "2021",
-        "id": "wells-fargo-q2"
+        "id": "wells-fargo-q2",
+        "topic": "Stacks",
+        "difficulty": "Medium"
       },
       {
         "title": "Level order traversal in binary tree",
         "link": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
         "type": "Interview",
         "year": "2021",
-        "id": "wells-fargo-q3"
+        "id": "wells-fargo-q3",
+        "topic": "Binary Tree",
+        "difficulty": "Medium"
       },
       {
         "title": "zig zag level order traversal in binary tree",
         "link": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
         "type": "Interview",
         "year": "2021",
-        "id": "wells-fargo-q4"
+        "id": "wells-fargo-q4",
+        "topic": "Binary Tree",
+        "difficulty": "Medium"
       },
       {
         "title": "Missing point of a parallelogram",
         "link": "https://www.geeksforgeeks.org/problems/missing-point-of-a-parallelogram0146/1",
         "type": "Interview",
         "year": "2023",
-        "id": "wells-fargo-q5"
+        "id": "wells-fargo-q5",
+        "topic": "Math",
+        "difficulty": "Easy"
       },
       {
         "title": "Given a string of length N, which contains ‘1’ , ‘0’ and ‘?’ . Return all the binary strings that can be formed by replacing the ‘?’ with ‘0’ or ‘1’.",
         "link": "https://www.geeksforgeeks.org/generate-all-binary-strings-from-given-pattern/",
         "type": "Interview",
         "year": "2023",
-        "id": "wells-fargo-q6"
+        "id": "wells-fargo-q6",
+        "topic": "Recursion & Backtracking",
+        "difficulty": "Medium"
       },
       {
         "title": "A balloon game is being played among people numbered from 1 to n in circle. Given an integer k which is the number of balloon pass, after which the person should be eliminated. The condition is before elimination of a particular person, the balloon should be passed to the next one. Find the winner ? (one who remains at last)",
         "link": "https://www.geeksforgeeks.org/josephus-problem-set-1-a-on-solution/",
         "type": "Interview",
         "year": "2023",
-        "id": "wells-fargo-q7"
+        "id": "wells-fargo-q7",
+        "topic": "Recursion & Backtracking",
+        "difficulty": "Medium"
       },
       {
         "title": "Program to convert a given number to words",
         "link": "https://www.geeksforgeeks.org/convert-number-to-words/",
         "type": "Interview",
         "year": "2023",
-        "id": "wells-fargo-q8"
+        "id": "wells-fargo-q8",
+        "topic": "Strings",
+        "difficulty": "Hard"
       },
       {
         "title": "Find the occurrences of digit d in the range [0..n]",
         "link": "https://www.geeksforgeeks.org/find-the-occurrences-of-y-in-the-range-of-x/",
         "type": "Interview",
         "year": "2023",
-        "id": "wells-fargo-q9"
+        "id": "wells-fargo-q9",
+        "topic": "Math",
+        "difficulty": "Medium"
       },
       {
         "title": "Generate binary string",
         "link": "https://practice.geeksforgeeks.org/problems/generate-binary-string3642/1",
         "type": "OA",
         "year": "2023",
-        "id": "wells-fargo-q10"
+        "id": "wells-fargo-q10",
+        "topic": "Recursion & Backtracking",
+        "difficulty": "Medium"
       },
       {
         "title": "Find Minimum sum of product of two arrays",
         "link": "https://iq.opengenus.org/minimum-sum-of-product-of-two-arrays/",
         "type": "OA",
         "year": "2023",
-        "id": "wells-fargo-q11"
+        "id": "wells-fargo-q11",
+        "topic": "Greedy Algorithms",
+        "difficulty": "Easy"
       },
       {
         "title": "Number of overtakes",
         "link": "https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/practice-problems/algorithm/overtakes-count-33746e3a/",
         "type": "Interview",
         "year": "2023",
-        "id": "wells-fargo-q12"
+        "id": "wells-fargo-q12",
+        "topic": "Sorting",
+        "difficulty": "Medium"
       },
       {
         "title": "Find missing element in a sorted array of consecutive numbers.",
         "link": "https://www.geeksforgeeks.org/find-missing-element-in-a-sorted-array-of-consecutive-numbers/",
         "type": "Interview",
         "year": "2023",
-        "id": "wells-fargo-q13"
+        "id": "wells-fargo-q13",
+        "topic": "Searching",
+        "difficulty": "Easy"
       },
       {
         "title": "Palindrome String",
         "link": "https://practice.geeksforgeeks.org/problems/palindrome-string0817/1",
         "type": "Interview",
         "year": "2023",
-        "id": "wells-fargo-q14"
+        "id": "wells-fargo-q14",
+        "topic": "Strings",
+        "difficulty": "Easy"
       },
       {
         "title": "Merge Sort",
         "link": "https://www.geeksforgeeks.org/merge-sort/",
         "type": "Interview",
         "year": "2023",
-        "id": "wells-fargo-q15"
+        "id": "wells-fargo-q15",
+        "topic": "Sorting",
+        "difficulty": "Easy"
       },
       {
         "title": "longest common prefix string",
         "link": "https://leetcode.com/problems/longest-common-prefix/",
         "type": "OA",
         "year": "2025",
-        "id": "wells-fargo-q16"
+        "id": "wells-fargo-q16",
+        "topic": "Strings",
+        "difficulty": "Easy"
       },
       {
         "title": "Segregate Even and Odd numbers",
         "link": "https://www.geeksforgeeks.org/problems/segregate-even-and-odd-numbers4629/1",
         "type": "OA",
         "year": "2025",
-        "id": "wells-fargo-q17"
+        "id": "wells-fargo-q17",
+        "topic": "Arrays",
+        "difficulty": "Easy"
       },
       {
         "title": "Sum of an array using pthreads",
         "link": "https://www.geeksforgeeks.org/sum-array-using-pthreads/",
         "type": "OA",
         "year": "2025",
-        "id": "wells-fargo-q18"
+        "id": "wells-fargo-q18",
+        "topic": "Arrays",
+        "difficulty": "Easy"
       },
       {
         "title": "Area of Intersection of two circles",
         "link": "https://www.geeksforgeeks.org/area-of-intersection-of-two-circles/",
         "type": "OA",
         "year": "2026",
-        "id": "wells-fargo-q19"
+        "id": "wells-fargo-q19",
+        "topic": "Math",
+        "difficulty": "Medium"
       },
       {
         "title": "Zellers congruence find day date",
         "link": "https://www.geeksforgeeks.org/zellers-congruence-find-day-date/",
         "type": "OA",
         "year": "2026",
-        "id": "wells-fargo-q20"
+        "id": "wells-fargo-q20",
+        "topic": "Math",
+        "difficulty": "Medium"
       },
       {
         "title": "Seven Bridges of Königsberg",
         "link": "https://en.wikipedia.org/wiki/Seven_Bridges_of_K%C3%B6nigsberg",
         "type": "OA",
         "year": "2026",
-        "id": "wells-fargo-q21"
+        "id": "wells-fargo-q21",
+        "topic": "Graphs",
+        "difficulty": "Medium"
       },
       {
         "title": "Remove Duplicates from the sorted array",
         "link": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
         "type": "Interview",
         "year": "2026",
-        "id": "wells-fargo-q22"
+        "id": "wells-fargo-q22",
+        "topic": "Arrays",
+        "difficulty": "Easy"
       },
       {
         "title": "Minimum length of Anagram Concatenation",
         "link": "https://leetcode.com/problems/minimum-length-of-anagram-concatenation/",
         "type": "OA",
         "year": "2026",
-        "id": "wells-fargo-q23"
+        "id": "wells-fargo-q23",
+        "topic": "Strings",
+        "difficulty": "Medium"
       },
       {
         "title": "Count Vowel Substrings of a String",
         "link": "https://leetcode.com/problems/count-vowel-substrings-of-a-string/",
         "type": "OA",
         "year": "2026",
-        "id": "wells-fargo-q24"
+        "id": "wells-fargo-q24",
+        "topic": "Strings",
+        "difficulty": "Medium"
       }
     ],
     "oaFormat": []
@@ -183,105 +231,135 @@
         "link": "https://leetcode.com/problems/reorder-list/description/",
         "type": "Interview",
         "year": "2026",
-        "id": "amazon-q1"
+        "id": "amazon-q1",
+        "topic": "Linked Lists",
+        "difficulty": "Medium"
       },
       {
         "title": "Koko eating bananas",
         "link": "https://leetcode.com/problems/koko-eating-bananas/description/",
         "type": "Interview",
         "year": "2026",
-        "id": "amazon-q2"
+        "id": "amazon-q2",
+        "topic": "Searching",
+        "difficulty": "Medium"
       },
       {
         "title": "Find k pairs with smallest sum",
         "link": "https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/",
         "type": "OA",
         "year": "2026",
-        "id": "amazon-q3"
+        "id": "amazon-q3",
+        "topic": "Heap",
+        "difficulty": "Medium"
       },
       {
         "title": "Occurrene of character in a given string",
         "link": "https://www.geeksforgeeks.org/program-count-occurrence-given-character-string/",
         "type": "Interview",
         "year": "2025",
-        "id": "amazon-q4"
+        "id": "amazon-q4",
+        "topic": "Strings",
+        "difficulty": "Easy"
       },
       {
         "title": "Find missing number",
         "link": "https://leetcode.com/problems/missing-number/",
         "type": "Interview",
         "year": "2025",
-        "id": "amazon-q5"
+        "id": "amazon-q5",
+        "topic": "Arrays",
+        "difficulty": "Easy"
       },
       {
         "title": "Find cycle in linked list",
         "link": "https://leetcode.com/problems/linked-list-cycle/",
         "type": "Interview",
         "year": "2025",
-        "id": "amazon-q6"
+        "id": "amazon-q6",
+        "topic": "Linked Lists",
+        "difficulty": "Easy"
       },
       {
         "title": "Detonate the maximum bombs",
         "link": "https://leetcode.com/problems/detonate-the-maximum-bombs/description/",
         "type": "Interview",
         "year": "2026",
-        "id": "amazon-q7"
+        "id": "amazon-q7",
+        "topic": "Graphs",
+        "difficulty": "Medium"
       },
       {
         "title": "Sort array of 0s and 1s",
         "link": "https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/",
         "type": "Interview",
         "year": "2026",
-        "id": "amazon-q8"
+        "id": "amazon-q8",
+        "topic": "Sorting",
+        "difficulty": "Easy"
       },
       {
         "title": "Step by step directions from a binary tree node to another",
         "link": "https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/",
         "type": "Interview",
         "year": "2025",
-        "id": "amazon-q9"
+        "id": "amazon-q9",
+        "topic": "Binary Tree",
+        "difficulty": "Medium"
       },
       {
         "title": "Wildcard matching",
         "link": "https://leetcode.com/problems/wildcard-matching/description/",
         "type": "OA",
         "year": "2026",
-        "id": "amazon-q10"
+        "id": "amazon-q10",
+        "topic": "Dynamic Programming",
+        "difficulty": "Hard"
       },
       {
         "title": "Removing stars from a string",
         "link": "https://leetcode.com/problems/removing-stars-from-a-string/",
         "type": "Interview",
         "year": "2026",
-        "id": "amazon-q11"
+        "id": "amazon-q11",
+        "topic": "Stacks",
+        "difficulty": "Medium"
       },
       {
         "title": "Print cousins of a given node of a binary tree",
         "link": "https://www.geeksforgeeks.org/print-cousins-of-a-given-node-in-binary-tree",
         "type": "Interview",
         "year": "2025",
-        "id": "amazon-q12"
+        "id": "amazon-q12",
+        "topic": "Binary Tree",
+        "difficulty": "Easy"
       },
       {
         "title": "Equilibrium index of an array",
         "link": "https://www.geeksforgeeks.org/equilibrium-index-of-an-array",
         "type": "Interview",
         "year": "2025",
-        "id": "amazon-q13"
+        "id": "amazon-q13",
+        "topic": "Arrays",
+        "difficulty": "Easy"
       },
       {
         "title": "Run length encoding",
         "link": "https://www.geeksforgeeks.org/run-length-encoding/",
         "type": "Interview",
         "year": "2024",
-        "id": "amazon-q14"
+        "id": "amazon-q14",
+        "topic": "Strings",
+        "difficulty": "Easy"
       },
       {
         "title": "Longest happy string",
         "link": "https://leetcode.com/problems/longest-happy-string/",
         "type": "Interview",
         "year": "2024",
-        "id": "amazon-q15"
+        "id": "amazon-q15",
+        "topic": "Greedy Algorithms",
+        "difficulty": "Medium"
       }
     ],
     "oaFormat": []
@@ -295,91 +373,117 @@
         "link": "https://leetcode.com/problems/insert-interval/description/",
         "type": "OA",
         "year": "2027",
-        "id": "appian-q1"
+        "id": "appian-q1",
+        "topic": "Greedy Algorithms",
+        "difficulty": "Medium"
       },
       {
         "title": "Find first and last position of element in sorted array",
         "link": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/",
         "type": "OA",
         "year": "2027",
-        "id": "appian-q2"
+        "id": "appian-q2",
+        "topic": "Searching",
+        "difficulty": "Medium"
       },
       {
         "title": "Find missing and repeating",
         "link": "https://www.geeksforgeeks.org/problems/find-missing-and-repeating2512/1",
         "type": "OA",
         "year": "2027",
-        "id": "appian-q3"
+        "id": "appian-q3",
+        "topic": "Arrays",
+        "difficulty": "Medium"
       },
       {
         "title": "Construct binary tree from preorder and inorder traversal",
         "link": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
         "type": "OA",
         "year": "2027",
-        "id": "appian-q4"
+        "id": "appian-q4",
+        "topic": "Binary Tree",
+        "difficulty": "Medium"
       },
       {
         "title": "Single Number",
         "link": "https://leetcode.com/problems/single-number/",
         "type": "OA",
         "year": "2027",
-        "id": "appian-q5"
+        "id": "appian-q5",
+        "topic": "Bit Manipulation",
+        "difficulty": "Easy"
       },
       {
         "title": "Two sum",
         "link": "https://leetcode.com/problems/two-sum/",
         "type": "OA",
         "year": "2027",
-        "id": "appian-q6"
+        "id": "appian-q6",
+        "topic": "Arrays",
+        "difficulty": "Easy"
       },
       {
         "title": "Set-mismatch",
         "link": "https://leetcode.com/problems/set-mismatch/description/",
         "type": "OA",
         "year": "2027",
-        "id": "appian-q7"
+        "id": "appian-q7",
+        "topic": "Arrays",
+        "difficulty": "Easy"
       },
       {
         "title": "Find duplicate and missing elements and return the status of the team",
         "link": "https://www.geeksforgeeks.org/problems/find-missing-and-repeating2512/1",
         "type": "OA",
         "year": "2027",
-        "id": "appian-q8"
+        "id": "appian-q8",
+        "topic": "Arrays",
+        "difficulty": "Medium"
       },
       {
         "title": "Find first and last occurences of an array",
         "link": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/description/",
         "type": "OA",
         "year": "2027",
-        "id": "appian-q9"
+        "id": "appian-q9",
+        "topic": "Searching",
+        "difficulty": "Medium"
       },
       {
         "title": "8 ball puzzle problem",
         "link": "https://www.geeksforgeeks.org/aptitude/puzzle-8-balls-problem/",
         "type": "Interview",
         "year": "2025",
-        "id": "appian-q10"
+        "id": "appian-q10",
+        "topic": "Puzzles",
+        "difficulty": "Medium"
       },
       {
         "title": "Josephus Problem",
         "link": "https://www.geeksforgeeks.org/josephus-problem/",
         "type": "OA",
         "year": "2026",
-        "id": "appian-q11"
+        "id": "appian-q11",
+        "topic": "Recursion & Backtracking",
+        "difficulty": "Medium"
       },
       {
         "title": "Majority Element",
         "link": "https://leetcode.com/problems/majority-element/",
         "type": "Interview",
         "year": "2024",
-        "id": "appian-q12"
+        "id": "appian-q12",
+        "topic": "Arrays",
+        "difficulty": "Easy"
       },
       {
         "title": "Bayer Moore Majority Voting",
         "link": "https://www.geeksforgeeks.org/boyer-moore-majority-voting-algorithm",
         "type": "Interview",
         "year": "2024",
-        "id": "appian-q13"
+        "id": "appian-q13",
+        "topic": "Arrays",
+        "difficulty": "Easy"
       }
     ],
     "oaFormat": []
@@ -393,84 +497,108 @@
         "link": "https://www.geeksforgeeks.org/trapping-rain-water/",
         "type": "OA",
         "year": "2021",
-        "id": "accolite-q1"
+        "id": "accolite-q1",
+        "topic": "Two Pointers",
+        "difficulty": "Hard"
       },
       {
         "title": "Level order tree traversal",
         "link": "https://www.geeksforgeeks.org/level-order-tree-traversal/",
         "type": "Interview",
         "year": "2021",
-        "id": "accolite-q2"
+        "id": "accolite-q2",
+        "topic": "Binary Tree",
+        "difficulty": "Medium"
       },
       {
         "title": "Print left view of bin tree",
         "link": "https://www.geeksforgeeks.org/iterative-method-to-print-left-view-of-a-binary-tree/",
         "type": "Interview",
         "year": "2021",
-        "id": "accolite-q3"
+        "id": "accolite-q3",
+        "topic": "Binary Tree",
+        "difficulty": "Easy"
       },
       {
         "title": "Right view bin tree using queue",
         "link": "https://www.geeksforgeeks.org/right-view-binary-tree-using-queue/",
         "type": "Interview",
         "year": "2021",
-        "id": "accolite-q4"
+        "id": "accolite-q4",
+        "topic": "Binary Tree",
+        "difficulty": "Easy"
       },
       {
         "title": "Rearrange a given linked list in place",
         "link": "https://www.geeksforgeeks.org/rearrange-a-given-linked-list-in-place/",
         "type": "Interview",
         "year": "2021",
-        "id": "accolite-q5"
+        "id": "accolite-q5",
+        "topic": "Linked Lists",
+        "difficulty": "Medium"
       },
       {
         "title": "Add two numbers represented by linked list",
         "link": "https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists/",
         "type": "Interview",
         "year": "2021",
-        "id": "accolite-q6"
+        "id": "accolite-q6",
+        "topic": "Linked Lists",
+        "difficulty": "Medium"
       },
       {
         "title": "Reverse string without affecting special characters",
         "link": "https://www.geeksforgeeks.org/reverse-a-string-without-affecting-special-characters/",
         "type": "Interview",
         "year": "2021",
-        "id": "accolite-q7"
+        "id": "accolite-q7",
+        "topic": "Strings",
+        "difficulty": "Easy"
       },
       {
         "title": "Dijkstra shortest path using greedy approach",
         "link": "https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/",
         "type": "Interview",
         "year": "2021",
-        "id": "accolite-q8"
+        "id": "accolite-q8",
+        "topic": "Graphs",
+        "difficulty": "Medium"
       },
       {
         "title": "Dijkstra shortest path using priority queue",
         "link": "https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-using-priority_queue-stl/",
         "type": "Interview",
         "year": "2021",
-        "id": "accolite-q9"
+        "id": "accolite-q9",
+        "topic": "Graphs",
+        "difficulty": "Medium"
       },
       {
         "title": "Partition set k subests equal sum",
         "link": "https://www.geeksforgeeks.org/partition-set-k-subsets-equal-sum/",
         "type": "Interview",
         "year": "2021",
-        "id": "accolite-q10"
+        "id": "accolite-q10",
+        "topic": "Recursion & Backtracking",
+        "difficulty": "Hard"
       },
       {
         "title": "Split given array into k sub arrays such that maximum sum of all sub arrays is minimum",
         "link": "https://www.geeksforgeeks.org/split-the-given-array-into-k-sub-arrays-such-that-maximum-sum-of-all-sub-arrays-is-minimum/",
         "type": "Interview",
         "year": "2021",
-        "id": "accolite-q11"
+        "id": "accolite-q11",
+        "topic": "Searching",
+        "difficulty": "Hard"
       },
       {
         "title": "Find a triplet that sum to a givne value",
         "link": "https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/",
         "type": "Interview",
         "year": "2021",
-        "id": "accolite-q12"
+        "id": "accolite-q12",
+        "topic": "Arrays",
+        "difficulty": "Medium"
       }
     ],
     "oaFormat": []
@@ -484,49 +612,63 @@
         "link": "https://www.geeksforgeeks.org/maximum-absolute-difference-value-index-sums/",
         "type": "OA",
         "year": "2021",
-        "id": "walmart-q1"
+        "id": "walmart-q1",
+        "topic": "Arrays",
+        "difficulty": "Medium"
       },
       {
         "title": "Reverse Linked List in group of 3",
         "link": "https://www.geeksforgeeks.org/reverse-a-list-in-groups-of-given-size/",
         "type": "Interview",
         "year": "2021",
-        "id": "walmart-q2"
+        "id": "walmart-q2",
+        "topic": "Linked Lists",
+        "difficulty": "Hard"
       },
       {
         "title": "Merge two sorted Linked Lists",
         "link": "https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/",
         "type": "Interview",
         "year": "2021",
-        "id": "walmart-q3"
+        "id": "walmart-q3",
+        "topic": "Linked Lists",
+        "difficulty": "Easy"
       },
       {
         "title": "4 Tyres and 1 Spare Tyre Puzzle",
         "link": "https://www.geeksforgeeks.org/puzzle-29-car-wheel-puzzle/",
         "type": "Interview",
         "year": "2021",
-        "id": "walmart-q4"
+        "id": "walmart-q4",
+        "topic": "Puzzles",
+        "difficulty": "Easy"
       },
       {
         "title": "DFS of a Graph",
         "link": "https://www.geeksforgeeks.org/depth-first-search-or-dfs-for-a-graph/",
         "type": "Interview",
         "year": "2021",
-        "id": "walmart-q5"
+        "id": "walmart-q5",
+        "topic": "Graphs",
+        "difficulty": "Easy"
       },
       {
         "title": "Grouping Anagrams",
         "link": "https://leetcode.com/problems/group-anagrams/description/",
         "type": "Interview",
         "year": "2025",
-        "id": "walmart-q6"
+        "id": "walmart-q6",
+        "topic": "Strings",
+        "difficulty": "Easy"
       },
       {
         "title": "Kth smallest element in a BST",
         "link": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/",
         "type": "Interview",
         "year": "2025",
-        "id": "walmart-q7"
+        "id": "walmart-q7",
+        "topic": "Binary Search Trees",
+        "difficulty": "Medium"
       }
     ],
     "oaFormat": []
@@ -540,28 +682,36 @@
         "link": "https://www.geeksforgeeks.org/dsa/find-second-largest-element-array/",
         "type": "Interview",
         "year": "2027",
-        "id": "western-digital-q1"
+        "id": "western-digital-q1",
+        "topic": "Arrays",
+        "difficulty": "Easy"
       },
       {
         "title": "Reverse words in a string",
         "link": "https://leetcode.com/problems/reverse-words-in-a-string/description/",
         "type": "Interview",
         "year": "2027",
-        "id": "western-digital-q2"
+        "id": "western-digital-q2",
+        "topic": "Strings",
+        "difficulty": "Medium"
       },
       {
         "title": "Find the kth maximum element in the array",
         "link": "https://leetcode.com/problems/kth-largest-element-in-an-array/description/",
         "type": "Interview",
         "year": "2027",
-        "id": "western-digital-q3"
+        "id": "western-digital-q3",
+        "topic": "Heap",
+        "difficulty": "Medium"
       },
       {
         "title": "Find if a linked list has a cycle",
         "link": "https://leetcode.com/problems/linked-list-cycle/description/",
         "type": "Interview",
         "year": "2027",
-        "id": "western-digital-q4"
+        "id": "western-digital-q4",
+        "topic": "Linked Lists",
+        "difficulty": "Easy"
       }
     ],
     "oaFormat": []
@@ -575,21 +725,27 @@
         "link": "https://leetcode.com/problems/subarrays-with-k-different-integers/",
         "type": "OA",
         "year": "2026",
-        "id": "athena-health-q1"
+        "id": "athena-health-q1",
+        "topic": "Two Pointers",
+        "difficulty": "Hard"
       },
       {
         "title": "Implement stack using queues",
         "link": "https://leetcode.com/problems/implement-stack-using-queues/",
         "type": "Interview",
         "year": "2026",
-        "id": "athena-health-q2"
+        "id": "athena-health-q2",
+        "topic": "Stacks",
+        "difficulty": "Easy"
       },
       {
         "title": "Remove nth node from the end of the list",
         "link": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
         "type": "Interview",
         "year": "2026",
-        "id": "athena-health-q3"
+        "id": "athena-health-q3",
+        "topic": "Linked Lists",
+        "difficulty": "Medium"
       }
     ],
     "oaFormat": []
@@ -603,14 +759,18 @@
         "link": "https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/description/",
         "type": "OA",
         "year": "2027",
-        "id": "american-express-q1"
+        "id": "american-express-q1",
+        "topic": "Graphs",
+        "difficulty": "Medium"
       },
       {
         "title": "Mimimum amount of time to collect garbage",
         "link": "https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/",
         "type": "OA",
         "year": "2027",
-        "id": "american-express-q2"
+        "id": "american-express-q2",
+        "topic": "Arrays",
+        "difficulty": "Medium"
       }
     ],
     "oaFormat": []
@@ -624,14 +784,18 @@
         "link": "https://leetcode.com/problems/missing-number/",
         "type": "Interview",
         "year": "2026",
-        "id": "aptiv-q1"
+        "id": "aptiv-q1",
+        "topic": "Arrays",
+        "difficulty": "Easy"
       },
       {
         "title": "Maximum consecutive ones",
         "link": "https://leetcode.com/problems/max-consecutive-ones/",
         "type": "Interview",
         "year": "2026",
-        "id": "aptiv-q2"
+        "id": "aptiv-q2",
+        "topic": "Arrays",
+        "difficulty": "Easy"
       }
     ],
     "oaFormat": []
@@ -645,14 +809,18 @@
         "link": "https://leetcode.com/problems/total-cost-to-hire-k-workers/description/",
         "type": "OA",
         "year": "2026",
-        "id": "arista-networks-q1"
+        "id": "arista-networks-q1",
+        "topic": "Heap",
+        "difficulty": "Medium"
       },
       {
         "title": "Simplify path",
         "link": "https://leetcode.com/problems/simplify-path/description/",
         "type": "Interview",
         "year": "2026",
-        "id": "arista-networks-q2"
+        "id": "arista-networks-q2",
+        "topic": "Stacks",
+        "difficulty": "Medium"
       }
     ],
     "oaFormat": []
@@ -666,7 +834,9 @@
         "link": "https://www.geeksforgeeks.org/problems/restrictive-candy-crush--141631/1",
         "type": "Interview",
         "year": "2026",
-        "id": "apple-q1"
+        "id": "apple-q1",
+        "topic": "Strings",
+        "difficulty": "Medium"
       }
     ],
     "oaFormat": []
@@ -680,7 +850,9 @@
         "link": "https://takeuforward.org/data-structure/minimum-number-of-platforms-required-for-a-railway",
         "type": "OA",
         "year": "2026",
-        "id": "zoho-q1"
+        "id": "zoho-q1",
+        "topic": "Greedy Algorithms",
+        "difficulty": "Medium"
       }
     ],
     "oaFormat": []

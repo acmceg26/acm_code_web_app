@@ -7,6 +7,12 @@ interface AccordionProps {
   defaultOpen?: boolean;
   className?: string;
   badge?: React.ReactNode;
+  /** Rendered on the root element — useful as a scroll/anchor target. */
+  id?: string;
+  /** Controlled open state. When provided, the accordion no longer tracks its
+   *  own state and the parent must react to `onOpenChange`. */
+  open?: boolean;
+  onOpenChange?: (open: boolean) => void;
 }
 
 export const Accordion: React.FC<AccordionProps> = ({
@@ -15,15 +21,26 @@ export const Accordion: React.FC<AccordionProps> = ({
   defaultOpen = false,
   className = '',
   badge,
+  id,
+  open,
+  onOpenChange,
 }) => {
-  const [isOpen, setIsOpen] = useState(defaultOpen);
+  const [internalOpen, setInternalOpen] = useState(defaultOpen);
+  const isControlled = open !== undefined;
+  const isOpen = isControlled ? open : internalOpen;
+
+  const toggle = () => {
+    const next = !isOpen;
+    if (!isControlled) setInternalOpen(next);
+    onOpenChange?.(next);
+  };
 
   return (
-    <div className={`border bg-zinc-900/30 rounded-xl overflow-hidden transition-colors duration-200 ${isOpen ? 'border-zinc-700' : 'border-zinc-800'} ${className}`}>
+    <div id={id} className={`border bg-zinc-900/30 rounded-xl overflow-hidden transition-colors duration-200 ${isOpen ? 'border-zinc-700' : 'border-zinc-800'} ${className}`}>
       <button
         type="button"
         className="w-full px-5 py-4 flex items-center justify-between text-left font-semibold text-zinc-200 hover:bg-zinc-900/60 transition-colors duration-150"
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={toggle}
       >
         <div className="flex items-center gap-3 flex-1 min-w-0 mr-4">
           <span className="truncate">{title}</span>

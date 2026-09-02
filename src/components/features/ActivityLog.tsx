@@ -3,7 +3,7 @@ import { useTracker } from '../../hooks/useTracker';
 import { CheckCircle2, Calendar } from 'lucide-react';
 
 export const ActivityLog: React.FC = () => {
-  const { solvedProblems } = useTracker();
+  const { dsaSolvedProblems } = useTracker();
   const [timeUpdater, setTimeUpdater] = useState(0);
 
   // Trigger re-render every 30 seconds to update relative times
@@ -45,7 +45,7 @@ export const ActivityLog: React.FC = () => {
     );
   };
 
-  const recentSolved = solvedProblems.slice(0, 5);
+  const recentSolved = dsaSolvedProblems.slice(0, 5);
 
   return (
     <div className="glass-panel p-6 rounded-xl border border-zinc-800/80 flex flex-col h-full">

@@ -26,6 +26,9 @@ export type NoteSaveState = 'saving' | 'saved' | 'error';
 
 export interface TrackerContextType {
   solvedProblems: SolvedProblem[];
+  /** Solved problems that belong to the DSA sheets (company/OA solves excluded).
+   *  Use this for DSA-only surfaces like the dashboard activity feed. */
+  dsaSolvedProblems: SolvedProblem[];
   notes: Record<string, string>;
   noteStatus: Record<string, NoteSaveState>;
   toggleProblem: (problem: Omit<SolvedProblem, 'solvedAtTimestamp'>) => void;
@@ -205,20 +208,22 @@ export const TrackerProvider: React.FC<{ children: React.ReactNode }> = ({ child
   let hardSolved = 0;
   const solvedByTopic: Record<string, number> = {};
 
-  solvedProblems.forEach((solved) => {
-    // Look up in our known problems map or fallback to the difficulty/topic present on the solved object
-    const known = allProblemsMap.get(solved.problemId);
-    const difficulty = known ? known.difficulty : solved.difficulty;
-    const topic = known ? known.topic : solved.topic;
+  // Only DSA-sheet problems count toward these metrics. Company & OA Prep solves
+  // live in the same table (keyed by their own ids) but are tracked per-company,
+  // so they must not leak into the difficulty/topic totals here.
+  const dsaSolvedProblems = solvedProblems.filter((s) => allProblemsMap.has(s.problemId));
 
-    if (difficulty === 'Easy') easySolved++;
-    else if (difficulty === 'Medium') mediumSolved++;
-    else if (difficulty === 'Hard') hardSolved++;
+  dsaSolvedProblems.forEach((solved) => {
+    const known = allProblemsMap.get(solved.problemId)!;
 
-    solvedByTopic[topic] = (solvedByTopic[topic] || 0) + 1;
+    if (known.difficulty === 'Easy') easySolved++;
+    else if (known.difficulty === 'Medium') mediumSolved++;
+    else if (known.difficulty === 'Hard') hardSolved++;
+
+    solvedByTopic[known.topic] = (solvedByTopic[known.topic] || 0) + 1;
   });
 
-  const totalSolvedCount = solvedProblems.length;
+  const totalSolvedCount = dsaSolvedProblems.length;
   const percentCompleted = totalProblemsCount > 0 
     ? Math.round((totalSolvedCount / totalProblemsCount) * 100) 
     : 0;
@@ -240,6 +245,7 @@ export const TrackerProvider: React.FC<{ children: React.ReactNode }> = ({ child
   return (
     <TrackerContext.Provider value={{
       solvedProblems,
+      dsaSolvedProblems,
       notes,
       noteStatus,
       toggleProblem,
