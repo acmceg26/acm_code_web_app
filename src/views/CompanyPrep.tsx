@@ -391,16 +391,21 @@ const CompanyDetailPage: React.FC<{
                 >
                   {q.title}
                 </span>
-                <span className={`shrink-0 px-2 py-0.5 text-[10px] font-bold rounded-md border ${diffBadge[q.difficulty]}`}>
-                  {q.difficulty}
+                {/* Fixed-width cells so the tags line up in columns across every row. */}
+                <span className="shrink-0 w-[68px] text-center">
+                  <span className={`inline-block w-full px-2 py-0.5 text-[10px] font-bold rounded-md border ${diffBadge[q.difficulty]}`}>
+                    {q.difficulty}
+                  </span>
                 </span>
-                <span className="hidden md:inline shrink-0 text-[10px] font-medium text-zinc-500">{q.topic}</span>
-                <span className={`shrink-0 px-2 py-0.5 text-[10px] font-bold rounded-md border ${typeStyles(q.type)}`}>
-                  {q.type}
+                <span className="hidden lg:block shrink-0 w-28 truncate text-right text-[10px] font-medium text-zinc-500" title={q.topic}>
+                  {q.topic}
                 </span>
-                {q.year && (
-                  <span className="shrink-0 text-[10px] font-mono font-bold text-zinc-500">{q.year}</span>
-                )}
+                <span className="shrink-0 w-[76px] text-center">
+                  <span className={`inline-block w-full px-2 py-0.5 text-[10px] font-bold rounded-md border ${typeStyles(q.type)}`}>
+                    {q.type}
+                  </span>
+                </span>
+                <span className="shrink-0 w-9 text-right text-[10px] font-mono font-bold text-zinc-500">{q.year}</span>
                 <ExternalLink className="w-3.5 h-3.5 shrink-0 text-zinc-500 group-hover:text-blue-400 transition-colors" />
               </a>
             </div>

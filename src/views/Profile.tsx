@@ -8,11 +8,13 @@ import {
   GraduationCap,
   Users,
   CheckCircle2,
+  Trash2,
 } from 'lucide-react';
 import { Input } from '../components/ui/Input';
 import { Select } from '../components/ui/Select';
 import { Button } from '../components/ui/Button';
 import { updateProfile } from '../services/profileService';
+import { useTracker } from '../hooks/useTracker';
 import type { User } from '../hooks/useAuth';
 
 const ROLL_RE = /^\d{10}$/;
@@ -46,6 +48,7 @@ function getInitials(name?: string, email?: string): string {
 }
 
 export const Profile: React.FC<ProfileProps> = ({ user }) => {
+  const { clearAllProgress } = useTracker();
   const [name, setName] = useState('');
   const [rollNumber, setRollNumber] = useState('');
   const [department, setDepartment] = useState('');
@@ -238,6 +241,22 @@ export const Profile: React.FC<ProfileProps> = ({ user }) => {
           </Button>
         </div>
       </form>
+
+      {/* Danger zone — clears every solved-problem and note for this account. */}
+      <div className="rounded-xl border border-rose-500/30 bg-rose-500/5 p-6">
+        <h3 className="text-base font-semibold text-zinc-100">Reset all progress</h3>
+        <p className="text-sm text-zinc-400 mt-1 leading-relaxed">
+          Permanently deletes every checked-off problem and note across all sheets and companies.
+          This cannot be undone.
+        </p>
+        <button
+          onClick={clearAllProgress}
+          className="mt-4 inline-flex items-center gap-2 px-4 py-2.5 rounded-lg border border-rose-500/40 bg-rose-500/10 hover:bg-rose-500/20 text-xs font-semibold text-rose-300 hover:text-rose-200 transition-colors cursor-pointer"
+        >
+          <Trash2 className="w-3.5 h-3.5" />
+          Reset all progress
+        </button>
+      </div>
     </div>
   );
 };

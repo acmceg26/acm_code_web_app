@@ -10,6 +10,7 @@ import { AptitudePractice } from './views/AptitudePractice';
 import { TechnicalConcepts } from './views/TechnicalConcepts';
 import { Contests } from './views/Contests';
 import { Resources } from './views/Resources';
+import { ContactUs } from './views/ContactUs';
 import { Profile } from './views/Profile';
 import { Login } from './views/auth/Login';
 import { Signup } from './views/auth/Signup';
@@ -135,6 +136,7 @@ function Root() {
         <Route path="/technical" element={<TechnicalConcepts />} />
         <Route path="/contests" element={<Contests />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path="/contact" element={<ContactUs />} />
         <Route path="/profile" element={<Profile user={user} />} />
         <Route path="*" element={<Navigate to="/dashboard" replace />} />
       </Route>

@@ -8,7 +8,7 @@ import {
   Cpu,
   Trophy,
   FolderOpen,
-  Trash2,
+  MessageCircle,
   Sun,
   Moon,
   LogOut,
@@ -35,7 +35,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   toggleTheme,
   onLogout,
 }) => {
-  const { metrics, clearAllProgress } = useTracker();
+  const { metrics } = useTracker();
 
   const navItems = [
     { to: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
@@ -45,6 +45,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { to: '/aptitude', label: 'Aptitude Practice', icon: Brain },
     { to: '/contests', label: 'Contests', icon: Trophy },
     { to: '/resources', label: 'Other Resources', icon: FolderOpen },
+    { to: '/contact', label: 'Contact Us', icon: MessageCircle },
   ] as const;
 
   // Close the mobile drawer after navigating.
@@ -151,14 +152,6 @@ export const Sidebar: React.FC<SidebarProps> = ({
           >
             {theme === 'dark' ? <Sun className="w-3.5 h-3.5" /> : <Moon className="w-3.5 h-3.5" />}
             <span>{theme === 'dark' ? 'Light mode' : 'Dark mode'}</span>
-          </button>
-
-          <button
-            onClick={clearAllProgress}
-            className="w-full flex items-center justify-center gap-2 px-4 py-2.5 mb-2 rounded-lg border border-zinc-800 hover:border-rose-900 hover:bg-rose-950/10 text-xs font-medium text-zinc-400 hover:text-rose-400 transition-colors cursor-pointer"
-          >
-            <Trash2 className="w-3.5 h-3.5" />
-            <span>Reset all progress</span>
           </button>
 
           <button
