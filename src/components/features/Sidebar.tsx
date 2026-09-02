@@ -46,7 +46,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
     { to: '/aptitude', label: 'Aptitude Practice', icon: Brain },
     { to: '/contests', label: 'Contests', icon: Trophy },
     { to: '/interview-prep', label: 'Interview Prep', icon: Speech },
-    { to: '/resources', label: 'Other Resources', icon: FolderOpen },
+    { to: '/resources', label: 'OA, CUIC and Other Resources', icon: FolderOpen },
   ] as const;
 
   // Close the mobile drawer after navigating.

@@ -12,6 +12,11 @@ const TABS: Tab[] = [
     icon: <FileText className="w-3.5 h-3.5" />,
   },
   {
+    label: 'Online Assessment Resources',
+    dataCategory: 'OAs',
+    icon: <FileText className="w-3.5 h-3.5" />,
+  },
+  {
     label: 'Resume Templates & resources',
     dataCategory: 'Resume',
     icon: <FileText className="w-3.5 h-3.5" />,

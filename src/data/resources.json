@@ -31,6 +31,53 @@
       "link": "https://cuic.annauniv.edu/login/student"
     },
     {
+      "id": "res-oa-1",
+      "category": "OAs",
+      "title": "Hackerrank sample OA",
+      "description": "Sample test from Hackerrank. NOTE: The actual test environment will be different with camera, mic and screen proctoring tools",
+      "tags": [
+        "SampleOA",
+        "Hackerrank"
+      ],
+      "link": "https://www.hackerrank.com/test/sample"
+    },
+    {
+      "id": "res-oa-2",
+      "category": "OAs",
+      "title": "Hirepro Compatability link",
+      "description": "A common tool provided by companies to check if your device is compatable for OAs",
+      "tags": [
+        "Compatability",
+        "Check",
+        "OA"
+      ],
+      "link": "https://eutl.hirepro.ai/assessment/#/compatibility/eyJhbGlhcyI6InBlYXJzb24iLCJzb2NrZXRDaGVja0NvbmZpZyI6eyJodnMiOnRydWUsImhpcmVwcm8iOnRydWUsImF3cyI6dHJ1ZX0sImVtYWlsSWQiOiJkdW1teUBoaXJlcHJvLmluIiwiY2xpZW50SWQiOiJhYzkwN2NkNy1kNWJmLTQxZWQtOWFkMi1kYzMxYjI5OTBlOWUiLCJpbnRlZ3JhdGlvbkdVSUQiOiIwNjBiOTIyYThlMWY0ZjRjYTYwYjcxNGVlOTY0ODFlYSIsImljZUNhbmRpZGF0ZUNoZWNrQ29uZmlnIjp7ImNhbmRpZGF0ZWNoZWNrIjp0cnVlfSwidmlkZW8iOnsic2FtcGxlVmlkZW8iOnsidHlwZSI6InZpZGVvQW5zd2VyIn19LCJ0ZXN0SWQiOiI3MTAyMDIxIiwiaG9zdE5hbWUiOiJhbXMuaGlyZXByby5pbiIsInZpZGVvU2VydmVySG9zdCI6ImV4YW0uaGlyZXByby5pbiIsInRlbmFudElkIjoiMTU5IiwibXVsdGlMYW5ndWFnZVN1cHBvcnQiOnRydWV9"
+    },
+    {
+      "id": "res-oa-3",
+      "category": "OAs",
+      "title": "Online Mic Test",
+      "description": "Mic test website that is commonly provided by companies to test microphone",
+      "tags": [
+        "MicTest",
+        "Prerequisites",
+        "Check"
+      ],
+      "link": "https://www.onlinemictest.com/"
+    },
+    {
+      "id": "res-oa-4",
+      "category": "OAs",
+      "title": "Online Camera Test",
+      "description": "Mic test website that is commonly provided by companies to test microphone",
+      "tags": [
+        "Camera Test",
+        "Prerequisites",
+        "Check"
+      ],
+      "link": "https://webcamtests.com/"
+    },
+    {
       "id": "res-os-1",
       "category": "Video Playlists",
       "title": "Algorithms Playlist - Abdul Bari",
