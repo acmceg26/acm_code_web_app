@@ -4,7 +4,7 @@ import { useTracker } from '../hooks/useTracker';
 import { Card } from '../components/ui/Card';
 import { Checkbox } from '../components/ui/Checkbox';
 import { ComingSoon } from '../components/ui/ComingSoon';
-import { ArrowLeft, ExternalLink, ClipboardList, Layers, BarChart2, Target } from 'lucide-react';
+import { ArrowLeft, ExternalLink, ClipboardList, Layers, BarChart2, Target, FileText } from 'lucide-react';
 
 type Difficulty = 'Easy' | 'Medium' | 'Hard';
 
@@ -21,12 +21,26 @@ interface OaFormatItem {
   label: string;
   value: string;
 }
+// Interview-process summary. Populated later from `src/data/companies_formats.xlsx`;
+// until then every field falls back to placeholder copy.
+interface CompanyFormat {
+  oaFormat?: string;
+  numInterviews?: string;
+  interviewFormats?: string;
+}
 interface Company {
   id: string;
   name: string;
   questions: Question[];
   oaFormat: OaFormatItem[];
+  formats?: CompanyFormat;
 }
+
+const FORMAT_PLACEHOLDER: Required<CompanyFormat> = {
+  oaFormat: 'Placeholder — online-assessment structure (platform, duration, sections) will be added from companies_formats.xlsx.',
+  numInterviews: 'Placeholder — number of interview rounds will be added from companies_formats.xlsx.',
+  interviewFormats: 'Placeholder — round-by-round format (DSA, system design, CS fundamentals, HR) will be added from companies_formats.xlsx.',
+};
 
 const companyData = rawCompanyData as unknown as Company[];
 
@@ -103,11 +117,17 @@ const diffBadge: Record<Difficulty, string> = {
   Medium: 'text-amber-400 bg-amber-400/10 border-amber-500/20',
   Hard: 'text-rose-400 bg-rose-400/10 border-rose-500/20',
 };
-const diffBar: Record<Difficulty, string> = {
-  Easy: 'bg-emerald-500',
-  Medium: 'bg-amber-500',
-  Hard: 'bg-rose-500',
+// Circular-chart colours — same guide as the dashboard's CompletionDonut.
+const diffHex: Record<Difficulty, string> = {
+  Easy: '#22c55e',
+  Medium: '#eab308',
+  Hard: '#ef4444',
 };
+const DONUT_SIZE = 140;
+const DONUT_STROKE = 14;
+const DONUT_RADIUS = (DONUT_SIZE - DONUT_STROKE) / 2;
+const DONUT_CIRC = 2 * Math.PI * DONUT_RADIUS;
+const DONUT_CENTER = DONUT_SIZE / 2;
 
 // ─── Company detail page ─────────────────────────────────────────────────────
 const CompanyDetailPage: React.FC<{
@@ -119,6 +139,7 @@ const CompanyDetailPage: React.FC<{
   const questions = company.questions as Question[];
   const solvedCount = questions.filter((q) => isSolved(q.id)).length;
   const progressPct = questions.length ? Math.round((solvedCount / questions.length) * 100) : 0;
+  const formats = { ...FORMAT_PLACEHOLDER, ...(company.formats ?? {}) };
 
   // Difficulty split + topic distribution across this company's questions only.
   const diffCounts = useMemo(() => {
@@ -126,6 +147,23 @@ const CompanyDetailPage: React.FC<{
     questions.forEach((q) => { counts[q.difficulty] = (counts[q.difficulty] ?? 0) + 1; });
     return counts;
   }, [questions]);
+
+  // Solved-per-difficulty for this company (drives the circular chart arcs).
+  const solvedByDiff: Record<Difficulty, number> = { Easy: 0, Medium: 0, Hard: 0 };
+  questions.forEach((q) => { if (isSolved(q.id)) solvedByDiff[q.difficulty]++; });
+
+  // Pre-compute one arc per difficulty. Each arc's length is that difficulty's
+  // solved share of ALL the company's questions, so the coloured ring equals
+  // overall completion (same approach as the dashboard's CompletionDonut).
+  const donutArcs = DIFFICULTIES.reduce<{ items: { d: Difficulty; dash: number; rotation: number }[]; acc: number }>(
+    (state, d) => {
+      const fraction = questions.length ? solvedByDiff[d] / questions.length : 0;
+      state.items.push({ d, dash: fraction * DONUT_CIRC, rotation: -90 + state.acc * 360 });
+      state.acc += fraction;
+      return state;
+    },
+    { items: [], acc: 0 },
+  ).items.filter((a) => a.dash > 0);
 
   const topicCounts = useMemo(() => {
     const map = new Map<string, number>();
@@ -155,60 +193,95 @@ const CompanyDetailPage: React.FC<{
       </div>
     </div>
 
-    {/* ── Progress + question analytics ─────────────────────── */}
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
-      {/* Progress tracker (this company's questions only) */}
-      <div className="glass-panel p-6 rounded-xl border border-zinc-800/80 flex flex-col justify-between">
+    {/* ── Interview process ────────────────────────────────── */}
+    {/* Placeholder copy until `src/data/companies_formats.xlsx` is wired up. */}
+    <div className="glass-panel p-6 rounded-xl border border-zinc-800/80">
+      <div className="flex items-center gap-2 mb-4">
+        <FileText className="w-5 h-5 text-blue-400" />
+        <h3 className="font-bold text-zinc-200 text-base">Interview Process</h3>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        {([
+          ['OA Format', formats.oaFormat],
+          ['Number of Interviews', formats.numInterviews],
+          ['Interview Formats', formats.interviewFormats],
+        ] as const).map(([label, value]) => (
+          <div key={label} className="rounded-lg border border-zinc-800 bg-zinc-900/40 px-4 py-3">
+            <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-500">{label}</p>
+            <p className="text-sm text-zinc-300 mt-1 leading-relaxed">{value}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* ── Progress + topics ────────────────────────────────── */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+      {/* Your progress — circular chart + per-difficulty completion */}
+      <div className="glass-panel p-6 rounded-xl border border-zinc-800/80">
         <div className="flex items-center gap-2 mb-4">
           <Target className="w-5 h-5 text-blue-400" />
           <h3 className="font-bold text-zinc-200 text-base">Your Progress</h3>
         </div>
-        <div>
-          <div className="flex items-baseline gap-1.5 mb-2">
-            <span className="text-3xl font-bold text-zinc-100 font-mono">{solvedCount}</span>
-            <span className="text-sm text-zinc-500">/ {questions.length} solved</span>
-          </div>
-          <div className="w-full h-1.5 bg-zinc-900 rounded-full overflow-hidden">
-            <div
-              className="h-full bg-blue-500 rounded-full transition-all duration-500 ease-out"
-              style={{ width: `${progressPct}%` }}
-            />
-          </div>
-          <div className="flex justify-between items-center mt-1.5">
-            <span className="text-[10px] text-zinc-500 font-semibold uppercase tracking-wider">Completion</span>
-            <span className="text-xs font-bold font-mono text-blue-400">{progressPct}%</span>
-          </div>
-        </div>
-      </div>
 
-      {/* Difficulty breakdown */}
-      <div className="glass-panel p-6 rounded-xl border border-zinc-800/80">
-        <div className="flex items-center gap-2 mb-4">
-          <Layers className="w-5 h-5 text-emerald-400" />
-          <h3 className="font-bold text-zinc-200 text-base">By Difficulty</h3>
-        </div>
-        <div className="flex w-full h-2 rounded-full overflow-hidden bg-zinc-900 mb-4">
-          {DIFFICULTIES.map((d) =>
-            diffCounts[d] > 0 ? (
-              <div
-                key={d}
-                className={diffBar[d]}
-                style={{ width: `${(diffCounts[d] / questions.length) * 100}%` }}
-                title={`${d}: ${diffCounts[d]}`}
+        <div className="flex flex-col items-center">
+          <div
+            className="relative flex items-center justify-center"
+            style={{ width: DONUT_SIZE, height: DONUT_SIZE }}
+          >
+            <svg width={DONUT_SIZE} height={DONUT_SIZE}>
+              {/* Track */}
+              <circle
+                className="text-zinc-800"
+                stroke="currentColor"
+                fill="transparent"
+                strokeWidth={DONUT_STROKE}
+                r={DONUT_RADIUS}
+                cx={DONUT_CENTER}
+                cy={DONUT_CENTER}
               />
-            ) : null,
-          )}
-        </div>
-        <div className="space-y-2">
-          {DIFFICULTIES.map((d) => (
-            <div key={d} className="flex items-center justify-between text-xs">
-              <span className="flex items-center gap-2 text-zinc-400">
-                <span className={`w-2.5 h-2.5 rounded-full ${diffBar[d]}`} />
-                {d}
-              </span>
-              <span className="font-mono text-zinc-300">{diffCounts[d]}</span>
+              {/* Solved arcs, one per difficulty (see donutArcs above). */}
+              {donutArcs.map(({ d, dash, rotation }) => (
+                <circle
+                  key={d}
+                  stroke={diffHex[d]}
+                  fill="transparent"
+                  strokeWidth={DONUT_STROKE}
+                  strokeDasharray={`${dash} ${DONUT_CIRC - dash}`}
+                  strokeLinecap="butt"
+                  r={DONUT_RADIUS}
+                  cx={DONUT_CENTER}
+                  cy={DONUT_CENTER}
+                  transform={`rotate(${rotation} ${DONUT_CENTER} ${DONUT_CENTER})`}
+                  className="transition-all duration-500 ease-out"
+                />
+              ))}
+            </svg>
+            <div className="absolute flex flex-col items-center">
+              <span className="text-2xl font-bold text-zinc-100 font-mono leading-none">{progressPct}%</span>
+              <span className="text-[10px] text-zinc-400 uppercase tracking-widest font-semibold mt-1">Solved</span>
             </div>
-          ))}
+          </div>
+
+          {/* Completed per difficulty, out of that difficulty's total. */}
+          <div className="w-full mt-6 space-y-2">
+            <div className="flex items-center justify-between text-xs pb-2 border-b border-zinc-800">
+              <span className="text-zinc-400 font-semibold">Total</span>
+              <span className="font-mono text-zinc-200">
+                {solvedCount}<span className="text-zinc-500"> / {questions.length}</span>
+              </span>
+            </div>
+            {DIFFICULTIES.map((d) => (
+              <div key={d} className="flex items-center justify-between text-xs">
+                <span className="flex items-center gap-2 text-zinc-400">
+                  <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: diffHex[d] }} />
+                  {d}
+                </span>
+                <span className="font-mono text-zinc-300">
+                  {solvedByDiff[d]}<span className="text-zinc-500"> / {diffCounts[d]}</span>
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
