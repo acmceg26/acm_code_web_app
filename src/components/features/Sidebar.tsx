@@ -68,11 +68,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
       >
         {/* Brand Header */}
         <div className="flex items-center justify-between px-6 py-5 border-b border-zinc-800">
-          <div className="flex items-center gap-1.5">
+          <div className="flex items-center gap-2.5">
             <img
               src={theme === 'dark' ? acmLogoDark : acmLogoBright}
               alt="ACM-CEG Student Chapter"
-              className={`h-9 w-auto rounded-md ${theme === 'dark' ? 'bg-black' : 'bg-white'}`}
+              className={`h-14 w-auto rounded-md ${theme === 'dark' ? 'bg-black' : 'bg-white'}`}
             />
             <div>
               <h1 className="font-bold text-zinc-100 text-lg leading-tight tracking-tight">C.O.D.E</h1>
