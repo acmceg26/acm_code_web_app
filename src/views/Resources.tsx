@@ -7,6 +7,11 @@ type Tab = { label: string; dataCategory: string; icon: React.ReactNode };
 
 const TABS: Tab[] = [
   {
+    label: 'CUIC Rules and Resources',
+    dataCategory: 'CUIC',
+    icon: <FileText className="w-3.5 h-3.5" />,
+  },
+  {
     label: 'Resume Templates & resources',
     dataCategory: 'Resume',
     icon: <FileText className="w-3.5 h-3.5" />,

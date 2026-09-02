@@ -1,6 +1,36 @@
 {
   "resources": [
     {
+      "id": "res-cuic-1",
+      "category": "CUIC",
+      "title": "CUIC Recruitment Policy 2026-2027",
+      "description": "Highlights registration, recruitment, selection and other details",
+      "tags": [
+        "Policy"
+      ],
+      "link": "https://cuicserver.annauniv.edu//reports/CUIC%20-%20Placement%20Policy%20(2026%20-%202027).pdf"
+    },
+    {
+      "id": "res-cuic-2",
+      "category": "CUIC",
+      "title": "CUIC Student Resources",
+      "description": "CUIC compiled preparation materials, resume guidelines, placement process details, etc",
+      "tags": [
+        "Resources"
+      ],
+      "link": "https://cuic.annauniv.edu/student-resources"
+    },
+    {
+      "id": "res-cuic-3",
+      "category": "CUIC",
+      "title": "CUIC Student Login",
+      "description": "Student login to upload resume and apply for companies.",
+      "tags": [
+        "Login"
+      ],
+      "link": "https://cuic.annauniv.edu/login/student"
+    },
+    {
       "id": "res-os-1",
       "category": "Video Playlists",
       "title": "Algorithms Playlist - Abdul Bari",
