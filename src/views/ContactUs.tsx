@@ -48,14 +48,14 @@ export const ContactUs: React.FC = () => {
         </p>
       </div>
 
-      {/* About ACM-CEG — full-width */}
-      <div className="glass-panel p-6 rounded-xl border border-zinc-800/80 flex flex-col sm:flex-row items-center gap-6">
-        <div className="shrink-0 rounded-xl bg-white border border-black/10 px-5 py-4 flex items-center justify-center">
+      {/* About ACM-CEG — full-width, brand-tinted to stand out */}
+      <div className="rounded-xl border border-violet-500/30 bg-gradient-to-br from-violet-600/20 via-purple-600/10 to-transparent p-6 flex flex-col sm:flex-row items-center gap-6">
+        <div className="shrink-0 rounded-xl bg-white border border-black/10 px-5 py-4 flex items-center justify-center shadow-lg shadow-violet-900/20">
           <img src="/favicon.png" alt="ACM-CEG logo" className="h-14 w-auto" />
         </div>
         <div className="min-w-0 flex-1">
-          <h3 className="text-base font-semibold text-zinc-100">About ACM-CEG</h3>
-          <p className="text-sm text-zinc-400 mt-1.5 leading-relaxed">{ABOUT_ACM_CEG}</p>
+          <h3 className="text-base font-semibold text-violet-100">About ACM-CEG</h3>
+          <p className="text-sm text-violet-100/70 mt-1.5 leading-relaxed">{ABOUT_ACM_CEG}</p>
         </div>
       </div>
 
