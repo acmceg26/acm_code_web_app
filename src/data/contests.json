@@ -2,38 +2,52 @@
   "contests": [
     {
       "id": "c-1",
-      "name": "C.O.D.E Weekly #1",
-      "topic": "Arrays & Strings",
+      "name": "Arrays and Strings",
+      "topic": "C.O.D.E Weekly #1",
       "internLink": "https://www.hackerrank.com/c-o-d-e-week1-interns-arrays-and-strings",
       "placementLink": "https://www.hackerrank.com/c-o-d-e-week1-placements-arrays-and-strings"
     },
     {
       "id": "c-2",
-      "name": "C.O.D.E Weekly #2",
-      "topic": "Stacks and Queues",
+      "name": "Stacks and Queues",
+      "topic": "C.O.D.E Weekly #2",
       "internLink": "https://www.hackerrank.com/c-o-d-e-week2-interns-stacks-and-queues",
       "placementLink": "https://www.hackerrank.com/c-o-d-e-week2-placements-stacks-and-queues"
     },
     {
       "id": "c-3",
-      "name": "C.O.D.E Weekly #3",
-      "topic": "Heap, Recursion and Backtracking",
+      "name": "Heap, Recursion and Backtracking",
+      "topic": "C.O.D.E Weekly #3",
       "internLink": "https://www.hackerrank.com/c-o-d-e-week3-interns-heap-and-recursion",
       "placementLink": "https://www.hackerrank.com/c-o-d-e-week3-placements-heap-and-recursion"
     },
     {
       "id": "c-4",
-      "name": "C.O.D.E Weekly #4",
-      "topic": "Linked List and Binary Tree",
+      "name": "Linked List and Binary Tree",
+      "topic": "C.O.D.E Weekly #4",
       "internLink": "https://www.hackerrank.com/c-o-d-e-week4-interns-linked-list-and-binary-tree",
       "placementLink": "https://www.hackerrank.com/c-o-d-e-week4-placements-linked-list-and-binary-tree"
     },
     {
       "id": "c-5",
-      "name": "C.O.D.E Weekly #5",
-      "topic": "Greedy and Binary Search Trees (BST)",
+      "name": "Greedy and Binary Search Trees (BST)",
+      "topic": "C.O.D.E Weekly #5",
       "internLink": "https://www.hackerrank.com/c-o-d-e-week5-interns-greedy-algorithm-and-binary-search-tree",
       "placementLink": "https://www.hackerrank.com/c-o-d-e-week5-placements-greedy-algorithm-and-binary-search-tree"
+    },
+    {
+      "id": "c-6",
+      "name": "Dynamic Programming (DP)",
+      "topic": "C.O.D.E Weekly #6",
+      "internLink": "https://www.hackerrank.com/c-o-d-e-week6-interns-dynamic-programing",
+      "placementLink": "https://www.hackerrank.com/c-o-d-e-week6-placements-dynamic-programing"
+    },
+        {
+      "id": "c-7",
+      "name": "Graphs, Sorting, Searching",
+      "topic": "C.O.D.E Weekly #7",
+      "internLink": "https://www.hackerrank.com/c-o-d-e-week6-interns-graphs-sorting-searching",
+      "placementLink": "https://www.hackerrank.com/c-o-d-e-week6-placements-graphs-sorting-searching"
     }
   ]
 }
