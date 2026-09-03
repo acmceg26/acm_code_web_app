@@ -2,31 +2,27 @@
   "tests": [
     {
       "id": "test-1",
-      "title": "Quantitative Aptitude – Mock Test 1",
-      "description": "30-question timed test covering arithmetic, algebra, and number systems.",
-      "formUrl": "https://forms.google.com/",
-      "bankUrl": "https://drive.google.com/file/d/1Qt5nWMAFQy0nFC_HP2LKqzw4nnGV24c8/view?usp=sharing"
+      "title": "Aptitude Test 1",
+      "description": "Clck here to access the timed Google Form test. Question and answers PDF is available below.",
+      "formUrl": "https://form-timer.com/start/b79eb741",
     },
     {
       "id": "test-2",
-      "title": "Logical Reasoning – Mock Test 1",
-      "description": "25-question test on syllogisms, blood relations, and seating arrangements.",
-      "formUrl": "https://forms.google.com/",
-      "bankUrl": "https://drive.google.com/file/d/17e_cKU18-oT2NRVNwH_uUWYO5ZxYprK0/view?usp=sharing"
+      "title": "Aptitde Test - 2",
+      "description": "Clck here to access the timed Google Form test. Question and answers PDF is available below.",
+      "formUrl": "https://test.gclocked.com/?form=-OxpMXwGFxfhYp6FWrlH"
     },
     {
       "id": "test-3",
-      "title": "Verbal Ability – Mock Test 1",
-      "description": "Reading comprehension, sentence correction, and vocabulary exercises.",
-      "formUrl": "https://forms.google.com/",
-      "bankUrl": "https://drive.google.com/file/d/17e_cKU18-oT2NRVNwH_uUWYO5ZxYprK0/view?usp=sharing"
+      "title": "Aptitude Test - 3",
+      "description": "Clck here to access the timed Google Form test. Question and answers PDF is available below.",
+      "formUrl": "https://form-timer.com/start/c473d75b"
     },
     {
       "id": "test-4",
-      "title": "Full Aptitude – Grand Mock Test",
+      "title": "Aptitude Test - 4",
       "description": "Comprehensive 60-question test covering all three aptitude sections.",
-      "formUrl": "https://forms.google.com/",
-      "bankUrl": "https://drive.google.com/file/d/1GfbiTu5FVSj0L3UZBxjnUQffjEC4bxn6/view?usp=sharing"
+      "formUrl": "https://test.gclocked.com/?form=-P-4aDHCt6UVlVirmtOt"
     }
   ],
   "studyMaterials": [

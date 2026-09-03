@@ -54,18 +54,6 @@ export const AptitudePractice: React.FC = () => {
                     >
                       Open Test <ExternalLink className="w-3 h-3" />
                     </a>
-                    {test.bankUrl ? (
-                      <a
-                        href={test.bankUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-1 text-emerald-400 hover:text-emerald-300 transition-colors"
-                      >
-                        Question Bank <ExternalLink className="w-3 h-3" />
-                      </a>
-                    ) : (
-                      <span className="text-zinc-500">Question Bank unavailable</span>
-                    )}
                   </div>
                 </Card>
               </div>
