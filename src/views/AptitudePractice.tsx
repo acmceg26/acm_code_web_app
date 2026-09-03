@@ -6,7 +6,7 @@ import { ExternalLink, FileText, ClipboardList } from 'lucide-react';
 
 // ─── Feature flag ───────────────────────────────────────────────────────────
 // Set to `false` once aptitude test links are ready to publish.
-const TESTS_COMING_SOON = true;
+const TESTS_COMING_SOON = false;
 // ────────────────────────────────────────────────────────────────────────────
 
 export const AptitudePractice: React.FC = () => {
