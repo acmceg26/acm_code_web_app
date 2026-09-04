@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, Outlet } from 'react-router-dom';
 import { DsaDataProvider } from './context/DsaDataContext';
 import { TrackerProvider } from './context/TrackerContext';
+import { GuestProvider, useGuest } from './context/GuestContext';
 import { Sidebar } from './components/features/Sidebar';
 import { Dashboard } from './views/Dashboard';
 import { DsaSheets } from './views/DsaSheets';
@@ -27,12 +28,13 @@ interface AppLayoutProps {
   theme: Theme;
   toggleTheme: () => void;
   onLogout: () => void;
+  isGuest: boolean;
 }
 
 // Shared shell for all authenticated pages. The active section is rendered by
 // the router via <Outlet />, so the URL is the single source of truth for which
 // page is shown (refresh, back/forward, and shareable links all work).
-function AppLayout({ theme, toggleTheme, onLogout }: AppLayoutProps) {
+function AppLayout({ theme, toggleTheme, onLogout, isGuest }: AppLayoutProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
@@ -44,6 +46,7 @@ function AppLayout({ theme, toggleTheme, onLogout }: AppLayoutProps) {
         theme={theme}
         toggleTheme={toggleTheme}
         onLogout={onLogout}
+        isGuest={isGuest}
       />
 
       {/* Main Content Layout */}
@@ -89,6 +92,13 @@ function AppLayout({ theme, toggleTheme, onLogout }: AppLayoutProps) {
 function Root() {
   const { theme, toggleTheme } = useTheme();
   const { user, isAuthenticated, loading } = useAuth();
+  const { isGuest, exitGuestMode } = useGuest();
+
+  // A real sign-in always wins over a stale guest flag (e.g. a guest who
+  // then logs in from /login without ever "exiting" guest mode first).
+  useEffect(() => {
+    if (isAuthenticated && isGuest) exitGuestMode();
+  }, [isAuthenticated, isGuest, exitGuestMode]);
 
   // While the session is being restored, avoid flashing the login screen.
   if (loading) {
@@ -118,12 +128,13 @@ function Root() {
       />
 
       {/* Protected app — one URL per section, under a shared layout. The layout
-          element doubles as the auth guard: unauthenticated users are bounced
-          to /login before any child page renders. */}
+          element doubles as the auth guard: unauthenticated, non-guest users
+          are bounced to /login before any child page renders. Guests get the
+          same shell; DB-backed actions gate themselves via useGuest(). */}
       <Route
         element={
-          isAuthenticated ? (
-            <AppLayout theme={theme} toggleTheme={toggleTheme} onLogout={signOut} />
+          isAuthenticated || isGuest ? (
+            <AppLayout theme={theme} toggleTheme={toggleTheme} onLogout={signOut} isGuest={isGuest} />
           ) : (
             <Navigate to="/login" replace />
           )
@@ -148,13 +159,15 @@ function Root() {
 
 function App() {
   return (
-    <DsaDataProvider>
-      <TrackerProvider>
-        <BrowserRouter>
-          <Root />
-        </BrowserRouter>
-      </TrackerProvider>
-    </DsaDataProvider>
+    <GuestProvider>
+      <DsaDataProvider>
+        <TrackerProvider>
+          <BrowserRouter>
+            <Root />
+          </BrowserRouter>
+        </TrackerProvider>
+      </DsaDataProvider>
+    </GuestProvider>
   );
 }
 

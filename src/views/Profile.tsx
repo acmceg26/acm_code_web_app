@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   User as UserIcon,
   Mail,
@@ -9,12 +10,14 @@ import {
   Users,
   CheckCircle2,
   Trash2,
+  LogIn,
 } from 'lucide-react';
 import { Input } from '../components/ui/Input';
 import { Select } from '../components/ui/Select';
 import { Button } from '../components/ui/Button';
 import { updateProfile } from '../services/profileService';
 import { useTracker } from '../hooks/useTracker';
+import { useGuest } from '../context/GuestContext';
 import type { User } from '../hooks/useAuth';
 
 const ROLL_RE = /^\d{10}$/;
@@ -48,7 +51,9 @@ function getInitials(name?: string, email?: string): string {
 }
 
 export const Profile: React.FC<ProfileProps> = ({ user }) => {
+  const navigate = useNavigate();
   const { clearAllProgress } = useTracker();
+  const { isGuest, exitGuestMode } = useGuest();
   const [name, setName] = useState('');
   const [rollNumber, setRollNumber] = useState('');
   const [department, setDepartment] = useState('');
@@ -123,6 +128,40 @@ export const Profile: React.FC<ProfileProps> = ({ user }) => {
     }
     setSaved(true);
   };
+
+  if (isGuest) {
+    return (
+      <div className="max-w-3xl animate-fade-in-up">
+        <div className="mb-6">
+          <h2 className="text-xl font-semibold text-zinc-100">My Profile</h2>
+          <p className="text-sm text-zinc-500 mt-1">View and update your account details.</p>
+        </div>
+        <div className="flex flex-col items-center text-center gap-3 rounded-xl border border-zinc-800 bg-zinc-900/40 p-10">
+          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-blue-600/20 border border-blue-500/30">
+            <UserIcon className="w-6 h-6 text-blue-300" />
+          </div>
+          <div>
+            <p className="text-sm font-semibold text-zinc-200">You&apos;re browsing as a guest</p>
+            <p className="text-xs text-zinc-500 mt-1 max-w-sm">
+              Sign in to set up your profile, track solved problems, and save notes across devices.
+            </p>
+          </div>
+          <Button
+            variant="primary"
+            size="md"
+            className="mt-2"
+            onClick={() => {
+              exitGuestMode();
+              navigate('/login');
+            }}
+          >
+            <LogIn className="w-3.5 h-3.5 mr-2" />
+            Sign in
+          </Button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6 animate-fade-in-up max-w-3xl">

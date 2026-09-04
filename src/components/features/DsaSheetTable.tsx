@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTracker } from '../../hooks/useTracker';
+import { useGuest } from '../../context/GuestContext';
 import { Checkbox } from '../ui/Checkbox';
 import {
   ExternalLink,
@@ -32,6 +33,7 @@ const MAX_NOTE_LENGTH = 1000;
 
 export const DsaSheetTable: React.FC<DsaSheetTableProps> = ({ problems, topicName }) => {
   const { isSolved, toggleProblem, getNote, saveNote, noteStatus } = useTracker();
+  const { isGuest, promptSignIn } = useGuest();
 
   // Track which problem IDs have notes expanded
   const [expandedNotesId, setExpandedNotesId] = useState<string | null>(null);
@@ -40,6 +42,10 @@ export const DsaSheetTable: React.FC<DsaSheetTableProps> = ({ problems, topicNam
   const [editingNoteText, setEditingNoteText] = useState('');
 
   const toggleNotes = (problemId: string) => {
+    if (isGuest) {
+      promptSignIn();
+      return;
+    }
     if (expandedNotesId === problemId) {
       setExpandedNotesId(null);
     } else {
@@ -98,13 +104,19 @@ export const DsaSheetTable: React.FC<DsaSheetTableProps> = ({ problems, topicNam
                       <Checkbox
                         checked={solved}
                         id={`check-${problem.id}`}
-                        onChange={() => toggleProblem({
-                          problemId: problem.id,
-                          title: problem.title,
-                          topic: topicName,
-                          difficulty: problem.difficulty,
-                          platform: problem.platforms.leetcode ? 'leetcode' : 'gfg'
-                        })}
+                        onChange={() => {
+                          if (isGuest) {
+                            promptSignIn();
+                            return;
+                          }
+                          toggleProblem({
+                            problemId: problem.id,
+                            title: problem.title,
+                            topic: topicName,
+                            difficulty: problem.difficulty,
+                            platform: problem.platforms.leetcode ? 'leetcode' : 'gfg'
+                          });
+                        }}
                       />
                     </div>
                   </td>

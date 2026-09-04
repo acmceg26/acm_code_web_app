@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Mail, Lock } from 'lucide-react';
 import { Input } from '../../components/ui/Input';
 import { Button } from '../../components/ui/Button';
 import { AuthLayout } from './AuthLayout';
 import { signIn } from '../../services/authService';
+import { useGuest } from '../../context/GuestContext';
 import type { Theme } from '../../hooks/useTheme';
 
 interface LoginProps {
@@ -15,12 +16,19 @@ interface LoginProps {
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export const Login: React.FC<LoginProps> = ({ theme, toggleTheme }) => {
+  const navigate = useNavigate();
+  const { enterGuestMode } = useGuest();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [remember, setRemember] = useState(true);
   const [errors, setErrors] = useState<{ email?: string; password?: string }>({});
   const [serverError, setServerError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
+
+  const handleGuest = () => {
+    enterGuestMode();
+    navigate('/dashboard');
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -114,6 +122,19 @@ export const Login: React.FC<LoginProps> = ({ theme, toggleTheme }) => {
         <Button type="submit" variant="primary" size="lg" className="w-full" disabled={submitting}>
           {submitting ? 'Signing in…' : 'Sign in'}
         </Button>
+
+        <div className="flex items-center gap-3 pt-1">
+          <div className="h-px flex-1 bg-zinc-800" />
+          <span className="text-[10px] font-semibold text-zinc-600 uppercase tracking-wider">or</span>
+          <div className="h-px flex-1 bg-zinc-800" />
+        </div>
+
+        <Button type="button" variant="secondary" size="lg" className="w-full" onClick={handleGuest}>
+          Continue as guest
+        </Button>
+        <p className="text-center text-[11px] text-zinc-500">
+          Explore C.O.D.E without an account — you won&apos;t be able to track progress or save notes.
+        </p>
       </form>
     </AuthLayout>
   );

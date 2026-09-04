@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import rawCompanyData from '../data/companies.json';
 import { useTracker } from '../hooks/useTracker';
+import { useGuest } from '../context/GuestContext';
 import { Card } from '../components/ui/Card';
 import { Checkbox } from '../components/ui/Checkbox';
 import { ComingSoon } from '../components/ui/ComingSoon';
@@ -47,9 +48,11 @@ const companyData = rawCompanyData as unknown as Company[];
 // CSEA placement portal — real, first-hand placement experiences live here.
 const CSEA_PLACEMENT_URL = 'https://placement.cseaceg.org.in/';
 
-// ─── Feature flag ───────────────────────────────────────────────────────────
+// ─── Feature flags ──────────────────────────────────────────────────────────
 // Set to `true` to hide the section behind a "Coming Soon" screen.
 const COMING_SOON = false;
+// Set to `false` to hide the "Interview Process" card on a company's detail page.
+const SHOW_INTERVIEW_PROCESS = false;
 // ────────────────────────────────────────────────────────────────────────────
 
 // Brand domains used to fetch each company's logo.
@@ -135,6 +138,7 @@ const CompanyDetailPage: React.FC<{
   onBack: () => void;
 }> = ({ company, onBack }) => {
   const { isSolved, toggleProblem } = useTracker();
+  const { isGuest, promptSignIn } = useGuest();
 
   const questions = company.questions as Question[];
   const solvedCount = questions.filter((q) => isSolved(q.id)).length;
@@ -366,15 +370,19 @@ const CompanyDetailPage: React.FC<{
               <Checkbox
                 checked={solved}
                 id={`chk-${q.id}`}
-                onChange={() =>
+                onChange={() => {
+                  if (isGuest) {
+                    promptSignIn();
+                    return;
+                  }
                   toggleProblem({
                     problemId: q.id,
                     title: q.title,
                     topic: q.topic,
                     difficulty: q.difficulty,
                     platform: '',
-                  })
-                }
+                  });
+                }}
               />
               <a
                 href={q.link}

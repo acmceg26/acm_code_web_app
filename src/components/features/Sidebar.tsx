@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import {
   LayoutDashboard,
   BookOpen,
@@ -13,10 +13,12 @@ import {
   Sun,
   Moon,
   LogOut,
+  LogIn,
   UserCircle,
   X
 } from 'lucide-react';
 import { useTracker } from '../../hooks/useTracker';
+import { useGuest } from '../../context/GuestContext';
 import type { Theme } from '../../hooks/useTheme';
 import acmLogoDark from '../../assets/acm-logo-dark.png';
 import acmLogoBright from '../../assets/acm-logo-bright.png';
@@ -27,6 +29,7 @@ interface SidebarProps {
   theme: Theme;
   toggleTheme: () => void;
   onLogout: () => void;
+  isGuest: boolean;
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({
@@ -35,8 +38,17 @@ export const Sidebar: React.FC<SidebarProps> = ({
   theme,
   toggleTheme,
   onLogout,
+  isGuest,
 }) => {
   const { metrics } = useTracker();
+  const { exitGuestMode } = useGuest();
+  const navigate = useNavigate();
+
+  const handleSignInClick = () => {
+    setMobileOpen(false);
+    exitGuestMode();
+    navigate('/login');
+  };
 
   const navItems = [
     { to: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
@@ -117,19 +129,29 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
         {/* User Mini Profile / Reset Progress */}
         <div className="p-4 border-t border-zinc-800 bg-zinc-900/50">
-          {/* Mini progress stats */}
-          <div className="mb-4 p-3 rounded-lg bg-zinc-950/40 border border-zinc-800/50">
-            <div className="flex justify-between text-xs font-medium text-zinc-400 mb-1.5">
-              <span>Overall progress</span>
-              <span className="font-mono text-zinc-200">{metrics.totalSolvedCount}/{metrics.totalProblemsCount}</span>
+          {/* Mini progress stats — guests have nothing to track yet */}
+          {isGuest ? (
+            <button
+              onClick={handleSignInClick}
+              className="mb-4 w-full text-left p-3 rounded-lg bg-blue-500/10 border border-blue-500/30 hover:bg-blue-500/15 transition-colors cursor-pointer"
+            >
+              <p className="text-xs font-semibold text-blue-300">Browsing as guest</p>
+              <p className="text-[11px] text-zinc-400 mt-0.5">Sign in to track your progress</p>
+            </button>
+          ) : (
+            <div className="mb-4 p-3 rounded-lg bg-zinc-950/40 border border-zinc-800/50">
+              <div className="flex justify-between text-xs font-medium text-zinc-400 mb-1.5">
+                <span>Overall progress</span>
+                <span className="font-mono text-zinc-200">{metrics.totalSolvedCount}/{metrics.totalProblemsCount}</span>
+              </div>
+              <div className="w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden">
+                <div
+                  className="h-full bg-blue-500 rounded-full transition-all duration-500"
+                  style={{ width: `${metrics.percentCompleted}%` }}
+                />
+              </div>
             </div>
-            <div className="w-full h-1.5 bg-zinc-800 rounded-full overflow-hidden">
-              <div
-                className="h-full bg-blue-500 rounded-full transition-all duration-500"
-                style={{ width: `${metrics.percentCompleted}%` }}
-              />
-            </div>
-          </div>
+          )}
 
           <NavLink
             to="/profile"
@@ -170,13 +192,23 @@ export const Sidebar: React.FC<SidebarProps> = ({
             <span>{theme === 'dark' ? 'Light mode' : 'Dark mode'}</span>
           </button>
 
-          <button
-            onClick={onLogout}
-            className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800/50 text-xs font-medium text-zinc-400 hover:text-zinc-200 transition-colors cursor-pointer"
-          >
-            <LogOut className="w-3.5 h-3.5" />
-            <span>Log out</span>
-          </button>
+          {isGuest ? (
+            <button
+              onClick={handleSignInClick}
+              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-blue-500/40 bg-blue-500/10 hover:bg-blue-500/15 text-xs font-medium text-blue-300 hover:text-blue-200 transition-colors cursor-pointer"
+            >
+              <LogIn className="w-3.5 h-3.5" />
+              <span>Sign in</span>
+            </button>
+          ) : (
+            <button
+              onClick={onLogout}
+              className="w-full flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800/50 text-xs font-medium text-zinc-400 hover:text-zinc-200 transition-colors cursor-pointer"
+            >
+              <LogOut className="w-3.5 h-3.5" />
+              <span>Log out</span>
+            </button>
+          )}
         </div>
       </aside>
     </>
