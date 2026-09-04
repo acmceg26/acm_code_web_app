@@ -22,22 +22,22 @@ interface PrepResource {
 
 const PREP_RESOURCES: PrepResource[] = [
   {
-    title: 'Resume Template',
-    description: 'A clean, single-page ATS-friendly resume template used by ACM-CEG seniors. Make a copy and fill in your details.',
+    title: 'Resume Template - Clean and Formal',
+    description: 'Adapated from /EngineeringResume - a clean, formal and effective resume template. NOTE: Click File, Make a Copy and then edit your resume. DO NOT REQUEST EDIT ACCESS IN THE ATTACHED DOCUMENT.',
     tags: ['resume', 'template'],
-    link: 'https://docs.google.com/',
+    link: 'https://docs.google.com/document/d/1hn8GJjoSlKQRw134uKgB6LHPlHZpxOmLZ07EwIL_a5A/edit?tab=t.0',
   },
   {
     title: 'Self Intro Prompt',
-    description: 'A guided prompt to script a crisp 60–90 second "Tell me about yourself" — background, projects, and what you are looking for.',
+    description: 'A prompt to provide to an LLM along with your resume for a tailored self-introduction for a specific company',
     tags: ['self-intro', 'prompt'],
-    link: 'https://docs.google.com/',
+    link: 'https://drive.google.com/file/d/13vJskPogXW0aPk83xK9XxsELaaa87ju0/view?usp=sharing',
   },
   {
-    title: 'Referral Email Template',
-    description: 'A short, polite cold-email / LinkedIn message template for asking alumni and employees for a referral.',
-    tags: ['referral', 'outreach'],
-    link: 'https://docs.google.com/',
+    title: 'HR Interview Question Bank',
+    description: 'Covers general HR, behavioral/scenario-based, project & resume-related, role-fit, and curveball questions — with preparation tips for each.',
+    tags: ['HR', 'scenario-based-questions'],
+    link: 'https://drive.google.com/file/d/164wsuaAz4eKMlyFnZbXiPYISeUWrSnF_/view?usp=sharing',
   },
 ];
 // ────────────────────────────────────────────────────────────────────────────
