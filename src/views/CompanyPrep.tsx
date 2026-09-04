@@ -199,24 +199,26 @@ const CompanyDetailPage: React.FC<{
 
     {/* ── Interview process ────────────────────────────────── */}
     {/* Placeholder copy until `src/data/companies_formats.xlsx` is wired up. */}
-    <div className="glass-panel p-6 rounded-xl border border-zinc-800/80">
-      <div className="flex items-center gap-2 mb-4">
-        <FileText className="w-5 h-5 text-blue-400" />
-        <h3 className="font-bold text-zinc-200 text-base">Interview Process</h3>
+    {SHOW_INTERVIEW_PROCESS && (
+      <div className="glass-panel p-6 rounded-xl border border-zinc-800/80">
+        <div className="flex items-center gap-2 mb-4">
+          <FileText className="w-5 h-5 text-blue-400" />
+          <h3 className="font-bold text-zinc-200 text-base">Interview Process</h3>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {([
+            ['OA Format', formats.oaFormat],
+            ['Number of Interviews', formats.numInterviews],
+            ['Interview Formats', formats.interviewFormats],
+          ] as const).map(([label, value]) => (
+            <div key={label} className="rounded-lg border border-zinc-800 bg-zinc-900/40 px-4 py-3">
+              <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-500">{label}</p>
+              <p className="text-sm text-zinc-300 mt-1 leading-relaxed">{value}</p>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        {([
-          ['OA Format', formats.oaFormat],
-          ['Number of Interviews', formats.numInterviews],
-          ['Interview Formats', formats.interviewFormats],
-        ] as const).map(([label, value]) => (
-          <div key={label} className="rounded-lg border border-zinc-800 bg-zinc-900/40 px-4 py-3">
-            <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-500">{label}</p>
-            <p className="text-sm text-zinc-300 mt-1 leading-relaxed">{value}</p>
-          </div>
-        ))}
-      </div>
-    </div>
+    )}
 
     {/* ── Progress + topics ────────────────────────────────── */}
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
